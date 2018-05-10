@@ -1,0 +1,26 @@
+body{
+	background-image: url("liz.jpg");
+
+}
+h1, h2, p {
+	font-family: "helvetica", sans-serif;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 100;
+	color: white;
+}
+
+.name{
+	font-size: 6em;
+	margin-left: .5em;
+}
+
+.title{
+	font-size: 2.5em;
+	margin-top: -70px;
+	margin-left: 1.5em;
+}
+
+.note{
+	font-size: 1.5em;
+	margin-left: 2.5em;
+	margin-top: 30%;
+}
