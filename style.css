@@ -1,26 +1,140 @@
-body{
-	background-image: url("liz.jpg");
+/*******************************************
+*TABLE OF CONTENTS
+*=================
+*1. DEFAULT OVERRIDES
+*2. HEADER 
+*3. MAIN
+*4. FORM 
+*5. FOOTER
+*6. MEDIA QUERIES
+*********************************************/
 
+/*INTRO CSS */
+/*To see inital positioning*/
+
+/*header {
+	border: 3px dashed blue;
+}*/
+/*main {
+	border: 3px dashed yellow;
 }
-h1, h2, p {
+footer {
+	border: 3px dashed red;	
+}*/
+/*section {
+	border: 3px dashed green;
+}*/
+
+/*p {
+	border: 3px dashed blue;
+}
+*/
+
+
+/*===========================================================
+/* 1. DEFAULT OVERRIDES */
+/*=========================================================*/
+
+h1, h2, p, a {
 	font-family: "helvetica", sans-serif;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 100;
 	color: white;
 }
+/*=========================================================
+/* 2. HEADER */
+/*=======================================================*/
+
+#first-container{
+	display: grid;
+}
+
+#logo-white{
+	max-width: 45%;
+}
 
 .name{
-	font-size: 6em;
-	margin-left: .5em;
+	font-size: 20px;
+	/* margin-left: .5em;
+	margin-top: 4em; */
 }
 
 .title{
-	font-size: 2.5em;
-	margin-top: -70px;
-	margin-left: 1.5em;
+	font-size: 20px;
+	margin-top: -15px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.top-nav{
+	list-style-type: none;
+}
+
+li{
+	display: inline;
+}
+
+/*======================================================
+/* 3.MAIN */
+/*=====================================================*/
+
+body{
+	background-image: url("images/liz.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 
 .note{
 	font-size: 1.5em;
 	margin-left: 2.5em;
 	margin-top: 30%;
+}
+
+
+/*===========================================================
+/* 5. FOOTER*/
+/*=========================================================*/
+
+
+.icon {
+	padding-right: 0.1em;
+	background: none;
+}
+#inst{
+	max-height:  3em;
+	width: auto;
+	padding-right: 1em;
+	margin-bottom: 5%;
+	margin-top: 9%;
+	margin-left: 33%;
+	}
+#fb{
+	max-height:  3em;
+	width: auto;
+	padding-right: 1em;
+	margin-bottom: 5%;
+}#tw{
+	max-height:  3em;
+	width: auto;
+	padding-right: 1em;
+	margin-bottom: 5%;
+}#li{
+	max-height:  3em;
+	width: auto;
+	padding-right: 1em;
+	margin-bottom: 5%;
+}#gh{
+	max-height:  3em;
+	width: auto;
+	padding-right: 1em;
+	margin-bottom: 5%;
+}#ut{
+	max-height:  3em;
+	width: auto;
+	padding-right: 1em;
+	margin-bottom: 5%;
 }
