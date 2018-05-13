@@ -35,46 +35,60 @@ footer {
 /* 1. DEFAULT OVERRIDES */
 /*=========================================================*/
 
-h1, h2, p, a {
+h1, h2, h3, p, a {
 	font-family: "helvetica", sans-serif;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 100;
 	color: white;
+}
+
+h3{
+	font-size: 2em;
 }
 /*=========================================================
 /* 2. HEADER */
 /*=======================================================*/
 
-#first-container{
-	display: grid;
+
+/* Navigation */
+
+.top-nav li{
+	list-style-type: none;
+	display: inline;
+	max-width: 900px;
 }
+
+.top-nav{
+	text-align: center;
+}
+
+.nav-link{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+/* End of Navigation */
 
 #logo-white{
 	max-width: 45%;
+	margin-top: 7%;
+	margin-left: 7%;
 }
 
-.name{
+.name, .title{
 	font-size: 20px;
-	/* margin-left: .5em;
-	margin-top: 4em; */
+	margin-left: 7%;
 }
 
 .title{
-	font-size: 20px;
 	margin-top: -15px;
 }
 
 a {
-	color: white;
+	color: #F5FD4D;
 	text-decoration: none;
 }
 
-.top-nav{
-	list-style-type: none;
-}
-
-li{
-	display: inline;
-}
 
 /*======================================================
 /* 3.MAIN */
@@ -92,6 +106,26 @@ body{
 	font-size: 1.5em;
 	margin-left: 2.5em;
 	margin-top: 30%;
+}
+
+.snc-wrapper{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	margin-top: 7%;
+}
+
+#snc-pic{
+	max-width: 100%;
+
+}
+
+/* .left-col{
+	margin-left: 7%;
+} */
+
+.portfolio-wrapper{
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 
