@@ -35,7 +35,7 @@ footer {
 /* 1. DEFAULT OVERRIDES */
 /*=========================================================*/
 
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, span {
 	font-family: "helvetica", sans-serif;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 100;
 }
@@ -209,10 +209,21 @@ body{
 	padding-bottom: 5em;
 }
 
+#icon-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 4;
+}
+
 #skills-and-tools-heading-text{
 	line-height: 4;
 	text-align: center;
 	font-size: 3em;
+}
+
+.tool-icon{
+	max-width: 30px;
+	margin: 2em;
 }
 
 
