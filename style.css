@@ -38,7 +38,6 @@ footer {
 h1, h2, h3, p, a {
 	font-family: "helvetica", sans-serif;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 100;
-	
 }
 
 h3{
@@ -49,7 +48,7 @@ h3{
 /*=======================================================*/
 
 
-/* Navigation */
+/* NAVIGATION */
 
 #nav-container{
 	display: grid;
@@ -75,7 +74,7 @@ li{
 	margin-left: 2%;
 }
 
-/* End of Navigation */
+/* END OF NAVIGATION */
 
 
 
@@ -151,6 +150,7 @@ body{
 	background-color: white;
 	margin-left: -10px;
 	margin-right: -10px;
+	padding-bottom: 5em;
 }
 
 .port-content{
@@ -160,13 +160,60 @@ body{
 
 .lower-text{
 	margin-top: -13px;
+	margin-bottom: 2em;
 }
 
 .left-col{
 	max-width: 75%;
 }
 
+.port-view-live, .port-view-GH{
+	color: black;
+	border: 1px solid black;
+	padding: 0.5em;
+}
 
+
+/* ABOUT ME SECION */
+
+#aboutme-section{
+	max-width: 45%;
+	margin-top: 15%;
+	margin-left: 11%;
+	padding-bottom: 11%;
+}
+
+#aboutme-text, #aboutme-heading, #resume-link{
+	color: white;
+}
+
+#aboutme-heading{
+	font-size: 3em;
+}
+
+#aboutme-text{
+	margin-bottom: 3.5em;
+}
+
+#resume-link{
+	border: 1px solid white;
+	padding: 0.5em;
+}
+
+/* SKILLS AND TOOLS SECTION */
+
+#skills-and-tools-wrapper{
+	background-color: white;
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-bottom: 5em;
+}
+
+#skills-and-tools-heading-text{
+	line-height: 4;
+	text-align: center;
+	font-size: 3em;
+}
 
 
 /*===========================================================
