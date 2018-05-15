@@ -113,7 +113,7 @@ body{
 
 #creds-container{
 	margin-top: 17%;
-	margin-bottom: 17%;
+	margin-bottom: 15%;
 }
 
 #dw-arrow{
@@ -213,6 +213,8 @@ body{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 4;
+	max-width: 900px;
+	margin-left: 20%;
 }
 
 #skills-and-tools-heading-text{
@@ -224,7 +226,107 @@ body{
 .tool-icon{
 	max-width: 30px;
 	margin: 2em;
+	padding-left: 0.75em;
+
 }
+
+span{
+	margin-bottom: 1em;
+	line-height: 3;
+}
+
+.tool-icon-div{
+	border: 1px solid silver;
+	max-width: 120px;
+	margin-bottom: 1em;
+}
+
+/* CUSTOM MARGINS */
+
+#html-span{
+	margin-left: -70px;
+}
+#php-span{
+	margin-left: -66px;
+}
+#git-span{
+	margin-left: -62px;
+}
+#css-span{
+	margin-left: -67px;
+}
+#sql-span{
+	margin-left: -68px;
+}
+#GH-span{
+	margin-left: -75px;
+}
+#JS-span{
+	margin-left: -85px;
+}
+#nodeJS-span{
+	margin-left: -78px;
+}
+#VS-span{
+	margin-left: -95px;
+}
+#JQ-span{
+	margin-left: -75px;
+}
+#mvc-span{
+	margin-left: -70px;
+}
+#adobe-span{
+	margin-left: -75px;
+}
+
+
+/* FORM */
+
+
+label {
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	color: white;
+}
+.left_side {
+	width: 50%;
+}
+.right_side {
+	width: 50%;
+}
+#_contact {
+	padding-left: 45%;
+	padding-top: 3%;
+}
+.form-wrapper{
+	padding-left: 27%;
+}
+#messagebox {
+	min-height: 17.5em;
+	min-width: 30em;
+}
+label {
+	line-height: 2em;
+}
+button {
+	background-color: #ff6633;
+	color: white;
+	border-radius:0.5em;
+	min-width: 70%;
+	min-height: 2.2em;
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	box-shadow: 1px 1px 5px #888888;
+}
+#name {
+	min-height: 2em;
+	min-width: 20em;
+}
+#email {
+	min-height: 2em;
+	min-width: 20em;
+}
+
 
 
 /*===========================================================
