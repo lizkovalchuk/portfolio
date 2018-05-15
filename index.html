@@ -3,6 +3,11 @@
 <head>
 	<title>Liz Kovalchuk</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="scripts/own.js"></script>
 </head>
 <body>
 	<div id="nav-container">
@@ -11,10 +16,10 @@
 		</div>
 		<nav class="top-nav">
 			<ul>
-				<li class="nav-link"><a href="#">PORTFOLIO</a></li>
-				<li class="nav-link"><a href="#">ABOUT</a></li>
-				<li class="nav-link"><a href="#">SKILLS AND TOOLS</a></li>
-				<li class="nav-link"><a href="#">CONTACT</a></li>
+				<li data-page="portfolio-block" class="nav-link"><a href="#">PORTFOLIO</a></li>
+				<li data-page="aboutme-section" class="nav-link"><a href="#">ABOUT</a></li>
+				<li data-page="skills-and-tools-wrapper" class="nav-link"><a href="#">SKILLS AND TOOLS</a></li>
+				<li data-page="contact-frm" class="nav-link"><a href="#">CONTACT</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -25,7 +30,7 @@
 	<div class="downward-arrow">
 		<img id="dw-arrow" src="images/down-arrow.gif">
 	</div>
-	<div class="portfolio-wrapper">
+	<div id="portfolio-block" class="portfolio-wrapper">
 		<div id="port-heading">
 			<h3 id="port-heading-text">Portfolio</h3>
 		</div>
@@ -195,7 +200,7 @@
 
 <!-- FORM -->
 
-<form action="result" method="post">
+<form id="contact-frm" action="result" method="post">
 	<h2 id="_contact">Contact</h2>
 	<div class="form-wrapper">
 		<div >
