@@ -244,7 +244,7 @@ span{
 	margin-left: -85px;
 }
 #dotnet-span{
-	margin-left: -78px;
+	margin-left: -70px;
 	/* line-height: 4; */
 }
 #VS-span{
@@ -350,43 +350,8 @@ footer{
 }
 
 .social-links img{
-	margin-top: 2em; 
 	max-width:45px;
 	padding-top: 200%;
 	padding-bottom: 100%;
 }
 
-/* #inst{
-	max-height:  3em;
-	width: auto;
-	padding-right: 1em;
-	margin-bottom: 5%;
-	margin-top: 9%;
-	margin-left: 33%;
-	}
-#fb{
-	max-height:  3em;
-	width: auto;
-	padding-right: 1em;
-	margin-bottom: 5%;
-}#tw{
-	max-height:  3em;
-	width: auto;
-	padding-right: 1em;
-	margin-bottom: 5%;
-}#li{
-	max-height:  3em;
-	width: auto;
-	padding-right: 1em;
-	margin-bottom: 5%;
-}#gh{
-	max-height:  3em;
-	width: auto;
-	padding-right: 1em;
-	margin-bottom: 5%;
-}#ut{
-	max-height:  3em;
-	width: auto;
-	padding-right: 1em;
-	margin-bottom: 5%;
-} */
