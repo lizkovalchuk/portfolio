@@ -38,7 +38,7 @@
 		<!-- FIRST PORT PIECE -->
 
 		<div class="port-content">
-			<div class="snc-wrapper">
+			<div class="port-piece-wrapper">
 				<div class="left-col">
 					<h3>Milestones</h3>
 					<p>
@@ -59,7 +59,7 @@
 		<!-- FIRST SECOND PIECE -->
 
 		<div class="port-content">
-			<div class="snc-wrapper">
+			<div class="port-piece-wrapper">
 				<div class="left-col">
 					<h3>Synesthesia Keyboard</h3>
 					<p>
@@ -80,7 +80,7 @@
 		<!-- FIRST THIRD PIECE -->
 
 		<div class="port-content">
-			<div class="snc-wrapper">
+			<div class="port-piece-wrapper">
 				<div class="left-col">
 					<h3>Stolen Bikes</h3>
 					<p>
@@ -101,7 +101,7 @@
 		<!-- FIRST FOURTH PIECE -->
 
 		<div class="port-content">
-			<div class="snc-wrapper">
+			<div class="port-piece-wrapper">
 				<div class="left-col">
 					<h3>Giftcards</h3>
 					<p>
@@ -200,32 +200,33 @@
 
 <!-- FORM -->
 
-<form id="contact-frm" action="mailer.php" method="post">
+<!-- <form id="contact-frm" action="mailer.php" method="post"> -->
 	<h2 id="_contact">Contact</h2>
 	<div class="form-wrapper">
 		<div >
 			<label for="name">Name:</label>
 		</div>
 		<div>
-			<input type="text" id="name">
+			<input type="text" id="name" name="name">
 		</div>
 		<div>
 			<label for="email">Email:</label>
 		</div>
 		<div>
-			<input type="text" id="email">
+			<input type="text" id="email" name="email">
 		</div>
 		<div >
 			<label for="message">Message:</label>
 		</div>
 		<div>
-			<input type="text" id="messagebox">
+			<!-- <input type="textarea" id="messagebox" rows="10"> -->
+			<textarea rows="15" id="messagebox" name="message"></textarea>
 		</div>
 		<div class="custom-button">
-			<button type="submit" id="mail-button">SEND</button>
+			<button id="mail-button">SEND</button>
 		</div>
 	</div>
-</form>
+<!-- </form> -->
 
 	<!-- FOOTER -->
 

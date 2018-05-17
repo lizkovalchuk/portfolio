@@ -4,6 +4,9 @@
 *1. DEFAULT OVERRIDES
 *2. HEADER 
 *3. MAIN
+	-PORTFOLIO SECTION
+	-ABOUT ME SECTION
+	-SKILLS AND TOOLS
 *4. FORM 
 *5. FOOTER
 *6. MEDIA QUERIES
@@ -113,7 +116,7 @@ body{
 	line-height: 4;
 }
 
-.snc-wrapper{
+.port-piece-wrapper{
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	margin-top: 7%;
@@ -202,13 +205,17 @@ body{
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 4;
 	max-width: 900px;
-	margin-left: 20%;
+	/* margin-left: 20%; */
+
 }
-/* 
+
 #icon-wrapper{
 	display: flex;
-    flex-wrap:wrap;
-} */
+	flex-wrap:wrap;
+	max-width: 1024px;
+	justify-content: space-around;
+	margin: 0 auto;
+} 
 
 #skills-and-tools-heading-text{
 	line-height: 4;
@@ -226,17 +233,19 @@ body{
 span{
 	margin-bottom: 1em;
 	line-height: 3;
+	margin: 0 auto;
 }
 
 .tool-icon-div{
 	border: 1px solid silver;
 	max-width: 120px;
-	margin-bottom: 1em;
+	margin: 1rem;
+	text-align: center;
 }
 
 /* CUSTOM MARGINS */
 
-#html-span{
+/* #html-span{
 	margin-left: -70px;
 }
 #php-span{
@@ -259,7 +268,7 @@ span{
 }
 #dotnet-span{
 	margin-left: -70px;
-	/* line-height: 4; */
+	/* line-height: 4; 
 }
 #VS-span{
 	margin-left: -95px;
@@ -272,7 +281,7 @@ span{
 }
 #adobe-span{
 	margin-left: -75px;
-}
+} */
 
 /* CUSTOM IMAGES */
 
@@ -280,7 +289,9 @@ span{
 	min-height: 30px;
 }
 
-/* FORM */
+/*===========================================================
+/* 4. FORM*/
+/*=========================================================*/
 
 
 label {
@@ -302,7 +313,6 @@ label {
 	padding-left: 20%;
 }
 #messagebox {
-	min-height: 17.5em;
 	min-width: 30em;
 }
 label {
@@ -374,3 +384,33 @@ footer{
 	padding-bottom: 100%;
 }
 
+
+/*===========================================================
+/* 6. MEDIA QUERIES*/
+/*=========================================================*/
+
+@media all and (max-width:768px){
+
+	.port-piece-wrapper{
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 1rem;
+		margin: 0 auto;
+
+		/* display: flex; */
+	}
+
+	form{
+		margin: 0 auto;
+	}
+
+	#icon-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 4;
+		max-width: 300px;
+		/* margin-left: 20%; */
+	
+	}
+
+}
