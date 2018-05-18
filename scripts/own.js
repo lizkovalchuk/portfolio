@@ -18,9 +18,9 @@ $(document).ready(function (){
 });
 
 function button_mail_click(){
-  var email = 'dfmoncada@gmail.com';
-  var name = 'diego';
-  var message = "BIATCH";
+  var email = $('#email').val();
+  var name = $('#name').val();
+  var message = $('#messagebox').val();
 
   $.ajax({
     url:'./mailer.php',
