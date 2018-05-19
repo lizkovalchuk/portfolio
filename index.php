@@ -133,7 +133,7 @@
 		<p id="aboutme-text">Front-end developer graduating from Humber College this July 2018. Trained as a classical musician, I apply inherent understanding of structure, complex pattern recognition, logical symbolism and analytical understanding into my code. My experiences as an artist 
 			and performer enhance my ability to ensure that my work has a cohesive narrative that provides great user experience.
 		</p>
-		<a href="#" id="resume-link">View Resume</a>
+		<a href="resume.pdf" target="_blank" id="resume-link">View Resume</a>
 	</div>
 
 	<!-- SKILLS AND TOOLS SECTION -->

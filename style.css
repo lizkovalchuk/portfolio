@@ -98,7 +98,7 @@ body{
 
 #creds-container{
 	margin-top: 17%;
-	margin-bottom: 6%;
+	margin-bottom: 10%;
 }
 
 
@@ -192,6 +192,10 @@ body{
 
 #aboutme-text, #aboutme-heading, #resume-link{
 	color: white;
+}
+
+#resume-link:hover{
+	background:#a08176;
 }
 
 #aboutme-heading{
