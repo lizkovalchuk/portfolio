@@ -78,6 +78,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover{
+	color: #a08176;
+}
+
 
 /*======================================================
 /* 3.MAIN */
@@ -94,14 +98,26 @@ body{
 
 #creds-container{
 	margin-top: 17%;
-	margin-bottom: 15%;
+	margin-bottom: 6%;
 }
+
 
 #dw-arrow{
 	display: block;
     margin-left: auto;
 	margin-right: auto;
 	max-width: 3%;
+	color:#F5FD4D;
+	transform: translateY(-20px);
+	font-size: 5em;
+	font-weight: 400;
+	/* font-family: Georgia, 'Times New Roman', Times, serif; */	
+}
+
+#dw-arrow:hover{
+	color:#a08176;
+	transition-duration: .3s;
+	transform: perspective(1px) translateZ(0);
 }
 
 /* PORTFOLIO SECTION */

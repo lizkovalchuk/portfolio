@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title>Liz Kovalchuk</title>
+	<!-- <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+	<link href="https://use.fontawesome.com/14a8473206.css" media="all" rel="stylesheet">
+<link href="fontawesome.min.css" rel="stylesheet" type="text/css">
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -28,7 +31,10 @@
 		<h2 class="title">Web Developer</h2>
 	</div>
 	<div class="downward-arrow">
-		<img id="dw-arrow" src="images/down-arrow.gif">
+		<!-- <img data-page="portfolio-block" id="dw-arrow" src="images/down-arrow.gif"> -->
+		<!-- <span data-page="portfolio-block" id="dw-arrow" ><</span> -->
+		<span class="fa fa-angle-down" id="dw-arrow" data-page="portfolio-block" ></span>
+		<!-- <span id="dw-arrow" data-page="portfolio-block">v</span> -->
 	</div>
 	<div id="portfolio-block" class="portfolio-wrapper">
 		<div id="port-heading">
