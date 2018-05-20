@@ -333,7 +333,7 @@ label {
 	padding-left: 20%;
 }
 #messagebox {
-	min-width: 30em;
+	min-width: 300px;
 }
 label {
 	line-height: 2em;
@@ -482,6 +482,23 @@ footer{
 	}
 
 	#logo-white{
-		max-width: 5%;
+		max-width: 0%;
 	}
+	.form-wrapper{
+		padding-left: 5%;
+	}
+	#aboutme-section{
+		max-width: 80%;
+		margin-top: 15%;
+		margin-left: 11%;
+		padding-bottom: 11%;
+	}
+
+	#aboutme-heading{
+		padding-left:5%;
+	}
+	#_contact{
+		padding-left:30%;
+	}
+
 }

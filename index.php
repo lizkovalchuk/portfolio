@@ -90,7 +90,7 @@
 				<div class="left-col">
 					<h3>Stolen Bikes</h3>
 					<p>
-						A web application intergrating two different APIs to help users plan bicycle trips far from reprted bike thiefs.
+						A web application intergrating two different APIs to help users plan bicycle trips far from reported bike thiefs.
 					</p>
 					<p class="lower-text">
 						Technologies: HTML, CSS and JQuery, Google Maps API and Bike Index API V3.
@@ -207,9 +207,10 @@
 <!-- FORM -->
 
 <!-- <form id="contact-frm" action="mailer.php" method="post"> -->
-	<div id="contact-frm">
+	<!-- <div id="contact-frm"> -->
+		
+		<div id="contact-frm" class="form-wrapper">
 		<h2 id="_contact">Contact</h2>
-		<div class="form-wrapper">
 			<div >
 				<label for="name">Name:</label>
 			</div>
@@ -233,7 +234,7 @@
 				<button id="mail-button">SEND</button>
 			</div>
 		</div>
-	</div>
+	<!-- </div> -->
 <!-- </form> -->
 
 	<!-- FOOTER -->
