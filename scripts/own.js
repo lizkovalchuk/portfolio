@@ -17,32 +17,6 @@ $(document).on('click', '#dw-arrow', function() {
 scrollToDiv('#'+ page);
 });
 
-//===========Downward arrow animation========//
-
-
-// $(document).ready(function(){
-//     $('#dw-arrow').hover(function(){
-//       $(this).stop().animate({
-//         top: -50
-//       }, 900, "easeOutBounce");
-//     }, function() {
-//       $(this).stop().animate({
-//         top: 0
-//       }, 900, "easeOutBounce");
-//     })
-// });
-
-// $(document).on('hover','#dw-arrow', function() {
-
-//   $(this).stop().animate({
-//     top: -50
-//   }, 900, "easeOutBounce");
-// }, function() {
-//   $(this).stop().animate({
-//     top: 0
-//   }, 900, "easeOutBounce");
-// });
-
 
 //=========== Mailer functioanlity===========//
 
@@ -69,10 +43,15 @@ function button_mail_click(){
     },
     error:function (){alert("didnt work");},
     success: function(){
-      alert("worked");
+      alert("Thank you for your message!");
 
       //grab the form feilds and make the 
       //make the value an empty string.
+
+      $('#email').val() = "";
+      $('#name').val() = "";
+      $('#messagebox').val() = "";
+
     }
   });
 }

@@ -95,7 +95,7 @@
 					<p class="lower-text">
 						Technologies: HTML, CSS and JQuery, Google Maps API and Bike Index API V3.
 					</p>
-					<a href="http://safecycling.tk/" target="_blank" class="port-view-live">View Live</a>
+					<a href="http://stolenbikes.tk/" target="_blank" class="port-view-live">View Live</a>
 					<a href="https://github.com/lizkovalchuk/API-project" target="_blank" class="port-view-GH">View GitHub Code</a>
 				</div>
 				<div>
@@ -207,29 +207,31 @@
 <!-- FORM -->
 
 <!-- <form id="contact-frm" action="mailer.php" method="post"> -->
-	<h2 id="_contact">Contact</h2>
-	<div class="form-wrapper">
-		<div >
-			<label for="name">Name:</label>
-		</div>
-		<div>
-			<input type="text" id="name" name="name">
-		</div>
-		<div>
-			<label for="email">Email:</label>
-		</div>
-		<div>
-			<input type="text" id="email" name="email">
-		</div>
-		<div >
-			<label for="message">Message:</label>
-		</div>
-		<div>
-			<!-- <input type="textarea" id="messagebox" rows="10"> -->
-			<textarea rows="15" id="messagebox" name="message"></textarea>
-		</div>
-		<div class="custom-button">
-			<button id="mail-button">SEND</button>
+	<div id="contact-frm">
+		<h2 id="_contact">Contact</h2>
+		<div class="form-wrapper">
+			<div >
+				<label for="name">Name:</label>
+			</div>
+			<div>
+				<input type="text" id="name" name="name">
+			</div>
+			<div>
+				<label for="email">Email:</label>
+			</div>
+			<div>
+				<input type="text" id="email" name="email">
+			</div>
+			<div >
+				<label for="message">Message:</label>
+			</div>
+			<div>
+				<!-- <input type="textarea" id="messagebox" rows="10"> -->
+				<textarea rows="15" id="messagebox" name="message"></textarea>
+			</div>
+			<div class="custom-button">
+				<button id="mail-button">SEND</button>
+			</div>
 		</div>
 	</div>
 <!-- </form> -->

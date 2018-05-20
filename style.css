@@ -173,12 +173,12 @@ body{
 
 .port-view-live:hover{
 	color: white;
-	background-color: black;
+	background-color: #a08176;
 }
 
 .port-view-GH:hover{
 	color: white;
-	background-color: black;
+	background-color: #a08176;
 }
 
 /* ABOUT ME SECION */
@@ -409,15 +409,46 @@ footer{
 /* 6. MEDIA QUERIES*/
 /*=========================================================*/
 
+@media all and (max-width:1065px){
+	#nav-container{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+	#logo-white{
+		max-width: 50%;
+		display: inline;
+	}
+}
+
+@media all and (max-width:800px){
+	#nav-container{
+		display: grid;
+		grid-template-columns: 1fr 4fr;
+	}
+	#logo-white{
+		max-width: 80%;
+		display: inline;
+	}
+}
+
+
 @media all and (max-width:768px){
+
+	#nav-container{
+		display: grid;
+		grid-template-columns: 1fr 6fr;
+	}
+
+	#logo-white{
+		max-width: 100%;
+		display: inline;
+	}
 
 	.port-piece-wrapper{
 		display: grid;
 		grid-template-columns: 1fr;
 		padding: 1rem;
 		margin: 0 auto;
-
-		/* display: flex; */
 	}
 
 	form{
@@ -428,9 +459,29 @@ footer{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 4;
-		max-width: 300px;
-		/* margin-left: 20%; */
-	
+		max-width: 300px;	
 	}
 
+	.name{
+		font-size: 3em;
+	}
+
+	.title{
+		font-size: 1em;
+		margin-top: -20px;
+	}
+	#messagebox{
+		max-width: 100px;
+	}
+}
+
+@media all and (max-width:626px){
+	#nav-container{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	#logo-white{
+		max-width: 5%;
+	}
 }
