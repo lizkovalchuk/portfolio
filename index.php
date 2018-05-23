@@ -2,14 +2,14 @@
 <html>
 <head>
 	<title>Liz Kovalchuk</title>
-	<!-- <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+	<meta name="viewport" content="width=device-width">
 	<link href="https://use.fontawesome.com/14a8473206.css" media="all" rel="stylesheet">
-<link href="fontawesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="images/logo.png" />
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
   <script src="scripts/own.js"></script>
 </head>
 <body>
@@ -41,6 +41,29 @@
 			<h3 id="port-heading-text">Portfolio</h3>
 		</div>
 
+
+		<!-- <div class="port-content">
+			<div class="port-piece-wrapper">
+				<div class="left-col">
+					<h3>Stolen Bikes</h3>
+					<p>
+						A web application intergrating two different APIs to help users plan bicycle trips far from reported bike thiefs.
+					</p>
+					<p class="lower-text">
+						Technologies: HTML, CSS and JQuery, Google Maps API and Bike Index API V3.
+					</p>
+					<a href="http://stolenbikes.tk/" target="_blank" class="port-view-live">View Live</a>
+					<a href="https://github.com/lizkovalchuk/API-project" target="_blank" class="port-view-GH">View GitHub Code</a>
+				</div>
+				<div>
+					<img src="images/sb.png" id="snc-pic">
+				</div>
+			</div>
+		</div> -->
+
+
+
+
 		<!-- FIRST PORT PIECE -->
 
 		<div class="port-content">
@@ -54,7 +77,7 @@
 						Technologies: HTML, CSS, JavaScript, PHP, MySQL, Google Charts API
 					</p>
 					<a href="http://netboost.ca/" target="_blank" class="port-view-live">View Live</a>
-					<a href="#" target="_blank" class="port-view-GH">View GitHub Code</a>
+					<a href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>
 				</div>
 				<div>
 					<img src="images/ms.png" id="snc-pic">

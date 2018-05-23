@@ -90,9 +90,13 @@ a:hover{
 body{
 	background-image: url("images/liz.jpg");
 	background-attachment: fixed;
-	background-repeat: no-repeat;
+	 background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+/* 
+    background-size: contain;
+    background-position-y: top;
+    background-position-x: center; */
 }
 
 
@@ -418,6 +422,37 @@ footer{
 		max-width: 50%;
 		display: inline;
 	}
+	body{
+		background-image: url("images/liz-small.jpg");
+		background-size: contain;
+		background-position-y: top;
+		background-position-x: center;
+		/* background-attachment: fixed; */
+		background-attachment: scroll;
+		background-repeat: repeat;
+		margin-bottom: -20px;
+	}
+
+	#contact-frm{
+		background-color: #3f3f3f;
+		margin-top: -50px;
+		margin-bottom: -50px;
+		margin-left:-20px;
+		margin-right:-20px;
+		padding-bottom: 40px;
+	}
+
+	footer{
+		background-color: #3f3f3f;
+		margin-bottom: -50px;
+		margin-left:-20px;
+		margin-right:-20px;
+		padding-bottom: 40px;
+	}
+
+	#_contact{
+		padding-left: 30%;
+	}
 }
 
 @media all and (max-width:800px){
@@ -434,6 +469,14 @@ footer{
 
 @media all and (max-width:768px){
 
+	body{
+		background-image: url("images/liz-small.jpg");
+		background-size: contain;
+		background-position-y: top;
+		background-position-x: center;
+		background-attachment: fixed;
+	}
+
 	#nav-container{
 		display: grid;
 		grid-template-columns: 1fr 6fr;
@@ -449,6 +492,7 @@ footer{
 		grid-template-columns: 1fr;
 		padding: 1rem;
 		margin: 0 auto;
+		width: 100%;
 	}
 
 	form{
@@ -499,6 +543,29 @@ footer{
 	}
 	#_contact{
 		padding-left:30%;
+	}
+
+	#inst, #fb, #tw, #li, #gh, #ut{
+		max-width: 20px;
+	}
+
+	body{
+		background-image: url("images/liz-small.jpg");
+		background-size: contain;
+		background-position-y: top;
+		background-position-x: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
+
+	.port-content{
+		margin-left: -5px;
+		/* margin-right: -5px; */
+		/* padding-right: 10%; */
+	}
+
+	#aboutme-text, #resume-link{
+		background-color: #3f3f3f;
 	}
 
 }
