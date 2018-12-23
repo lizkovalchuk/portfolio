@@ -1,10 +1,9 @@
 docs/*
-!docs/README.md
-test/message.txt
-test/testbootstrap.php
-build/
-vendor/
-*.pem
+package-lock.json
+package.json
 composer.lock
-.php_cs.cache
+composer.json
+node_modules
+assets/images
+assets/libs
 mailer.php

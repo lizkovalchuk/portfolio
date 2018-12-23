@@ -5,37 +5,40 @@
 	<meta name="viewport" content="width=device-width">
 	<link href="https://use.fontawesome.com/14a8473206.css" media="all" rel="stylesheet">
 	<link rel="shortcut icon" href="images/logo.png" />
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="assets/style/style.min.css" rel="stylesheet" type="text/css">
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.min.js"
   	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   	crossorigin="anonymous"></script>
-  <script src="scripts/own.js"></script>
+  <script src="assets/scripts/script.js"></script>
 </head>
 <body>
-	<div id="nav-container">
-		<div>
-			<img src="images/logo-final-white.png" alt="logo" id="logo-white">	
+	<header>
+		<div id="nav-container">
+			<div>
+				<img src="assets/images/logo-final-white.png" alt="logo" id="logo-white">	
+			</div>
+			<nav class="top-nav">
+				<ul>
+					<li data-page="portfolio-block" class="nav-link"><a href="#">PORTFOLIO</a></li>
+					<li data-page="aboutme-section" class="nav-link"><a href="#">ABOUT</a></li>
+					<li data-page="skills-and-tools-wrapper" class="nav-link"><a href="#">SKILLS AND TOOLS</a></li>
+					<li data-page="contact-frm" class="nav-link"><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
 		</div>
-		<nav class="top-nav">
-			<ul>
-				<li data-page="portfolio-block" class="nav-link"><a href="#">PORTFOLIO</a></li>
-				<li data-page="aboutme-section" class="nav-link"><a href="#">ABOUT</a></li>
-				<li data-page="skills-and-tools-wrapper" class="nav-link"><a href="#">SKILLS AND TOOLS</a></li>
-				<li data-page="contact-frm" class="nav-link"><a href="#">CONTACT</a></li>
-			</ul>
-		</nav>
-	</div>
-	<div id="creds-container">
-		<h1 class="name">Liz Kovalchuk</h1>
-		<h2 class="title">Web Developer</h2>
-	</div>
-	<div class="downward-arrow">
-		<!-- <img data-page="portfolio-block" id="dw-arrow" src="images/down-arrow.gif"> -->
-		<!-- <span data-page="portfolio-block" id="dw-arrow" ><</span> -->
-		<span class="fa fa-angle-down" id="dw-arrow" data-page="portfolio-block" ></span>
-		<!-- <span id="dw-arrow" data-page="portfolio-block">v</span> -->
-	</div>
+		<div id="creds-container">
+			<h1 class="name">Liz Kovalchuk</h1>
+			<h2 class="title">Web Developer</h2>
+		</div>
+		<div class="downward-arrow">
+			<span class="fa fa-angle-down" id="dw-arrow" data-page="portfolio-block" ></span>
+		</div>
+	</header>
+
+
+
+
 	<div id="portfolio-block" class="portfolio-wrapper">
 		<div id="port-heading">
 			<h3 id="port-heading-text">Portfolio</h3>
@@ -45,23 +48,21 @@
 		<!-- <div class="port-content">
 			<div class="port-piece-wrapper">
 				<div class="left-col">
-					<h3>Stolen Bikes</h3>
+					<h3>BerryFace</h3>
 					<p>
-						A web application intergrating two different APIs to help users plan bicycle trips far from reported bike thiefs.
+						BerryFace is an interface that connects to a raspberry pi via an API to show the current temperature and humidity. In charge of all frontend and project management in team of four.
 					</p>
 					<p class="lower-text">
-						Technologies: HTML, CSS and JQuery, Google Maps API and Bike Index API V3.
+						Technologies: Illustrator, React, Python and Django
 					</p>
-					<a href="http://stolenbikes.tk/" target="_blank" class="port-view-live">View Live</a>
-					<a href="https://github.com/lizkovalchuk/API-project" target="_blank" class="port-view-GH">View GitHub Code</a>
+					<a href="http://berryface.tk:8000" target="_blank" class="port-view-live">View Live</a>
+					<a href="#" target="_blank" class="port-view-GH">View GitHub Code</a>
 				</div>
 				<div>
-					<img src="images/sb.png" id="snc-pic">
+					<img src="images/bf.png" id="snc-pic">
 				</div>
 			</div>
 		</div> -->
-
-
 
 
 		<!-- FIRST PORT PIECE -->
@@ -156,7 +157,6 @@
 		<p id="aboutme-text">Front-end developer graduating from Humber College this July 2018. Trained as a classical musician, I apply inherent understanding of structure, complex pattern recognition, logical symbolism and analytical understanding into my code. My experiences as an artist 
 			and performer enhance my ability to ensure that my work has a cohesive narrative that provides great user experience.
 		</p>
-		<a href="resume.pdf" target="_blank" id="resume-link">View Resume</a>
 	</div>
 
 	<!-- SKILLS AND TOOLS SECTION -->

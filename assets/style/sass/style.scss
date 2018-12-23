@@ -1,0 +1,13 @@
+@import 'vars.scss';
+@import 'header.scss';
+
+body{
+    background-color: grey;
+    h1, h2, h3, p, a, span {
+        font-family: "helvetica", sans-serif;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: 100;
+    }
+    h3{
+        font-size: 2em;
+    }
+}
