@@ -6,6 +6,7 @@
 	<link href="https://use.fontawesome.com/14a8473206.css" media="all" rel="stylesheet">
 	<link rel="shortcut icon" href="images/logo.png" />
 	<link href="assets/style/style.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.min.js"
   	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -15,9 +16,6 @@
 <body>
 	<header>
 		<div id="nav-container">
-			<div>
-				<img src="assets/images/logo-final-white.png" alt="logo" id="logo-white">	
-			</div>
 			<nav class="top-nav">
 				<ul>
 					<li data-page="portfolio-block" class="nav-link"><a href="#">PORTFOLIO</a></li>
@@ -26,6 +24,11 @@
 					<li data-page="contact-frm" class="nav-link"><a href="#">CONTACT</a></li>
 				</ul>
 			</nav>
+
+				<img src="assets/images/logo-final-white.svg" alt="logo" id="logo-white">	
+
+			<div id="orange-square">
+			</div>
 		</div>
 		<div id="creds-container">
 			<h1 class="name">Liz Kovalchuk</h1>

@@ -3,6 +3,7 @@ var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
+// var watch = require('gulp-watch');
 
 var styleSRC = './assets/style/sass/style.scss';
 var styleDIST = './assets/style/';
@@ -10,6 +11,7 @@ var styleDIST = './assets/style/';
 gulp.task('style', function(done){
 	gulp.src( styleSRC )
 		.pipe( sourcemaps.init() )
+		// .pipe( watch( './assets/style/sass/*.scss' ) )
 		.pipe(  sass({
 			errorLogToConsole:true,
 			outputStyle: 'compressed'

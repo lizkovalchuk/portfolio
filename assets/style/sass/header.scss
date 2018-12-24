@@ -1,9 +1,27 @@
 header{
-    #logo-white{
-        max-width: 25%;
-        margin-left: 2%;
+    min-height: 1000px;
+    #nav-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 50% 50%;
     }
-    #new-liz{
-        max-width: 530px;
+
+    #logo-white{
+        grid-column-start: 2;
+        grid-column-end: 10;
+        // max-width: 450px;
+
+    }
+    #orange-square{
+        // height: 300px;
+        // width: 300px;
+        background: linear-gradient(67.5deg, #d68708 30%, #fca71e 60%);
+        border-radius: 5%;
+        grid-column-start: 2;
+        grid-column-end: 10;
+    }
+    li{
+        display: inline;
+        list-style-type: none;
     }
 }
