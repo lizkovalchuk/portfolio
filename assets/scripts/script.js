@@ -1,3 +1,12 @@
+/*******************************************
+*TABLE OF CONTENTS
+*=================
+*1. Scroll to divs
+*2. Mailer Functionality
+*3. 
+*********************************************/
+
+
 //==========Scroll to divs===================//
 
 function scrollToDiv($div_name){
@@ -16,12 +25,7 @@ $(document).on('click', '#dw-arrow', function() {
 	scrollToDiv('#'+ page);
 });
 
-
 //=========== Mailer functioanlity===========//
-
-// $(document).on('click', '#mail-button', function(){
-//     // alert("Your message has been sent");
-// });
 
 $(document).ready(function (){
 	$('#mail-button').click(button_mail_click);
@@ -54,3 +58,28 @@ function button_mail_click(){
     	}
   	});
 }
+
+//=========== Welome Text =============//
+
+$(document).ready(function(){
+	setTimeout(animateText,500,"welcome-text-scene-1","I design with code", 2.5);
+});
+
+function animateText(label_name, text, timer){
+	//setTimeout(alert("4 seconds"),4000);
+	t = 0;
+	text = text;
+	var milisecondPerFrame = Math.ceil(timer * 500 / text.length);
+	console.log(milisecondPerFrame);
+	for (var i = 0; i < text.length; i++) 
+	{
+		//console.log(text.substring(0,i+1));
+		//$("#"+label_name).html(text.substring(0,i+1));
+		setTimeout(textFrame, i*milisecondPerFrame, text.substring(0, i + 1));
+	}
+};
+
+function textFrame(text)
+{
+	$("#welcome-text-scene-1").html(text);
+};

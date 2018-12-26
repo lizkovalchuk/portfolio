@@ -3,7 +3,8 @@
 <head>
 	<title>Liz Kovalchuk</title>
 	<meta name="viewport" content="width=device-width">
-	<link href="https://use.fontawesome.com/14a8473206.css" media="all" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- <link href="https://use.fontawesome.com/14a8473206.css" media="all" rel="stylesheet"> -->
 	<link rel="shortcut icon" href="images/logo.png" />
 	<link href="assets/style/style.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -16,23 +17,31 @@
 <body>
 	<header>
 		<div id="nav-container">
-			<nav class="top-nav">
-				<ul>
-					<li data-page="portfolio-block" class="nav-link"><a href="#">PORTFOLIO</a></li>
-					<li data-page="aboutme-section" class="nav-link"><a href="#">ABOUT</a></li>
-					<li data-page="skills-and-tools-wrapper" class="nav-link"><a href="#">SKILLS AND TOOLS</a></li>
-					<li data-page="contact-frm" class="nav-link"><a href="#">CONTACT</a></li>
+			<h1 id="name">Liz Kovalchuk - Web Developer</h1>
+			<nav id="top-nav">
+				<ul id="top-nav-ul" >
+					<li data-page="portfolio-block"><a class="header-nav-link" href="#">Portfolio</a></li>
+					<li data-page="aboutme-section"><a class="header-nav-link" href="#">About</a></li>
+					<li data-page="skills-and-tools-wrapper"><a class="header-nav-link" href="#">Skills and Tools</a></li>
+					<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
 				</ul>
-			</nav>
 
-				<img src="assets/images/logo-final-white.svg" alt="logo" id="logo-white">	
+				<!-- <ul>
+					<li data-page="portfolio-block" class="nav-link"><a href="#">Portfolio</a></li>
+					<li data-page="aboutme-section" class="nav-link"><a href="#">About</a></li>
+					<li data-page="skills-and-tools-wrapper" class="nav-link"><a href="#">Skills and Tools</a></li>
+					<li data-page="contact-frm" class="nav-link"><a href="#">Contact</a></li>
+				</ul> -->
+			</nav>
+			<section id="welcome-text-section">
+				<label id="welcome-text-scene-1"></label>
+			</section>
+			<div id="white-logo-container">
+				<img src="assets/images/logo-final-white.svg" id="logo-white">	
+			</div>
 
 			<div id="orange-square">
 			</div>
-		</div>
-		<div id="creds-container">
-			<h1 class="name">Liz Kovalchuk</h1>
-			<h2 class="title">Web Developer</h2>
 		</div>
 		<div class="downward-arrow">
 			<span class="fa fa-angle-down" id="dw-arrow" data-page="portfolio-block" ></span>
