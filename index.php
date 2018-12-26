@@ -37,6 +37,7 @@
 				<label id="welcome-text-scene-1"></label>
 			</section>
 			<div id="white-logo-container">
+				<!-- <img src="assets/images/dec-26-liz-attempt1-01.svg" id="logo-white"> -->
 				<img src="assets/images/logo-too-many-paths.svg" id="logo-white">
 			</div>
 

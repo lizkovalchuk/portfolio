@@ -7,16 +7,15 @@ header{
         color: #383530;
         grid-column-start: 3;
         grid-column-end: 14;
-        // font-size: 16px;
     }
     #nav-container{
         display: grid;
         grid-template-columns: repeat(48, 1fr);
         grid-template-rows: repeat(20, 1fr);
-        height: 500px;
+        height: 540px;
         position: relative;
         #top-nav{
-            grid-column-start: 24;
+            grid-column-start: 26;
             grid-column-end: 47;
             #top-nav-ul{
                 padding: 0;
@@ -26,6 +25,9 @@ header{
                 display: inline;
                 list-style-type: none;
                 margin-right: 4em;
+                &:last-child{
+                    margin-right: 0;
+                }
             }
             
             .header-nav-link {
@@ -55,12 +57,12 @@ header{
         grid-row-start: 14;
         grid-row-end: 14;
         #welcome-text-scene-1{
-            color: white;
+            // color: white;
             font-size: 40px;
-            // background: linear-gradient(to right, #5BCEA3 15%, #18B1F4 42%, #DD98DA 75%);
-            // background-clip: border-box;
-            // -webkit-background-clip: text;
-            // -webkit-text-fill-color: transparent;
+            background: linear-gradient(to right, #23074d , #BD4A4E );
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 
@@ -74,7 +76,7 @@ header{
         }
     }
     #orange-square{
-        background: linear-gradient(67.5deg, #d68708 30%, #fca71e 60%);
+        background: linear-gradient(67.5deg, #BD4A4E 30%, #DB5B3C 70%);
         border-radius: 5%;
         grid-column-start: 26;
         grid-column-end: 39;
@@ -85,7 +87,7 @@ header{
     .downward-arrow{
         display: grid;
         justify-content: center;
-        margin-top: 4em;
+        margin-top: 7em;
         #dw-arrow{
             font-size: 50px;
             color: white;
