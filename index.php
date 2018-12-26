@@ -3,7 +3,8 @@
 <head>
 	<title>Liz Kovalchuk</title>
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+	<link href="assets/libs/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
 	<!-- <link href="https://use.fontawesome.com/14a8473206.css" media="all" rel="stylesheet"> -->
 	<link rel="shortcut icon" href="images/logo.png" />
 	<link href="assets/style/style.min.css" rel="stylesheet" type="text/css">
@@ -44,8 +45,10 @@
 			<div id="orange-square">
 			</div>
 		</div>
+		
 		<div class="downward-arrow">
-			<span class="fa fa-angle-down" id="dw-arrow" data-page="portfolio-block" ></span>
+			<!-- <span class="fa fa-angle-down" id="dw-arrow" data-page="portfolio-block" ></span> -->
+			<i class="fal fa-chevron-down" id="dw-arrow" data-page="portfolio-block" ></i>			
 		</div>
 	</header>
 
