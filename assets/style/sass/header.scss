@@ -16,9 +16,11 @@ header{
         height: 500px;
         position: relative;
         #top-nav{
-            grid-column-start: 26;
+            grid-column-start: 24;
             grid-column-end: 47;
-
+            #top-nav-ul{
+                padding: 0;
+            }
             li {
                 margin-bottom: 10px;
                 display: inline;
@@ -48,13 +50,17 @@ header{
         }
     }
     #welcome-text-section{
-        grid-column-start: 3;
+        grid-column-start: 5;
         grid-column-end: 20;
         grid-row-start: 14;
         grid-row-end: 14;
         #welcome-text-scene-1{
             color: white;
             font-size: 40px;
+            // background: linear-gradient(to right, #5BCEA3 15%, #18B1F4 42%, #DD98DA 75%);
+            // background-clip: border-box;
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
         }
     }
 
@@ -104,3 +110,4 @@ header{
     transform:translateY(-15px);
   }
 }
+

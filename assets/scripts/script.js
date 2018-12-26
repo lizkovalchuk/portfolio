@@ -3,11 +3,12 @@
 *=================
 *1. Scroll to divs
 *2. Mailer Functionality
-*3. 
+*3. Welcome Text
+*4. Keyframes
 *********************************************/
 
 
-//==========Scroll to divs===================//
+//========== 1. Scroll to divs===================//
 
 function scrollToDiv($div_name){
 	$("html, body").delay(500).animate({
@@ -25,7 +26,7 @@ $(document).on('click', '#dw-arrow', function() {
 	scrollToDiv('#'+ page);
 });
 
-//=========== Mailer functioanlity===========//
+//=========== 2. Mailer functioanlity===========//
 
 $(document).ready(function (){
 	$('#mail-button').click(button_mail_click);
@@ -59,10 +60,10 @@ function button_mail_click(){
   	});
 }
 
-//=========== Welome Text =============//
+//=========== 3. Welome Text =============//
 
 $(document).ready(function(){
-	setTimeout(animateText,500,"welcome-text-scene-1","I design with code", 2.5);
+	setTimeout(animateText,500,"welcome-text-scene-1","Designing with code", 2.5);
 });
 
 function animateText(label_name, text, timer){
@@ -83,3 +84,4 @@ function textFrame(text)
 {
 	$("#welcome-text-scene-1").html(text);
 };
+
