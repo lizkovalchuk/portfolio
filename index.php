@@ -17,39 +17,41 @@
 </head>
 <body>
 	<header>
-		<div id="nav-container">
+		<section id="header-row">
 			<h1 id="name">Liz Kovalchuk - Web Developer</h1>
-			<nav id="top-nav">
-				<ul id="top-nav-ul" >
+			<nav id="desktop-nav">
+				<ul id="desktop-nav-ul" >
 					<li data-page="portfolio-block"><a class="header-nav-link" href="#">Portfolio</a></li>
 					<li data-page="aboutme-section"><a class="header-nav-link" href="#">About</a></li>
 					<li data-page="skills-and-tools-wrapper"><a class="header-nav-link" href="#">Skills and Tools</a></li>
 					<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
 				</ul>
-
-				<!-- <ul>
-					<li data-page="portfolio-block" class="nav-link"><a href="#">Portfolio</a></li>
-					<li data-page="aboutme-section" class="nav-link"><a href="#">About</a></li>
-					<li data-page="skills-and-tools-wrapper" class="nav-link"><a href="#">Skills and Tools</a></li>
-					<li data-page="contact-frm" class="nav-link"><a href="#">Contact</a></li>
-				</ul> -->
 			</nav>
+			<nav id="mobile-nav">
+				<ul id="mobile-nav-ul" >
+					<li data-page="portfolio-block"><a class="header-nav-link" href="#">Portfolio</a></li>
+					<li data-page="aboutme-section"><a class="header-nav-link" href="#">About</a></li>
+					<li data-page="skills-and-tools-wrapper"><a class="header-nav-link" href="#">Skills and Tools</a></li>
+					<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</section>
+		<div id="banner-container">
 			<section id="welcome-text-section">
 				<label id="welcome-text-scene-1"></label>
 			</section>
 			<div id="white-logo-container">
-				<!-- <img src="assets/images/dec-26-liz-attempt1-01.svg" id="logo-white"> -->
-				<img src="assets/images/logo-too-many-paths.svg" id="logo-white">
+				<!-- <img src="assets/images/logos/pre-tutorial-with-mom/test.svg" id="logo-white"> -->
+				<!-- <img src="assets/images/logos/pre-tutorial-with-mom/dec-26-liz-attempt1-01.svg" id="logo-white"> -->
+				<img src="assets/images/logos/pre-tutorial-with-mom/logo-too-many-paths copy.svg" id="logo-white">
 			</div>
-
-			<div id="orange-square">
+			<div id="orange-square"></div>
+			<div class="downward-arrow">
+				<!-- <span class="fa fa-angle-down" id="dw-arrow" data-page="portfolio-block" ></span> -->
+				<i class="fal fa-chevron-down" id="dw-arrow" data-page="portfolio-block" ></i>			
 			</div>
 		</div>
 		
-		<div class="downward-arrow">
-			<!-- <span class="fa fa-angle-down" id="dw-arrow" data-page="portfolio-block" ></span> -->
-			<i class="fal fa-chevron-down" id="dw-arrow" data-page="portfolio-block" ></i>			
-		</div>
 	</header>
 
 
