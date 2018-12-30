@@ -1,5 +1,4 @@
 header{
-    min-height: 1000px;
     h1, a {
         font-size: 16px;
     }
@@ -8,11 +7,14 @@ header{
         justify-content: space-between;
         max-width: 90%;
         margin: 0 auto;
-        #name{
+        #h1-name{
             color: #383530;
             margin: 16px 0;
         }
         #desktop-nav{
+            @media screen and (max-width: $sm){
+                display: none;
+            }
             #desktop-nav-ul{
                 padding: 0;
             }
@@ -21,6 +23,9 @@ header{
                 display: inline;
                 list-style-type: none;
                 margin-right: 4em;
+                @media screen and (max-width: $md){
+                    margin-right: 3em;
+                }
                 &:last-child{
                     margin-right: 0;
                 }
@@ -52,8 +57,8 @@ header{
     #banner-container{
         display: grid;
         grid-template-columns: repeat(48, 1fr);
-        grid-template-rows: repeat(22, 1fr);
-        height: 600px;
+        grid-template-rows: repeat(16, 1fr);
+        height: 500px;
         position: relative;
         #orange-square{
             background: linear-gradient(67.5deg, #BD4A4E 30%, #DB5B3C 70%);
@@ -70,7 +75,7 @@ header{
             // grid-row-start: 11;
             // grid-row-end: 13;
             position: absolute;
-            top: 300px;
+            top: 250px;
             left: 5%;
             #welcome-text-scene-1{
                 font-size: 40px;
@@ -80,24 +85,22 @@ header{
                 -webkit-text-fill-color: transparent;
             }
         }
-        .downward-arrow{
-            grid-column-start: 24;
-            grid-row-start: 22;
-            #dw-arrow{
-                font-size: 50px;
-                color: #BC4A4D;
-                &:hover{
-                    animation: bounce 1.5s infinite;
-                }
-            }
+    }
+    .downward-arrow{
+        display: flex;
+        justify-content: center;
+        #dw-arrow{
+            font-size: 50px;
+            color: #BC4A4D;
+            animation: bounce 3s infinite;
         }
     }
 
     #white-logo-container{
         grid-column-start: 23;
         grid-column-end: 44;
-        grid-row-start: 8;
-        grid-row-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 3;
         #logo-white{
             max-width: 100%;
         }
@@ -108,14 +111,11 @@ header{
 // KEYFRAMES
 
 @keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {
-    transform:translateY(0);
-  }
-	40% {
-    transform:translateY(-30px);
-  }
-	60% {
-    transform:translateY(-15px);
-  }
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform:translateY(-20px);    
+    }
 }
 

@@ -16,7 +16,7 @@ function scrollToDiv($div_name){
   	}, 500);
 }
 
-$(document).on('click', '.top-nav ul li', function() {
+$(document).on('click', '#desktop-nav ul li', function() {
     var page = $(this).attr("data-page");
   	scrollToDiv('#'+ page);
 });

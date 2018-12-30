@@ -1,0 +1,45 @@
+.portfolio-wrapper{
+    display: grid;
+    grid-template-columns: 70px 1fr 40px 1fr 70px;
+    // grid-template-rows: 10vh 10vh 50vh 50vh;
+    .port-piece-img{
+        max-height: 300px;
+        img{
+            height: 300px;
+            border-radius: 25px;
+        }
+    }
+    .port-piece-text{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.6s ease;
+        background-color: aquamarine;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    #netboost-container{
+        grid-row-start: 3;
+        grid-column-start: 2;
+        position: relative;
+    }
+    #stolen-bikes-container{
+        grid-row-start: 3;
+        grid-column-start: 4;
+        position: relative;
+    }
+    #syn-key-container{
+        grid-row-start: 4;
+        grid-column-start: 2;
+        position: relative;
+    }
+    #comrade-cafe-container{
+        grid-row-start: 4;
+        grid-column-start: 4;
+        position: relative;
+    }
+}
