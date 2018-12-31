@@ -4,7 +4,7 @@
   "description": "Liz Portfolio webpack package",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode development",
+    "start": "webpack --mode development ./src/index.js --output ./dist/main.js --watch",
     "watch": "webpack -w",
     "build": "webpack -p"
   },

@@ -17,6 +17,7 @@ module.exports = {
   target: 'node', // update from 23.12.2018
   externals: [nodeExternals()], // update from 23.12.2018
   module: {
+    
     rules: [
       {
         test: /\.js$/,
@@ -31,7 +32,6 @@ module.exports = {
           "style-loader",
           MiniCssExtractPlugin.loader,
           "css-loader",
-          'postcss-loader',
           "sass-loader"
         ]
       }
