@@ -4,7 +4,7 @@
 *1. Scroll to divs
 *2. Mailer Functionality
 *3. Welcome Text
-*4. Keyframes
+*4. Toggle Class
 *********************************************/
 
 
@@ -85,3 +85,19 @@ function textFrame(text)
 	$("#welcome-text-scene-1").html(text);
 };
 
+//=========== 4. Toggle Class =============//
+
+$(document).ready(function() {
+	$("#netboost-port-piece-text").hover(function(){
+		$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
+	});
+	$("#sb-port-piece-text").hover(function(){
+		$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
+	});
+	$("#snc-port-piece-text").hover(function(){
+		$(".port-piece-container #snc-port-piece-img img").toggleClass("blur-img");
+	});
+	$("#cc-port-piece-text").hover(function(){
+		$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
+	});
+});
