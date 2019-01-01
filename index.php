@@ -3,15 +3,16 @@
 	<head>
 		<title>Liz Kovalchuk</title>
 		<meta name="viewport" content="width=device-width">
-		<link href="assets/libs/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
+		<link href="src/assets/libs/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
 		<link rel="shortcut icon" href="images/logo.png" />
-		<link href="assets/style/style.min.css" rel="stylesheet" type="text/css">
+		<!-- <link href="assets/style/style.min.css" rel="stylesheet" type="text/css"> -->
+		<link href="dist/style.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 		<script
 		src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		crossorigin="anonymous"></script>
-		<script src="assets/scripts/script.js"></script>
+		<script src="src/assets/scripts/script.js"></script>
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -42,8 +43,7 @@
 						<label id="welcome-text-scene-1"></label>
 					</section>
 					<div id="white-logo-container">				
-						<img src="assets/images/logos/masked-logo.svg" id="logo-white">
-						<!-- <img src="assets/images/logos/pre-tutorial-with-mom/outlined-logo.svg" id="logo-white" alt="white liz logo"> -->
+						<img src="src/assets/images/logos/masked-logo.svg" id="logo-white">
 					</div>
 					<div id="orange-square"></div>
 				</div>
@@ -66,7 +66,7 @@
 					</div>	
 					<div id="netboost-container" class="port-piece-container">
 						<div id="netboost-port-piece-img">
-							<img src="assets/images/portfolio-pieces/nb.png" alt="picture of netboost project">
+							<img src="src/assets/images/portfolio-pieces/nb.png" alt="picture of netboost project">
 						</div>
 						<div id="netboost-port-piece-text">
 							<h3>Netboost.ca</h3>
@@ -78,7 +78,7 @@
 					</div>
 					<div id="stolen-bikes-container" class="port-piece-container">
 						<div id="sb-port-piece-img">
-							<img src="assets/images/portfolio-pieces/sb.png" alt="pitcure of stolen bikes project">
+							<img src="src/assets/images/portfolio-pieces/sb.png" alt="pitcure of stolen bikes project">
 						</div>
 						<div id="sb-port-piece-text">
 							<h3>Stolen Bikes</h3>
@@ -90,7 +90,7 @@
 					</div>
 					<div id="syn-key-container" class="port-piece-container">
 						<div id="snc-port-piece-img">
-							<img src="assets/images/portfolio-pieces/snc.png" id="snc-pic">
+							<img src="src/assets/images/portfolio-pieces/snc.png" id="snc-pic">
 						</div>
 						<div id="snc-port-piece-text">
 							<h3>Synesthesia Keyboard</h3>
@@ -102,7 +102,7 @@
 					</div>
 					<div id="comrade-cafe-container" class="port-piece-container">
 						<div id="cc-port-piece-img">
-							<img src="assets/images/portfolio-pieces/cc.png" id="cc-pic">
+							<img src="src/assets/images/portfolio-pieces/cc.png" id="cc-pic">
 						</div>
 						<div id="cc-port-piece-text">
 							<h3>Giftcards</h3>
