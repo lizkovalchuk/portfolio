@@ -1,0 +1,22 @@
+#aboutme__section{
+    max-width: 90%;
+    margin: 0 auto;
+    #aboutme__div--container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        height: 325px;
+        .aboutme__div--items{        
+            // background-color: #7987F9;
+            border: 1px solid rgba(60, 61, 60, 0.15);;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%; /* the magic */
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            h3, p{
+                padding: 0 5px !important;
+            }
+        }
+    }
+}

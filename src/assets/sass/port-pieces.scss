@@ -1,66 +1,74 @@
+.port-heading-text{
+    max-width: 90%;
+    margin: 0 auto;
+    padding:25px 0;
+}
 .portfolio-wrapper{
-    display: grid;
-    grid-template-columns: 70px 1fr 40px 1fr 70px;
-    // grid-template-rows: 10vh 10vh 50vh 50vh;
+    display: flex;
+    grid-template-rows: 35px;
+    grid-row-gap: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
     
     .port-piece-container{
+        padding-bottom: 30px;
+        #berryface-port-piece-img,
         #netboost-port-piece-img,
         #sb-port-piece-img,
         #snc-port-piece-img,
         #cc-port-piece-img
         {
-            max-height: 300px;
+            max-height: 372px;
+            overflow: hidden;
+            border-radius: 20px;
             img{
-                height: 300px;
-                border-radius: 25px;
-                max-width: 453px;            
+                border-radius: 20px;
+                width: 525px;
+                height: 375px;   
             }
         }
+        #snc-port-piece-img{
+            border: 1px solid black;
+        }
+
+        #berryface-port-piece-text,
         #netboost-port-piece-text,
         #sb-port-piece-text,
         #snc-port-piece-text,
         #cc-port-piece-text
         {
             position: absolute;
-            top: 0;
             bottom: 0;
-            height: 100%;
-            width: 100%;
+            top: 0;
+            height: 372px;
             opacity: 0;
             transition: 0.6s ease;
             background-color: rgba(95, 94, 94, 0.5);
-            color: white;
-            max-width: 453px;
+            border-radius: 20px;
+            h3, p {
+                color: white;
+            }
             &:hover{
                 opacity: 1;
             }
         }
     }
 
-    #netboost-container{
-        grid-row-start: 3;
-        grid-column-start: 2;
-        position: relative;
-    }
-    #stolen-bikes-container{
-        grid-row-start: 3;
-        grid-column-start: 4;
-        position: relative;
-    }
-    #syn-key-container{
-        grid-row-start: 4;
-        grid-column-start: 2;
-        position: relative;
-    }
-    #comrade-cafe-container{
-        grid-row-start: 4;
-        grid-column-start: 4;
+    #berryface-container,
+    #netboost-container,
+    #stolen-bikes-container,
+    #syn-key-container,
+    #comrade-cafe-container {
         position: relative;
     }
 }
 
-
 .blur-img {
-    -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+    -webkit-filter: blur(10px);
     filter: blur(10px);
+    border-radius: 55px !important;
+    transform: scale(1.15);
 }

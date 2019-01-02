@@ -63,7 +63,7 @@ function button_mail_click(){
 //=========== 3. Welome Text =============//
 
 $(document).ready(function(){
-	setTimeout(animateText,500,"welcome-text-scene-1","Designing with code", 2.5);
+	setTimeout(animateText,500,"banner__label--welcome-text-1","Designing with code", 2.5);
 });
 
 function animateText(label_name, text, timer){
@@ -82,12 +82,18 @@ function animateText(label_name, text, timer){
 
 function textFrame(text)
 {
-	$("#welcome-text-scene-1").html(text);
+	$("#banner__label--welcome-text-1").html(text);
 };
 
 //=========== 4. Toggle Class =============//
 
 $(document).ready(function() {
+
+
+	$("#berryface-port-piece-text").hover(function(){
+		$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
+	});
+
 	$("#netboost-port-piece-text").hover(function(){
 		$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
 	});

@@ -2,20 +2,20 @@ header{
     h1, a {
         font-size: 16px;
     }
-    #header-row{
+    #header__section--toprow{
         display: flex;
         justify-content: space-between;
         max-width: 90%;
         margin: 0 auto;
-        #h1-name{
-            color: #383530;
+        #header__h1--name{
+            color: #240F4E;
             margin: 16px 0;
         }
-        #desktop-nav{
+        #menu--desktop{
             @media screen and (max-width: $sm){
                 display: none;
             }
-            #desktop-nav-ul{
+            #menu__ul--desktop{
                 padding: 0;
             }
             li {
@@ -34,74 +34,78 @@ header{
                 display: inline-block;
                 color: #000;
                 text-decoration: none;
-                color: white;
+                color: #3C3D3C;
             }
             .header-nav-link::after {
                 content: '';
                 display: block;
                 width: 0;
                 height: 2px;
-                background: white;
+                background: #7987F9;
                 transition: width .3s;
             }
             .header-nav-link:hover::after {
                 width: 100%;
             }
         }
-        #mobile-nav{
+        #menu--mobile{
             @media screen and (min-width: $sm){
                 display: none;
             }
         }
     }
-    #banner-container{
+    #banner__div--container{
         display: grid;
         grid-template-columns: repeat(48, 1fr);
         grid-template-rows: repeat(16, 1fr);
         height: 500px;
         position: relative;
-        #orange-square{
-            background: linear-gradient(67.5deg, #BD4A4E 30%, #DB5B3C 70%);
+        #banner__div--orange-square{
+            // background: linear-gradient(67.5deg, rgb(197, 66, 66), rgb(240, 129, 3) 70%);
+            // fill: linear-gradient(#7987F9, #24F2C7); 
+            background: linear-gradient(67.5deg, #7987F9, #24F2C7);
             border-radius: 5%;
-            grid-column-start: 26;
-            grid-column-end: 39;
-            grid-row-start: 7;
-            grid-row-end: -6;
+            grid-column-start: 25;
+            grid-column-end: 43;
+            grid-row-start: 4;
+            grid-row-end: -4;
             z-index: -1;
         }
-        #welcome-text-section{
-            // grid-column-start: 5;
-            // grid-column-end: 20;
-            // grid-row-start: 11;
-            // grid-row-end: 13;
+        #banner__section--welcome-text{
             position: absolute;
-            top: 250px;
+            top: 173px;
             left: 5%;
-            #welcome-text-scene-1{
+            #banner__label--welcome-text-1{
                 font-size: 40px;
-                background: linear-gradient(to right, #23074d , #BD4A4E );
+                background: linear-gradient(to right, rgb(66, 160, 139) , #7987F9 );
                 background-clip: border-box;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
+        #header__svg_underline{
+            position: absolute;
+            top: 250px;
+            left: 58px;
+            width: 367px;
+        }
     }
-    .downward-arrow{
+    #banner__div--downward-arrow{
         display: flex;
         justify-content: center;
-        #dw-arrow{
+        #banner__i--downward-arrow{
             font-size: 50px;
-            color: #BC4A4D;
+            color: #7987F9;
             animation: bounce 3s infinite;
         }
     }
 
-    #white-logo-container{
+    #banner__div--white-logo-container{
         grid-column-start: 23;
         grid-column-end: 44;
         grid-row-start: 6;
         grid-row-end: 3;
-        #logo-white{
+        #banner__img--logo-white{
             max-width: 100%;
         }
     }
