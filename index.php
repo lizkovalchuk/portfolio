@@ -73,15 +73,15 @@
 				</div> -->
 				<h2 id="aboutme__h2">About</h2>
 				<div id="aboutme__div--container">
-					<div class="aboutme__div--items">
+					<div class="aboutme__div--items" id="imagine__div">
 						<h3>Imagine</h3>
 						<p>Great user experience for both frontend websites and backend applications start with imagination. Focusing on user journeys inform a websites' content architecture and interface design.</p>
 					</div>
-					<div class="aboutme__div--items">
+					<div class="aboutme__div--items" id="organize__div">
 						<h3>Organize</h3>
 						<p>My meticulous and outstanding attention to detail make for a smooth transition when transforming a vision into tangible results. Normalizing databases, consolidating content and defining specifications are crucial steps in web development.</p>
 					</div>
-					<div class="aboutme__div--items">
+					<div class="aboutme__div--items" id="produce__div">
 						<h3>Produce</h3>
 						<p>Coding with complete concentration takes place after prototypes and specs are crystal clear. Nothing beats the satisfaction of bringing visions to life with the unparalleled power of code.</p>
 					</div>
