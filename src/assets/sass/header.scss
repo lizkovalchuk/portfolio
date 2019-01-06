@@ -2,11 +2,25 @@ header{
     h1, a {
         font-size: 16px;
     }
+    h1{
+        @media screen and (max-width: $xs){
+            font-size: 14px;
+        }
+    }
     #header__section--toprow{
-        display: flex;
-        justify-content: space-between;
-        max-width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        margin-left: 3%;
+        position: fixed;
+        background-image: linear-gradient( rgba(255, 255, 255, 1) 40%,rgba(255, 255, 255, 0.95) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.0)90%);
+        z-index: 99;
+        top: 0;
+        min-height: 80px;
+        #header__div--container{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+        }
         #header__h1--name{
             color: #240F4E;
             margin: 16px 0;
@@ -64,11 +78,13 @@ header{
             }
             #menu__ul--mobile{
                 position: absolute;
-                width: 100%;
+                width: 115%;
                 list-style: none;
                 top: -300px;
-                left: 0;
+                left: -55px;
                 transition: 0.5s;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
                 li a{
                     text-decoration: none;
                 }
@@ -80,60 +96,107 @@ header{
         // display: block !important;
         position: absolute;
         left: 0;
-        top: 40px !important;
+        top: 46px !important;
         list-style: none;
         width: 100%;
         background-color: rgba(192,192,192, 0.3);
+        z-index: 99;
         li{
-            padding: 5px 0;
+            padding: 5px 0 0 30px;
             a{
                 text-decoration: none;
             }
         }
+        li:nth-child(1), li:nth-child(2){
+            padding-top: 12px;
+        }
+        li:nth-child(3), li:nth-child(4){
+            padding-bottom: 12px;
+        }
     }
-
-
-
-
-
-
-
-
-
     #banner__div--container{
         display: grid;
         grid-template-columns: repeat(48, 1fr);
         grid-template-rows: repeat(16, 1fr);
-        height: 500px;
+        height: 550px;
         position: relative;
+        @media screen and (max-width: $md){
+            height: 650px;
+        }
+        // @media screen and (max-width: $custom-md){
+        //     height: 650px;
+        // }
+        @media screen and (max-width: $sm){
+            height: 550px;
+        }
+        @media screen and (max-width: $custom-xs){
+            height: 500px;
+        }
+        @media screen and (max-width: $xs){
+            height: 405px;
+        }
         #banner__div--orange-square{
-            // background: linear-gradient(67.5deg, rgb(197, 66, 66), rgb(240, 129, 3) 70%);
-            // fill: linear-gradient(#7987F9, #24F2C7); 
             background: linear-gradient(67.5deg, #7987F9, #24F2C7);
-            border-radius: 5%;
-            grid-column-start: 25;
-            grid-column-end: 43;
-            grid-row-start: 4;
-            grid-row-end: -4;
+            border-radius: 30px;
+            grid-column: 29 / span 16;
+            grid-row: 8 / span 6;
             z-index: -1;
+            @media screen and (max-width: $md){
+                grid-column: 12 / span 27;
+                grid-row: 5 /span 11;
+            }
+            @media screen and (max-width: $custom-md){
+                grid-row: 5 /span 9;
+            }
+            @media screen and (max-width: $sm){
+                grid-row: 6 /span 10;
+            }
+            @media screen and (max-width: $custom-sm){
+                grid-row: 7 /span 9;
+            }
+            @media screen and (max-width: $custom-xs){
+                grid-row: 7 /span 8;
+            }            
+            @media screen and (max-width: $xs){
+                grid-row: 8 /span 8;
+            }
         }
         #banner__section--welcome-text{
-            position: absolute;
-            top: 173px;
-            left: 5%;
+            grid-column-start: 4;
+            grid-column-end: 23;
+            grid-row-start: 10;
+            position: relative;
+            @media screen and (max-width: $md){
+                grid-column: 1 /span 49;
+                text-align: center;
+                grid-row-start: 16;
+            }
+            @media screen and (max-width: $xs){
+                grid-row-start: 17
+            }
+        }
             #banner__label--welcome-text-1{
+                #hidden-letter{
+                    opacity: 0;
+                }
                 font-size: 40px;
                 background: linear-gradient(to right, rgb(66, 160, 139) , #7987F9 );
                 background-clip: border-box;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                @media screen and (max-width: $xs) {
+                    font-size: 30px;
+                }
             }
         }
         #header__svg_underline{
             position: absolute;
-            top: 250px;
-            left: 58px;
+            top: 79px;
+            left: -3px;
             width: 367px;
+            @media screen and (max-width: $md){
+                display: none;
+            }
         }
     }
     #banner__div--downward-arrow{
@@ -145,17 +208,30 @@ header{
             animation: bounce 3s infinite;
         }
     }
-
-    #banner__div--white-logo-container{
-        grid-column-start: 23;
-        grid-column-end: 44;
-        grid-row-start: 6;
-        grid-row-end: 3;
+    #banner__div--logo-container{
+        grid-column: 25 / span 22;
+        grid-row: 6 / span 10;
+        @media screen and (max-width: $md) {
+            grid-column: 8 / span 32;
+            grid-row: 4 / span 10;
+        }
+        @media screen and (max-width: $sm) {
+            grid-row: 5 / span 10;
+        }
+        @media screen and (max-width: $custom-sm) {
+            grid-row: 6 / span 10;
+        }
+        @media screen and (max-width: $xs) {
+            grid-row: 7 / span 10;
+        }
         #banner__img--logo-white{
             max-width: 100%;
+            @media screen and (max-width: $xs) {
+                width: 400px;
+            }
         }
     }
-}
+//}
 
 
 // KEYFRAMES

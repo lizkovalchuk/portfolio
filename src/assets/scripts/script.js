@@ -27,6 +27,11 @@ $(document).on('click', '#dw-arrow', function() {
 	scrollToDiv('#'+ page);
 });
 
+$(document).on('click', '#header__section--toprow #menu__ul--mobile li', function() {
+    var page = $(this).attr("data-page");
+  	scrollToDiv('#'+ page);
+});
+
 //=========== 2. Mailer functioanlity===========//
 
 $(document).ready(function (){

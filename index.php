@@ -20,43 +20,45 @@
 		<div id="body__div_page-wrapper">
 			<header>
 				<section id="header__section--toprow">
-					<h1 id="header__h1--name">Liz Kovalchuk - Web Developer</h1>
-					<nav id="menu--desktop">
-						<ul id="menu__ul--desktop" >
-							<li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li>
-							<li data-page="portfolio-block"><a class="header-nav-link" href="#">Portfolio</a></li>
-							<li data-page="skills-and-tools-wrapper"><a class="header-nav-link" href="#">Skills and Tools</a></li>
-							<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
-						</ul>
-					</nav>
-					<nav id="menu--mobile">
-						<button class="hamburger hamburger--squeeze" type="button">
-							<span class="hamburger-box">
-								<span class="hamburger-inner"></span>
-							</span>
-						</button>						
-						<ul id="menu__ul--mobile" >
-							<li data-page="aboutme-section"><a class="header-nav-link" href="#">About</a></li>
-							<li data-page="portfolio-block"><a class="header-nav-link" href="#">Portfolio</a></li>
-							<li data-page="skills-and-tools-wrapper"><a class="header-nav-link" href="#">Skills and Tools</a></li>
-							<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
-						</ul>
-					</nav>
+					<div id="header__div--container">
+						<h1 id="header__h1--name">Liz Kovalchuk - Web Developer</h1>
+						<nav id="menu--desktop">
+							<ul id="menu__ul--desktop" >
+								<li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li>
+								<li data-page="portfolio-block"><a class="header-nav-link" href="#">Portfolio</a></li>
+								<li data-page="skills-and-tools-wrapper"><a class="header-nav-link" href="#">Skills and Tools</a></li>
+								<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
+							</ul>
+						</nav>
+						<nav id="menu--mobile">
+							<button class="hamburger hamburger--squeeze" type="button">
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+								</span>
+							</button>						
+							<ul id="menu__ul--mobile" >
+								<li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li>
+								<li data-page="portfolio-block"><a class="header-nav-link" href="#">Portfolio</a></li>
+								<li data-page="skills-and-tools-wrapper"><a class="header-nav-link" href="#">Skills and Tools</a></li>
+								<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
 				</section>
 				<div id="banner__div--container">
 					<div id="banner__section--welcome-text">
-						<p id="banner__label--welcome-text-1"></p>
+						<p id="banner__label--welcome-text-1"><span id="hidden-letter">L</span></p>
+						<svg id="header__svg_underline">
+							<g fill="none">
+								<path stroke="#3C3D3C" d="M5 20 l400 0" pathLength=""/>
+							</g>
+						</svg>
 					</div>
-					<div id="banner__div--white-logo-container">				
+					<div id="banner__div--logo-container">				
 						<!-- <img src="src/assets/images/logos/masked-logo.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk"> -->
 						<img src="src/assets/images/logos/logo.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk">
 					</div>
 					<div id="banner__div--orange-square"></div>
-					<svg id="header__svg_underline">
-						<g fill="none">
-							<path stroke="#3C3D3C" d="M5 20 l400 0" pathLength=""/>
-						</g>
-					</svg>
 				</div>
 				<div id="banner__div--downward-arrow">
 					<i class="fal fa-chevron-down" id="banner__i--downward-arrow" data-page="portfolio-block" ></i>			

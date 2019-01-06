@@ -1,11 +1,23 @@
 header h1, header a {
   font-size: 16px; }
 
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 14px; } }
+
 header #header__section--toprow {
-  display: flex;
-  justify-content: space-between;
-  max-width: 90%;
-  margin: 0 auto; }
+  width: 100%;
+  margin-left: 3%;
+  position: fixed;
+  background-image: linear-gradient(white 40%, rgba(255, 255, 255, 0.95) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0) 90%);
+  z-index: 99;
+  top: 0;
+  min-height: 80px; }
+  header #header__section--toprow #header__div--container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px; }
   header #header__section--toprow #header__h1--name {
     color: #240F4E;
     margin: 16px 0; }
@@ -50,71 +62,139 @@ header #header__section--toprow {
       display: none; } }
   header #header__section--toprow #menu--mobile #menu__ul--mobile {
     position: absolute;
-    width: 100%;
+    width: 115%;
     list-style: none;
     top: -300px;
-    left: 0;
-    transition: 0.5s; }
+    left: -55px;
+    transition: 0.5s;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
     header #header__section--toprow #menu--mobile #menu__ul--mobile li a {
       text-decoration: none; }
 
 header .mobile-menu-view {
   position: absolute;
   left: 0;
-  top: 40px !important;
+  top: 46px !important;
   list-style: none;
   width: 100%;
-  background-color: rgba(192, 192, 192, 0.3); }
+  background-color: rgba(192, 192, 192, 0.3);
+  z-index: 99; }
   header .mobile-menu-view li {
-    padding: 5px 0; }
+    padding: 5px 0 0 30px; }
     header .mobile-menu-view li a {
       text-decoration: none; }
+  header .mobile-menu-view li:nth-child(1), header .mobile-menu-view li:nth-child(2) {
+    padding-top: 12px; }
+  header .mobile-menu-view li:nth-child(3), header .mobile-menu-view li:nth-child(4) {
+    padding-bottom: 12px; }
 
 header #banner__div--container {
   display: grid;
   grid-template-columns: repeat(48, 1fr);
   grid-template-rows: repeat(16, 1fr);
-  height: 500px;
+  height: 550px;
   position: relative; }
+  @media screen and (max-width: 992px) {
+    header #banner__div--container {
+      height: 650px; } }
+  @media screen and (max-width: 768px) {
+    header #banner__div--container {
+      height: 550px; } }
+  @media screen and (max-width: 550px) {
+    header #banner__div--container {
+      height: 500px; } }
+  @media screen and (max-width: 500px) {
+    header #banner__div--container {
+      height: 405px; } }
   header #banner__div--container #banner__div--orange-square {
     background: linear-gradient(67.5deg, #7987F9, #24F2C7);
-    border-radius: 5%;
-    grid-column-start: 25;
-    grid-column-end: 43;
-    grid-row-start: 4;
-    grid-row-end: -4;
+    border-radius: 30px;
+    grid-column: 29 / span 16;
+    grid-row: 8 / span 6;
     z-index: -1; }
+    @media screen and (max-width: 992px) {
+      header #banner__div--container #banner__div--orange-square {
+        grid-column: 12 / span 27;
+        grid-row: 5 /span 11; } }
+    @media screen and (max-width: 900px) {
+      header #banner__div--container #banner__div--orange-square {
+        grid-row: 5 /span 9; } }
+    @media screen and (max-width: 768px) {
+      header #banner__div--container #banner__div--orange-square {
+        grid-row: 6 /span 10; } }
+    @media screen and (max-width: 650px) {
+      header #banner__div--container #banner__div--orange-square {
+        grid-row: 7 /span 9; } }
+    @media screen and (max-width: 550px) {
+      header #banner__div--container #banner__div--orange-square {
+        grid-row: 7 /span 8; } }
+    @media screen and (max-width: 500px) {
+      header #banner__div--container #banner__div--orange-square {
+        grid-row: 8 /span 8; } }
   header #banner__div--container #banner__section--welcome-text {
-    position: absolute;
-    top: 173px;
-    left: 5%; }
-    header #banner__div--container #banner__section--welcome-text #banner__label--welcome-text-1 {
-      font-size: 40px;
-      background: linear-gradient(to right, #42a08b, #7987F9);
-      background-clip: border-box;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-  header #banner__div--container #header__svg_underline {
-    position: absolute;
-    top: 250px;
-    left: 58px;
-    width: 367px; }
+    grid-column-start: 4;
+    grid-column-end: 23;
+    grid-row-start: 10;
+    position: relative; }
+    @media screen and (max-width: 992px) {
+      header #banner__div--container #banner__section--welcome-text {
+        grid-column: 1 /span 49;
+        text-align: center;
+        grid-row-start: 16; } }
+    @media screen and (max-width: 500px) {
+      header #banner__div--container #banner__section--welcome-text {
+        grid-row-start: 17; } }
+  header #banner__div--container #banner__label--welcome-text-1 {
+    font-size: 40px;
+    background: linear-gradient(to right, #42a08b, #7987F9);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+    header #banner__div--container #banner__label--welcome-text-1 #hidden-letter {
+      opacity: 0; }
+    @media screen and (max-width: 500px) {
+      header #banner__div--container #banner__label--welcome-text-1 {
+        font-size: 30px; } }
 
-header #banner__div--downward-arrow {
+header #header__svg_underline {
+  position: absolute;
+  top: 79px;
+  left: -3px;
+  width: 367px; }
+  @media screen and (max-width: 992px) {
+    header #header__svg_underline {
+      display: none; } }
+
+#banner__div--downward-arrow {
   display: flex;
   justify-content: center; }
-  header #banner__div--downward-arrow #banner__i--downward-arrow {
+  #banner__div--downward-arrow #banner__i--downward-arrow {
     font-size: 50px;
     color: #7987F9;
     animation: bounce 3s infinite; }
 
-header #banner__div--white-logo-container {
-  grid-column-start: 23;
-  grid-column-end: 44;
-  grid-row-start: 6;
-  grid-row-end: 3; }
-  header #banner__div--white-logo-container #banner__img--logo-white {
+#banner__div--logo-container {
+  grid-column: 25 / span 22;
+  grid-row: 6 / span 10; }
+  @media screen and (max-width: 992px) {
+    #banner__div--logo-container {
+      grid-column: 8 / span 32;
+      grid-row: 4 / span 10; } }
+  @media screen and (max-width: 768px) {
+    #banner__div--logo-container {
+      grid-row: 5 / span 10; } }
+  @media screen and (max-width: 650px) {
+    #banner__div--logo-container {
+      grid-row: 6 / span 10; } }
+  @media screen and (max-width: 500px) {
+    #banner__div--logo-container {
+      grid-row: 7 / span 10; } }
+  #banner__div--logo-container #banner__img--logo-white {
     max-width: 100%; }
+    @media screen and (max-width: 500px) {
+      #banner__div--logo-container #banner__img--logo-white {
+        width: 400px; } }
 
 @keyframes bounce {
   0% {
