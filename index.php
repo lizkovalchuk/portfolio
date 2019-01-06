@@ -171,7 +171,7 @@
 	
 <section id="skills-and-tools-wrapper">
 	<div class="port-content">
-		<h3 id="skills-and-tools-heading-text">Skills and Tools</h3>
+		<h2 id="skills-and-tools-heading-text">Skills and Tools</h2>
 	</div>
 	<div id="icon-wrapper">
 		<div id="icon-container">

@@ -12,6 +12,9 @@
     flex-wrap: wrap;
     position: relative;
     justify-content: space-between;
+    @media screen and (max-width: $lg) {
+        justify-content: space-evenly;
+    }
     
     .port-piece-container{
         padding-bottom: 30px;
@@ -22,13 +25,41 @@
         #ipmp-port-piece-img,
         #cc-port-piece-img
         {
-            max-height: 355px;
+            height: 355px;
             overflow: hidden;
             border-radius: 20px;
+            @media screen and (max-width: $lg) {
+                height: 250px;
+            }
+            @media screen and (max-width: $md) {
+                height: 470px;
+            }
+            @media screen and (max-width: $sm) {
+                height: 270px;
+            }
+            @media screen and (max-width: $xs) {
+                height: 200px;
+            }
             img{
                 border-radius: 20px;
                 width: 525px;
                 height: 355px;   
+                @media screen and (max-width: $lg) {
+                    height: 250px;
+                    width: 420px;
+                }
+                @media screen and (max-width: $md) {
+                    height: 470px;
+                    width: 700px;
+                }
+                @media screen and (max-width: $sm) {
+                    height: 270px;
+                    width: 425px;
+                }
+                @media screen and (max-width: $xs) {
+                    height: 200px;
+                    width: 300px;
+                }
             }
         }
         #snc-port-piece-img{
@@ -50,6 +81,18 @@
             transition: 0.6s ease;
             background-color: rgba(95, 94, 94, 0.5);
             border-radius: 20px;
+            @media screen and (max-width: $lg) {
+                height: 250px;
+            }
+            @media screen and (max-width: $md) {
+                height: 470px;
+            }
+            @media screen and (max-width: $sm) {
+                height: 270px;
+            }
+            @media screen and (max-width: $xs) {
+                height: 200px;
+            }
             h3, p {
                 color: white;
             }
