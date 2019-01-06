@@ -5,18 +5,19 @@
 *2. Mailer Functionality
 *3. Welcome Text
 *4. Toggle Class
+*5. Hamburger
 *********************************************/
 
 
 //========== 1. Scroll to divs===================//
 
 function scrollToDiv($div_name){
-	$("html, body").delay(500).animate({
+	$("html, body").delay(300).animate({
     	scrollTop: $($div_name).offset().top
   	}, 500);
 }
 
-$(document).on('click', '#desktop-nav ul li', function() {
+$(document).on('click', '#header__section--toprow ul li', function() {
     var page = $(this).attr("data-page");
   	scrollToDiv('#'+ page);
 });
@@ -89,7 +90,6 @@ function textFrame(text)
 
 $(document).ready(function() {
 
-
 	$("#berryface-port-piece-text").hover(function(){
 		$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
 	});
@@ -97,13 +97,35 @@ $(document).ready(function() {
 	$("#netboost-port-piece-text").hover(function(){
 		$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
 	});
+
 	$("#sb-port-piece-text").hover(function(){
 		$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
 	});
+
 	$("#snc-port-piece-text").hover(function(){
 		$(".port-piece-container #snc-port-piece-img img").toggleClass("blur-img");
 	});
+
+	$("#snc-port-piece-text").hover(function(){
+		$("#snc-port-piece-img").toggleClass("remove-border-snc");
+	});
+
+	$("#ipmp-port-piece-text").hover(function(){
+		$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
+	});
+
 	$("#cc-port-piece-text").hover(function(){
 		$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
+	});
+});
+
+//=========== 5. Hamburger ===========//
+
+$(document).ready(function() {
+	var $hamburger = $(".hamburger");
+	var $mobile__ul = $("#menu__ul--mobile");
+	$hamburger.on("click", function(e) {
+	  $hamburger.toggleClass("is-active");
+	  $mobile__ul.toggleClass("mobile-menu-view");
 	});
 });

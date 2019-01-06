@@ -19,15 +19,16 @@
         #netboost-port-piece-img,
         #sb-port-piece-img,
         #snc-port-piece-img,
+        #ipmp-port-piece-img,
         #cc-port-piece-img
         {
-            max-height: 372px;
+            max-height: 355px;
             overflow: hidden;
             border-radius: 20px;
             img{
                 border-radius: 20px;
                 width: 525px;
-                height: 375px;   
+                height: 355px;   
             }
         }
         #snc-port-piece-img{
@@ -38,12 +39,13 @@
         #netboost-port-piece-text,
         #sb-port-piece-text,
         #snc-port-piece-text,
+        #ipmp-port-piece-text,
         #cc-port-piece-text
         {
             position: absolute;
             bottom: 0;
             top: 0;
-            height: 372px;
+            height: 355px;
             opacity: 0;
             transition: 0.6s ease;
             background-color: rgba(95, 94, 94, 0.5);
@@ -61,6 +63,7 @@
     #netboost-container,
     #stolen-bikes-container,
     #syn-key-container,
+    #ipmp-container,
     #comrade-cafe-container {
         position: relative;
     }
@@ -71,4 +74,8 @@
     filter: blur(10px);
     border-radius: 55px !important;
     transform: scale(1.15);
+}
+
+.remove-border-snc{
+    border: 1px solid white !important;
 }

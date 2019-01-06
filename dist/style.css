@@ -9,7 +9,7 @@ header #header__section--toprow {
   header #header__section--toprow #header__h1--name {
     color: #240F4E;
     margin: 16px 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     header #header__section--toprow #menu--desktop {
       display: none; } }
   header #header__section--toprow #menu--desktop #menu__ul--desktop {
@@ -38,9 +38,37 @@ header #header__section--toprow {
     transition: width .3s; }
   header #header__section--toprow #menu--desktop .header-nav-link:hover::after {
     width: 100%; }
-  @media screen and (min-width: 768px) {
+  header #header__section--toprow #menu--mobile button .hamburger-box .hamburger-inner {
+    font-size: 40px;
+    background: linear-gradient(to right, #42a08b, #7987F9); }
+    header #header__section--toprow #menu--mobile button .hamburger-box .hamburger-inner::before {
+      background: linear-gradient(to right, #42a08b, #7987F9); }
+    header #header__section--toprow #menu--mobile button .hamburger-box .hamburger-inner:after {
+      background: linear-gradient(to right, #42a08b, #7987F9); }
+  @media screen and (min-width: 900px) {
     header #header__section--toprow #menu--mobile {
       display: none; } }
+  header #header__section--toprow #menu--mobile #menu__ul--mobile {
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    top: -300px;
+    left: 0;
+    transition: 0.5s; }
+    header #header__section--toprow #menu--mobile #menu__ul--mobile li a {
+      text-decoration: none; }
+
+header .mobile-menu-view {
+  position: absolute;
+  left: 0;
+  top: 40px !important;
+  list-style: none;
+  width: 100%;
+  background-color: rgba(192, 192, 192, 0.3); }
+  header .mobile-menu-view li {
+    padding: 5px 0; }
+    header .mobile-menu-view li a {
+      text-decoration: none; }
 
 header #banner__div--container {
   display: grid;
@@ -114,29 +142,32 @@ header #banner__div--white-logo-container {
     .portfolio-wrapper .port-piece-container #netboost-port-piece-img,
     .portfolio-wrapper .port-piece-container #sb-port-piece-img,
     .portfolio-wrapper .port-piece-container #snc-port-piece-img,
+    .portfolio-wrapper .port-piece-container #ipmp-port-piece-img,
     .portfolio-wrapper .port-piece-container #cc-port-piece-img {
-      max-height: 372px;
+      max-height: 355px;
       overflow: hidden;
       border-radius: 20px; }
       .portfolio-wrapper .port-piece-container #berryface-port-piece-img img,
       .portfolio-wrapper .port-piece-container #netboost-port-piece-img img,
       .portfolio-wrapper .port-piece-container #sb-port-piece-img img,
       .portfolio-wrapper .port-piece-container #snc-port-piece-img img,
+      .portfolio-wrapper .port-piece-container #ipmp-port-piece-img img,
       .portfolio-wrapper .port-piece-container #cc-port-piece-img img {
         border-radius: 20px;
         width: 525px;
-        height: 375px; }
+        height: 355px; }
     .portfolio-wrapper .port-piece-container #snc-port-piece-img {
       border: 1px solid black; }
     .portfolio-wrapper .port-piece-container #berryface-port-piece-text,
     .portfolio-wrapper .port-piece-container #netboost-port-piece-text,
     .portfolio-wrapper .port-piece-container #sb-port-piece-text,
     .portfolio-wrapper .port-piece-container #snc-port-piece-text,
+    .portfolio-wrapper .port-piece-container #ipmp-port-piece-text,
     .portfolio-wrapper .port-piece-container #cc-port-piece-text {
       position: absolute;
       bottom: 0;
       top: 0;
-      height: 372px;
+      height: 355px;
       opacity: 0;
       transition: 0.6s ease;
       background-color: rgba(95, 94, 94, 0.5);
@@ -148,6 +179,8 @@ header #banner__div--white-logo-container {
       .portfolio-wrapper .port-piece-container #sb-port-piece-text p,
       .portfolio-wrapper .port-piece-container #snc-port-piece-text h3,
       .portfolio-wrapper .port-piece-container #snc-port-piece-text p,
+      .portfolio-wrapper .port-piece-container #ipmp-port-piece-text h3,
+      .portfolio-wrapper .port-piece-container #ipmp-port-piece-text p,
       .portfolio-wrapper .port-piece-container #cc-port-piece-text h3,
       .portfolio-wrapper .port-piece-container #cc-port-piece-text p {
         color: white; }
@@ -155,12 +188,14 @@ header #banner__div--white-logo-container {
       .portfolio-wrapper .port-piece-container #netboost-port-piece-text:hover,
       .portfolio-wrapper .port-piece-container #sb-port-piece-text:hover,
       .portfolio-wrapper .port-piece-container #snc-port-piece-text:hover,
+      .portfolio-wrapper .port-piece-container #ipmp-port-piece-text:hover,
       .portfolio-wrapper .port-piece-container #cc-port-piece-text:hover {
         opacity: 1; }
   .portfolio-wrapper #berryface-container,
   .portfolio-wrapper #netboost-container,
   .portfolio-wrapper #stolen-bikes-container,
   .portfolio-wrapper #syn-key-container,
+  .portfolio-wrapper #ipmp-container,
   .portfolio-wrapper #comrade-cafe-container {
     position: relative; }
 
@@ -169,6 +204,9 @@ header #banner__div--white-logo-container {
   filter: blur(10px);
   border-radius: 55px !important;
   transform: scale(1.15); }
+
+.remove-border-snc {
+  border: 1px solid white !important; }
 
 #aboutme__section {
   max-width: 90%;

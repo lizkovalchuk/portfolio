@@ -26,6 +26,7 @@
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "webpack-node-externals": "^1.7.2"
   }
 }

@@ -3,6 +3,7 @@
 	<head>
 		<title>Liz Kovalchuk - Web Developer</title>
 		<meta name="viewport" content="width=device-width">
+		<link href="src/assets/libs/hamburgers.min.css" rel="stylesheet">
 		<link href="src/assets/libs/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
 		<link rel="shortcut icon" href="images/logo.png" />
 		<!-- <link href="assets/style/style.min.css" rel="stylesheet" type="text/css"> -->
@@ -22,20 +23,24 @@
 					<h1 id="header__h1--name">Liz Kovalchuk - Web Developer</h1>
 					<nav id="menu--desktop">
 						<ul id="menu__ul--desktop" >
-							<li data-page="aboutme-section"><a class="header-nav-link" href="#">About</a></li>
+							<li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li>
 							<li data-page="portfolio-block"><a class="header-nav-link" href="#">Portfolio</a></li>
 							<li data-page="skills-and-tools-wrapper"><a class="header-nav-link" href="#">Skills and Tools</a></li>
 							<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
 						</ul>
 					</nav>
 					<nav id="menu--mobile">
+						<button class="hamburger hamburger--squeeze" type="button">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>						
 						<ul id="menu__ul--mobile" >
 							<li data-page="aboutme-section"><a class="header-nav-link" href="#">About</a></li>
 							<li data-page="portfolio-block"><a class="header-nav-link" href="#">Portfolio</a></li>
 							<li data-page="skills-and-tools-wrapper"><a class="header-nav-link" href="#">Skills and Tools</a></li>
 							<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
 						</ul>
-						<i class="fal fa-bars"></i>
 					</nav>
 				</section>
 				<div id="banner__div--container">
@@ -43,7 +48,8 @@
 						<p id="banner__label--welcome-text-1"></p>
 					</div>
 					<div id="banner__div--white-logo-container">				
-						<img src="src/assets/images/logos/masked-logo.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk">
+						<!-- <img src="src/assets/images/logos/masked-logo.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk"> -->
+						<img src="src/assets/images/logos/logo.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk">
 					</div>
 					<div id="banner__div--orange-square"></div>
 					<svg id="header__svg_underline">
@@ -108,8 +114,6 @@
 							<a href="https://github.com/lizkovalchuk/API-project" target="_blank" class="port-view-GH">View GitHub Code</a>
 						</div>
 					</div>
-
-
 					<div id="netboost-container" class="port-piece-container">
 						<div id="netboost-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/nb.png" alt="picture of netboost project">
@@ -122,8 +126,6 @@
 							<a href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								
 						</div>
 					</div>
-
-
 					<div id="syn-key-container" class="port-piece-container">
 						<div id="snc-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/snc.png" id="snc-pic" alt="picture of synthesia keyboard project">
@@ -136,27 +138,18 @@
 							<a href="https://github.com/lizkovalchuk/CSS-animation" target="_blank" class="port-view-GH">View GitHub Code</a>
 						</div>
 					</div>
-
-
-
-
-
-
-
-					<div id="netboost-container" class="port-piece-container">
-						<div id="netboost-port-piece-img">
-							<img src="src/assets/images/portfolio-pieces/ipmp.png" alt="picture of netboost project">
+					<div id="ipmp-container" class="port-piece-container">
+						<div id="ipmp-port-piece-img">
+							<img src="src/assets/images/portfolio-pieces/ipmp.png" alt="picture of IPMP project">
 						</div>
-						<div id="netboost-port-piece-text">
-							<h3>Netboost.ca</h3>
+						<div id="ipmp-port-piece-text">
+							<h3>International Project Management Alumni Network</h3>
 							<p>Database Driven website project management feature that displays percantage and duration of milestone completion.</p>
 							<p class="lower-text">Technologies: HTML, CSS, JavaScript, PHP, MySQL, Google Charts API</p>
 							<a href="http://netboost.ca/" target="_blank" class="port-view-live">View Live</a>
 							<a href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								
 						</div>
 					</div>
-
-
 					<div id="comrade-cafe-container" class="port-piece-container">
 						<div id="cc-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/cc.png" id="cc-pic" alt="picture of comrade cafe project">

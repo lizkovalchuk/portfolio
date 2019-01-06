@@ -12,7 +12,7 @@ header{
             margin: 16px 0;
         }
         #menu--desktop{
-            @media screen and (max-width: $sm){
+            @media screen and (max-width: $custom-md){
                 display: none;
             }
             #menu__ul--desktop{
@@ -49,11 +49,57 @@ header{
             }
         }
         #menu--mobile{
-            @media screen and (min-width: $sm){
+            button .hamburger-box .hamburger-inner{
+                font-size: 40px;
+                background: linear-gradient(to right, rgb(66, 160, 139) , #7987F9 );
+                &::before{
+                    background: linear-gradient(to right, rgb(66, 160, 139) , #7987F9 );
+                }
+                &:after{
+                    background: linear-gradient(to right, rgb(66, 160, 139) , #7987F9 );
+                }
+            }
+            @media screen and (min-width: $custom-md){
                 display: none;
+            }
+            #menu__ul--mobile{
+                position: absolute;
+                width: 100%;
+                list-style: none;
+                top: -300px;
+                left: 0;
+                transition: 0.5s;
+                li a{
+                    text-decoration: none;
+                }
             }
         }
     }
+
+    .mobile-menu-view{
+        // display: block !important;
+        position: absolute;
+        left: 0;
+        top: 40px !important;
+        list-style: none;
+        width: 100%;
+        background-color: rgba(192,192,192, 0.3);
+        li{
+            padding: 5px 0;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
     #banner__div--container{
         display: grid;
         grid-template-columns: repeat(48, 1fr);
