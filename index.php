@@ -79,7 +79,7 @@
 					</div>
 					<div class="aboutme__div--items" id="organize__div">
 						<h3>Organize</h3>
-						<p>My meticulous and outstanding attention to detail make for a smooth transition when transforming a vision into tangible results. Normalizing databases, consolidating content and defining specifications are crucial steps in web development.</p>
+						<p>My meticulous attention to detail make for a smooth transition when transforming a vision into tangible results. Normalizing databases, consolidating content and defining specifications are crucial steps in web development.</p>
 					</div>
 					<div class="aboutme__div--items" id="produce__div">
 						<h3>Produce</h3>
@@ -173,71 +173,89 @@
 	<div class="port-content">
 		<h2 id="skills-and-tools-heading-text">Skills and Tools</h2>
 	</div>
-	<div id="icon-wrapper">
-		<div id="icon-container">
 
-			<div id="col1-icons">
-				<div class="tool-icon-div">
+		<div id="icon-container">
+			<!-- <div id="skills__div_row1"> -->
+				<div class="tool-icon-div row-1" id="item-1">
 					<img class="tool-icon" src="images/tool-icons/html5.svg" alt="html logo">
 					<span id="html-span">HTML</span>
 				</div>
-				<div class="tool-icon-div">
+				<div class="tool-icon-div row-1" id="item-2">
 					<img class="tool-icon" src="images/tool-icons/php-logo.png" alt="php logo">
 					<span id="php-span">PHP</span>
 				</div>
-					<div class="tool-icon-div">
+				<div class="tool-icon-div row-1" id="item-3">
 					<img class="tool-icon" src="images/tool-icons/git_branch.svg" alt="git logo">
-				<span id="git-span">Git</span>
+					<span id="git-span">Git</span>
 				</div>
-			</div>
+				<div class="tool-icon-div row-1" id="item-4">
+					<img class="tool-icon" src="images/tool-icons/git_branch.svg" alt="git logo">
+					<span id="git-span">Git</span>
+				</div>
+				<div class="tool-icon-div row-1" id="item-5">
+					<img class="tool-icon" src="images/tool-icons/git_branch.svg" alt="git logo">
+					<span id="git-span">Git</span>
+				</div>
+				<div class="tool-icon-div row-1" id="item-6">
+					<img class="tool-icon" src="images/tool-icons/git_branch.svg" alt="git logo">
+					<span id="git-span">Git</span>
+				</div>
+			<!-- </div> -->
 
-			<div id="col2-icons">			
-				<div class="tool-icon-div">
+
+			<!-- <div id="skills__div_row2"> -->
+				<div class="tool-icon-div row-2" id="item-7">
 					<img class="tool-icon" src="images/tool-icons/css3.svg" alt="css logo">
 					<span id="css-span" >CSS</span>
 				</div>
-				<div class="tool-icon-div">
+				<div class="tool-icon-div row-2" id="item-8">
 					<img class="tool-icon" src="images/tool-icons/sql-logo.png" alt="sql logo">
 					<span id="sql-span">SQL</span>
 				</div>
-				<div class="tool-icon-div">
+				<div class="tool-icon-div row-2" id="item-9">
 					<img class="tool-icon" src="images/tool-icons/github_full.svg" alt="github logo" >
 					<span id="GH-span">GitHub</span>
 				</div>
-			</div>
-
-			<div id="col3-icons">
-				<div class="tool-icon-div">
-					<img class="tool-icon" src="images/tool-icons/javascript.svg" alt="javascript logo">
-					<span id="JS-span">JavaScript</span>
-				</div>	
-				<div class="tool-icon-div"> 
-					<img class="tool-icon" id="dotnet-img" src="images/tool-icons/dot-net.png" alt="dot net logo">
-					<span id="dotnet-span">.NET</span>
+				<div class="tool-icon-div row-2" id="item-10">
+					<img class="tool-icon" src="images/tool-icons/github_full.svg" alt="github logo" >
+					<span id="GH-span">GitHub</span>
 				</div>
-				<div class="tool-icon-div">
-					<img class="tool-icon" src="images/tool-icons/visualstudio.svg" alt="Visual Studio logo">
-					<span id="VS-span">Visual Studio</span>
-				</div>	
-			</div>
-
-			<div id="col4-icons">
-				<div class="tool-icon-div">
-					<img class="tool-icon" src="images/tool-icons/jquery_logo.svg" alt="jquery logo">
-					<span id="JQ-span">JQuery</span>
-				</div>	
-				<div class="tool-icon-div">
-					<img class="tool-icon" src="images/tool-icons/mvc.png" alt="mvc logo">
-					<span id="mvc-span">MVC</span>
+				<div class="tool-icon-div row-2" id="item-11">
+					<img class="tool-icon" src="images/tool-icons/github_full.svg" alt="github logo" >
+					<span id="GH-span">GitHub</span>
 				</div>
-				<div class="tool-icon-div">
+				<div class="tool-icon-div row-2" id="item-12">
 					<img class="tool-icon" src="images/tool-icons/adobe.png" alt="adobe logo" >
 					<span id="adobe-span">Adobe</span>
 				</div>
-			</div>
+			<!-- </div> -->
+
+
+
+				<div class="tool-icon-div row-3" id="item-13">
+					<img class="tool-icon" src="images/tool-icons/javascript.svg" alt="javascript logo">
+					<span id="JS-span">JavaScript</span>
+				</div>	
+				<div class="tool-icon-div row-3" id="item-14"> 
+					<img class="tool-icon" id="dotnet-img" src="images/tool-icons/dot-net.png" alt="dot net logo">
+					<span id="dotnet-span">.NET</span>
+				</div>
+				<div class="tool-icon-div row-3" id="item-15">
+					<img class="tool-icon" src="images/tool-icons/visualstudio.svg" alt="Visual Studio logo">
+					<span id="VS-span">Visual Studio</span>
+				</div>	
+				<div class="tool-icon-div row-3" id="item-16">
+					<img class="tool-icon" src="images/tool-icons/jquery_logo.svg" alt="jquery logo">
+					<span id="JQ-span">JQuery</span>
+				</div>	
+				<div class="tool-icon-div row-3" id="item-17">
+					<img class="tool-icon" src="images/tool-icons/mvc.png" alt="mvc logo">
+					<span id="mvc-span">MVC</span>
+				</div>
+
 
 		</div>
-	</div>
+
 </section>
 
 	
