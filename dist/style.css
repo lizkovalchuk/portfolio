@@ -7,7 +7,6 @@ header h1, header a {
 
 header #header__section--toprow {
   width: 100%;
-  margin-left: 3%;
   position: fixed;
   background-image: linear-gradient(white 40%, rgba(255, 255, 255, 0.95) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0) 90%);
   z-index: 99;
@@ -20,7 +19,8 @@ header #header__section--toprow {
     max-width: 1200px; }
   header #header__section--toprow #header__h1--name {
     color: #240F4E;
-    margin: 16px 0; }
+    margin: 16px 0;
+    margin-left: 3%; }
   @media screen and (max-width: 900px) {
     header #header__section--toprow #menu--desktop {
       display: none; } }
@@ -447,54 +447,60 @@ header #header__svg_underline {
       #aboutme__section #aboutme__div--container .aboutme__div--items h3, #aboutme__section #aboutme__div--container .aboutme__div--items p {
         padding: 0 5px !important; }
 
-#icon-container {
-  height: 600px;
-  display: grid;
-  grid-template-columns: repeat(23, 1fr);
-  grid-template-rows: repeat(11, 1fr);
-  grid-row-gap: 5px; }
-  #icon-container .tool-icon-div {
-    border: solid 1px black; }
-  #icon-container .row-1 {
-    grid-row: 1 / span 3; }
-  #icon-container #item-1 {
-    grid-column: 1 / span 3; }
-  #icon-container #item-2 {
-    grid-column: 5 / span 3; }
-  #icon-container #item-3 {
-    grid-column: 9 / span 3; }
-  #icon-container #item-4 {
-    grid-column: 13 / span 3; }
-  #icon-container #item-5 {
-    grid-column: 17 / span 3; }
-  #icon-container #item-6 {
-    grid-column: 21 / span 3; }
-  #icon-container .row-2 {
-    grid-row: 5 /span 3; }
-  #icon-container #item-7 {
-    grid-column: 1 / span 3; }
-  #icon-container #item-8 {
-    grid-column: 5 / span 3; }
-  #icon-container #item-9 {
-    grid-column: 9 / span 3; }
-  #icon-container #item-10 {
-    grid-column: 13 / span 3; }
-  #icon-container #item-11 {
-    grid-column: 17 / span 3; }
-  #icon-container #item-12 {
-    grid-column: 21 / span 3; }
-  #icon-container .row-3 {
-    grid-row: 9 / span 3; }
-  #icon-container #item-13 {
-    grid-column: 3 / span 3; }
-  #icon-container #item-14 {
-    grid-column: 7 / span 3; }
-  #icon-container #item-15 {
-    grid-column: 11 / span 3; }
-  #icon-container #item-16 {
-    grid-column: 15 / span 3; }
-  #icon-container #item-17 {
-    grid-column: 19 / span 3; }
+#skills-and-tools-wrapper {
+  max-width: 90%;
+  margin: 0 auto; }
+  #skills-and-tools-wrapper #icon-container {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-row-gap: 5px; }
+    #skills-and-tools-wrapper #icon-container .tool-icon-div {
+      display: grid;
+      justify-content: center;
+      text-align: center;
+      grid-template-rows: 80px 10px; }
+      #skills-and-tools-wrapper #icon-container .tool-icon-div .tool-icon {
+        width: 55px;
+        margin: 0 auto; }
+    #skills-and-tools-wrapper #icon-container .row-1 {
+      grid-row: 1 / span 3; }
+    #skills-and-tools-wrapper #icon-container .row-2 {
+      grid-row: 5 /span 3; }
+    #skills-and-tools-wrapper #icon-container .row-3 {
+      grid-row: 9 / span 3; }
+    #skills-and-tools-wrapper #icon-container #item-1,
+    #skills-and-tools-wrapper #icon-container #item-7,
+    #skills-and-tools-wrapper #icon-container #item-13 {
+      grid-column: 1 / span 3; }
+    #skills-and-tools-wrapper #icon-container #item-2,
+    #skills-and-tools-wrapper #icon-container #item-8,
+    #skills-and-tools-wrapper #icon-container #item-14 {
+      grid-column: 5 / span 3; }
+    #skills-and-tools-wrapper #icon-container #item-3,
+    #skills-and-tools-wrapper #icon-container #item-9,
+    #skills-and-tools-wrapper #icon-container #item-15 {
+      grid-column: 9 / span 3; }
+    #skills-and-tools-wrapper #icon-container #item-4,
+    #skills-and-tools-wrapper #icon-container #item-10,
+    #skills-and-tools-wrapper #icon-container #item-16 {
+      grid-column: 13 / span 3; }
+    #skills-and-tools-wrapper #icon-container #item-5,
+    #skills-and-tools-wrapper #icon-container #item-11,
+    #skills-and-tools-wrapper #icon-container #item-17 {
+      grid-column: 17 / span 3; }
+    #skills-and-tools-wrapper #icon-container #item-6,
+    #skills-and-tools-wrapper #icon-container #item-12,
+    #skills-and-tools-wrapper #icon-container #item-18 {
+      grid-column: 21 / span 3; }
+    #skills-and-tools-wrapper #icon-container #item-7 img,
+    #skills-and-tools-wrapper #icon-container #item-15 img,
+    #skills-and-tools-wrapper #icon-container #item-17 img,
+    #skills-and-tools-wrapper #icon-container #item-18 img {
+      width: 40px; }
+    #skills-and-tools-wrapper #icon-container #item-7 img {
+      margin-top: 10px; }
 
 body #body__div_page-wrapper {
   max-width: 1200px;

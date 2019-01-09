@@ -9,7 +9,7 @@ header{
     }
     #header__section--toprow{
         width: 100%;
-        margin-left: 3%;
+        // margin-left: 3%;
         position: fixed;
         background-image: linear-gradient( rgba(255, 255, 255, 1) 40%,rgba(255, 255, 255, 0.95) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.0)90%);
         z-index: 99;
@@ -24,6 +24,7 @@ header{
         #header__h1--name{
             color: #240F4E;
             margin: 16px 0;
+            margin-left: 3%;
         }
         #menu--desktop{
             @media screen and (max-width: $custom-md){
