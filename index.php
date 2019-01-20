@@ -7,10 +7,8 @@
 		<link href="src/assets/libs/hamburgers.min.css" rel="stylesheet">
 		<link href="src/assets/libs/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
 		<link rel="shortcut icon" href="images/logo.png" />
-		<!-- <link href="assets/style/style.min.css" rel="stylesheet" type="text/css"> -->
 		<link href="dist/style.css" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Heebo:900" rel="stylesheet"> 
+		<link href="//db.onlinewebfonts.com/c/c1abe50701241db4325576abf409ee8c?family=HelveticaWorldW01-Bold" rel="stylesheet">
 		<script
 		src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -26,8 +24,8 @@
 						<nav id="menu--desktop">
 							<ul id="menu__ul--desktop" >
 								<li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li>
-								<li data-page="portfolio-block"><a class="header-nav-link" href="#">Portfolio</a></li>
-								<li data-page="skills-and-tools-wrapper"><a class="header-nav-link" href="#">Skills and Tools</a></li>
+								<li data-page="portfolio-data-page"><a class="header-nav-link" href="#">Portfolio</a></li>
+								<li data-page="skills-and-tools-data-page"><a class="header-nav-link" href="#">Skills & Tools</a></li>
 								<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
 							</ul>
 						</nav>
@@ -39,8 +37,8 @@
 							</button>						
 							<ul id="menu__ul--mobile" >
 								<li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li>
-								<li data-page="portfolio-block"><a class="header-nav-link" href="#">Portfolio</a></li>
-								<li data-page="skills-and-tools-wrapper"><a class="header-nav-link" href="#">Skills and Tools</a></li>
+								<li data-page="portfolio-data-page"><a class="header-nav-link" href="#">Portfolio</a></li>
+								<li data-page="skills-and-tools-data-page"><a class="header-nav-link" href="#">Skills & Tools</a></li>
 								<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
 							</ul>
 						</nav>
@@ -51,13 +49,12 @@
 						<p id="banner__label--welcome-text-1"><span id="hidden-letter">L</span></p>
 						<svg id="header__svg_underline">
 							<g fill="none">
-								<path stroke="#3C3D3C" d="M5 20 l400 0" pathLength=""/>
+								<path stroke="black" d="M5 20 l600 0" pathLength=""/>
 							</g>
 						</svg>
 					</div>
 					<div id="banner__div--logo-container">				
-						<!-- <img src="src/assets/images/logos/masked-logo.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk"> -->
-						<img src="src/assets/images/logos/logo.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk">
+						<img src="src/assets/images/logos/with-joshua1.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk">
 					</div>
 					<div id="banner__div--orange-square"></div>
 				</div>
@@ -66,14 +63,18 @@
 				</div>
 			</header>
 			<section id="aboutme__section">
-				<!-- <div id="aboutme__div">
-					<h2 id="aboutme__h2">About Me</h2>
-					<p id="aboutme__p">Front-end developer graduating from Humber College this July 2018. Trained as a classical musician, I apply inherent understanding of structure, complex pattern recognition, logical symbolism and analytical understanding into my code. My experiences as an artist 
-						and performer enhance my ability to ensure that my work has a cohesive narrative that provides great user experience.
-					</p>
-				</div> -->
 				<h2 id="aboutme__h2">About</h2>
-				<h3>Creating beautiful, clean and highly functional websites.</h3>
+				<svg id="aboutme__svg_underline">
+					<g fill="none">
+						<path stroke="black" d="M5 20 l600 0" pathLength=""/>
+					</g>
+				</svg>
+				<div id="aboutme__div--intro">
+					<h3>Creating beautiful, clean and highly functional websites.</h3>
+					<div id="aboutme__div--resume">
+						<a href="src/assets/resume.pdf" target="_blank">View Resume</a>
+					</div>
+				</div>
 				<div id="aboutme__div--container">
 					<div class="aboutme__div--items" id="imagine__div">
 						<h3>Imagine</h3>
@@ -89,6 +90,10 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- PORTFOLIO BLOCK -->
+
+			<span id="portfolio-data-page">   </span>
 			<section>
 				<h2 id="portfolio-block" class="port-heading-text">Portfolio</h2>
 				<div class="portfolio-wrapper">	
@@ -170,96 +175,94 @@
 			</section>
 		
 			<!-- SKILLS AND TOOLS SECTION -->
-	
-<section id="skills-and-tools-wrapper">
-	<div class="port-content">
-		<h2 id="skills-and-tools-heading-text">Skills and Tools</h2>
-	</div>
 
-		<div id="icon-container">			
-			<div class="tool-icon-div row-1" id="item-1">
-				<img class="tool-icon" src="src/assets/images/tool-icons/html5.svg" alt="html logo">
-				<span id="html-span">HTML</span>
-			</div>
-			<div class="tool-icon-div row-1" id="item-2">
-				<img class="tool-icon" src="src/assets/images/tool-icons/css3.svg" alt="css logo">					
-				<span id="php-span">CSS</span>
-			</div>
-			<div class="tool-icon-div row-1" id="item-3">
-				<img class="tool-icon" src="src/assets/images/tool-icons/sass.svg" alt="git logo">
-				<span id="git-span">Sass</span>
-			</div>
-			<div class="tool-icon-div row-1" id="item-4">
-			<img class="tool-icon" src="src/assets/images/tool-icons/js.png" alt="javascript logo">					
-				<span id="git-span">JavaScript</span>
-			</div>
-			<div class="tool-icon-div row-1" id="item-5">
-				<img class="tool-icon" src="src/assets/images/tool-icons/jquery_logo.svg" alt="jquery logo">					
-				<span id="git-span">JQuery</span>
-			</div>
-			<div class="tool-icon-div row-1" id="item-6">
-				<img class="tool-icon" src="src/assets/images/tool-icons/react.svg" alt="git logo">
-				<span id="git-span">React</span>
-			</div>		
-		
-			<div class="tool-icon-div row-2" id="item-7">
-				<img class="tool-icon" src="src/assets/images/tool-icons/angular.png" alt="sql logo">
-				<span id="css-span">Angular</span>
-			</div>
-			<div class="tool-icon-div row-2" id="item-8">
-				<img class="tool-icon" src="src/assets/images/tool-icons/gulp.svg" alt="sql logo">
-				<span id="sql-span">Gulp</span>
-			</div>
-			<div class="tool-icon-div row-2" id="item-9">
-			<img class="tool-icon" src="src/assets/images/tool-icons/webpack.png" alt="php logo">										
-				<span id="GH-span">Webpack</span>
-			</div>
-			<div class="tool-icon-div row-2" id="item-10">
-				<img class="tool-icon" src="src/assets/images/tool-icons/git_branch.svg" alt="github logo" >
-				<span id="GH-span">Git</span>
-			</div>
-			<div class="tool-icon-div row-2" id="item-11">
-				<img class="tool-icon" src="src/assets/images/tool-icons/visualstudio.svg" alt="Visual Studio logo">		
-				<span id="GH-span">Visual Studio</span>
-			</div>
-			<div class="tool-icon-div row-2" id="item-12">
-				<img class="tool-icon" id="dotnet-img" src="src/assets/images/tool-icons/dot-net.png" alt="dot net logo">					
-				<span id="adobe-span">.NET</span>
-			</div>
-			<div class="tool-icon-div row-3" id="item-13">
-				<img class="tool-icon" src="src/assets/images/tool-icons/w3c.svg" alt="git logo">					
-				<span id="JS-span">WCAG</span>
-			</div>	
-			<div class="tool-icon-div row-3" id="item-14"> 
-				<img class="tool-icon" src="src/assets/images/tool-icons/wordpress.png" alt="git logo">					
-				<span id="dotnet-span">WordPress</span>
-			</div>
-			<div class="tool-icon-div row-3" id="item-15">
-				<img class="tool-icon" src="src/assets/images/tool-icons/laravel.png" alt="Visual Studio logo">
-				<span id="VS-span">Visual Studio</span>
-			</div>	
-			<div class="tool-icon-div row-3" id="item-16">
-				<img class="tool-icon" src="src/assets/images/tool-icons/php-logo.png" alt="jquery logo">
-				<span id="JQ-span">PHP</span>
-			</div>	
-			<div class="tool-icon-div row-3" id="item-17">
-				<img class="tool-icon" src="src/assets/images/tool-icons/sql-logo.png" alt="sql logo">					
-				<span id="mvc-span">MVC</span>
-			</div>
-			<div class="tool-icon-div row-3" id="item-18">
-				<img class="tool-icon" src="src/assets/images/tool-icons/mvc.png" alt="mvc logo">
-				<span id="mvc-span">MVC</span>
-			</div>
-		</div>
-	</section>
+			<span id="skills-and-tools-data-page"></span>
+			<section id="skills-and-tools-wrapper">
+				<div class="port-content">
+					<h2 id="skills-and-tools-heading-text">Skills and Tools</h2>
+				</div>
 
+				<div id="icon-container">			
+					<div class="tool-icon-div row-1" id="item-1">
+						<img class="tool-icon" src="src/assets/images/tool-icons/html5.svg" alt="html logo">
+						<span id="html-span">HTML</span>
+					</div>
+					<div class="tool-icon-div row-1" id="item-2">
+						<img class="tool-icon" src="src/assets/images/tool-icons/css3.svg" alt="css logo">					
+						<span id="css-span">CSS</span>
+					</div>
+					<div class="tool-icon-div row-1" id="item-3">
+						<img class="tool-icon" src="src/assets/images/tool-icons/sass.svg" alt="git logo">
+						<span id="sass-span">Sass</span>
+					</div>
+					<div class="tool-icon-div row-1" id="item-4">
+					<img class="tool-icon" src="src/assets/images/tool-icons/js.png" alt="javascript logo">					
+						<span id="javascript-span">JavaScript</span>
+					</div>
+					<div class="tool-icon-div row-1" id="item-5">
+						<img class="tool-icon" src="src/assets/images/tool-icons/jquery_logo.svg" alt="jquery logo">					
+						<span id="jquery-span">JQuery</span>
+					</div>
+					<div class="tool-icon-div row-1" id="item-6">
+						<img class="tool-icon" src="src/assets/images/tool-icons/react.svg" alt="git logo">
+						<span id="react-span">React</span>
+					</div>		
+				
+					<div class="tool-icon-div row-2" id="item-7">
+						<img class="tool-icon" src="src/assets/images/tool-icons/angular.png" alt="sql logo">
+						<span id="angular-span">Angular</span>
+					</div>
+					<div class="tool-icon-div row-2" id="item-8">
+						<img class="tool-icon" src="src/assets/images/tool-icons/gulp.svg" alt="sql logo">
+						<span id="gulp-span">Gulp</span>
+					</div>
+					<div class="tool-icon-div row-2" id="item-9">
+					<img class="tool-icon" src="src/assets/images/tool-icons/webpack.png" alt="php logo">										
+						<span id="webpack-span">Webpack</span>
+					</div>
+					<div class="tool-icon-div row-2" id="item-10">
+						<img class="tool-icon" src="src/assets/images/tool-icons/git_branch.svg" alt="github logo" >
+						<span id="git-span">Git</span>
+					</div>
+					<div class="tool-icon-div row-2" id="item-11">
+						<img class="tool-icon" src="src/assets/images/tool-icons/visualstudio.svg" alt="Visual Studio logo">		
+						<span id="vs-span">Visual Studio</span>
+					</div>
+					<div class="tool-icon-div row-2" id="item-12">
+						<img class="tool-icon" id="dotnet-img" src="src/assets/images/tool-icons/dot-net.png" alt="dot net logo">					
+						<span id="dotnet-span">.NET</span>
+					</div>
+					<div class="tool-icon-div row-3" id="item-13">
+						<img class="tool-icon" src="src/assets/images/tool-icons/w3c.svg" alt="git logo">					
+						<span id="wcag-span">WCAG</span>
+					</div>	
+					<div class="tool-icon-div row-3" id="item-14"> 
+						<img class="tool-icon" src="src/assets/images/tool-icons/wordpress.png" alt="git logo">					
+						<span id="wordpress-span">WordPress</span>
+					</div>
+					<div class="tool-icon-div row-3" id="item-15">
+						<img class="tool-icon" src="src/assets/images/tool-icons/laravel.png" alt="Visual Studio logo">
+						<span id="laravel-span">Laravel</span>
+					</div>	
+					<div class="tool-icon-div row-3" id="item-16">
+						<img class="tool-icon" src="src/assets/images/tool-icons/php-logo.png" alt="jquery logo">
+						<span id="php-span">PHP</span>
+					</div>	
+					<div class="tool-icon-div row-3" id="item-17">
+						<img class="tool-icon" src="src/assets/images/tool-icons/sql-logo.png" alt="sql logo">					
+						<span id="sql-span">SQL</span>
+					</div>
+					<div class="tool-icon-div row-3" id="item-18">
+						<img class="tool-icon" src="src/assets/images/tool-icons/mvc.png" alt="mvc logo">
+						<span id="mvc-span">MVC</span>
+					</div>
+				</div>
+			</section>
 	
 		<!-- FORM -->
 	
-		<!-- <form id="contact-frm" action="mailer.php" method="post"> -->
-			<!-- <div id="contact-frm"> -->
-				
-				<div id="contact-frm" class="form-wrapper">
+			<form id="contact-frm" class="modal" action="mailer.php" method="post">		
+				<div class="modal-content">
 				<h2 id="_contact">Contact</h2>
 					<div >
 						<label for="name">Name:</label>
@@ -277,28 +280,30 @@
 						<label for="messagebox">Message:</label>
 					</div>
 					<div>
-						<!-- <input type="textarea" id="messagebox" rows="10"> -->
 						<textarea rows="15" id="messagebox" name="message"></textarea>
 					</div>
 					<div class="custom-button">
 						<button id="mail-button">SEND</button>
 					</div>
 				</div>
-			<!-- </div> -->
-		<!-- </form> -->
+			</form>
 	
 			<!-- FOOTER -->
-	
+			<div id="thank-you-section">
+				<span id="thank-you-text">Thanks for visiting!</span>
+			</div>
+
+
 	
 			<div>
 				<footer>	
 					<div class="social-links">
-						<a href="https://www.instagram.com/lizthecellist/" target="_blank" class="icon"><img src="images/icons/inst.png" id="inst" alt="instagram logo"></a>
-						<a href="https://www.facebook.com/liz.kovalchuk" target="_blank" class="icon"><img src="images/icons/fb.png" id="fb" alt="facebook logo"></a>
-						<a href="https://twitter.com/lizthecellist" target="_blank" class="icon"><img src="images/icons/tw.png" id="tw" alt="twitter logo"></a>
-						<a href="https://ca.linkedin.com/in/liz-kovalchuk-4803b86a" target="_blank" class="icon"><img src="images/icons/li.png" id="li" alt="linked in logo"></a>
-						<a href="https://github.com/lizkovalchuk" target="_blank" class="icon"><img src="images/icons/gh.png" id="gh" alt="github logo"></a>
-						<a href="https://www.youtube.com/channel/UC7FfRr8dyecguF5082J23FQ" target="_blank" class="icon"><img src="images/icons/ut.png" id="ut" alt="YouTube logo"></a>
+						<a href="https://github.com/lizkovalchuk" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+						<a href="https://ca.linkedin.com/in/liz-kovalchuk-4803b86a" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://www.instagram.com/lizthecellist/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+						<a href="https://twitter.com/lizthecellist" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.facebook.com/liz.kovalchuk" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.youtube.com/channel/UC7FfRr8dyecguF5082J23FQ" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>																										
 					</div>
 				</footer>
 			</div>

@@ -11,10 +11,11 @@ header{
         width: 100%;
         // margin-left: 3%;
         position: fixed;
-        background-image: linear-gradient( rgba(255, 255, 255, 1) 40%,rgba(255, 255, 255, 0.95) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.0)90%);
+        background-color: white;
         z-index: 99;
         top: 0;
         min-height: 80px;
+        min-height: 50px;
         #header__div--container{
             display: flex;
             justify-content: space-between;
@@ -24,7 +25,7 @@ header{
         #header__h1--name{
             color: #240F4E;
             margin: 16px 0;
-            margin-left: 3%;
+            margin-left: 4.25%;
         }
         #menu--desktop{
             @media screen and (max-width: $custom-md){
@@ -49,14 +50,17 @@ header{
                 display: inline-block;
                 color: #000;
                 text-decoration: none;
-                color: #3C3D3C;
+                // color: #3C3D3C;
+                line-height: 30px;
+                margin-top: -5px;
             }
             .header-nav-link::after {
                 content: '';
                 display: block;
                 width: 0;
                 height: 2px;
-                background: #7987F9;
+                background: #F5FD4D;
+                border-bottom: 1px solid black;
                 transition: width .3s;
             }
             .header-nav-link:hover::after {
@@ -97,10 +101,11 @@ header{
         // display: block !important;
         position: absolute;
         left: 0;
-        top: 46px !important;
+        top: 38px !important;
         list-style: none;
         width: 100%;
-        background-color: rgba(192,192,192, 0.3);
+        background-color: white;
+        
         z-index: 99;
         li{
             padding: 5px 0 0 30px;
@@ -137,11 +142,13 @@ header{
             height: 405px;
         }
         #banner__div--orange-square{
-            background: linear-gradient(67.5deg, #7987F9, #24F2C7);
-            border-radius: 30px;
-            grid-column: 29 / span 16;
-            grid-row: 8 / span 6;
-            z-index: -1;
+            // background: linear-gradient(67.5deg, #7987F9, #24F2C7);
+            // background: linear-gradient(67.5deg, #F5FD4D, rgba(211,211,211, 1));
+            // background: linear-gradient(67.5deg, #F5FD4D, rgba(255,255,255,0.4));
+            background-color: #F5FD4D;
+            grid-column: 25 / span 22;
+            grid-row: 6 / span 10;
+            z-index: -1;            
             @media screen and (max-width: $md){
                 grid-column: 12 / span 27;
                 grid-row: 5 /span 11;
@@ -163,10 +170,11 @@ header{
             }
         }
         #banner__section--welcome-text{
-            grid-column-start: 4;
+            grid-column-start: 3;
             grid-column-end: 23;
-            grid-row-start: 10;
-            position: relative;
+            grid-row-start: 8;
+            // position: relative;
+            
             @media screen and (max-width: $md){
                 grid-column: 1 /span 49;
                 text-align: center;
@@ -181,10 +189,12 @@ header{
                     opacity: 0;
                 }
                 font-size: 40px;
-                background: linear-gradient(to right, rgb(66, 160, 139) , #7987F9 );
-                background-clip: border-box;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                color: black; 
+                font-size: 700 !important;               
+                // background: linear-gradient(to right, rgb(66, 160, 139) , #7987F9 );
+                // background-clip: border-box;
+                // -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
                 @media screen and (max-width: $xs) {
                     font-size: 30px;
                 }
@@ -192,9 +202,9 @@ header{
         }
         #header__svg_underline{
             position: absolute;
-            top: 79px;
-            left: -3px;
-            width: 367px;
+            top: 280px;
+            left: -6px;
+            width: 400px;                      
             @media screen and (max-width: $md){
                 display: none;
             }
@@ -203,15 +213,16 @@ header{
     #banner__div--downward-arrow{
         display: flex;
         justify-content: center;
+        margin-top: 65px;
         #banner__i--downward-arrow{
             font-size: 50px;
-            color: #7987F9;
+            color: black;
             animation: bounce 3s infinite;
         }
     }
     #banner__div--logo-container{
-        grid-column: 25 / span 22;
-        grid-row: 6 / span 10;
+        grid-column: 15 / span 39;
+        grid-row: 3 / span 10;
         @media screen and (max-width: $md) {
             grid-column: 8 / span 32;
             grid-row: 4 / span 10;
