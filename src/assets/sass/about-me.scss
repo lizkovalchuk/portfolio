@@ -1,70 +1,64 @@
 #aboutme__section{
     max-width: 90%;
     margin: 0 auto;
-    position: relative;
+    height: 500px;
+    
+    
+    @media screen and (max-width: $md) {
+        height: 550px;
+    }
+
     h2{
-        font-size: 40px;
-        background-color: #F5FD4D;
         width: 120px;
         padding-left: 15px;
     }
     #aboutme__svg_underline{
         position: absolute;
-        top: 29px;
-        left: -66px;
-        width: 200px;
-    }
-    #aboutme__div--intro{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        #aboutme__div--resume{            
-            background-color: $yellow;
-            padding: 8px;
-            margin-right: 42px;
-            // border-bottom: 1px solid black;
-            a{
-                color: black;
-                text-decoration: none;
-                position: relative;
-                &::after {
-                    content: '';
-                    position: absolute;
-                    top: 24px;
-                    left: -8px;
-                    display: block;
-                    width: 0;
-                    height: 2px;                    
-                    border-bottom: 1px solid black;
-                    transition: width .3s;
-                }
-                &:hover::after {
-                    width: 111px;
-                }
-            }
+        top: 734px;
+        left: -5px;
+        width: 201px;
+        @media screen and (max-width: 1210px) {
+            left: -65px;
         }
     }
     #aboutme__div--container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(6, 1fr);
         grid-column-gap: 30px;
-        height: 325px;
+        height: 393px;
+
         @media screen and (max-width: $md) {
-            grid-template-columns: repeat(11, 1fr);
-            grid-template-rows: 300px 300px;
-            grid-column-gap: unset;
-            height: 625px;
-            #imagine__div{
-                grid-column: 1 /span 4;
-            }
-            #organize__div{
-                grid-column: 7 / span 4;
-            }
-            #produce__div{
-                grid-row: 2;
-                grid-column: 4 / span 4;
+            grid-row-gap: 30px;
+        }
+
+        #aboutme__h3{
+            grid-column: 1 / span 5;
+            @media screen and (max-width: $md) {
+                grid-column: 1 /span 6;
+                margin-bottom: 10px;
             }
         }
+
+        #imagine__div{
+            grid-column: 1 /span 2;
+            @media screen and (max-width: $md) {
+                grid-column: 1 /span 3;
+            }
+        }
+        #organize__div{            
+            grid-column: 3 / span 2;
+            @media screen and (max-width: $md) {
+                grid-column: 4 /span 3;
+                grid-row: 2;
+            }
+        }
+        #produce__div{            
+            grid-column: 5 / span 2;
+            @media screen and (max-width: $md) {                
+                grid-column: 1 /span 3;
+            }
+        }
+
         @media screen and (max-width: $custom-sm) {
             grid-template-columns: unset;
             grid-template-rows: 300px 300px 300px;
@@ -77,29 +71,47 @@
                 max-width: 300px;
                 margin: 0 auto;
             }
-            #imagine__div{
-                grid-row: 1;
+        }
+        #aboutme__div--resume{   
+            grid-column: 6/ span 1;
+            background-color: #F5FD4D;
+            padding: 8px;
+            height: 21px;
+            margin-top: 35px;
+            width: 95px;        
+            a{
+                color: black;
+                text-decoration: none;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 26px;
+                    left: -8px;
+                    display: block;
+                    width: 0;
+                    height: 2px;                    
+                    border-bottom: 1px solid black;
+                    transition: width .3s;
+                }
+                &:hover::after {
+                    width: 111px;
+                }
             }
-            #organize__div{
-                grid-row: 2;
-            }
-            #produce__div{
+            @media screen and (max-width: $md) {
+                grid-column: 5 /span 2;
                 grid-row: 3;
             }
         }
+    }
+
         .aboutme__div--items{        
             border: 1px solid rgba(60, 61, 60, 0.15);;
             height: 100%;
             width: 100%;
-            @media screen and (max-width: $md) {
-                width: 110%;
-            }
-            @media screen and (max-width: $custom-md) {
-                width: 130%;
-            }
             h3, p{
-                padding: 0 5px !important;
+                padding: 0 20px !important;
             }
         }
-    }
+   // }
 }

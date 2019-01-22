@@ -15,20 +15,23 @@ body{
         max-width: 1200px;
         margin: 0 auto;
         border-left: 1px solid black;
+        position: relative;
+        @media screen and (max-width: $custom-lg) {
+            margin-left: 7%;
+        }
+        @media screen and (max-width: $lg) {
+            margin-left: 5%;
+        }
     }
     h1, h2, h3, p, a, span, label {
         font-weight: 100;
         font-family: "helvetica", sans-serif;
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
-       // color: #3C3D3C;
     }
-    // h2{
-    //     // font-family: 'Heebo', sans-serif;
-    //     font-family: "helvetica", sans-serif;
-    //     font-size: 80px;
-    //     // font-weight: 300;
-    //     color: rgba(60, 61, 60, 0.2);
-    // }
+    h2{
+        font-size: 40px;
+        background-color: #F5FD4D;
+    }
     h3{
         font-size: 2em;
     }

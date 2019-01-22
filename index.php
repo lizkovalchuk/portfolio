@@ -49,7 +49,7 @@
 						<p id="banner__label--welcome-text-1"><span id="hidden-letter">L</span></p>
 						<svg id="header__svg_underline">
 							<g fill="none">
-								<path stroke="black" d="M5 20 l600 0" pathLength=""/>
+								<path stroke="black" d="M5 20 l1000 0" pathLength=""/>
 							</g>
 						</svg>
 					</div>
@@ -69,13 +69,11 @@
 						<path stroke="black" d="M5 20 l600 0" pathLength=""/>
 					</g>
 				</svg>
-				<div id="aboutme__div--intro">
-					<h3>Creating beautiful, clean and highly functional websites.</h3>
+				<div id="aboutme__div--container">					
+					<h3 id="aboutme__h3">Creating beautiful, clean and highly functional websites.</h3>
 					<div id="aboutme__div--resume">
 						<a href="src/assets/resume.pdf" target="_blank">View Resume</a>
-					</div>
-				</div>
-				<div id="aboutme__div--container">
+					</div>					
 					<div class="aboutme__div--items" id="imagine__div">
 						<h3>Imagine</h3>
 						<p>Great user experience for both frontend websites and backend applications start with great imagination.</p>
@@ -94,9 +92,14 @@
 			<!-- PORTFOLIO BLOCK -->
 
 			<span id="portfolio-data-page">   </span>
-			<section>
-				<h2 id="portfolio-block" class="port-heading-text">Portfolio</h2>
+			<section id="portfolio_section">				
 				<div class="portfolio-wrapper">	
+						<h2 id="portfolio-block">Portfolio</h2>				
+						<svg id="portfolio__svg_underline">
+							<g fill="none">
+								<path stroke="black" d="M5 20 l600 0" pathLength=""/>
+							</g>
+						</svg>
 
 					<div id="berryface-container" class="port-piece-container">
 						<div id="berryface-port-piece-img">
@@ -135,18 +138,23 @@
 							<a href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								
 						</div>
 					</div>
-					<div id="syn-key-container" class="port-piece-container">
-						<div id="snc-port-piece-img">
-							<img src="src/assets/images/portfolio-pieces/snc.png" id="snc-pic" alt="picture of synthesia keyboard project">
+
+					<div id="comrade-cafe-container" class="port-piece-container">
+						<div id="cc-port-piece-img">
+							<img src="src/assets/images/portfolio-pieces/cc.png" id="cc-pic" alt="picture of comrade cafe project">
 						</div>
-						<div id="snc-port-piece-text">
-							<h3>Synesthesia Keyboard</h3>
-							<p>An exercise in keyframe animations. Click on a note on the piano keyboard to see its colour.</p>
-							<p class="lower-text">Technologies: HTML, CSS and JavaScript</p>
-							<a href="http://seenotecolours.tk/" target="_blank" class="port-view-live">View Live</a>
-							<a href="https://github.com/lizkovalchuk/CSS-animation" target="_blank" class="port-view-GH">View GitHub Code</a>
+						<div id="cc-port-piece-text">
+							<h3>Giftcards</h3>
+							<p>An interactive interface for users to custom build giftcards on a restaurant website.</p>
+							<p class="lower-text">Technologies: HTML, CSS and JQuery.</p>
+							<a href="http://comradecafe.tk" target="_blank" class="port-view-live">View Live</a>
+							<a href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank" class="port-view-GH">View GitHub Code</a>
 						</div>
 					</div>
+
+
+
+
 					<div id="ipmp-container" class="port-piece-container">
 						<div id="ipmp-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/ipmp.png" alt="picture of IPMP project">
@@ -171,6 +179,24 @@
 							<a href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank" class="port-view-GH">View GitHub Code</a>
 						</div>
 					</div>
+
+
+
+					<div id="syn-key-container" class="port-piece-container">
+						<div id="snc-port-piece-img">
+							<img src="src/assets/images/portfolio-pieces/snc.png" id="snc-pic" alt="picture of synthesia keyboard project">
+						</div>
+						<div id="snc-port-piece-text">
+							<h3>Synesthesia Keyboard</h3>
+							<p>An exercise in keyframe animations. Click on a note on the piano keyboard to see its colour.</p>
+							<p class="lower-text">Technologies: HTML, CSS and JavaScript</p>
+							<a href="http://seenotecolours.tk/" target="_blank" class="port-view-live">View Live</a>
+							<a href="https://github.com/lizkovalchuk/CSS-animation" target="_blank" class="port-view-GH">View GitHub Code</a>
+						</div>
+					</div>
+
+
+
 				</div>
 			</section>
 		

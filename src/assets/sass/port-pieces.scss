@@ -1,130 +1,144 @@
-
-#portfolio-data-page{
-    min-height: 70px;
-    display: block;
-}
-.port-heading-text{
-    max-width: 90%;
-    margin: 0 auto;
-    padding:25px 0;
-}
-.portfolio-wrapper{
-    display: flex;
-    grid-template-rows: 35px;
-    grid-row-gap: 20px;
-    max-width: 90%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: space-between;
-    @media screen and (max-width: $lg) {
-        justify-content: space-evenly;
+#portfolio_section{
+    // position: relative;
+    h2{
+        width: 200px;
+        padding-left: 15px;
     }
-    
-    .port-piece-container{
-        padding-bottom: 30px;
-        #berryface-port-piece-img,
-        #netboost-port-piece-img,
-        #sb-port-piece-img,
-        #snc-port-piece-img,
-        #ipmp-port-piece-img,
-        #cc-port-piece-img
-        {
-            height: 355px;
-            overflow: hidden;
-            // border-radius: 20px;
-            @media screen and (max-width: $lg) {
-                height: 250px;
-            }
-            @media screen and (max-width: $md) {
-                height: 470px;
-            }
-            @media screen and (max-width: $sm) {
-                height: 270px;
-            }
-            @media screen and (max-width: $xs) {
-                height: 200px;
-            }
-            img{
+    #portfolio__svg_underline{
+        position: absolute;
+    }
+    #portfolio-data-page{
+        min-height: 70px;
+        display: block;
+    }
+    .port-heading-text{
+        max-width: 90%;
+        margin: 0 auto;
+        padding:25px 0;
+    }
+    .portfolio-wrapper{
+        display: flex;
+        grid-template-rows: 35px;
+        grid-row-gap: 20px;
+        max-width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: space-between;
+        margin-top: 50px;
+        @media screen and (max-width: $lg) {
+            justify-content: space-between;
+            // justify-content: space-evenly;
+        }
+        @media screen and (max-width: $md) {            
+            justify-content: space-evenly;
+        }
+        
+        .port-piece-container{
+            padding-bottom: 30px;
+            #berryface-port-piece-img,
+            #netboost-port-piece-img,
+            #sb-port-piece-img,
+            #snc-port-piece-img,
+            #ipmp-port-piece-img,
+            #cc-port-piece-img
+            {
+                height: 355px;
+                overflow: hidden;
                 // border-radius: 20px;
-                width: 525px;
-                height: 355px;   
                 @media screen and (max-width: $lg) {
-                    height: 250px;
-                    width: 420px;
+                    height: 275px;
                 }
                 @media screen and (max-width: $md) {
                     height: 470px;
-                    width: 700px;
                 }
                 @media screen and (max-width: $sm) {
                     height: 270px;
-                    width: 425px;
                 }
                 @media screen and (max-width: $xs) {
                     height: 200px;
-                    width: 300px;
+                }
+                img{
+                    // border-radius: 20px;
+                    width: 525px;
+                    height: 355px;   
+                    @media screen and (max-width: $lg) {
+                        height: 275px;
+                        width: 420px;
+                    }
+                    @media screen and (max-width: $md) {
+                        height: 470px;
+                        width: 700px;
+                    }
+                    @media screen and (max-width: $sm) {
+                        height: 270px;
+                        width: 425px;
+                    }
+                    @media screen and (max-width: $xs) {
+                        height: 200px;
+                        width: 275px;
+                    }
+                }
+            }
+            #snc-port-piece-img{
+                border: 1px solid black;
+            }
+    
+            #berryface-port-piece-text,
+            #netboost-port-piece-text,
+            #sb-port-piece-text,
+            #snc-port-piece-text,
+            #ipmp-port-piece-text,
+            #cc-port-piece-text
+            {
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                height: 355px;
+                opacity: 0;
+                transition: 0.6s ease;
+                background-color: rgba(95, 94, 94, 0.5);
+                // border-radius: 20px;
+                @media screen and (max-width: $lg) {
+                    height: 300px;
+                }
+                @media screen and (max-width: $md) {
+                    height: 470px;
+                    width: 100%;
+                }
+                @media screen and (max-width: $sm) {
+                    height: 270px;
+                }
+                @media screen and (max-width: $xs) {
+                    height: 200px;
+                }
+                h3, p {
+                    color: white;
+                }
+                &:hover{
+                    opacity: 1;
                 }
             }
         }
-        #snc-port-piece-img{
-            border: 1px solid black;
-        }
-
-        #berryface-port-piece-text,
-        #netboost-port-piece-text,
-        #sb-port-piece-text,
-        #snc-port-piece-text,
-        #ipmp-port-piece-text,
-        #cc-port-piece-text
-        {
-            position: absolute;
-            bottom: 0;
-            top: 0;
-            height: 355px;
-            opacity: 0;
-            transition: 0.6s ease;
-            background-color: rgba(95, 94, 94, 0.5);
-            // border-radius: 20px;
-            @media screen and (max-width: $lg) {
-                height: 250px;
-            }
-            @media screen and (max-width: $md) {
-                height: 470px;
-                width: 100%;
-            }
-            @media screen and (max-width: $sm) {
-                height: 270px;
-            }
-            @media screen and (max-width: $xs) {
-                height: 200px;
-            }
-            h3, p {
-                color: white;
-            }
-            &:hover{
-                opacity: 1;
-            }
+    
+        #berryface-container,
+        #netboost-container,
+        #stolen-bikes-container,
+        #syn-key-container,
+        #ipmp-container,
+        #comrade-cafe-container {
+            position: relative;
         }
     }
-
-    #berryface-container,
-    #netboost-container,
-    #stolen-bikes-container,
-    #syn-key-container,
-    #ipmp-container,
-    #comrade-cafe-container {
-        position: relative;
+    
+    .blur-img {
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+        // border-radius: 55px !important;
+        transform: scale(1.15);
     }
-}
-
-.blur-img {
-    -webkit-filter: blur(10px);
-    filter: blur(10px);
-    // border-radius: 55px !important;
-    transform: scale(1.15);
-}
-
-.remove-border-snc{
-    border: 1px solid white !important;
+    
+    .remove-border-snc{
+        border: 1px solid white !important;
+    }
 }
