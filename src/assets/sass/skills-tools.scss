@@ -1,6 +1,20 @@
 #skills-and-tools-wrapper{
     max-width: 90%;
     margin: 0 auto;
+
+    #skills-and-tools-heading-text{
+        width: 276px;
+        padding-left: 15px;
+        margin-bottom: 15vh
+    }
+    
+    #skills-and-tools__svg_underline{
+        position: absolute;
+        top: 2931px;  
+        left: -5px;
+        width: 356px;
+    }
+
     #icon-container{
         height: 500px;
         display: grid;

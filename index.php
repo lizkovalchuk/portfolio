@@ -94,12 +94,14 @@
 			<span id="portfolio-data-page">   </span>
 			<section id="portfolio_section">				
 				<div class="portfolio-wrapper">	
+					<div id="portfolio__div-h2-wrapper">
 						<h2 id="portfolio-block">Portfolio</h2>				
-						<svg id="portfolio__svg_underline">
-							<g fill="none">
-								<path stroke="black" d="M5 20 l600 0" pathLength=""/>
-							</g>
-						</svg>
+					</div>
+					<svg id="portfolio__svg_underline">
+						<g fill="none">
+							<path stroke="black" d="M5 20 l600 0" pathLength=""/>
+						</g>
+					</svg>
 
 					<div id="berryface-container" class="port-piece-container">
 						<div id="berryface-port-piece-img">
@@ -141,7 +143,7 @@
 
 					<div id="comrade-cafe-container" class="port-piece-container">
 						<div id="cc-port-piece-img">
-							<img src="src/assets/images/portfolio-pieces/cc.png" id="cc-pic" alt="picture of comrade cafe project">
+							<img src="src/assets/images/portfolio-pieces/st.png" id="cc-pic" alt="picture of comrade cafe project">
 						</div>
 						<div id="cc-port-piece-text">
 							<h3>Giftcards</h3>
@@ -182,6 +184,9 @@
 
 
 
+					
+					
+					
 					<div id="syn-key-container" class="port-piece-container">
 						<div id="snc-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/snc.png" id="snc-pic" alt="picture of synthesia keyboard project">
@@ -194,19 +199,19 @@
 							<a href="https://github.com/lizkovalchuk/CSS-animation" target="_blank" class="port-view-GH">View GitHub Code</a>
 						</div>
 					</div>
-
-
-
 				</div>
 			</section>
 		
 			<!-- SKILLS AND TOOLS SECTION -->
 
 			<span id="skills-and-tools-data-page"></span>
-			<section id="skills-and-tools-wrapper">
-				<div class="port-content">
-					<h2 id="skills-and-tools-heading-text">Skills and Tools</h2>
-				</div>
+			<section id="skills-and-tools-wrapper">				
+				<h2 id="skills-and-tools-heading-text">Skills and Tools</h2>
+				<svg id="skills-and-tools__svg_underline">
+					<g fill="none">
+						<path stroke="black" d="M5 20 l2000 0" pathLength=""/>
+					</g>
+				</svg>				
 
 				<div id="icon-container">			
 					<div class="tool-icon-div row-1" id="item-1">

@@ -49,8 +49,7 @@ header{
             .header-nav-link {
                 display: inline-block;
                 color: #000;
-                text-decoration: none;
-                // color: #3C3D3C;
+                text-decoration: none;                
                 line-height: 30px;
                 margin-top: -5px;
             }
@@ -68,14 +67,8 @@ header{
         }
         #menu--mobile{
             button .hamburger-box .hamburger-inner{
-                font-size: 40px;
-                background: linear-gradient(to right, rgb(66, 160, 139) , #7987F9 );
-                &::before{
-                    background: linear-gradient(to right, rgb(66, 160, 139) , #7987F9 );
-                }
-                &:after{
-                    background: linear-gradient(to right, rgb(66, 160, 139) , #7987F9 );
-                }
+                font-size: 40px;                
+                background-color: black;
             }
             @media screen and (min-width: $custom-md){
                 display: none;
@@ -166,7 +159,7 @@ header{
                 grid-row: 7 /span 8;
             }            
             @media screen and (max-width: $xs){
-                grid-row: 8 /span 8;
+                grid-row: 8 /span 7;
             }
         }
         #banner__section--welcome-text{

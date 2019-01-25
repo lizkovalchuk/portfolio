@@ -54,11 +54,7 @@ header #header__section--toprow {
     width: 100%; }
   header #header__section--toprow #menu--mobile button .hamburger-box .hamburger-inner {
     font-size: 40px;
-    background: linear-gradient(to right, #42a08b, #7987F9); }
-    header #header__section--toprow #menu--mobile button .hamburger-box .hamburger-inner::before {
-      background: linear-gradient(to right, #42a08b, #7987F9); }
-    header #header__section--toprow #menu--mobile button .hamburger-box .hamburger-inner:after {
-      background: linear-gradient(to right, #42a08b, #7987F9); }
+    background-color: black; }
   @media screen and (min-width: 900px) {
     header #header__section--toprow #menu--mobile {
       display: none; } }
@@ -132,7 +128,7 @@ header #banner__div--container {
         grid-row: 7 /span 8; } }
     @media screen and (max-width: 500px) {
       header #banner__div--container #banner__div--orange-square {
-        grid-row: 8 /span 8; } }
+        grid-row: 8 /span 7; } }
   header #banner__div--container #banner__section--welcome-text {
     grid-column-start: 3;
     grid-column-end: 23;
@@ -201,40 +197,42 @@ header #header__svg_underline {
   50% {
     transform: translateY(-20px); } }
 
-#portfolio_section h2 {
-  width: 200px;
-  padding-left: 15px; }
-
-#portfolio_section #portfolio__svg_underline {
-  position: absolute; }
-
-#portfolio_section #portfolio-data-page {
-  min-height: 70px;
-  display: block; }
-
-#portfolio_section .port-heading-text {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 25px 0; }
-
-#portfolio_section .portfolio-wrapper {
-  display: flex;
-  grid-template-rows: 35px;
-  grid-row-gap: 20px;
-  max-width: 90%;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  position: relative;
-  justify-content: space-between;
-  margin-top: 50px; }
-  @media screen and (max-width: 1200px) {
-    #portfolio_section .portfolio-wrapper {
-      justify-content: space-between; } }
-  @media screen and (max-width: 992px) {
-    #portfolio_section .portfolio-wrapper {
-      justify-content: space-evenly; } }
-  #portfolio_section .portfolio-wrapper .port-piece-container {
-    padding-bottom: 30px; }
+#portfolio_section {
+  margin-bottom: 16vh; }
+  #portfolio_section #portfolio__div-h2-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #F5FD4D; }
+    #portfolio_section #portfolio__div-h2-wrapper h2 {
+      width: 155px;
+      padding-left: 15px; }
+  #portfolio_section #portfolio__svg_underline {
+    position: absolute;
+    top: 1431px;
+    left: -5px;
+    width: 235px; }
+  #portfolio_section #portfolio-data-page {
+    min-height: 70px;
+    display: block; }
+  #portfolio_section .port-heading-text {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 25px 0; }
+  #portfolio_section .portfolio-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+    max-width: 90%;
+    margin: 0 auto;
+    grid-column-gap: 35px;
+    margin-top: 50px; }
+    @media screen and (max-width: 1200px) {
+      #portfolio_section .portfolio-wrapper {
+        justify-content: space-between; } }
+    @media screen and (max-width: 992px) {
+      #portfolio_section .portfolio-wrapper {
+        grid-template-columns: 1fr;
+        justify-content: space-evenly; } }
     #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-img,
     #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img,
     #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img,
@@ -386,21 +384,19 @@ header #header__svg_underline {
       #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-text:hover,
       #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text:hover {
         opacity: 1; }
-  #portfolio_section .portfolio-wrapper #berryface-container,
-  #portfolio_section .portfolio-wrapper #netboost-container,
-  #portfolio_section .portfolio-wrapper #stolen-bikes-container,
-  #portfolio_section .portfolio-wrapper #syn-key-container,
-  #portfolio_section .portfolio-wrapper #ipmp-container,
-  #portfolio_section .portfolio-wrapper #comrade-cafe-container {
-    position: relative; }
-
-#portfolio_section .blur-img {
-  -webkit-filter: blur(10px);
-  filter: blur(10px);
-  transform: scale(1.15); }
-
-#portfolio_section .remove-border-snc {
-  border: 1px solid white !important; }
+    #portfolio_section .portfolio-wrapper #berryface-container,
+    #portfolio_section .portfolio-wrapper #netboost-container,
+    #portfolio_section .portfolio-wrapper #stolen-bikes-container,
+    #portfolio_section .portfolio-wrapper #syn-key-container,
+    #portfolio_section .portfolio-wrapper #ipmp-container,
+    #portfolio_section .portfolio-wrapper #comrade-cafe-container {
+      position: relative; }
+  #portfolio_section .blur-img {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    transform: scale(1.15); }
+  #portfolio_section .remove-border-snc {
+    border: 1px solid white !important; }
 
 #aboutme__section {
   max-width: 90%;
@@ -414,7 +410,7 @@ header #header__svg_underline {
     padding-left: 15px; }
   #aboutme__section #aboutme__svg_underline {
     position: absolute;
-    top: 734px;
+    top: 727px;
     left: -5px;
     width: 201px; }
     @media screen and (max-width: 1210px) {
@@ -499,6 +495,15 @@ header #header__svg_underline {
 #skills-and-tools-wrapper {
   max-width: 90%;
   margin: 0 auto; }
+  #skills-and-tools-wrapper #skills-and-tools-heading-text {
+    width: 276px;
+    padding-left: 15px;
+    margin-bottom: 15vh; }
+  #skills-and-tools-wrapper #skills-and-tools__svg_underline {
+    position: absolute;
+    top: 2931px;
+    left: -5px;
+    width: 356px; }
   #skills-and-tools-wrapper #icon-container {
     height: 500px;
     display: grid;
@@ -585,13 +590,8 @@ header #header__svg_underline {
   margin: 50px 0; }
   #thank-you-section #thank-you-text {
     font-size: 60px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(211, 211, 211, 0.5);
-    background: linear-gradient(67.5deg, #F5FD4D, rgba(211, 211, 211, 0.4));
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700; }
+    color: black;
+    background-color: #F5FD4D; }
 
 footer {
   display: flex;
@@ -599,7 +599,8 @@ footer {
   font-size: 50px;
   margin-bottom: 40px; }
   footer a i {
-    margin: 0 10px; }
+    margin: 0 10px;
+    color: black; }
     footer a i:hover {
       background: linear-gradient(67.5deg, #F5FD4D, rgba(211, 211, 211, 0.4));
       -webkit-text-stroke-width: 1px;

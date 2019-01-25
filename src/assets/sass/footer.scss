@@ -5,14 +5,18 @@
     justify-content: center;
     margin: 50px 0;
     #thank-you-text{
+        // font-size: 60px;
+        // -webkit-text-stroke-width: 1px;
+        // -webkit-text-stroke-color: rgba(211,211,211, 0.5);
+        // background: linear-gradient(67.5deg, #F5FD4D, rgba(211,211,211, 0.4));
+        // background-clip: border-box;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // font-weight: 700;
+
         font-size: 60px;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(211,211,211, 0.5);
-        background: linear-gradient(67.5deg, #F5FD4D, rgba(211,211,211, 0.4));
-        background-clip: border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 700;
+        color: black;
+        background-color: $yellow;
     }
 }
 footer{
@@ -23,6 +27,7 @@ footer{
     a{
         i{
             margin: 0 10px;
+            color: black;
             &:hover{
                // color: blue;
                background: linear-gradient(67.5deg, #F5FD4D, rgba(211,211,211, 0.4));

@@ -14,7 +14,7 @@
     }
     #aboutme__svg_underline{
         position: absolute;
-        top: 734px;
+        top: 727px;
         left: -5px;
         width: 201px;
         @media screen and (max-width: 1210px) {
@@ -74,7 +74,7 @@
         }
         #aboutme__div--resume{   
             grid-column: 6/ span 1;
-            background-color: #F5FD4D;
+            background-color: $yellow;
             padding: 8px;
             height: 21px;
             margin-top: 35px;

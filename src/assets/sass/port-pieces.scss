@@ -1,11 +1,21 @@
 #portfolio_section{
     // position: relative;
-    h2{
-        width: 200px;
-        padding-left: 15px;
+    margin-bottom: 16vh;
+    #portfolio__div-h2-wrapper{
+        display: flex;
+        align-items: center;
+        // border:  1px solid rgba(60, 61, 60, 0.15);
+        background-color: $yellow;
+        h2{
+            width: 155px;
+            padding-left: 15px;
+        }
     }
     #portfolio__svg_underline{
         position: absolute;
+        top: 1431px;
+        left: -5px;
+        width: 235px;
     }
     #portfolio-data-page{
         min-height: 70px;
@@ -17,25 +27,37 @@
         padding:25px 0;
     }
     .portfolio-wrapper{
-        display: flex;
-        grid-template-rows: 35px;
-        grid-row-gap: 20px;
+        // display: flex;
+        // grid-template-rows: 35px;
+        // grid-row-gap: 20px;
+        // max-width: 90%;
+        // margin: 0 auto;
+        // flex-wrap: wrap;
+        // position: relative;
+        // justify-content: space-between;
+        // margin-top: 50px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 35px;
+        grid-row-gap: 40px;
         max-width: 90%;
         margin: 0 auto;
-        flex-wrap: wrap;
-        position: relative;
-        justify-content: space-between;
+        grid-column-gap: 35px;        
+       // position: relative;
+        // justify-content: space-between;
         margin-top: 50px;
         @media screen and (max-width: $lg) {
             justify-content: space-between;
             // justify-content: space-evenly;
         }
-        @media screen and (max-width: $md) {            
+        @media screen and (max-width: $md) {   
+            grid-template-columns: 1fr;         
             justify-content: space-evenly;
         }
         
         .port-piece-container{
-            padding-bottom: 30px;
+            // padding-bottom: 30px;
             #berryface-port-piece-img,
             #netboost-port-piece-img,
             #sb-port-piece-img,
