@@ -63,12 +63,14 @@
 				</div>
 			</header>
 			<section id="aboutme__section">
-				<h2 id="aboutme__h2">About</h2>
-				<svg id="aboutme__svg_underline">
-					<g fill="none">
-						<path stroke="black" d="M5 20 l600 0" pathLength=""/>
-					</g>
-				</svg>
+				<div>
+					<h2 id="aboutme__h2">About</h2>
+					<svg id="aboutme__svg_underline">
+						<g fill="none">
+							<path stroke="black" d="M5 20 l600 0" pathLength=""/>
+						</g>
+					</svg>
+				</div>
 				<div id="aboutme__div--container">					
 					<h3 id="aboutme__h3">Creating beautiful, clean and highly functional websites.</h3>
 					<div id="aboutme__div--resume">
@@ -96,12 +98,12 @@
 				<div class="portfolio-wrapper">	
 					<div id="portfolio__div-h2-wrapper">
 						<h2 id="portfolio-block">Portfolio</h2>				
+						<svg id="portfolio__svg_underline">
+							<g fill="none">
+								<path stroke="black" d="M5 20 l600 0" pathLength=""/>
+							</g>
+						</svg>
 					</div>
-					<svg id="portfolio__svg_underline">
-						<g fill="none">
-							<path stroke="black" d="M5 20 l600 0" pathLength=""/>
-						</g>
-					</svg>
 
 					<div id="berryface-container" class="port-piece-container">
 						<div id="berryface-port-piece-img">
@@ -141,11 +143,11 @@
 						</div>
 					</div>
 
-					<div id="comrade-cafe-container" class="port-piece-container">
-						<div id="cc-port-piece-img">
+					<div id="symptom-tracker-container" class="port-piece-container">
+						<div id="st-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/st.png" id="cc-pic" alt="picture of comrade cafe project">
 						</div>
-						<div id="cc-port-piece-text">
+						<div id="st-port-piece-text">
 							<h3>Giftcards</h3>
 							<p>An interactive interface for users to custom build giftcards on a restaurant website.</p>
 							<p class="lower-text">Technologies: HTML, CSS and JQuery.</p>

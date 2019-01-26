@@ -115,6 +115,10 @@ $(document).ready(function() {
 		$("#snc-port-piece-img").toggleClass("remove-border-snc");
 	});
 
+	$("#st-port-piece-text").hover(function(){
+		$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
+	});
+
 	$("#ipmp-port-piece-text").hover(function(){
 		$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
 	});

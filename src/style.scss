@@ -16,11 +16,9 @@ body{
         margin: 0 auto;
         border-left: 1px solid black;
         position: relative;
+
         @media screen and (max-width: $custom-lg) {
-            margin-left: 7%;
-        }
-        @media screen and (max-width: $lg) {
-            margin-left: 5%;
+            margin-left: 30px;
         }
     }
     h1, h2, h3, p, a, span, label {

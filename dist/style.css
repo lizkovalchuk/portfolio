@@ -237,6 +237,7 @@ header #header__svg_underline {
     #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img,
     #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img,
     #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-img,
+    #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-img,
     #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-img,
     #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-img {
       height: 355px;
@@ -246,37 +247,46 @@ header #header__svg_underline {
         #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-img,
+        #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-img {
-          height: 275px; } }
+          height: 275px;
+          width: 420px; } }
       @media screen and (max-width: 992px) {
         #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-img,
+        #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-img {
-          height: 470px; } }
+          height: 470px;
+          width: 700px; } }
       @media screen and (max-width: 768px) {
         #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-img,
+        #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-img {
-          height: 270px; } }
+          height: 270px;
+          width: 425px; } }
       @media screen and (max-width: 500px) {
         #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-img,
+        #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-img,
         #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-img {
-          height: 200px; } }
+          height: 200px;
+          width: 275px; } }
       #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-img img,
       #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img img,
       #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img img,
       #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-img img,
+      #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-img img,
       #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-img img,
       #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-img img {
         width: 525px;
@@ -286,6 +296,7 @@ header #header__svg_underline {
           #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-img img,
+          #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-img img {
             height: 275px;
@@ -295,6 +306,7 @@ header #header__svg_underline {
           #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-img img,
+          #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-img img {
             height: 470px;
@@ -304,6 +316,7 @@ header #header__svg_underline {
           #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-img img,
+          #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-img img {
             height: 270px;
@@ -313,6 +326,7 @@ header #header__svg_underline {
           #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-img img,
+          #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-img img,
           #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-img img {
             height: 200px;
@@ -323,6 +337,7 @@ header #header__svg_underline {
     #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text,
     #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-text,
     #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-text,
+    #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-text,
     #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-text,
     #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text {
       position: absolute;
@@ -337,34 +352,41 @@ header #header__svg_underline {
         #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-text,
+        #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text {
-          height: 300px; } }
+          width: 420px;
+          height: 275px; } }
       @media screen and (max-width: 992px) {
         #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-text,
+        #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text {
           height: 470px;
-          width: 100%; } }
+          width: 700px; } }
       @media screen and (max-width: 768px) {
         #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-text,
+        #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text {
-          height: 270px; } }
+          height: 270px;
+          width: 425px; } }
       @media screen and (max-width: 500px) {
         #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-text,
+        #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text {
-          height: 200px; } }
+          height: 200px;
+          width: 275px; } }
       #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-text h3, #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-text p,
       #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text h3,
       #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text p,
@@ -372,6 +394,8 @@ header #header__svg_underline {
       #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-text p,
       #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-text h3,
       #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-text p,
+      #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-text h3,
+      #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-text p,
       #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-text h3,
       #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-text p,
       #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text h3,
@@ -381,6 +405,7 @@ header #header__svg_underline {
       #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text:hover,
       #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-text:hover,
       #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-text:hover,
+      #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-text:hover,
       #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-text:hover,
       #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text:hover {
         opacity: 1; }
@@ -388,6 +413,7 @@ header #header__svg_underline {
     #portfolio_section .portfolio-wrapper #netboost-container,
     #portfolio_section .portfolio-wrapper #stolen-bikes-container,
     #portfolio_section .portfolio-wrapper #syn-key-container,
+    #portfolio_section .portfolio-wrapper #symptom-tracker-container,
     #portfolio_section .portfolio-wrapper #ipmp-container,
     #portfolio_section .portfolio-wrapper #comrade-cafe-container {
       position: relative; }
@@ -402,6 +428,9 @@ header #header__svg_underline {
   max-width: 90%;
   margin: 0 auto;
   height: 500px; }
+  @media screen and (max-width: 1250px) {
+    #aboutme__section {
+      margin-left: 45px; } }
   @media screen and (max-width: 992px) {
     #aboutme__section {
       height: 550px; } }
@@ -412,10 +441,10 @@ header #header__svg_underline {
     position: absolute;
     top: 727px;
     left: -5px;
-    width: 201px; }
-    @media screen and (max-width: 1210px) {
+    width: calc(100% - 1000px); }
+    @media screen and (max-width: 1250px) {
       #aboutme__section #aboutme__svg_underline {
-        left: -65px; } }
+        width: 185px; } }
   #aboutme__section #aboutme__div--container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -616,10 +645,7 @@ body #body__div_page-wrapper {
   position: relative; }
   @media screen and (max-width: 1250px) {
     body #body__div_page-wrapper {
-      margin-left: 7%; } }
-  @media screen and (max-width: 1200px) {
-    body #body__div_page-wrapper {
-      margin-left: 5%; } }
+      margin-left: 30px; } }
 
 body h1, body h2, body h3, body p, body a, body span, body label {
   font-weight: 100;

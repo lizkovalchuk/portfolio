@@ -62,6 +62,7 @@
             #netboost-port-piece-img,
             #sb-port-piece-img,
             #snc-port-piece-img,
+            #st-port-piece-img,
             #ipmp-port-piece-img,
             #cc-port-piece-img
             {
@@ -70,18 +71,21 @@
                 // border-radius: 20px;
                 @media screen and (max-width: $lg) {
                     height: 275px;
+                    width: 420px;
                 }
                 @media screen and (max-width: $md) {
                     height: 470px;
+                    width: 700px;
                 }
                 @media screen and (max-width: $sm) {
                     height: 270px;
+                    width: 425px;
                 }
                 @media screen and (max-width: $xs) {
                     height: 200px;
+                    width: 275px;
                 }
-                img{
-                    // border-radius: 20px;
+                img{                    
                     width: 525px;
                     height: 355px;   
                     @media screen and (max-width: $lg) {
@@ -110,6 +114,7 @@
             #netboost-port-piece-text,
             #sb-port-piece-text,
             #snc-port-piece-text,
+            #st-port-piece-text,
             #ipmp-port-piece-text,
             #cc-port-piece-text
             {
@@ -119,20 +124,22 @@
                 height: 355px;
                 opacity: 0;
                 transition: 0.6s ease;
-                background-color: rgba(95, 94, 94, 0.5);
-                // border-radius: 20px;
+                background-color: rgba(95, 94, 94, 0.5);                
                 @media screen and (max-width: $lg) {
-                    height: 300px;
+                    width: 420px;
+                    height: 275px;
                 }
                 @media screen and (max-width: $md) {
-                    height: 470px;
-                    width: 100%;
+                    height: 470px;                   
+                    width: 700px;
                 }
                 @media screen and (max-width: $sm) {
                     height: 270px;
+                    width: 425px;
                 }
                 @media screen and (max-width: $xs) {
                     height: 200px;
+                    width: 275px;
                 }
                 h3, p {
                     color: white;
@@ -147,6 +154,7 @@
         #netboost-container,
         #stolen-bikes-container,
         #syn-key-container,
+        #symptom-tracker-container,
         #ipmp-container,
         #comrade-cafe-container {
             position: relative;

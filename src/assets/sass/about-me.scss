@@ -2,6 +2,10 @@
     max-width: 90%;
     margin: 0 auto;
     height: 500px;
+
+    @media screen and (max-width: $custom-lg) {
+        margin-left: 45px;
+    }
     
     
     @media screen and (max-width: $md) {
@@ -16,9 +20,11 @@
         position: absolute;
         top: 727px;
         left: -5px;
-        width: 201px;
-        @media screen and (max-width: 1210px) {
-            left: -65px;
+        width: calc(100% - 1000px);
+
+        
+        @media screen and (max-width: $custom-lg) {
+            width: 185px;
         }
     }
     #aboutme__div--container{

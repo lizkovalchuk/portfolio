@@ -1,6 +1,6 @@
 #skills-and-tools-wrapper{
     max-width: 90%;
-    margin: 0 auto;
+    margin: 0 auto;    
 
     #skills-and-tools-heading-text{
         width: 276px;
@@ -20,7 +20,11 @@
         display: grid;
         grid-template-columns: repeat(23, 1fr);
         grid-template-rows: repeat(11, 1fr);
-        grid-row-gap: 5px;
+        grid-row-gap: 5px;          
+
+        @media screen and (max-width: $custom-md){
+                        
+        }
     
         .tool-icon-div {
             // border: solid 1px black;            
