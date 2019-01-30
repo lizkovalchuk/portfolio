@@ -128,7 +128,7 @@ header #banner__div--container {
         grid-row: 7 /span 8; } }
     @media screen and (max-width: 500px) {
       header #banner__div--container #banner__div--orange-square {
-        grid-row: 8 /span 7; } }
+        grid-row: 8 /span 6; } }
   header #banner__div--container #banner__section--welcome-text {
     grid-column-start: 3;
     grid-column-end: 23;
@@ -199,18 +199,21 @@ header #header__svg_underline {
 
 #portfolio_section {
   margin-bottom: 16vh; }
-  #portfolio_section #portfolio__div-h2-wrapper {
-    display: flex;
-    align-items: center;
-    background-color: #F5FD4D; }
-    #portfolio_section #portfolio__div-h2-wrapper h2 {
-      width: 155px;
-      padding-left: 15px; }
+  #portfolio_section #portfolio__div-h2-wrapper h2 {
+    width: 155px;
+    padding-left: 15px;
+    margin-left: 59px; }
   #portfolio_section #portfolio__svg_underline {
     position: absolute;
-    top: 1431px;
+    top: 727px;
     left: -5px;
     width: 235px; }
+    @media screen and (max-width: 768px) {
+      #portfolio_section #portfolio__svg_underline {
+        top: 678px; } }
+    @media screen and (max-width: 500px) {
+      #portfolio_section #portfolio__svg_underline {
+        top: 583px; } }
   #portfolio_section #portfolio-data-page {
     min-height: 70px;
     display: block; }
@@ -417,6 +420,15 @@ header #header__svg_underline {
     #portfolio_section .portfolio-wrapper #ipmp-container,
     #portfolio_section .portfolio-wrapper #comrade-cafe-container {
       position: relative; }
+      @media screen and (max-width: 768px) {
+        #portfolio_section .portfolio-wrapper #berryface-container,
+        #portfolio_section .portfolio-wrapper #netboost-container,
+        #portfolio_section .portfolio-wrapper #stolen-bikes-container,
+        #portfolio_section .portfolio-wrapper #syn-key-container,
+        #portfolio_section .portfolio-wrapper #symptom-tracker-container,
+        #portfolio_section .portfolio-wrapper #ipmp-container,
+        #portfolio_section .portfolio-wrapper #comrade-cafe-container {
+          justify-self: center; } }
   #portfolio_section .blur-img {
     -webkit-filter: blur(10px);
     filter: blur(10px);
@@ -427,24 +439,37 @@ header #header__svg_underline {
 #aboutme__section {
   max-width: 90%;
   margin: 0 auto;
-  height: 500px; }
+  height: 566px; }
   @media screen and (max-width: 1250px) {
     #aboutme__section {
       margin-left: 45px; } }
   @media screen and (max-width: 992px) {
     #aboutme__section {
       height: 550px; } }
+  @media screen and (max-width: 768px) {
+    #aboutme__section {
+      height: 723px; } }
   #aboutme__section h2 {
     width: 120px;
     padding-left: 15px; }
   #aboutme__section #aboutme__svg_underline {
     position: absolute;
-    top: 727px;
+    top: 2082px;
     left: -5px;
     width: calc(100% - 1000px); }
     @media screen and (max-width: 1250px) {
       #aboutme__section #aboutme__svg_underline {
+        top: 1841px;
         width: 185px; } }
+    @media screen and (max-width: 992px) {
+      #aboutme__section #aboutme__svg_underline {
+        top: 4107px; } }
+    @media screen and (max-width: 768px) {
+      #aboutme__section #aboutme__svg_underline {
+        top: 2756px; } }
+    @media screen and (max-width: 500px) {
+      #aboutme__section #aboutme__svg_underline {
+        top: 2193px; } }
   #aboutme__section #aboutme__div--container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -452,6 +477,11 @@ header #header__svg_underline {
     height: 393px; }
     @media screen and (max-width: 992px) {
       #aboutme__section #aboutme__div--container {
+        grid-row-gap: 30px; } }
+    @media screen and (max-width: 650px) {
+      #aboutme__section #aboutme__div--container {
+        grid-template-columns: unset;
+        grid-template-rows: 150px 300px 300px;
         grid-row-gap: 30px; } }
     #aboutme__section #aboutme__div--container #aboutme__h3 {
       grid-column: 1 / span 5; }
@@ -464,27 +494,27 @@ header #header__svg_underline {
       @media screen and (max-width: 992px) {
         #aboutme__section #aboutme__div--container #imagine__div {
           grid-column: 1 /span 3; } }
+      @media screen and (max-width: 768px) {
+        #aboutme__section #aboutme__div--container #imagine__div {
+          max-width: 300px;
+          margin: 0 auto; } }
     #aboutme__section #aboutme__div--container #organize__div {
       grid-column: 3 / span 2; }
       @media screen and (max-width: 992px) {
         #aboutme__section #aboutme__div--container #organize__div {
           grid-column: 4 /span 3;
           grid-row: 2; } }
+      @media screen and (max-width: 768px) {
+        #aboutme__section #aboutme__div--container #organize__div {
+          max-width: 300px;
+          margin: 0 auto; } }
     #aboutme__section #aboutme__div--container #produce__div {
       grid-column: 5 / span 2; }
       @media screen and (max-width: 992px) {
         #aboutme__section #aboutme__div--container #produce__div {
           grid-column: 1 /span 3; } }
-    @media screen and (max-width: 650px) {
-      #aboutme__section #aboutme__div--container {
-        grid-template-columns: unset;
-        grid-template-rows: 300px 300px 300px;
-        grid-row-gap: 30px;
-        height: 1000px; }
-        #aboutme__section #aboutme__div--container #imagine__div,
-        #aboutme__section #aboutme__div--container #organize__div,
+      @media screen and (max-width: 768px) {
         #aboutme__section #aboutme__div--container #produce__div {
-          grid-column: unset;
           max-width: 300px;
           margin: 0 auto; } }
     #aboutme__section #aboutme__div--container #aboutme__div--resume {
@@ -530,9 +560,15 @@ header #header__svg_underline {
     margin-bottom: 15vh; }
   #skills-and-tools-wrapper #skills-and-tools__svg_underline {
     position: absolute;
-    top: 2931px;
+    top: 2682px;
     left: -5px;
     width: 356px; }
+    @media screen and (max-width: 992px) {
+      #skills-and-tools-wrapper #skills-and-tools__svg_underline {
+        top: 3234px; } }
+    @media screen and (max-width: 768px) {
+      #skills-and-tools-wrapper #skills-and-tools__svg_underline {
+        top: 3514px; } }
   #skills-and-tools-wrapper #icon-container {
     height: 500px;
     display: grid;

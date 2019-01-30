@@ -10,9 +10,15 @@
     
     #skills-and-tools__svg_underline{
         position: absolute;
-        top: 2931px;  
+        top: 2682px;        
         left: -5px;
         width: 356px;
+        @media screen and (max-width: $md) {
+            top: 3234px;
+        }
+        @media screen and (max-width: $sm) {
+            top: 3514px;
+        }
     }
 
     #icon-container{

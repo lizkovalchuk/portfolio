@@ -1,7 +1,7 @@
 #aboutme__section{
     max-width: 90%;
     margin: 0 auto;
-    height: 500px;
+    height: 566px;
 
     @media screen and (max-width: $custom-lg) {
         margin-left: 45px;
@@ -12,19 +12,32 @@
         height: 550px;
     }
 
+    @media screen and (max-width: $sm) {
+        height: 723px;
+    }
+
     h2{
         width: 120px;
         padding-left: 15px;
     }
     #aboutme__svg_underline{
         position: absolute;
-        top: 727px;
+        top: 2082px;
         left: -5px;
         width: calc(100% - 1000px);
-
-        
+     
         @media screen and (max-width: $custom-lg) {
+            top: 1841px;
             width: 185px;
+        }
+        @media screen and (max-width: $md) {
+            top: 4107px;
+        }
+        @media screen and (max-width: $sm){
+            top: 2756px;
+        }
+        @media screen and (max-width: $xs){
+            top: 2193px;
         }
     }
     #aboutme__div--container{
@@ -36,6 +49,24 @@
         @media screen and (max-width: $md) {
             grid-row-gap: 30px;
         }
+
+        @media screen and (max-width: $custom-sm) {
+            grid-template-columns: unset;
+            grid-template-rows: 150px 300px 300px;
+            grid-row-gap: 30px;
+          //  height: 1000px;
+            // #imagine__div,
+            // #organize__div,
+            // #produce__div{
+            //   //  grid-column:unset;
+              
+            //     max-width: 300px;
+            //     margin: 0 auto;
+            // }
+        }
+
+
+
 
         #aboutme__h3{
             grid-column: 1 / span 5;
@@ -50,6 +81,10 @@
             @media screen and (max-width: $md) {
                 grid-column: 1 /span 3;
             }
+            @media screen and (max-width: $sm) {
+                max-width: 300px;
+                margin: 0 auto;
+            }
         }
         #organize__div{            
             grid-column: 3 / span 2;
@@ -57,27 +92,23 @@
                 grid-column: 4 /span 3;
                 grid-row: 2;
             }
+            @media screen and (max-width: $sm) {
+                max-width: 300px;
+                margin: 0 auto;
+            }
         }
         #produce__div{            
             grid-column: 5 / span 2;
             @media screen and (max-width: $md) {                
                 grid-column: 1 /span 3;
             }
-        }
-
-        @media screen and (max-width: $custom-sm) {
-            grid-template-columns: unset;
-            grid-template-rows: 300px 300px 300px;
-            grid-row-gap: 30px;
-            height: 1000px;
-            #imagine__div,
-            #organize__div,
-            #produce__div{
-                grid-column:unset;
+            @media screen and (max-width: $sm) {
                 max-width: 300px;
                 margin: 0 auto;
             }
         }
+
+
         #aboutme__div--resume{   
             grid-column: 6/ span 1;
             background-color: $yellow;

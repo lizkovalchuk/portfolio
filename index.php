@@ -23,8 +23,8 @@
 						<h1 id="header__h1--name">Liz Kovalchuk - Web Developer</h1>
 						<nav id="menu--desktop">
 							<ul id="menu__ul--desktop" >
-								<li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li>
 								<li data-page="portfolio-data-page"><a class="header-nav-link" href="#">Portfolio</a></li>
+								<li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li>
 								<li data-page="skills-and-tools-data-page"><a class="header-nav-link" href="#">Skills & Tools</a></li>
 								<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
 							</ul>
@@ -55,6 +55,7 @@
 					</div>
 					<div id="banner__div--logo-container">				
 						<img src="src/assets/images/logos/with-joshua1.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk">
+						<!-- <img src="src/assets/images/logos/logo-jan-26.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk"> -->
 					</div>
 					<div id="banner__div--orange-square"></div>
 				</div>
@@ -62,48 +63,21 @@
 					<i class="fal fa-chevron-down" id="banner__i--downward-arrow" data-page="portfolio-block" ></i>			
 				</div>
 			</header>
-			<section id="aboutme__section">
-				<div>
-					<h2 id="aboutme__h2">About</h2>
-					<svg id="aboutme__svg_underline">
-						<g fill="none">
-							<path stroke="black" d="M5 20 l600 0" pathLength=""/>
-						</g>
-					</svg>
-				</div>
-				<div id="aboutme__div--container">					
-					<h3 id="aboutme__h3">Creating beautiful, clean and highly functional websites.</h3>
-					<div id="aboutme__div--resume">
-						<a href="src/assets/resume.pdf" target="_blank">View Resume</a>
-					</div>					
-					<div class="aboutme__div--items" id="imagine__div">
-						<h3>Imagine</h3>
-						<p>Great user experience for both frontend websites and backend applications start with great imagination.</p>
-					</div>
-					<div class="aboutme__div--items" id="organize__div">
-						<h3>Organize</h3>
-						<p>My meticulous attention to detail make for a smooth transition when transforming a vision into tangible results.</p>
-					</div>
-					<div class="aboutme__div--items" id="produce__div">
-						<h3>Produce</h3>
-						<p>Coding with complete concentration takes place after prototypes and specs are crystal clear.</p>
-					</div>
-				</div>
-			</section>
+
 
 			<!-- PORTFOLIO BLOCK -->
 
 			<span id="portfolio-data-page">   </span>
 			<section id="portfolio_section">				
+				<div id="portfolio__div-h2-wrapper">
+					<h2 id="portfolio-block">Portfolio</h2>				
+					<svg id="portfolio__svg_underline">
+						<g fill="none">
+							<path stroke="black" d="M5 20 l600 0" pathLength=""/>
+						</g>
+					</svg>
+				</div>
 				<div class="portfolio-wrapper">	
-					<div id="portfolio__div-h2-wrapper">
-						<h2 id="portfolio-block">Portfolio</h2>				
-						<svg id="portfolio__svg_underline">
-							<g fill="none">
-								<path stroke="black" d="M5 20 l600 0" pathLength=""/>
-							</g>
-						</svg>
-					</div>
 
 					<div id="berryface-container" class="port-piece-container">
 						<div id="berryface-port-piece-img">
@@ -189,7 +163,7 @@
 					
 					
 					
-					<div id="syn-key-container" class="port-piece-container">
+					<!-- <div id="syn-key-container" class="port-piece-container">
 						<div id="snc-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/snc.png" id="snc-pic" alt="picture of synthesia keyboard project">
 						</div>
@@ -200,6 +174,36 @@
 							<a href="http://seenotecolours.tk/" target="_blank" class="port-view-live">View Live</a>
 							<a href="https://github.com/lizkovalchuk/CSS-animation" target="_blank" class="port-view-GH">View GitHub Code</a>
 						</div>
+					</div> -->
+				</div>
+			</section>
+
+
+			<section id="aboutme__section">
+				<div>
+					<h2 id="aboutme__h2">About</h2>
+					<svg id="aboutme__svg_underline">
+						<g fill="none">
+							<path stroke="black" d="M5 20 l600 0" pathLength=""/>
+						</g>
+					</svg>
+				</div>
+				<div id="aboutme__div--container">					
+					<h3 id="aboutme__h3">Creating beautiful, clean and highly functional websites.</h3>
+					<div id="aboutme__div--resume">
+						<a href="src/assets/resume.pdf" target="_blank">View Resume</a>
+					</div>					
+					<div class="aboutme__div--items" id="imagine__div">
+						<h3>Imagine</h3>
+						<p>Great user experience for both frontend websites and backend applications start with great imagination.</p>
+					</div>
+					<div class="aboutme__div--items" id="organize__div">
+						<h3>Organize</h3>
+						<p>My meticulous attention to detail make for a smooth transition when transforming a vision into tangible results.</p>
+					</div>
+					<div class="aboutme__div--items" id="produce__div">
+						<h3>Produce</h3>
+						<p>Coding with complete concentration takes place after prototypes and specs are crystal clear.</p>
 					</div>
 				</div>
 			</section>
