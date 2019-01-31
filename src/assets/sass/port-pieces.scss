@@ -12,6 +12,9 @@
         top: 727px;
         left: -5px;
         width: 235px;
+        @media screen and (max-width: $md ){
+            top: 877px
+        }
         @media screen and (max-width: $sm ){
             top: 678px;
         }
@@ -144,7 +147,7 @@
         #ipmp-container,
         #comrade-cafe-container {
             position: relative;
-            @media screen and (max-width: $sm){
+            @media screen and (max-width: $md){
                 justify-self: center;
             }
         }

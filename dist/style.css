@@ -208,6 +208,9 @@ header #header__svg_underline {
     top: 727px;
     left: -5px;
     width: 235px; }
+    @media screen and (max-width: 992px) {
+      #portfolio_section #portfolio__svg_underline {
+        top: 877px; } }
     @media screen and (max-width: 768px) {
       #portfolio_section #portfolio__svg_underline {
         top: 678px; } }
@@ -420,7 +423,7 @@ header #header__svg_underline {
     #portfolio_section .portfolio-wrapper #ipmp-container,
     #portfolio_section .portfolio-wrapper #comrade-cafe-container {
       position: relative; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 992px) {
         #portfolio_section .portfolio-wrapper #berryface-container,
         #portfolio_section .portfolio-wrapper #netboost-container,
         #portfolio_section .portfolio-wrapper #stolen-bikes-container,
@@ -454,22 +457,29 @@ header #header__svg_underline {
     padding-left: 15px; }
   #aboutme__section #aboutme__svg_underline {
     position: absolute;
-    top: 2082px;
+    top: 2128px;
     left: -5px;
     width: calc(100% - 1000px); }
     @media screen and (max-width: 1250px) {
       #aboutme__section #aboutme__svg_underline {
-        top: 1841px;
+        top: 2126px;
+        width: 185px; } }
+    @media screen and (max-width: 1200px) {
+      #aboutme__section #aboutme__svg_underline {
+        top: 1886px;
         width: 185px; } }
     @media screen and (max-width: 992px) {
       #aboutme__section #aboutme__svg_underline {
-        top: 4107px; } }
+        top: 4151px; } }
     @media screen and (max-width: 768px) {
       #aboutme__section #aboutme__svg_underline {
-        top: 2756px; } }
+        top: 2801px; } }
+    @media screen and (max-width: 550px) {
+      #aboutme__section #aboutme__svg_underline {
+        top: 2753px; } }
     @media screen and (max-width: 500px) {
       #aboutme__section #aboutme__svg_underline {
-        top: 2193px; } }
+        top: 2236px; } }
   #aboutme__section #aboutme__div--container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -554,6 +564,9 @@ header #header__svg_underline {
 #skills-and-tools-wrapper {
   max-width: 90%;
   margin: 0 auto; }
+  @media screen and (max-width: 1250px) {
+    #skills-and-tools-wrapper {
+      margin-left: 45px; } }
   #skills-and-tools-wrapper #skills-and-tools-heading-text {
     width: 276px;
     padding-left: 15px;
@@ -562,10 +575,15 @@ header #header__svg_underline {
     position: absolute;
     top: 2682px;
     left: -5px;
-    width: 356px; }
+    width: calc(100% - 849px); }
+    @media screen and (max-width: 1200px) {
+      #skills-and-tools-wrapper #skills-and-tools__svg_underline {
+        top: 2440px;
+        width: 343px; } }
     @media screen and (max-width: 992px) {
       #skills-and-tools-wrapper #skills-and-tools__svg_underline {
-        top: 3234px; } }
+        top: 4689px;
+        width: 343px; } }
     @media screen and (max-width: 768px) {
       #skills-and-tools-wrapper #skills-and-tools__svg_underline {
         top: 3514px; } }

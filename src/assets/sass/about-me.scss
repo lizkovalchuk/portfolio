@@ -22,22 +22,29 @@
     }
     #aboutme__svg_underline{
         position: absolute;
-        top: 2082px;
+        top: 2128px;
         left: -5px;
         width: calc(100% - 1000px);
      
         @media screen and (max-width: $custom-lg) {
-            top: 1841px;
+            top: 2126px;
+            width: 185px;
+        }
+        @media screen and (max-width: $lg) {
+            top: 1886px;
             width: 185px;
         }
         @media screen and (max-width: $md) {
-            top: 4107px;
+            top: 4151px;
         }
-        @media screen and (max-width: $sm){
-            top: 2756px;
+        @media screen and (max-width: $sm){            
+            top: 2801px;
+        }
+        @media screen and (max-width: $custom-xs){
+            top: 2753px;
         }
         @media screen and (max-width: $xs){
-            top: 2193px;
+            top: 2236px;
         }
     }
     #aboutme__div--container{

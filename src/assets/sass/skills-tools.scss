@@ -2,6 +2,10 @@
     max-width: 90%;
     margin: 0 auto;    
 
+    @media screen and (max-width: $custom-lg) {
+    margin-left: 45px;
+    }
+
     #skills-and-tools-heading-text{
         width: 276px;
         padding-left: 15px;
@@ -12,9 +16,14 @@
         position: absolute;
         top: 2682px;        
         left: -5px;
-        width: 356px;
+        width: calc(100% - 849px);
+        @media screen and (max-width: $lg) {
+            top: 2440px;            
+            width: 343px;
+        }
         @media screen and (max-width: $md) {
-            top: 3234px;
+            top: 4689px;
+            width: 343px;
         }
         @media screen and (max-width: $sm) {
             top: 3514px;
