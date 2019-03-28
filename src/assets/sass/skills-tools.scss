@@ -14,16 +14,24 @@
     
     #skills-and-tools__svg_underline{
         position: absolute;
-        top: 2682px;        
+        top: 2725px;        
         left: -5px;
-        width: calc(100% - 849px);
-        @media screen and (max-width: $lg) {
-            top: 2440px;            
+        width: calc(100% - 843px);
+        @media screen and (max-width: $custom-lg) {
+         //   top: 2440px;            
             width: 343px;
         }
+        @media screen and (max-width: $lg) {
+            top: 2485px;            
+         //   width: 343px;
+        }
         @media screen and (max-width: $md) {
-            top: 4689px;
-            width: 343px;
+            top: 4783px;
+         //   width: 343px;
+        }
+        @media screen and (max-width: $custom-md) {
+            top: 4836px;
+         //   width: 343px;
         }
         @media screen and (max-width: $sm) {
             top: 3514px;

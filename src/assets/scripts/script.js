@@ -13,23 +13,23 @@
 
 function scrollToDiv($div_name){
 	$("html, body").delay(300).animate({
-    	scrollTop: $($div_name).offset().top
-  	}, 500);
+			scrollTop: $($div_name).offset().top
+		}, 500);
 }
 
 $(document).on('click', '#header__section--toprow ul li', function() {
-    var page = $(this).attr("data-page");
-  	scrollToDiv('#'+ page);
+		var page = $(this).attr("data-page");
+		scrollToDiv('#'+ page);
 });
 
 $(document).on('click', '#dw-arrow', function() {
-  	var page = $(this).attr("data-page");
+		var page = $(this).attr("data-page");
 	scrollToDiv('#'+ page);
 });
 
 $(document).on('click', '#header__section--toprow #menu__ul--mobile li', function() {
-    var page = $(this).attr("data-page");
-  	scrollToDiv('#'+ page);
+		var page = $(this).attr("data-page");
+		scrollToDiv('#'+ page);
 });
 
 //=========== 2. Mailer functioanlity===========//
@@ -39,31 +39,31 @@ $(document).ready(function (){
 });
 
 function button_mail_click(){
-  	var email = $('#email').val();
-  	var name = $('#name').val();
-  	var message = $('#messagebox').val();
+		var email = $('#email').val();
+		var name = $('#name').val();
+		var message = $('#messagebox').val();
 
-  	$.ajax({
-    	url:'../mailer.php',
-    	type: 'POST',
-    	data:{
-      		name:name,
-      		email:email,
-      		message:message
-    	},
-    		error:function (){alert("didnt work");},
-    		success: function(){
-      		alert("Thank you for your message!");
+		$.ajax({
+			url:'../mailer.php',
+			type: 'POST',
+			data:{
+					name:name,
+					email:email,
+					message:message
+			},
+				error:function (){alert("didnt work");},
+				success: function(){
+					alert("Thank you for your message!");
 
-      //grab the form feilds and make the 
-      //make the value an empty string.
+			//grab the form feilds and make the 
+			//make the value an empty string.
 
-      	$('#email').val() = "";
-      	$('#name').val() = "";
-      	$('#messagebox').val() = "";
+				$('#email').val() = "";
+				$('#name').val() = "";
+				$('#messagebox').val() = "";
 
-    	}
-  	});
+			}
+		});
 }
 
 //=========== 3. Welome Text =============//
@@ -73,15 +73,12 @@ $(document).ready(function(){
 });
 
 function animateText(label_name, text, timer){
-	//setTimeout(alert("4 seconds"),4000);
 	t = 0;
 	text = text;
 	var milisecondPerFrame = Math.ceil(timer * 500 / text.length);
 	console.log(milisecondPerFrame);
 	for (var i = 0; i < text.length; i++) 
-	{
-		//console.log(text.substring(0,i+1));
-		//$("#"+label_name).html(text.substring(0,i+1));
+	{		
 		setTimeout(textFrame, i*milisecondPerFrame, text.substring(0, i + 1));
 	}
 };
@@ -95,37 +92,46 @@ function textFrame(text)
 
 $(document).ready(function() {
 
-	$("#berryface-port-piece-text").hover(function(){
-		$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
-	});
+	function myFunction(x) {
+		if (x.matches) { 
+			$("#berryface-port-piece-text").hover(function(){
+				$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
+			});
+	
+			$("#netboost-port-piece-text").hover(function(){
+				$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
+			});
+	
+			$("#sb-port-piece-text").hover(function(){
+				$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
+			});
+	
+			$("#snc-port-piece-text").hover(function(){
+				$(".port-piece-container #snc-port-piece-img img").toggleClass("blur-img");
+			});
+	
+			$("#snc-port-piece-text").hover(function(){
+				$("#snc-port-piece-img").toggleClass("remove-border-snc");
+			});
+	
+			$("#st-port-piece-text").hover(function(){
+				$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
+			});
+	
+			$("#ipmp-port-piece-text").hover(function(){
+				$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
+			});
+	
+			$("#cc-port-piece-text").hover(function(){
+				$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
+			});
+		} 
+	}
 
-	$("#netboost-port-piece-text").hover(function(){
-		$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
-	});
+	var x = window.matchMedia("(min-width: 500px)")
+	myFunction(x) // Call listener function at run time
+	x.addListener(myFunction)
 
-	$("#sb-port-piece-text").hover(function(){
-		$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
-	});
-
-	$("#snc-port-piece-text").hover(function(){
-		$(".port-piece-container #snc-port-piece-img img").toggleClass("blur-img");
-	});
-
-	$("#snc-port-piece-text").hover(function(){
-		$("#snc-port-piece-img").toggleClass("remove-border-snc");
-	});
-
-	$("#st-port-piece-text").hover(function(){
-		$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
-	});
-
-	$("#ipmp-port-piece-text").hover(function(){
-		$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
-	});
-
-	$("#cc-port-piece-text").hover(function(){
-		$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
-	});
 });
 
 //=========== 5. Hamburger ===========//
@@ -134,7 +140,7 @@ $(document).ready(function() {
 	var $hamburger = $(".hamburger");
 	var $mobile__ul = $("#menu__ul--mobile");
 	$hamburger.on("click", function(e) {
-	  $hamburger.toggleClass("is-active");
-	  $mobile__ul.toggleClass("mobile-menu-view");
+		$hamburger.toggleClass("is-active");
+		$mobile__ul.toggleClass("mobile-menu-view");
 	});
 });

@@ -83,12 +83,14 @@
 						<div id="berryface-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/bf.png" alt="picture of berryface project">
 						</div>
-						<div id="berryface-port-piece-text">
-							<h3>Netboost.ca</h3>
-							<p>Database Driven website project management feature that displays percantage and duration of milestone completion.</p>
-							<p class="lower-text">Technologies: HTML, CSS, JavaScript, PHP, MySQL, Google Charts API</p>
-							<a href="http://netboost.ca/" target="_blank" class="port-view-live">View Live</a>
-							<a href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								
+						<div class="portfolio__div--port-piece-text-container" id="berryface-port-piece-text">
+							<h3>BerryFace</h3>
+							<p>BerryFace is an interface that connects to a raspberry pi via an API to show the current temperature and humidity.</p>
+							<p class="lower-text">Technologies: React, Python, Django and MariaDB</p>
+							<div class="portfolio__div--links-container">
+								<a class="portfolio__links" href="http://netboost.ca/" target="_blank" class="port-view-live">View Live</a>
+								<a class="portfolio__links" href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								
+							</div>
 						</div>
 					</div>
 
@@ -96,24 +98,28 @@
 						<div id="sb-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/sb.png" alt="pitcure of stolen bikes project">
 						</div>
-						<div id="sb-port-piece-text">
+						<div class="portfolio__div--port-piece-text-container" id="sb-port-piece-text">
 							<h3>Stolen Bikes</h3>
 							<p>A web application intergrating two different APIs to help users plan bicycle trips far from reported bike thiefs.</p>
 							<p class="lower-text">Technologies: HTML, CSS and JQuery, Google Maps API and Bike Index API V3.</p>
-							<a href="http://stolenbikes.tk/" target="_blank" class="port-view-live">View Live</a>
-							<a href="https://github.com/lizkovalchuk/API-project" target="_blank" class="port-view-GH">View GitHub Code</a>
+							<div class="portfolio__div--links-container">
+								<a class="portfolio__links" href="https://github.com/lizkovalchuk/API-project" target="_blank" class="port-view-GH">View GitHub Code</a>
+								<a class="portfolio__links" href="http://stolenbikes.tk/" target="_blank" class="port-view-live">View Live</a>
+							</div>
 						</div>
 					</div>
 					<div id="netboost-container" class="port-piece-container">
 						<div id="netboost-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/nb.png" alt="picture of netboost project">
 						</div>
-						<div id="netboost-port-piece-text">
+						<div class="portfolio__div--port-piece-text-container" id="netboost-port-piece-text">
 							<h3>Netboost.ca</h3>
 							<p>Database Driven website project management feature that displays percantage and duration of milestone completion.</p>
 							<p class="lower-text">Technologies: HTML, CSS, JavaScript, PHP, MySQL, Google Charts API</p>
-							<a href="http://netboost.ca/" target="_blank" class="port-view-live">View Live</a>
-							<a href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								
+							<div class="portfolio__div--links-container">
+								<a class="portfolio__links" href="http://netboost.ca/" target="_blank" class="port-view-live">View Live</a>
+								<a class="portfolio__links" href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								
+							</div>
 						</div>
 					</div>
 
@@ -121,28 +127,28 @@
 						<div id="st-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/st.png" id="cc-pic" alt="picture of comrade cafe project">
 						</div>
-						<div id="st-port-piece-text">
+						<div class="portfolio__div--port-piece-text-container" id="st-port-piece-text">
 							<h3>Giftcards</h3>
 							<p>An interactive interface for users to custom build giftcards on a restaurant website.</p>
 							<p class="lower-text">Technologies: HTML, CSS and JQuery.</p>
-							<a href="http://comradecafe.tk" target="_blank" class="port-view-live">View Live</a>
-							<a href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank" class="port-view-GH">View GitHub Code</a>
+							<div class="portfolio__div--links-container">
+								<a class="portfolio__links" href="http://comradecafe.tk" target="_blank" class="port-view-live">View Live</a>
+								<a class="portfolio__links" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank" class="port-view-GH">View GitHub Code</a>
+							</div>
 						</div>
 					</div>
-
-
-
-
 					<div id="ipmp-container" class="port-piece-container">
 						<div id="ipmp-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/ipmp.png" alt="picture of IPMP project">
 						</div>
-						<div id="ipmp-port-piece-text">
+						<div class="portfolio__div--port-piece-text-container" id="ipmp-port-piece-text">
 							<h3>International Project Management Alumni Network</h3>
 							<p>Database Driven website project management feature that displays percantage and duration of milestone completion.</p>
 							<p class="lower-text">Technologies: HTML, CSS, JavaScript, PHP, MySQL, Google Charts API</p>
-							<a href="http://netboost.ca/" target="_blank" class="port-view-live">View Live</a>
-							<a href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								
+							<div class="portfolio__div--links-container">
+								<a class="portfolio__links" href="http://netboost.ca/" target="_blank" class="port-view-live">View Live</a>
+								<a class="portfolio__links" href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								
+							</div>
 						</div>
 					</div>
 					<div id="comrade-cafe-container" class="port-piece-container">
@@ -150,19 +156,18 @@
 							<img src="src/assets/images/portfolio-pieces/cc.png" id="cc-pic" alt="picture of comrade cafe project">
 						</div>
 						<div id="cc-port-piece-text">
-							<h3>Giftcards</h3>
-							<p>An interactive interface for users to custom build giftcards on a restaurant website.</p>
-							<p class="lower-text">Technologies: HTML, CSS and JQuery.</p>
-							<a href="http://comradecafe.tk" target="_blank" class="port-view-live">View Live</a>
-							<a href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank" class="port-view-GH">View GitHub Code</a>
+							<div class="portfolio__div--port-piece-text-container">								
+								<h3>Giftcards</h3>
+								<p>An interactive interface for users to custom build giftcards on a restaurant website.</p>
+								<p class="lower-text">Technologies: HTML, CSS and JQuery.</p>
+								<div class="portfolio__div--links-container">
+									<a class="portfolio__links" href="http://comradecafe.tk" target="_blank" class="port-view-live">View Live</a>
+									<a class="portfolio__links" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank" class="port-view-GH">View GitHub Code</a>
+								</div>
+							</div>
 						</div>
 					</div>
 
-
-
-					
-					
-					
 					<!-- <div id="syn-key-container" class="port-piece-container">
 						<div id="snc-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/snc.png" id="snc-pic" alt="picture of synthesia keyboard project">

@@ -9,7 +9,6 @@ header{
     }
     #header__section--toprow{
         width: 100%;
-        // margin-left: 3%;
         position: fixed;
         background-color: white;
         z-index: 99;
@@ -89,8 +88,7 @@ header{
         }
     }
 
-    .mobile-menu-view{
-        // display: block !important;
+    .mobile-menu-view{    
         position: absolute;
         left: 0;
         top: 38px !important;
@@ -118,48 +116,49 @@ header{
         grid-template-rows: repeat(16, 1fr);
         height: 550px;
         position: relative;
-        @media screen and (max-width: $md){
-            // height: 650px;
+        @media screen and (max-width: $md){            
             height: 700px;
+            grid-template-rows: repeat(25, 1fr);
         }
-        // @media screen and (max-width: $custom-md){
-        //     height: 650px;
-        // }
         @media screen and (max-width: $sm){
-            height: 550px;
+            height: 600px;
         }
         @media screen and (max-width: $custom-xs){
             height: 500px;
         }
-        @media screen and (max-width: $xs){
-            height: 405px;
-        }
+        // @media screen and (max-width: $xs){
+        //     height: 405px;
+        // }
         #banner__div--orange-square{
-            // background: linear-gradient(67.5deg, #7987F9, #24F2C7);
-            // background: linear-gradient(67.5deg, #F5FD4D, rgba(211,211,211, 1));
-            // background: linear-gradient(67.5deg, #F5FD4D, rgba(255,255,255,0.4));
-            background-color: #F5FD4D;
+            background-color: $yellow;
             grid-column: 25 / span 22;
             grid-row: 6 / span 10;
-            z-index: -1;            
+            z-index: -1;   
+            @media screen and (max-width: $large-md){
+                grid-column: 25 / span 20;
+                grid-row: 6 / span 8;
+            }         
             @media screen and (max-width: $md){
                 grid-column: 13 / span 25;
-                grid-row: 6 /span 9;
+                grid-row: 7 /span 15;
             }
             @media screen and (max-width: $custom-md){
-                grid-row: 5 /span 9;
+                grid-row: 7 /span 14;
             }
-            @media screen and (max-width: $sm){
-                grid-row: 6 /span 10;
+            @media screen and (max-width: $small-md){
+                grid-row: 7 /span 13;
+            }
+            @media screen and (max-width: $large-sm){
+                grid-row: 8 /span 13;
             }
             @media screen and (max-width: $custom-sm){
-                grid-row: 7 /span 9;
+                grid-row: 10 /span 9;
             }
             @media screen and (max-width: $custom-xs){
-                grid-row: 7 /span 8;
+                grid-row: 9 /span 12;
             }            
             @media screen and (max-width: $xs){
-                grid-row: 8 /span 6;
+                grid-row: 8 /span 9;
             }
         }
         #banner__section--welcome-text{
@@ -171,10 +170,10 @@ header{
             @media screen and (max-width: $md){
                 grid-column: 1 /span 49;
                 text-align: center;
-                grid-row-start: 16;
+                grid-row-start: 25;
             }
             @media screen and (max-width: $xs){
-                grid-row-start: 17
+                grid-row-start: 20;
             }
         }
             #banner__label--welcome-text-1{
@@ -207,6 +206,9 @@ header{
         display: flex;
         justify-content: center;
         margin-top: 65px;
+        @media screen and (max-width: $xs) {
+            margin-top: -60px;
+        }
         #banner__i--downward-arrow{
             font-size: 50px;
             color: black;
@@ -216,19 +218,24 @@ header{
     #banner__div--logo-container{
         grid-column: 15 / span 39;
         grid-row: 3 / span 10;
-        @media screen and (max-width: $md) {
-            grid-column: 8 / span 32;
-            grid-row: 4 / span 10;
-        }
-        @media screen and (max-width: $sm) {
-            grid-row: 5 / span 10;
-        }
-        @media screen and (max-width: $custom-sm) {
+        @media screen and (max-width: $large-md) {
+            grid-column: 21 / span 25;
             grid-row: 6 / span 10;
         }
-        @media screen and (max-width: $xs) {
-            grid-row: 7 / span 10;
+        @media screen and (max-width: $md) {
+            grid-column: 8 / span 32;
+          //  grid-row: 4 / span 10;
+
         }
+        @media screen and (max-width: $sm) {
+            grid-row: 8 / span 10;
+        }
+        // @media screen and (max-width: $custom-sm) {
+        //     grid-row: 6 / span 10;
+        // }
+        // @media screen and (max-width: $xs) {
+        //     grid-row: 8 / span 10;
+        // }
         #banner__img--logo-white{
             max-width: 100%;
             @media screen and (max-width: $xs) {

@@ -9,11 +9,15 @@
     
     
     @media screen and (max-width: $md) {
-        height: 550px;
+        height: 600px;
+    }
+
+    @media screen and (max-width: $custom-md) {
+        height: 650px;
     }
 
     @media screen and (max-width: $sm) {
-        height: 723px;
+        height: 1723px;
     }
 
     h2{
@@ -57,19 +61,10 @@
             grid-row-gap: 30px;
         }
 
-        @media screen and (max-width: $custom-sm) {
-            grid-template-columns: unset;
-            grid-template-rows: 150px 300px 300px;
+        @media screen and (max-width: $sm) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 150px 200px 200px 200px;
             grid-row-gap: 30px;
-          //  height: 1000px;
-            // #imagine__div,
-            // #organize__div,
-            // #produce__div{
-            //   //  grid-column:unset;
-              
-            //     max-width: 300px;
-            //     margin: 0 auto;
-            // }
         }
 
 
@@ -81,6 +76,9 @@
                 grid-column: 1 /span 6;
                 margin-bottom: 10px;
             }
+            @media screen and (max-width: $sm) {
+                grid-column: unset;
+            }
         }
 
         #imagine__div{
@@ -89,8 +87,9 @@
                 grid-column: 1 /span 3;
             }
             @media screen and (max-width: $sm) {
-                max-width: 300px;
+                max-width: 450px;
                 margin: 0 auto;
+                grid-column: unset;
             }
         }
         #organize__div{            
@@ -100,7 +99,8 @@
                 grid-row: 2;
             }
             @media screen and (max-width: $sm) {
-                max-width: 300px;
+                grid-column: unset;
+                max-width: 450px;
                 margin: 0 auto;
             }
         }
@@ -110,8 +110,9 @@
                 grid-column: 1 /span 3;
             }
             @media screen and (max-width: $sm) {
-                max-width: 300px;
+                max-width: 450px;
                 margin: 0 auto;
+                grid-column: unset;
             }
         }
 
@@ -145,6 +146,10 @@
             @media screen and (max-width: $md) {
                 grid-column: 5 /span 2;
                 grid-row: 3;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: unset;
+                grid-row: 5;
             }
         }
     }

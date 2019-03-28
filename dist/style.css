@@ -95,40 +95,45 @@ header #banner__div--container {
   position: relative; }
   @media screen and (max-width: 992px) {
     header #banner__div--container {
-      height: 700px; } }
+      height: 700px;
+      grid-template-rows: repeat(25, 1fr); } }
   @media screen and (max-width: 768px) {
     header #banner__div--container {
-      height: 550px; } }
+      height: 600px; } }
   @media screen and (max-width: 550px) {
     header #banner__div--container {
       height: 500px; } }
-  @media screen and (max-width: 500px) {
-    header #banner__div--container {
-      height: 405px; } }
   header #banner__div--container #banner__div--orange-square {
     background-color: #F5FD4D;
     grid-column: 25 / span 22;
     grid-row: 6 / span 10;
     z-index: -1; }
+    @media screen and (max-width: 1100px) {
+      header #banner__div--container #banner__div--orange-square {
+        grid-column: 25 / span 20;
+        grid-row: 6 / span 8; } }
     @media screen and (max-width: 992px) {
       header #banner__div--container #banner__div--orange-square {
         grid-column: 13 / span 25;
-        grid-row: 6 /span 9; } }
+        grid-row: 7 /span 15; } }
     @media screen and (max-width: 900px) {
       header #banner__div--container #banner__div--orange-square {
-        grid-row: 5 /span 9; } }
-    @media screen and (max-width: 768px) {
+        grid-row: 7 /span 14; } }
+    @media screen and (max-width: 850px) {
       header #banner__div--container #banner__div--orange-square {
-        grid-row: 6 /span 10; } }
+        grid-row: 7 /span 13; } }
+    @media screen and (max-width: 700px) {
+      header #banner__div--container #banner__div--orange-square {
+        grid-row: 8 /span 13; } }
     @media screen and (max-width: 650px) {
       header #banner__div--container #banner__div--orange-square {
-        grid-row: 7 /span 9; } }
+        grid-row: 10 /span 9; } }
     @media screen and (max-width: 550px) {
       header #banner__div--container #banner__div--orange-square {
-        grid-row: 7 /span 8; } }
+        grid-row: 9 /span 12; } }
     @media screen and (max-width: 500px) {
       header #banner__div--container #banner__div--orange-square {
-        grid-row: 8 /span 6; } }
+        grid-row: 8 /span 9; } }
   header #banner__div--container #banner__section--welcome-text {
     grid-column-start: 3;
     grid-column-end: 23;
@@ -137,10 +142,10 @@ header #banner__div--container {
       header #banner__div--container #banner__section--welcome-text {
         grid-column: 1 /span 49;
         text-align: center;
-        grid-row-start: 16; } }
+        grid-row-start: 25; } }
     @media screen and (max-width: 500px) {
       header #banner__div--container #banner__section--welcome-text {
-        grid-row-start: 17; } }
+        grid-row-start: 20; } }
   header #banner__div--container #banner__label--welcome-text-1 {
     font-size: 40px;
     color: black;
@@ -164,6 +169,9 @@ header #header__svg_underline {
   display: flex;
   justify-content: center;
   margin-top: 65px; }
+  @media screen and (max-width: 500px) {
+    #banner__div--downward-arrow {
+      margin-top: -60px; } }
   #banner__div--downward-arrow #banner__i--downward-arrow {
     font-size: 50px;
     color: black;
@@ -172,19 +180,16 @@ header #header__svg_underline {
 #banner__div--logo-container {
   grid-column: 15 / span 39;
   grid-row: 3 / span 10; }
+  @media screen and (max-width: 1100px) {
+    #banner__div--logo-container {
+      grid-column: 21 / span 25;
+      grid-row: 6 / span 10; } }
   @media screen and (max-width: 992px) {
     #banner__div--logo-container {
-      grid-column: 8 / span 32;
-      grid-row: 4 / span 10; } }
+      grid-column: 8 / span 32; } }
   @media screen and (max-width: 768px) {
     #banner__div--logo-container {
-      grid-row: 5 / span 10; } }
-  @media screen and (max-width: 650px) {
-    #banner__div--logo-container {
-      grid-row: 6 / span 10; } }
-  @media screen and (max-width: 500px) {
-    #banner__div--logo-container {
-      grid-row: 7 / span 10; } }
+      grid-row: 8 / span 10; } }
   #banner__div--logo-container #banner__img--logo-white {
     max-width: 100%; }
     @media screen and (max-width: 500px) {
@@ -213,10 +218,10 @@ header #header__svg_underline {
         top: 877px; } }
     @media screen and (max-width: 768px) {
       #portfolio_section #portfolio__svg_underline {
-        top: 678px; } }
+        top: 726px; } }
     @media screen and (max-width: 500px) {
       #portfolio_section #portfolio__svg_underline {
-        top: 583px; } }
+        top: 552px; } }
   #portfolio_section #portfolio-data-page {
     min-height: 70px;
     display: block; }
@@ -239,6 +244,47 @@ header #header__svg_underline {
       #portfolio_section .portfolio-wrapper {
         grid-template-columns: 1fr;
         justify-content: space-evenly; } }
+    #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container h3, #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container p {
+      max-width: 85%;
+      margin-left: 5%; }
+      @media screen and (max-width: 1200px) {
+        #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container h3, #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container p {
+          margin: 10px 0;
+          margin-left: 30px; } }
+      @media screen and (max-width: 500px) {
+        #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container h3, #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container p {
+          margin: 10px 0;
+          margin-left: 5px; } }
+    @media screen and (max-width: 1200px) {
+      #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container h3 {
+        margin-top: 30px; } }
+    #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__links {
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white; }
+      #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__links:hover {
+        background-color: white;
+        color: gray;
+        border: 1px solid white; }
+      @media screen and (max-width: 500px) {
+        #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__links {
+          color: black;
+          border: 1px solid black; }
+          #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__links:hover {
+            border: 1px solid gray;
+            background-color: gray;
+            color: white; } }
+    #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container {
+      position: absolute;
+      bottom: 40px;
+      left: 30px;
+      width: 100%; }
+      #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container a:first-child {
+        margin-right: 10px; }
+      @media screen and (max-width: 500px) {
+        #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container {
+          left: 5px; } }
     #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-img,
     #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img,
     #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img,
@@ -352,7 +398,7 @@ header #header__svg_underline {
       height: 355px;
       opacity: 0;
       transition: 0.6s ease;
-      background-color: rgba(95, 94, 94, 0.5); }
+      background-color: rgba(95, 94, 94, 0.75); }
       @media screen and (max-width: 1200px) {
         #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text,
@@ -391,8 +437,11 @@ header #header__svg_underline {
         #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-text,
         #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text {
-          height: 200px;
-          width: 275px; } }
+          height: 275px;
+          width: 275px;
+          position: unset;
+          opacity: 1;
+          background-color: unset; } }
       #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-text h3, #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-text p,
       #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text h3,
       #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text p,
@@ -407,6 +456,21 @@ header #header__svg_underline {
       #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text h3,
       #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text p {
         color: white; }
+        @media screen and (max-width: 500px) {
+          #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-text h3, #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-text p,
+          #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text h3,
+          #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text p,
+          #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-text h3,
+          #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-text p,
+          #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-text h3,
+          #portfolio_section .portfolio-wrapper .port-piece-container #snc-port-piece-text p,
+          #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-text h3,
+          #portfolio_section .portfolio-wrapper .port-piece-container #st-port-piece-text p,
+          #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-text h3,
+          #portfolio_section .portfolio-wrapper .port-piece-container #ipmp-port-piece-text p,
+          #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text h3,
+          #portfolio_section .portfolio-wrapper .port-piece-container #cc-port-piece-text p {
+            color: black; } }
       #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-text:hover,
       #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-text:hover,
       #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-text:hover,
@@ -448,10 +512,13 @@ header #header__svg_underline {
       margin-left: 45px; } }
   @media screen and (max-width: 992px) {
     #aboutme__section {
-      height: 550px; } }
+      height: 600px; } }
+  @media screen and (max-width: 900px) {
+    #aboutme__section {
+      height: 650px; } }
   @media screen and (max-width: 768px) {
     #aboutme__section {
-      height: 723px; } }
+      height: 1723px; } }
   #aboutme__section h2 {
     width: 120px;
     padding-left: 15px; }
@@ -488,10 +555,10 @@ header #header__svg_underline {
     @media screen and (max-width: 992px) {
       #aboutme__section #aboutme__div--container {
         grid-row-gap: 30px; } }
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 768px) {
       #aboutme__section #aboutme__div--container {
-        grid-template-columns: unset;
-        grid-template-rows: 150px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 200px 200px 200px;
         grid-row-gap: 30px; } }
     #aboutme__section #aboutme__div--container #aboutme__h3 {
       grid-column: 1 / span 5; }
@@ -499,6 +566,9 @@ header #header__svg_underline {
         #aboutme__section #aboutme__div--container #aboutme__h3 {
           grid-column: 1 /span 6;
           margin-bottom: 10px; } }
+      @media screen and (max-width: 768px) {
+        #aboutme__section #aboutme__div--container #aboutme__h3 {
+          grid-column: unset; } }
     #aboutme__section #aboutme__div--container #imagine__div {
       grid-column: 1 /span 2; }
       @media screen and (max-width: 992px) {
@@ -506,8 +576,9 @@ header #header__svg_underline {
           grid-column: 1 /span 3; } }
       @media screen and (max-width: 768px) {
         #aboutme__section #aboutme__div--container #imagine__div {
-          max-width: 300px;
-          margin: 0 auto; } }
+          max-width: 450px;
+          margin: 0 auto;
+          grid-column: unset; } }
     #aboutme__section #aboutme__div--container #organize__div {
       grid-column: 3 / span 2; }
       @media screen and (max-width: 992px) {
@@ -516,7 +587,8 @@ header #header__svg_underline {
           grid-row: 2; } }
       @media screen and (max-width: 768px) {
         #aboutme__section #aboutme__div--container #organize__div {
-          max-width: 300px;
+          grid-column: unset;
+          max-width: 450px;
           margin: 0 auto; } }
     #aboutme__section #aboutme__div--container #produce__div {
       grid-column: 5 / span 2; }
@@ -525,8 +597,9 @@ header #header__svg_underline {
           grid-column: 1 /span 3; } }
       @media screen and (max-width: 768px) {
         #aboutme__section #aboutme__div--container #produce__div {
-          max-width: 300px;
-          margin: 0 auto; } }
+          max-width: 450px;
+          margin: 0 auto;
+          grid-column: unset; } }
     #aboutme__section #aboutme__div--container #aboutme__div--resume {
       grid-column: 6/ span 1;
       background-color: #F5FD4D;
@@ -554,6 +627,10 @@ header #header__svg_underline {
         #aboutme__section #aboutme__div--container #aboutme__div--resume {
           grid-column: 5 /span 2;
           grid-row: 3; } }
+      @media screen and (max-width: 768px) {
+        #aboutme__section #aboutme__div--container #aboutme__div--resume {
+          grid-column: unset;
+          grid-row: 5; } }
   #aboutme__section .aboutme__div--items {
     border: 1px solid rgba(60, 61, 60, 0.15);
     height: 100%;
@@ -573,17 +650,21 @@ header #header__svg_underline {
     margin-bottom: 15vh; }
   #skills-and-tools-wrapper #skills-and-tools__svg_underline {
     position: absolute;
-    top: 2682px;
+    top: 2725px;
     left: -5px;
-    width: calc(100% - 849px); }
+    width: calc(100% - 843px); }
+    @media screen and (max-width: 1250px) {
+      #skills-and-tools-wrapper #skills-and-tools__svg_underline {
+        width: 343px; } }
     @media screen and (max-width: 1200px) {
       #skills-and-tools-wrapper #skills-and-tools__svg_underline {
-        top: 2440px;
-        width: 343px; } }
+        top: 2485px; } }
     @media screen and (max-width: 992px) {
       #skills-and-tools-wrapper #skills-and-tools__svg_underline {
-        top: 4689px;
-        width: 343px; } }
+        top: 4783px; } }
+    @media screen and (max-width: 900px) {
+      #skills-and-tools-wrapper #skills-and-tools__svg_underline {
+        top: 4836px; } }
     @media screen and (max-width: 768px) {
       #skills-and-tools-wrapper #skills-and-tools__svg_underline {
         top: 3514px; } }
