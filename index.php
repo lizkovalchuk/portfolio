@@ -142,9 +142,9 @@
 							<img src="src/assets/images/portfolio-pieces/ipmp.png" alt="picture of IPMP project">
 						</div>
 						<div class="portfolio__div--port-piece-text-container" id="ipmp-port-piece-text">
-							<h3>International Project Management Alumni Network</h3>
-							<p>Database Driven website project management feature that displays percantage and duration of milestone completion.</p>
-							<p class="lower-text">Technologies: HTML, CSS, JavaScript, PHP, MySQL, Google Charts API</p>
+							<h3 id="portfolio__h3-ipmp">Humber College - International Project Management Alumni Network</h3>
+							<p>Coded two custom WordPress plugins, one for custom profiles and the other to alter the GeoDirectory Theme style and content.</p>
+							<p class="lower-text">Technologies: WordPress, JQuery, CSS and PHP.</p>
 							<div class="portfolio__div--links-container">
 								<a class="portfolio__links" href="http://netboost.ca/" target="_blank" class="port-view-live">View Live</a>
 								<a class="portfolio__links" href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								

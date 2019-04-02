@@ -5,7 +5,7 @@
 *2. Mailer Functionality
 *3. Welcome Text
 *4. Toggle Class
-*5. Hamburger
+*6. Hamburger
 *********************************************/
 
 
@@ -134,7 +134,27 @@ $(document).ready(function() {
 
 });
 
-//=========== 5. Hamburger ===========//
+
+//=========== 5. IPMP header ===========//
+
+
+$(document).ready(function() {
+
+	function myFunction(x) {
+		if (x.matches) { 
+			$("#portfolio__h3-ipmp").replaceWith("<h3>IPMP Network</h3>");
+		} 
+	}
+
+	var x = window.matchMedia("(max-width: 768px)")
+	myFunction(x) // Call listener function at run time
+	x.addListener(myFunction)
+
+});
+
+
+
+//=========== 6. Hamburger ===========//
 
 $(document).ready(function() {
 	var $hamburger = $(".hamburger");
