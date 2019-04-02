@@ -6,9 +6,9 @@
 		<meta name="description" content="Liz Kovalchuk, a fullstack developer based in Toronto. He does front and back end coding for web and mobile applications to be more interactive.">
 		<link href="src/assets/libs/hamburgers.min.css" rel="stylesheet">
 		<link href="src/assets/libs/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
-		<link rel="shortcut icon" href="images/logo.png" />
+		<link rel="shortcut icon" href="src/assets/images/logos/logo-favicon.png" />
 		<link href="dist/style.css" rel="stylesheet" type="text/css">
-		<link href="//db.onlinewebfonts.com/c/c1abe50701241db4325576abf409ee8c?family=HelveticaWorldW01-Bold" rel="stylesheet">
+		<!-- <link href="//db.onlinewebfonts.com/c/c1abe50701241db4325576abf409ee8c?family=HelveticaWorldW01-Bold" rel="stylesheet"> -->
 		<script
 		src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

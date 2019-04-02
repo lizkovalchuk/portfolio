@@ -128,11 +128,28 @@ $(document).ready(function() {
 		} 
 	}
 
-	var x = window.matchMedia("(min-width: 500px)")
+	var x = window.matchMedia("(max-width: 500px)")
 	myFunction(x) // Call listener function at run time
 	x.addListener(myFunction)
 
 });
+
+// $(window).width(function() {
+// 	$("#log").append("<div>Handler for .resize() called.</div>");
+// });
+
+// document.getElementsByTagName("body")[0].onresize = function(){widthWatcher();};
+
+function widthWatcher(){
+	var w = window.innerWidth;
+	console.log(w);
+}
+
+document.getElementsByTagName("body")[0].onresize = function(){widthWatcher();};
+
+
+
+
 
 
 //=========== 5. IPMP header ===========//
