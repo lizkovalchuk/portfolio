@@ -9,10 +9,11 @@
 		<link rel="shortcut icon" href="src/assets/images/logos/logo-favicon.png" />
 		<link href="dist/style.css" rel="stylesheet" type="text/css">
 		<!-- <link href="//db.onlinewebfonts.com/c/c1abe50701241db4325576abf409ee8c?family=HelveticaWorldW01-Bold" rel="stylesheet"> -->
-		<script
+		<!-- <script
 		src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		crossorigin="anonymous"></script>
+		crossorigin="anonymous"></script> -->
+		<script src="src/assets/libs/jquery-3.3.1.js"></script>
 		<script src="src/assets/scripts/script.js"></script>
 	</head>
 	<body>

@@ -90,65 +90,61 @@ function textFrame(text)
 
 //=========== 4. Toggle Class =============//
 
+
+
+var smallScreen = false;
+
 $(document).ready(function() {
-
-	function myFunction(x) {
-		if (x.matches) { 
-			$("#berryface-port-piece-text").hover(function(){
-				$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
-			});
-	
-			$("#netboost-port-piece-text").hover(function(){
-				$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
-			});
-	
-			$("#sb-port-piece-text").hover(function(){
-				$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
-			});
-	
-			$("#snc-port-piece-text").hover(function(){
-				$(".port-piece-container #snc-port-piece-img img").toggleClass("blur-img");
-			});
-	
-			$("#snc-port-piece-text").hover(function(){
-				$("#snc-port-piece-img").toggleClass("remove-border-snc");
-			});
-	
-			$("#st-port-piece-text").hover(function(){
-				$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
-			});
-	
-			$("#ipmp-port-piece-text").hover(function(){
-				$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
-			});
-	
-			$("#cc-port-piece-text").hover(function(){
-				$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
-			});
-		} 
+    if($(window).width() < 500) {
+		smallScreen = true;
+//		console.log("smallScreen is "+smallScreen);
+    }else{
+//		console.log("smallScreen is "+smallScreen);
+		window.toggleImageBlurClass();
 	}
-
-	var x = window.matchMedia("(max-width: 500px)")
-	myFunction(x) // Call listener function at run time
-	x.addListener(myFunction)
-
 });
 
-// $(window).width(function() {
-// 	$("#log").append("<div>Handler for .resize() called.</div>");
-// });
+$(window).resize(function() {
+    if($(window).width() < 500) {
+		smallScreen = true;
+//		console.log("smallScreen is "+smallScreen + " from resize function");
+    } else if (($(window).width() > 500)) {
+		smallScreen = false;
+		// console.log("smallScreen is "+smallScreen + " from resize function");	
+		// console.log($(window).width());	
+		window.toggleImageBlurClass();
+    }
+});
 
-// document.getElementsByTagName("body")[0].onresize = function(){widthWatcher();};
 
-function widthWatcher(){
-	var w = window.innerWidth;
-	console.log(w);
+
+function toggleImageBlurClass() {
+	if(smallScreen == false) {
+		$("#berryface-port-piece-text").hover(function(){
+			$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
+		});
+	
+		$("#netboost-port-piece-text").hover(function(){
+			$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
+		});
+	
+		$("#sb-port-piece-text").hover(function(){
+			$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
+		});
+	
+		$("#st-port-piece-text").hover(function(){
+			$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
+		});
+	
+		$("#ipmp-port-piece-text").hover(function(){
+			$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
+		});
+	
+		$("#cc-port-piece-text").hover(function(){
+			$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
+		});
+	}
 }
-
-document.getElementsByTagName("body")[0].onresize = function(){widthWatcher();};
-
-
-
 
 
 
@@ -181,3 +177,273 @@ $(document).ready(function() {
 		$mobile__ul.toggleClass("mobile-menu-view");
 	});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// OBSOLETE FOR NOW
+
+
+
+
+/*
+
+
+
+function toggleBlurImageClass(){
+	$("#berryface-port-piece-text").hover(function(){
+		$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
+	});
+
+	$("#netboost-port-piece-text").hover(function(){
+		$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
+	});
+
+	$("#sb-port-piece-text").hover(function(){
+		$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
+	});
+
+	$("#st-port-piece-text").hover(function(){
+		$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
+	});
+
+	$("#ipmp-port-piece-text").hover(function(){
+		$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
+	});
+
+	$("#cc-port-piece-text").hover(function(){
+		$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
+	});
+}
+
+function removeBlurImageClass(){
+	$(".port-piece-container #berryface-port-piece-img img").removeClass("blur-img");
+	$(".port-piece-container #netboost-port-piece-img img").removeClass("blur-img");
+	$(".port-piece-container #sb-port-piece-img img").removeClass("blur-img");
+	$(".port-piece-container #st-port-piece-img img").removeClass("blur-img");
+	$(".port-piece-container #ipmp-port-piece-img img").removeClass("blur-img");
+	$(".port-piece-container #cc-port-piece-img img").removeClass("blur-img");
+}
+
+$(document).ready(function() {
+
+	var widthOnLoad = window.innerWidth;
+	if(widthOnLoad > 500){
+		toggleBlurImageClass();
+	}
+
+	var resizeId;
+	window.addEventListener("resize", function(){
+		clearTimeout(resizeId);
+		resizeId = setTimeout(widthWatcher, 500);
+		
+	});
+
+	function widthWatcher(){
+		var widthOnResize = window.innerWidth;
+		console.log(widthOnResize + " from widthWatcher function");	
+
+		if(widthOnResize > 500){
+			alert("bigger than 500");
+			toggleBlurImageClass();
+		} else if(widthOnResize < 500){
+			alert("smaller than 500");
+			removeBlurImageClass();
+		}
+	}
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// 		$("#berryface-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
+	// 		});
+	
+	// 		$("#netboost-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
+	// 		});
+	
+	// 		$("#sb-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
+	// 		});
+	
+	// 		$("#snc-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #snc-port-piece-img img").toggleClass("blur-img");
+	// 		});
+	
+	// 		$("#snc-port-piece-text").hover(function(){
+	// 			$("#snc-port-piece-img").toggleClass("remove-border-snc");
+	// 		});
+	
+	// 		$("#st-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
+	// 		});
+	
+	// 		$("#ipmp-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
+	// 		});
+	
+	// 		$("#cc-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
+	// 		});
+
+
+
+
+
+
+	/*
+
+
+
+
+	var resizeId;
+	window.addEventListener("resize", function(){
+		clearTimeout(resizeId);
+		resizeId = setTimeout(widthWatcher, 600);
+	});
+
+	function widthWatcher(){
+		var widthOnResize = window.innerWidth;
+		console.log(widthOnResize);		
+		if(widthOnResize > 500){
+			$("#berryface-port-piece-text").mouseover(function(){
+				$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
+			});
+	
+			$("#netboost-port-piece-text").mouseover(function(){
+				$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
+			});
+	
+			$("#sb-port-piece-text").mouseover(function(){
+				$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
+			});
+
+			$("#st-port-piece-text").mouseover(function(){
+				$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
+			});
+	
+			$("#ipmp-port-piece-text").mouseover(function(){
+				$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
+			});
+	
+			$("#cc-port-piece-text").mouseover(function(){
+				$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
+			});
+		} else if(widthOnResize < 500){
+			$("#berryface-port-piece-text").mouseover(function(){
+				$(".port-piece-container #berryface-port-piece-img img").removeClass("blur-img");
+			});
+	
+			$("#netboost-port-piece-text").mouseover(function(){
+				$(".port-piece-container #netboost-port-piece-img img").removeClass("blur-img");
+			});
+	
+			$("#sb-port-piece-text").mouseover(function(){
+				$(".port-piece-container #sb-port-piece-img img").removeClass("blur-img");
+			});
+
+			$("#st-port-piece-text").mouseover(function(){
+				$(".port-piece-container #st-port-piece-img img").removeClass("blur-img");
+			});
+	
+			$("#ipmp-port-piece-text").mouseover(function(){
+				$(".port-piece-container #ipmp-port-piece-img img").removeClass("blur-img");
+			});
+	
+			$("#cc-port-piece-text").mouseover(function(){
+				$(".port-piece-container #cc-port-piece-img img").removeClass("blur-img");
+			});
+		} 
+	}
+
+
+
+
+
+		// function myFunction(x) {
+	// 	if (x.matches) { 
+	// 		$("#berryface-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
+	// 		});
+	
+	// 		$("#netboost-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
+	// 		});
+	
+	// 		$("#sb-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
+	// 		});
+	
+	// 		$("#st-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
+	// 		});
+	
+	// 		$("#ipmp-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
+	// 		});
+	
+	// 		$("#cc-port-piece-text").hover(function(){
+	// 			$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
+	// 		});
+	// 	} 
+	// }
+
+	// var x = window.matchMedia("(min-width: 500px)")
+	// myFunction(x) // Call listener function at run time
+	// x.addListener(myFunction)
+
+
+// $(window).width(function() {
+// 	$("#log").append("<div>Handler for .resize() called.</div>");
+// });
+
+// document.getElementsByTagName("body")[0].onresize = function(){widthWatcher();};
+
+
+
+
+
+	*/
