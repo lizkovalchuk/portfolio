@@ -88,9 +88,9 @@ function textFrame(text)
 	$("#banner__label--welcome-text-1").html(text);
 };
 
-//=========== 4. Toggle Class =============//
+//=========== 4. Toggle Class with JQuery =============//
 
-
+/*
 
 var smallScreen = false;
 
@@ -145,6 +145,246 @@ function toggleImageBlurClass() {
 		});
 	}
 }
+
+*/
+
+
+//=========== 4. Toggle Class with JavaScript =============//
+
+
+
+
+
+
+
+window.addEventListener('load', function() {
+	var smallScreen = false;
+	var widthOnLoad = window.innerWidth;
+	
+	if(widthOnLoad < 500){
+		smallScreen = true;
+	} 
+
+	if(smallScreen == false) {
+		toggleBlurImageClass();
+	}
+})
+
+
+
+// RESIZER
+
+var resizeId;
+window.addEventListener("resize", function(){
+	clearTimeout(resizeId);
+	resizeId = setTimeout(widthWatcher, 500);
+});
+
+function widthWatcher(){
+	var widthOnResize = window.innerWidth;
+	console.log(widthOnResize + " from widthWatcher function");	
+
+	if(widthOnResize > 500){
+		console.log(widthOnResize + " from if inside widthWatcher function");
+		toggleBlurImageClass();
+	} 
+	if(widthOnResize < 500){
+		var berryFaceText = document.querySelector('#berryface-port-piece-text');
+		var berryFaceImg = document.querySelector('.port-piece-container #berryface-port-piece-img img');
+
+		var stolenBikesText = document.querySelector('#sb-port-piece-text');
+		var stolenBikesImg = document.querySelector('.port-piece-container #sb-port-piece-img img');
+
+		var netboostText = document.querySelector('#netboost-port-piece-text');
+		var netboostImg = document.querySelector('.port-piece-container #netboost-port-piece-img img');
+
+		var symptomTrackerText = document.querySelector('#st-port-piece-text');
+		var symptomTrackerImg = document.querySelector('.port-piece-container #st-port-piece-img img');
+
+		var ipmpText = document.querySelector('#ipmp-port-piece-text');
+		var ipmpImg = document.querySelector('.port-piece-container #ipmp-port-piece-img img');
+
+		var ccText = document.querySelector('#cc-port-piece-text');
+		var ccImg = document.querySelector('.port-piece-container #cc-port-piece-img img');
+
+		berryFaceText.onmouseover = noBlurImg;
+		function noBlurImg() {
+			berryFaceImg.classList.remove("blur-img");
+		}
+
+		stolenBikesText.onmouseover = noBlurImg;
+		function noBlurImg() {
+			stolenBikesImg.classList.remove("blur-img");
+		}
+
+		netboostText.onmouseover = noBlurImg;
+		function noBlurImg() {
+			netboostImg.classList.remove("blur-img");
+		}
+
+		symptomTrackerText.onmouseover = noBlurImg;
+		function noBlurImg() {
+			symptomTrackerImg.classList.remove("blur-img");
+		}
+
+		ipmpText.onmouseover = noBlurImg;
+		function noBlurImg() {
+			ipmpImg.classList.remove("blur-img");
+		}
+
+		ccText.onmouseover = noBlurImg;
+		function noBlurImg() {
+			ccImg.classList.remove("blur-img");
+		}
+
+	} // end of if(widthOnResize < 500)
+} // end of widthWatcher function
+
+
+
+function toggleBlurImageClass(){
+	var berryFaceText = document.querySelector('#berryface-port-piece-text');
+	var berryFaceImg = document.querySelector('.port-piece-container #berryface-port-piece-img img');
+
+	var stolenBikesText = document.querySelector('#sb-port-piece-text');
+	var stolenBikesImg = document.querySelector('.port-piece-container #sb-port-piece-img img');
+
+	var netboostText = document.querySelector('#netboost-port-piece-text');
+	var netboostImg = document.querySelector('.port-piece-container #netboost-port-piece-img img');
+
+	var symptomTrackerText = document.querySelector('#st-port-piece-text');
+	var symptomTrackerImg = document.querySelector('.port-piece-container #st-port-piece-img img');
+
+	var ipmpText = document.querySelector('#ipmp-port-piece-text');
+	var ipmpImg = document.querySelector('.port-piece-container #ipmp-port-piece-img img');
+
+	var ccText = document.querySelector('#cc-port-piece-text');
+	var ccImg = document.querySelector('.port-piece-container #cc-port-piece-img img');
+
+	berryFaceText.onmouseover = logMouseOverBerryFace;
+	berryFaceText.onmouseout = logMouseOutBerryFace;
+
+	function logMouseOverBerryFace() {	
+		berryFaceImg.classList.add("blur-img");
+	}
+	function logMouseOutBerryFace() {
+		berryFaceImg.classList.remove("blur-img");
+	}
+
+	stolenBikesText.onmouseover = logMouseOverStolenBikes;
+	stolenBikesText.onmouseout = logMouseOutStolenBikes;
+
+	function logMouseOverStolenBikes() {	
+		stolenBikesImg.classList.add("blur-img");
+	}
+	function logMouseOutStolenBikes() {
+		stolenBikesImg.classList.remove("blur-img");
+	}
+
+	netboostText.onmouseover = logMouseOverNetboost;
+	netboostText.onmouseout = logMouseOutNetboost;
+
+	function logMouseOverNetboost() {	
+		netboostImg.classList.add("blur-img");
+	}
+	function logMouseOutNetboost() {
+		netboostImg.classList.remove("blur-img");
+	}
+
+	symptomTrackerText.onmouseover = logMouseOverSymptomTracker;
+	symptomTrackerText.onmouseout = logMouseOutSymptomTracker;
+
+	function logMouseOverSymptomTracker() {	
+		symptomTrackerImg.classList.add("blur-img");
+	}
+	function logMouseOutSymptomTracker() {
+		symptomTrackerImg.classList.remove("blur-img");
+	}
+
+	ipmpText.onmouseover = logMouseOverIpmp;
+	ipmpText.onmouseout = logMouseOutIpmp;
+
+	function logMouseOverIpmp() {	
+		ipmpImg.classList.add("blur-img");
+	}
+	function logMouseOutIpmp() {
+		ipmpImg.classList.remove("blur-img");
+	}
+
+	ccText.onmouseover = logMouseOverCc;
+	ccText.onmouseout = logMouseOutCc;
+
+	function logMouseOverCc() {	
+		ccImg.classList.add("blur-img");
+	}
+	function logMouseOutCc() {
+		ccImg.classList.remove("blur-img");
+	}
+
+
+} // end of toogleBlurImageClass function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// const p = document.querySelector('p');
+	// p.onmouseover = logMouseOver;
+	// p.onmouseout = logMouseOut;
+	
+	// function logMouseOver() {
+	// 	p.innerHTML = 'MOUSE OVER detected';
+	// }
+	
+	// function logMouseOut() {
+	// 	p.innerHTML = 'MOUSE OUT detected';
+	// }
+
+
+
+
+
+
+
+
+	// $("#berryface-port-piece-text").hover(function(){
+	// 	$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
+	// });
+
+	// $("#netboost-port-piece-text").hover(function(){
+	// 	$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
+	// });
+
+	// $("#sb-port-piece-text").hover(function(){
+	// 	$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
+	// });
+
+	// $("#st-port-piece-text").hover(function(){
+	// 	$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
+	// });
+
+	// $("#ipmp-port-piece-text").hover(function(){
+	// 	$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
+	// });
+
+	// $("#cc-port-piece-text").hover(function(){
+	// 	$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
+	// });
+
+
+
 
 
 
@@ -247,7 +487,6 @@ $(document).ready(function() {
 	window.addEventListener("resize", function(){
 		clearTimeout(resizeId);
 		resizeId = setTimeout(widthWatcher, 500);
-		
 	});
 
 	function widthWatcher(){
@@ -441,6 +680,30 @@ $(document).ready(function() {
 // });
 
 // document.getElementsByTagName("body")[0].onresize = function(){widthWatcher();};
+
+
+
+// document.onload = function(e){ 
+// 	console.log("document.onload"); 
+// }
+
+
+// $(document).ready(function() {
+
+// 	var smallScreen = false;
+// 	var widthOnLoad = window.innerWidth;
+	
+// 	if(widthOnLoad < 500){
+// 		smallScreen = true;
+// 		console.log(widthOnLoad);
+// 	} 
+
+// 	if(smallScreen == false) {
+// 		toggleBlurImageClass();
+// 		console.log(widthOnLoad+ " from if inside document.ready");
+// 	}
+// });
+
 
 
 
