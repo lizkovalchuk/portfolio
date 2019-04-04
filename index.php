@@ -226,76 +226,76 @@
 				</svg>				
 
 				<div id="icon-container">			
-					<div class="tool-icon-div row-1" id="item-1">
+					<div class="tool-icon-div" id="item-1">
 						<img class="tool-icon" src="src/assets/images/tool-icons/html5.svg" alt="html logo">
 						<span id="html-span">HTML</span>
 					</div>
-					<div class="tool-icon-div row-1" id="item-2">
+					<div class="tool-icon-div" id="item-2">
 						<img class="tool-icon" src="src/assets/images/tool-icons/css3.svg" alt="css logo">					
 						<span id="css-span">CSS</span>
 					</div>
-					<div class="tool-icon-div row-1" id="item-3">
+					<div class="tool-icon-div" id="item-3">
 						<img class="tool-icon" src="src/assets/images/tool-icons/sass.svg" alt="git logo">
 						<span id="sass-span">Sass</span>
 					</div>
-					<div class="tool-icon-div row-1" id="item-4">
+					<div class="tool-icon-div" id="item-4">
 					<img class="tool-icon" src="src/assets/images/tool-icons/js.png" alt="javascript logo">					
 						<span id="javascript-span">JavaScript</span>
 					</div>
-					<div class="tool-icon-div row-1" id="item-5">
+					<div class="tool-icon-div" id="item-5">
 						<img class="tool-icon" src="src/assets/images/tool-icons/jquery_logo.svg" alt="jquery logo">					
 						<span id="jquery-span">JQuery</span>
 					</div>
-					<div class="tool-icon-div row-1" id="item-6">
+					<div class="tool-icon-div" id="item-6">
 						<img class="tool-icon" src="src/assets/images/tool-icons/react.svg" alt="git logo">
 						<span id="react-span">React</span>
 					</div>		
 				
-					<div class="tool-icon-div row-2" id="item-7">
+					<div class="tool-icon-div" id="item-7">
 						<img class="tool-icon" src="src/assets/images/tool-icons/angular.png" alt="sql logo">
 						<span id="angular-span">Angular</span>
 					</div>
-					<div class="tool-icon-div row-2" id="item-8">
+					<div class="tool-icon-div" id="item-8">
 						<img class="tool-icon" src="src/assets/images/tool-icons/gulp.svg" alt="sql logo">
 						<span id="gulp-span">Gulp</span>
 					</div>
-					<div class="tool-icon-div row-2" id="item-9">
+					<div class="tool-icon-div" id="item-9">
 					<img class="tool-icon" src="src/assets/images/tool-icons/webpack.png" alt="php logo">										
 						<span id="webpack-span">Webpack</span>
 					</div>
-					<div class="tool-icon-div row-2" id="item-10">
+					<div class="tool-icon-div" id="item-10">
 						<img class="tool-icon" src="src/assets/images/tool-icons/git_branch.svg" alt="github logo" >
 						<span id="git-span">Git</span>
 					</div>
-					<div class="tool-icon-div row-2" id="item-11">
+					<div class="tool-icon-div" id="item-11">
 						<img class="tool-icon" src="src/assets/images/tool-icons/visualstudio.svg" alt="Visual Studio logo">		
 						<span id="vs-span">Visual Studio</span>
 					</div>
-					<div class="tool-icon-div row-2" id="item-12">
+					<div class="tool-icon-div" id="item-12">
 						<img class="tool-icon" id="dotnet-img" src="src/assets/images/tool-icons/dot-net.png" alt="dot net logo">					
 						<span id="dotnet-span">.NET</span>
 					</div>
-					<div class="tool-icon-div row-3" id="item-13">
+					<div class="tool-icon-div" id="item-13">
 						<img class="tool-icon" src="src/assets/images/tool-icons/w3c.svg" alt="git logo">					
 						<span id="wcag-span">WCAG</span>
 					</div>	
-					<div class="tool-icon-div row-3" id="item-14"> 
+					<div class="tool-icon-div" id="item-14"> 
 						<img class="tool-icon" src="src/assets/images/tool-icons/wordpress.png" alt="git logo">					
 						<span id="wordpress-span">WordPress</span>
 					</div>
-					<div class="tool-icon-div row-3" id="item-15">
+					<div class="tool-icon-div" id="item-15">
 						<img class="tool-icon" src="src/assets/images/tool-icons/laravel.png" alt="Visual Studio logo">
 						<span id="laravel-span">Laravel</span>
 					</div>	
-					<div class="tool-icon-div row-3" id="item-16">
+					<div class="tool-icon-div" id="item-16">
 						<img class="tool-icon" src="src/assets/images/tool-icons/php-logo.png" alt="jquery logo">
 						<span id="php-span">PHP</span>
 					</div>	
-					<div class="tool-icon-div row-3" id="item-17">
+					<div class="tool-icon-div" id="item-17">
 						<img class="tool-icon" src="src/assets/images/tool-icons/sql-logo.png" alt="sql logo">					
 						<span id="sql-span">SQL</span>
 					</div>
-					<div class="tool-icon-div row-3" id="item-18">
+					<div class="tool-icon-div" id="item-18">
 						<img class="tool-icon" src="src/assets/images/tool-icons/mvc.png" alt="mvc logo">
 						<span id="mvc-span">MVC</span>
 					</div>

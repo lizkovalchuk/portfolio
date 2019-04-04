@@ -7,17 +7,16 @@
         margin-left: 45px;
     }
     
-    
     @media screen and (max-width: $md) {
-        height: 600px;
-    }
-
-    @media screen and (max-width: $custom-md) {
         height: 650px;
     }
 
+    @media screen and (max-width: $custom-md) {
+        height: 700px;
+    }
+
     @media screen and (max-width: $sm) {
-        height: 1723px;
+        height: 1129px;
     }
 
     h2{
@@ -32,7 +31,7 @@
      
         @media screen and (max-width: $custom-lg) {
             top: 2126px;
-            width: 185px;
+          //  width: 185px;
         }
         @media screen and (max-width: $lg) {
             top: 1886px;
@@ -42,13 +41,13 @@
             top: 4151px;
         }
         @media screen and (max-width: $sm){            
-            top: 2801px;
+            top: 2851px;
         }
         @media screen and (max-width: $custom-xs){
             top: 2753px;
         }
         @media screen and (max-width: $xs){
-            top: 2236px;
+            top: 4038px;
         }
     }
     #aboutme__div--container{
@@ -66,9 +65,6 @@
             grid-template-rows: 150px 200px 200px 200px;
             grid-row-gap: 30px;
         }
-
-
-
 
         #aboutme__h3{
             grid-column: 1 / span 5;

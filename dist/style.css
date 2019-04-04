@@ -218,7 +218,7 @@ header #header__svg_underline {
         top: 877px; } }
     @media screen and (max-width: 768px) {
       #portfolio_section #portfolio__svg_underline {
-        top: 726px; } }
+        top: 777px; } }
     @media screen and (max-width: 500px) {
       #portfolio_section #portfolio__svg_underline {
         top: 552px; } }
@@ -512,13 +512,13 @@ header #header__svg_underline {
       margin-left: 45px; } }
   @media screen and (max-width: 992px) {
     #aboutme__section {
-      height: 600px; } }
+      height: 650px; } }
   @media screen and (max-width: 900px) {
     #aboutme__section {
-      height: 650px; } }
+      height: 700px; } }
   @media screen and (max-width: 768px) {
     #aboutme__section {
-      height: 1723px; } }
+      height: 1129px; } }
   #aboutme__section h2 {
     width: 120px;
     padding-left: 15px; }
@@ -529,8 +529,7 @@ header #header__svg_underline {
     width: calc(100% - 1000px); }
     @media screen and (max-width: 1250px) {
       #aboutme__section #aboutme__svg_underline {
-        top: 2126px;
-        width: 185px; } }
+        top: 2126px; } }
     @media screen and (max-width: 1200px) {
       #aboutme__section #aboutme__svg_underline {
         top: 1886px;
@@ -540,13 +539,13 @@ header #header__svg_underline {
         top: 4151px; } }
     @media screen and (max-width: 768px) {
       #aboutme__section #aboutme__svg_underline {
-        top: 2801px; } }
+        top: 2851px; } }
     @media screen and (max-width: 550px) {
       #aboutme__section #aboutme__svg_underline {
         top: 2753px; } }
     @media screen and (max-width: 500px) {
       #aboutme__section #aboutme__svg_underline {
-        top: 2236px; } }
+        top: 4038px; } }
   #aboutme__section #aboutme__div--container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -640,14 +639,28 @@ header #header__svg_underline {
 
 #skills-and-tools-wrapper {
   max-width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 800px; }
   @media screen and (max-width: 1250px) {
     #skills-and-tools-wrapper {
       margin-left: 45px; } }
+  @media screen and (max-width: 992px) {
+    #skills-and-tools-wrapper {
+      height: 900px; } }
+  @media screen and (max-width: 768px) {
+    #skills-and-tools-wrapper {
+      height: 1050px;
+      margin: 0 auto; } }
+  @media screen and (max-width: 650px) {
+    #skills-and-tools-wrapper {
+      height: 1400px; } }
   #skills-and-tools-wrapper #skills-and-tools-heading-text {
     width: 276px;
     padding-left: 15px;
     margin-bottom: 15vh; }
+    @media screen and (max-width: 768px) {
+      #skills-and-tools-wrapper #skills-and-tools-heading-text {
+        margin-left: 45px; } }
   #skills-and-tools-wrapper #skills-and-tools__svg_underline {
     position: absolute;
     top: 2725px;
@@ -661,10 +674,10 @@ header #header__svg_underline {
         top: 2485px; } }
     @media screen and (max-width: 992px) {
       #skills-and-tools-wrapper #skills-and-tools__svg_underline {
-        top: 4783px; } }
+        top: 4835px; } }
     @media screen and (max-width: 900px) {
       #skills-and-tools-wrapper #skills-and-tools__svg_underline {
-        top: 4836px; } }
+        top: 4884px; } }
     @media screen and (max-width: 768px) {
       #skills-and-tools-wrapper #skills-and-tools__svg_underline {
         top: 3514px; } }
@@ -674,6 +687,21 @@ header #header__svg_underline {
     grid-template-columns: repeat(23, 1fr);
     grid-template-rows: repeat(11, 1fr);
     grid-row-gap: 5px; }
+    @media screen and (max-width: 992px) {
+      #skills-and-tools-wrapper #icon-container {
+        height: 650px;
+        grid-template-columns: repeat(19, 1fr);
+        grid-template-rows: repeat(15, 1fr); } }
+    @media screen and (max-width: 768px) {
+      #skills-and-tools-wrapper #icon-container {
+        height: 800px;
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: repeat(19, 1fr); } }
+    @media screen and (max-width: 650px) {
+      #skills-and-tools-wrapper #icon-container {
+        height: 1200px;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(23, 1fr); } }
     #skills-and-tools-wrapper #icon-container .tool-icon-div {
       display: grid;
       justify-content: center;
@@ -682,43 +710,219 @@ header #header__svg_underline {
       #skills-and-tools-wrapper #icon-container .tool-icon-div .tool-icon {
         width: 55px;
         margin: 0 auto; }
-    #skills-and-tools-wrapper #icon-container .row-1 {
-      grid-row: 1 / span 3; }
-    #skills-and-tools-wrapper #icon-container .row-2 {
-      grid-row: 5 /span 3; }
-    #skills-and-tools-wrapper #icon-container .row-3 {
-      grid-row: 9 / span 3; }
-    #skills-and-tools-wrapper #icon-container #item-1,
-    #skills-and-tools-wrapper #icon-container #item-7,
-    #skills-and-tools-wrapper #icon-container #item-13 {
+    #skills-and-tools-wrapper #icon-container #item-1 {
       grid-column: 1 / span 3; }
-    #skills-and-tools-wrapper #icon-container #item-2,
-    #skills-and-tools-wrapper #icon-container #item-8,
-    #skills-and-tools-wrapper #icon-container #item-14 {
+    #skills-and-tools-wrapper #icon-container #item-2 {
       grid-column: 5 / span 3; }
-    #skills-and-tools-wrapper #icon-container #item-3,
-    #skills-and-tools-wrapper #icon-container #item-9,
-    #skills-and-tools-wrapper #icon-container #item-15 {
+    #skills-and-tools-wrapper #icon-container #item-3 {
       grid-column: 9 / span 3; }
-    #skills-and-tools-wrapper #icon-container #item-4,
-    #skills-and-tools-wrapper #icon-container #item-10,
-    #skills-and-tools-wrapper #icon-container #item-16 {
+    #skills-and-tools-wrapper #icon-container #item-4 {
       grid-column: 13 / span 3; }
-    #skills-and-tools-wrapper #icon-container #item-5,
-    #skills-and-tools-wrapper #icon-container #item-11,
-    #skills-and-tools-wrapper #icon-container #item-17 {
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-4 {
+          grid-column: 1 / span 3;
+          grid-row-start: 5; } }
+    #skills-and-tools-wrapper #icon-container #item-5 {
       grid-column: 17 / span 3; }
-    #skills-and-tools-wrapper #icon-container #item-6,
-    #skills-and-tools-wrapper #icon-container #item-12,
-    #skills-and-tools-wrapper #icon-container #item-18 {
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-5 {
+          grid-column: 1 / span 3;
+          grid-row-start: 5; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-5 {
+          grid-column: 5 / span 3;
+          grid-row-start: 5; } }
+    #skills-and-tools-wrapper #icon-container #item-6 {
       grid-column: 21 / span 3; }
-    #skills-and-tools-wrapper #icon-container #item-7 img,
-    #skills-and-tools-wrapper #icon-container #item-15 img,
-    #skills-and-tools-wrapper #icon-container #item-17 img,
-    #skills-and-tools-wrapper #icon-container #item-18 img {
-      width: 40px; }
-    #skills-and-tools-wrapper #icon-container #item-7 img {
-      margin-top: 10px; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-6 {
+          grid-column: 1 / span 3;
+          grid-row-start: 5; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-6 {
+          grid-column: 5 / span 3; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-6 {
+          grid-column: 9 / span 3; } }
+    #skills-and-tools-wrapper #icon-container #item-7 {
+      grid-column: 1 / span 3;
+      grid-row-start: 5; }
+      #skills-and-tools-wrapper #icon-container #item-7 img {
+        width: 40px; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-7 {
+          grid-column: 5 / span 3;
+          grid-row-start: 5; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-7 {
+          grid-column: 9 / span 3; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-7 {
+          grid-column: 1 / span 3;
+          grid-row-start: 9; } }
+    #skills-and-tools-wrapper #icon-container #item-8 {
+      grid-column: 5 / span 3;
+      grid-row-start: 5; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-8 {
+          grid-column: 9 / span 3;
+          grid-row-start: 5; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-8 {
+          grid-column: 13 / span 3; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-8 {
+          grid-column: 5 / span 3;
+          grid-row-start: 9; } }
+    #skills-and-tools-wrapper #icon-container #item-9 {
+      grid-column: 9 / span 3;
+      grid-row-start: 5; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-9 {
+          grid-column: 13 / span 3;
+          grid-row-start: 5; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-9 {
+          grid-column: 1 / span 3;
+          grid-row-start: 9; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-9 {
+          grid-column: 9 / span 3; } }
+    #skills-and-tools-wrapper #icon-container #item-10 {
+      grid-column: 13 / span 3;
+      grid-row-start: 5; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-10 {
+          grid-column: 17 / span 3;
+          grid-row-start: 5; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-10 {
+          grid-column: 5 / span 3;
+          grid-row-start: 9; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-10 {
+          grid-column: 1 / span 3;
+          grid-row-start: 13; } }
+    #skills-and-tools-wrapper #icon-container #item-11 {
+      grid-column: 17 / span 3;
+      grid-row-start: 5; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-11 {
+          grid-column: 1 / span 3;
+          grid-row-start: 9; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-11 {
+          grid-column: 9 / span 3; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-11 {
+          grid-column: 5 / span 3;
+          grid-row-start: 13; } }
+    #skills-and-tools-wrapper #icon-container #item-12 {
+      grid-column: 21 / span 3;
+      grid-row-start: 5; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-12 {
+          grid-column: 5 / span 3;
+          grid-row-start: 9; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-12 {
+          grid-column: 13 / span 3; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-12 {
+          grid-column: 9 / span 3;
+          grid-row-start: 13; } }
+    #skills-and-tools-wrapper #icon-container #item-13 {
+      grid-column: 1 / span 3;
+      grid-row-start: 9; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-13 {
+          grid-column: 9 / span 3;
+          grid-row-start: 9; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-13 {
+          grid-column: 1 / span 3;
+          grid-row-start: 13; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-13 {
+          grid-row-start: 17; } }
+    #skills-and-tools-wrapper #icon-container #item-14 {
+      grid-column: 5 / span 3;
+      grid-row-start: 9; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-14 {
+          grid-column: 13 / span 3;
+          grid-row-start: 9; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-14 {
+          grid-column: 5 / span 3;
+          grid-row-start: 13; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-14 {
+          grid-column: 5 / span 3;
+          grid-row-start: 17; } }
+    #skills-and-tools-wrapper #icon-container #item-15 {
+      grid-column: 9 / span 3;
+      grid-row-start: 9; }
+      #skills-and-tools-wrapper #icon-container #item-15 img {
+        width: 40px; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-15 {
+          grid-column: 17 / span 3;
+          grid-row-start: 9; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-15 {
+          grid-column: 9 / span 3;
+          grid-row-start: 13; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-15 {
+          grid-row-start: 17; } }
+    #skills-and-tools-wrapper #icon-container #item-16 {
+      grid-column: 13 / span 3;
+      grid-row-start: 9; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-16 {
+          grid-column: 5 / span 3;
+          grid-row-start: 13; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-16 {
+          grid-column: 13 / span 3; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-16 {
+          grid-column: 1 / span 3;
+          grid-row-start: 21; } }
+    #skills-and-tools-wrapper #icon-container #item-17 {
+      grid-column: 17 / span 3;
+      grid-row-start: 9; }
+      #skills-and-tools-wrapper #icon-container #item-17 img {
+        width: 40px; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-17 {
+          grid-column: 9 / span 3;
+          grid-row-start: 13; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-17 {
+          grid-column: 5 / span 3;
+          grid-row-start: 17; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-17 {
+          grid-row-start: 21; } }
+    #skills-and-tools-wrapper #icon-container #item-18 {
+      grid-column: 21 / span 3;
+      grid-row-start: 9; }
+      #skills-and-tools-wrapper #icon-container #item-18 img {
+        width: 40px; }
+      @media screen and (max-width: 992px) {
+        #skills-and-tools-wrapper #icon-container #item-18 {
+          grid-column: 13 / span 3;
+          grid-row-start: 13; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #icon-container #item-18 {
+          grid-column: 9 / span 3;
+          grid-row-start: 17; } }
+      @media screen and (max-width: 650px) {
+        #skills-and-tools-wrapper #icon-container #item-18 {
+          grid-column: 9 / span 3;
+          grid-row-start: 21; } }
 
 .modal {
   display: none;

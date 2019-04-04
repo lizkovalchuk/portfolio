@@ -88,74 +88,8 @@ function textFrame(text)
 	$("#banner__label--welcome-text-1").html(text);
 };
 
-//=========== 4. Toggle Class with JQuery =============//
-
-/*
-
-var smallScreen = false;
-
-$(document).ready(function() {
-    if($(window).width() < 500) {
-		smallScreen = true;
-//		console.log("smallScreen is "+smallScreen);
-    }else{
-//		console.log("smallScreen is "+smallScreen);
-		window.toggleImageBlurClass();
-	}
-});
-
-$(window).resize(function() {
-    if($(window).width() < 500) {
-		smallScreen = true;
-//		console.log("smallScreen is "+smallScreen + " from resize function");
-    } else if (($(window).width() > 500)) {
-		smallScreen = false;
-		// console.log("smallScreen is "+smallScreen + " from resize function");	
-		// console.log($(window).width());	
-		window.toggleImageBlurClass();
-    }
-});
-
-
-
-function toggleImageBlurClass() {
-	if(smallScreen == false) {
-		$("#berryface-port-piece-text").hover(function(){
-			$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
-		});
-	
-		$("#netboost-port-piece-text").hover(function(){
-			$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
-		});
-	
-		$("#sb-port-piece-text").hover(function(){
-			$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
-		});
-	
-		$("#st-port-piece-text").hover(function(){
-			$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
-		});
-	
-		$("#ipmp-port-piece-text").hover(function(){
-			$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
-		});
-	
-		$("#cc-port-piece-text").hover(function(){
-			$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
-		});
-	}
-}
-
-*/
-
 
 //=========== 4. Toggle Class with JavaScript =============//
-
-
-
-
-
-
 
 window.addEventListener('load', function() {
 	var smallScreen = false;
@@ -170,8 +104,6 @@ window.addEventListener('load', function() {
 	}
 })
 
-
-
 // RESIZER
 
 var resizeId;
@@ -182,10 +114,10 @@ window.addEventListener("resize", function(){
 
 function widthWatcher(){
 	var widthOnResize = window.innerWidth;
-	console.log(widthOnResize + " from widthWatcher function");	
+	// console.log(widthOnResize + " from widthWatcher function");	
 
 	if(widthOnResize > 500){
-		console.log(widthOnResize + " from if inside widthWatcher function");
+		// console.log(widthOnResize + " from if inside widthWatcher function");
 		toggleBlurImageClass();
 	} 
 	if(widthOnResize < 500){
@@ -321,69 +253,7 @@ function toggleBlurImageClass(){
 		ccImg.classList.remove("blur-img");
 	}
 
-
 } // end of toogleBlurImageClass function
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// const p = document.querySelector('p');
-	// p.onmouseover = logMouseOver;
-	// p.onmouseout = logMouseOut;
-	
-	// function logMouseOver() {
-	// 	p.innerHTML = 'MOUSE OVER detected';
-	// }
-	
-	// function logMouseOut() {
-	// 	p.innerHTML = 'MOUSE OUT detected';
-	// }
-
-
-
-
-
-
-
-
-	// $("#berryface-port-piece-text").hover(function(){
-	// 	$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
-	// });
-
-	// $("#netboost-port-piece-text").hover(function(){
-	// 	$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
-	// });
-
-	// $("#sb-port-piece-text").hover(function(){
-	// 	$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
-	// });
-
-	// $("#st-port-piece-text").hover(function(){
-	// 	$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
-	// });
-
-	// $("#ipmp-port-piece-text").hover(function(){
-	// 	$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
-	// });
-
-	// $("#cc-port-piece-text").hover(function(){
-	// 	$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
-	// });
-
-
 
 
 
@@ -703,6 +573,69 @@ $(document).ready(function() {
 // 		console.log(widthOnLoad+ " from if inside document.ready");
 // 	}
 // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// const p = document.querySelector('p');
+	// p.onmouseover = logMouseOver;
+	// p.onmouseout = logMouseOut;
+	
+	// function logMouseOver() {
+	// 	p.innerHTML = 'MOUSE OVER detected';
+	// }
+	
+	// function logMouseOut() {
+	// 	p.innerHTML = 'MOUSE OUT detected';
+	// }
+
+
+
+
+
+
+
+
+	// $("#berryface-port-piece-text").hover(function(){
+	// 	$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
+	// });
+
+	// $("#netboost-port-piece-text").hover(function(){
+	// 	$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
+	// });
+
+	// $("#sb-port-piece-text").hover(function(){
+	// 	$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
+	// });
+
+	// $("#st-port-piece-text").hover(function(){
+	// 	$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
+	// });
+
+	// $("#ipmp-port-piece-text").hover(function(){
+	// 	$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
+	// });
+
+	// $("#cc-port-piece-text").hover(function(){
+	// 	$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
+	// });
+
+
 
 
 

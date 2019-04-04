@@ -1,15 +1,29 @@
 #skills-and-tools-wrapper{
     max-width: 90%;
-    margin: 0 auto;    
+    margin: 0 auto;   
+    height: 800px; 
 
     @media screen and (max-width: $custom-lg) {
     margin-left: 45px;
+    }
+    @media screen and (max-width: $md) {
+        height: 900px; 
+    }
+    @media screen and (max-width: $sm) {
+        height: 1050px; 
+        margin: 0 auto;
+    }
+    @media screen and (max-width: $custom-sm) {
+        height: 1400px; 
     }
 
     #skills-and-tools-heading-text{
         width: 276px;
         padding-left: 15px;
-        margin-bottom: 15vh
+        margin-bottom: 15vh;
+        @media screen and (max-width: $sm) {            
+            margin-left: 45px;
+        }
     }
     
     #skills-and-tools__svg_underline{
@@ -17,21 +31,17 @@
         top: 2725px;        
         left: -5px;
         width: calc(100% - 843px);
-        @media screen and (max-width: $custom-lg) {
-         //   top: 2440px;            
+        @media screen and (max-width: $custom-lg) {                  
             width: 343px;
         }
         @media screen and (max-width: $lg) {
-            top: 2485px;            
-         //   width: 343px;
+            top: 2485px;                     
         }
         @media screen and (max-width: $md) {
-            top: 4783px;
-         //   width: 343px;
+            top: 4835px;         
         }
         @media screen and (max-width: $custom-md) {
-            top: 4836px;
-         //   width: 343px;
+            top: 4884px;         
         }
         @media screen and (max-width: $sm) {
             top: 3514px;
@@ -45,12 +55,23 @@
         grid-template-rows: repeat(11, 1fr);
         grid-row-gap: 5px;          
 
-        @media screen and (max-width: $custom-md){
-                        
+        @media screen and (max-width: $md){
+            height: 650px;
+            grid-template-columns: repeat(19, 1fr);
+            grid-template-rows: repeat(15, 1fr);        
+        }
+        @media screen and (max-width: $sm){
+            height: 800px;
+            grid-template-columns: repeat(15, 1fr);
+            grid-template-rows: repeat(19, 1fr);        
+        }
+        @media screen and (max-width: $custom-sm){
+            height: 1200px;
+            grid-template-columns: repeat(11, 1fr);
+            grid-template-rows: repeat(23, 1fr);        
         }
     
-        .tool-icon-div {
-            // border: solid 1px black;            
+        .tool-icon-div {                    
             display: grid;
             justify-content: center;
             text-align: center;
@@ -61,60 +82,253 @@
             }
         }
     
-        .row-1{
-            grid-row: 1 / span 3;
-        }
-        .row-2{
-            grid-row: 5 /span 3;
-        }
-        .row-3{
-            grid-row: 9 / span 3;
-        }
-    
-        #item-1,
-        #item-7,
-        #item-13{
+        // .row-1{
+        //     grid-row: 1 / span 3;
+        // }
+        // .row-2{
+        //     grid-row: 5 /span 3;
+        // }
+        // .row-3{
+        //     grid-row: 9 / span 3;
+        // }
+
+
+ 
+        #item-1{
             grid-column: 1 / span 3;
         }
-        #item-2,
-        #item-8,
-        #item-14{
+        #item-2{
             grid-column: 5 / span 3;
         }
-        #item-3,
-        #item-9,
-        #item-15{
+        #item-3{
             grid-column: 9 / span 3;
         }
-        #item-4,
-        #item-10,
-        #item-16{
+        #item-4{
             grid-column: 13 / span 3;
+            @media screen and (max-width: $custom-sm) { 
+                grid-column: 1 / span 3;               
+                grid-row-start: 5;
+            }
         }
-        #item-5,
-        #item-11,
-        #item-17{
+        #item-5{
             grid-column: 17 / span 3;
+            @media screen and (max-width: $sm) {
+                grid-column: 1 / span 3;
+                grid-row-start: 5;
+            }
+            @media screen and (max-width: $custom-sm) { 
+                grid-column: 5 / span 3;               
+                grid-row-start: 5;
+            }
         }
-        #item-6,
-        #item-12,
-        #item-18{
+        #item-6{
             grid-column: 21 / span 3;
-        }
-
-        #item-7,
-        #item-15,
-        #item-17,
-        #item-18{
-            img{
-                width: 40px;
+            @media screen and (max-width: $md) {
+                grid-column: 1 / span 3;
+                grid-row-start: 5;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 5 / span 3;
+            }
+            @media screen and (max-width: $custom-sm) { 
+                grid-column: 9 / span 3;                               
             }
         }
         #item-7{
+            grid-column: 1 / span 3;
+            grid-row-start: 5;
             img{
-                margin-top: 10px;
+                width: 40px;
+            }
+            @media screen and (max-width: $md) {
+                grid-column: 5 / span 3;
+                grid-row-start: 5;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 9 / span 3;
+            }
+            @media screen and (max-width: $custom-sm) { 
+                grid-column: 1 / span 3; 
+                grid-row-start: 9;                              
             }
         }
-    }
+        #item-8{
+            grid-column: 5 / span 3;
+            grid-row-start: 5;
+            @media screen and (max-width: $md) {
+                grid-column: 9 / span 3;
+                grid-row-start: 5;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 13 / span 3;
+            }
+            @media screen and (max-width: $custom-sm) { 
+                grid-column: 5 / span 3; 
+                grid-row-start: 9;                              
+            }
+        }
+        #item-9{
+            grid-column: 9 / span 3;
+            grid-row-start: 5;
+            @media screen and (max-width: $md) {
+                grid-column: 13 / span 3;
+                grid-row-start: 5;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 1 / span 3;
+                grid-row-start: 9;
+            }
+            @media screen and (max-width: $custom-sm) { 
+                grid-column: 9 / span 3;                                           
+            }
+        }
+        #item-10{
+            grid-column: 13 / span 3;
+            grid-row-start: 5;
+            @media screen and (max-width: $md) {
+                grid-column: 17 / span 3;
+                grid-row-start: 5;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 5 / span 3;
+                grid-row-start: 9;
+            }
+            @media screen and (max-width: $custom-sm) { 
+                grid-column: 1 / span 3;   
+                grid-row-start: 13;                                        
+            }
+        }
+        #item-11{
+            grid-column: 17 / span 3;
+            grid-row-start: 5;
+            @media screen and (max-width: $md) {
+                grid-column: 1 / span 3;
+                grid-row-start: 9;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 9 / span 3;
+            }
+            @media screen and (max-width: $custom-sm) { 
+                grid-column: 5 / span 3;   
+                grid-row-start: 13;                                        
+            }
+        }
+        #item-12{
+            grid-column: 21 / span 3;
+            grid-row-start: 5;
+            @media screen and (max-width: $md) {
+                grid-column: 5 / span 3;
+                grid-row-start: 9;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 13 / span 3;
+            }
+            @media screen and (max-width: $custom-sm) { 
+                grid-column: 9 / span 3;   
+                grid-row-start: 13;                                        
+            }
+        }
+        #item-13{
+            grid-column: 1 / span 3;
+            grid-row-start: 9;
+            @media screen and (max-width: $md) {
+                grid-column: 9 / span 3;
+                grid-row-start: 9;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 1 / span 3;
+                grid-row-start: 13;
+            }
+            @media screen and (max-width: $custom-sm) {                   
+                grid-row-start: 17;                                        
+            }
+        }
+        #item-14{
+            grid-column: 5 / span 3;
+            grid-row-start: 9;
+            @media screen and (max-width: $md) {
+                grid-column: 13 / span 3;
+                grid-row-start: 9;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 5 / span 3;
+                grid-row-start: 13;
+            }
+            @media screen and (max-width: $custom-sm) { 
+                grid-column: 5 / span 3;   
+                grid-row-start: 17;                                        
+            }
+        }
+        #item-15{
+            grid-column: 9 / span 3;
+            grid-row-start: 9;
+            img{
+                width: 40px;
+            }
+            @media screen and (max-width: $md) {
+                grid-column: 17 / span 3;
+                grid-row-start: 9;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 9 / span 3;
+                grid-row-start: 13;
+            }
+            @media screen and (max-width: $custom-sm) {                   
+                grid-row-start: 17;                                        
+            }
+        }
+        #item-16{
+            grid-column: 13 / span 3;
+            grid-row-start: 9;
+            @media screen and (max-width: $md) {
+                grid-column: 5 / span 3;
+                grid-row-start: 13;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 13 / span 3;                
+            }
+            @media screen and (max-width: $custom-sm) { 
+                grid-column: 1 / span 3;   
+                grid-row-start: 21;                                        
+            }
+        }
+        #item-17{
+            grid-column: 17 / span 3;
+            grid-row-start: 9;
+            img{
+                width: 40px;
+            }
+            @media screen and (max-width: $md) {
+                grid-column: 9 / span 3;
+                grid-row-start: 13;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 5 / span 3; 
+                grid-row-start: 17;               
+            }
+            @media screen and (max-width: $custom-sm) {                 
+                grid-row-start: 21;                                        
+            }
+        }
+        #item-18{
+            grid-column: 21 / span 3;
+            grid-row-start: 9;
+            img{
+                width: 40px;
+            }
+            @media screen and (max-width: $md) {
+                grid-column: 13 / span 3;
+                grid-row-start: 13;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: 9 / span 3; 
+                grid-row-start: 17;               
+            }
+            @media screen and (max-width: $custom-sm) { 
+                grid-column: 9 / span 3;   
+                grid-row-start: 21;                                        
+            }
+        }
+    } // end of icon-container
 }
 
