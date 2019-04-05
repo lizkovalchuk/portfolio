@@ -72,11 +72,6 @@
             @media screen and (max-width: $md) {
                 grid-column: 1 /span 3;
             }
-            @media screen and (max-width: $sm) {
-                max-width: 450px;
-                margin: 0 auto;
-                grid-column: unset;
-            }
         }
         #organize__div{            
             grid-column: 3 / span 2;
@@ -84,20 +79,19 @@
                 grid-column: 4 /span 3;
                 grid-row: 2;
             }
-            @media screen and (max-width: $sm) {
-                grid-column: unset;
-                max-width: 450px;
-                margin: 0 auto;
-            }
         }
         #produce__div{            
             grid-column: 5 / span 2;
             @media screen and (max-width: $md) {                
                 grid-column: 1 /span 3;
             }
-            @media screen and (max-width: $sm) {
-                max-width: 450px;
-                margin: 0 auto;
+        }
+
+        #imagine__div,
+        #organize__div,
+        #produce__div{
+            @media screen and (max-width: $sm) {                
+                max-width: 90%;              
                 grid-column: unset;
             }
         }

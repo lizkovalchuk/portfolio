@@ -563,32 +563,23 @@ header #header__svg_underline {
       @media screen and (max-width: 992px) {
         #aboutme__section #aboutme__div--container #imagine__div {
           grid-column: 1 /span 3; } }
-      @media screen and (max-width: 768px) {
-        #aboutme__section #aboutme__div--container #imagine__div {
-          max-width: 450px;
-          margin: 0 auto;
-          grid-column: unset; } }
     #aboutme__section #aboutme__div--container #organize__div {
       grid-column: 3 / span 2; }
       @media screen and (max-width: 992px) {
         #aboutme__section #aboutme__div--container #organize__div {
           grid-column: 4 /span 3;
           grid-row: 2; } }
-      @media screen and (max-width: 768px) {
-        #aboutme__section #aboutme__div--container #organize__div {
-          grid-column: unset;
-          max-width: 450px;
-          margin: 0 auto; } }
     #aboutme__section #aboutme__div--container #produce__div {
       grid-column: 5 / span 2; }
       @media screen and (max-width: 992px) {
         #aboutme__section #aboutme__div--container #produce__div {
           grid-column: 1 /span 3; } }
-      @media screen and (max-width: 768px) {
-        #aboutme__section #aboutme__div--container #produce__div {
-          max-width: 450px;
-          margin: 0 auto;
-          grid-column: unset; } }
+    @media screen and (max-width: 768px) {
+      #aboutme__section #aboutme__div--container #imagine__div,
+      #aboutme__section #aboutme__div--container #organize__div,
+      #aboutme__section #aboutme__div--container #produce__div {
+        max-width: 90%;
+        grid-column: unset; } }
     #aboutme__section #aboutme__div--container #aboutme__div--resume {
       grid-column: 6/ span 1;
       background-color: #F5FD4D;
