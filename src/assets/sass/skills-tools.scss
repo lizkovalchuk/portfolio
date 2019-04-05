@@ -10,8 +10,7 @@
         height: 900px; 
     }
     @media screen and (max-width: $sm) {
-        height: 1050px; 
-        // margin: 0 auto;
+        height: 1050px;         
         margin-left: 30px;
     }
     @media screen and (max-width: $custom-sm) {
@@ -25,6 +24,9 @@
             width: 276px;
             padding-left: 15px;
             margin-bottom: 15vh;
+            @media screen and (max-width: $extra-xs) {                
+                width: 253px;
+            }
         }
         
         #skills-and-tools__svg_underline{
@@ -36,27 +38,13 @@
                 left: -50px;
                 width: 342px;
             }
-            // @media screen and (max-width: $lg) {
-            //     top: 2485px;                     
-            // }
-            // @media screen and (max-width: $md) {
-            //     top: 4835px;         
-            // }
-            // @media screen and (max-width: $custom-md) {
-            //     top: 4884px;         
-            // }
             @media screen and (max-width: $sm) {
-                // left: -41px;
-                // width: 332px;
-                // width: calc(332px - 6px);
-                // left: calc(-36px + 10px);
                 left: -36px;
                 width: 327px;
             }
-            // @media screen and (max-width: $custom-xs){
-            //     left: -23px;
-            //     width: calc(100% - -12px);
-            // }
+            @media screen and (max-width: $extra-xs) {                
+                width: 305px;
+            }
         }
     }
 

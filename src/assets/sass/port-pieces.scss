@@ -18,8 +18,8 @@
         @media screen and (max-width: $sm ){
             top: 777px;
         }
-        @media screen and (max-width: $xs ){
-            // ADD NEW HERE
+        @media screen and (max-width: $custom-xs ){
+            top: 677px;
         }
         @media screen and (max-width: $xs ){
             top: 552px;

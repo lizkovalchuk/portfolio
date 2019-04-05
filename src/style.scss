@@ -20,6 +20,9 @@ body{
         @media screen and (max-width: $custom-lg) {
             margin-left: 30px;
         }
+        @media screen and (max-width: $extra-xs) {
+            margin-left: 6px;
+        }
     }
     h1, h2, h3, p, a, span, label {
         font-weight: 100;

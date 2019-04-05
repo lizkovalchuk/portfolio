@@ -219,6 +219,9 @@ header #header__svg_underline {
     @media screen and (max-width: 768px) {
       #portfolio_section #portfolio__svg_underline {
         top: 777px; } }
+    @media screen and (max-width: 550px) {
+      #portfolio_section #portfolio__svg_underline {
+        top: 677px; } }
     @media screen and (max-width: 500px) {
       #portfolio_section #portfolio__svg_underline {
         top: 552px; } }
@@ -647,6 +650,9 @@ header #header__svg_underline {
       width: 276px;
       padding-left: 15px;
       margin-bottom: 15vh; }
+      @media screen and (max-width: 400px) {
+        #skills-and-tools-wrapper #skills-and-tools--header-svg-container #skills-and-tools-heading-text {
+          width: 253px; } }
     #skills-and-tools-wrapper #skills-and-tools--header-svg-container #skills-and-tools__svg_underline {
       position: absolute;
       top: 28px;
@@ -660,6 +666,9 @@ header #header__svg_underline {
         #skills-and-tools-wrapper #skills-and-tools--header-svg-container #skills-and-tools__svg_underline {
           left: -36px;
           width: 327px; } }
+      @media screen and (max-width: 400px) {
+        #skills-and-tools-wrapper #skills-and-tools--header-svg-container #skills-and-tools__svg_underline {
+          width: 305px; } }
   #skills-and-tools-wrapper #icon-container {
     height: 500px;
     display: grid;
@@ -939,12 +948,26 @@ header #header__svg_underline {
     font-size: 60px;
     color: black;
     background-color: #F5FD4D; }
+    @media screen and (max-width: 500px) {
+      #thank-you-section #thank-you-text {
+        font-size: 45px; } }
+    @media screen and (max-width: 400px) {
+      #thank-you-section #thank-you-text {
+        font-size: 40px; } }
 
 footer {
   display: flex;
   justify-content: center;
   font-size: 50px;
   margin-bottom: 40px; }
+  @media screen and (max-width: 550px) {
+    footer {
+      font-size: 28px; } }
+  @media screen and (max-width: 400px) {
+    footer {
+      font-size: 60px;
+      margin: 0 10px;
+      text-align: center; } }
   footer a i {
     margin: 0 10px;
     color: black; }
@@ -964,6 +987,9 @@ body #body__div_page-wrapper {
   @media screen and (max-width: 1250px) {
     body #body__div_page-wrapper {
       margin-left: 30px; } }
+  @media screen and (max-width: 400px) {
+    body #body__div_page-wrapper {
+      margin-left: 6px; } }
 
 body h1, body h2, body h3, body p, body a, body span, body label {
   font-weight: 100;
