@@ -186,7 +186,7 @@
 
 
 			<section id="aboutme__section">
-				<div>
+				<div id="aboutme__div--header-svg-container">
 					<h2 id="aboutme__h2">About</h2>
 					<svg id="aboutme__svg_underline">
 						<g fill="none">
@@ -217,13 +217,15 @@
 			<!-- SKILLS AND TOOLS SECTION -->
 
 			<span id="skills-and-tools-data-page"></span>
-			<section id="skills-and-tools-wrapper">				
-				<h2 id="skills-and-tools-heading-text">Skills and Tools</h2>
-				<svg id="skills-and-tools__svg_underline">
-					<g fill="none">
-						<path stroke="black" d="M5 20 l2000 0" pathLength=""/>
-					</g>
-				</svg>				
+			<section id="skills-and-tools-wrapper">			
+				<div id="skills-and-tools--header-svg-container">
+					<h2 id="skills-and-tools-heading-text">Skills and Tools</h2>
+					<svg id="skills-and-tools__svg_underline">
+						<g fill="none">
+							<path stroke="black" d="M5 20 l2000 0" pathLength=""/>
+						</g>
+					</svg>				
+				</div>	
 
 				<div id="icon-container">			
 					<div class="tool-icon-div" id="item-1">

@@ -19,37 +19,27 @@
         height: 1129px;
     }
 
-    h2{
-        width: 120px;
-        padding-left: 15px;
-    }
-    #aboutme__svg_underline{
-        position: absolute;
-        top: 2128px;
-        left: -5px;
-        width: calc(100% - 1000px);
-     
-        @media screen and (max-width: $custom-lg) {
-            top: 2126px;
-          //  width: 185px;
+    #aboutme__div--header-svg-container{
+        position: relative;
+        h2{
+            width: 120px;
+            padding-left: 15px;
+            
         }
-        @media screen and (max-width: $lg) {
-            top: 1886px;
-            width: 185px;
-        }
-        @media screen and (max-width: $md) {
-            top: 4151px;
-        }
-        @media screen and (max-width: $sm){            
-            top: 2851px;
-        }
-        @media screen and (max-width: $custom-xs){
-            top: 2753px;
-        }
-        @media screen and (max-width: $xs){
-            top: 4038px;
+        #aboutme__svg_underline{
+            position: absolute;            
+            left: -65px;                                  
+            width: 202px;
+            top: 28px;
+         
+            @media screen and (max-width: $custom-lg) {
+                left: -50px; 
+                width: 185px;
+                
+            }
         }
     }
+
     #aboutme__div--container{
         display: grid;
         grid-template-columns: repeat(6, 1fr);

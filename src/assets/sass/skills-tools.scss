@@ -11,40 +11,52 @@
     }
     @media screen and (max-width: $sm) {
         height: 1050px; 
-        margin: 0 auto;
+        // margin: 0 auto;
+        margin-left: 30px;
     }
     @media screen and (max-width: $custom-sm) {
         height: 1400px; 
     }
 
-    #skills-and-tools-heading-text{
-        width: 276px;
-        padding-left: 15px;
-        margin-bottom: 15vh;
-        @media screen and (max-width: $sm) {            
-            margin-left: 45px;
+
+    #skills-and-tools--header-svg-container{
+        position: relative;
+        #skills-and-tools-heading-text{
+            width: 276px;
+            padding-left: 15px;
+            margin-bottom: 15vh;
         }
-    }
-    
-    #skills-and-tools__svg_underline{
-        position: absolute;
-        top: 2725px;        
-        left: -5px;
-        width: calc(100% - 843px);
-        @media screen and (max-width: $custom-lg) {                  
-            width: 343px;
-        }
-        @media screen and (max-width: $lg) {
-            top: 2485px;                     
-        }
-        @media screen and (max-width: $md) {
-            top: 4835px;         
-        }
-        @media screen and (max-width: $custom-md) {
-            top: 4884px;         
-        }
-        @media screen and (max-width: $sm) {
-            top: 3514px;
+        
+        #skills-and-tools__svg_underline{
+            position: absolute;
+            top: 28px;
+            left: -66px;
+            width: 357px;
+            @media screen and (max-width: $custom-lg) {                  
+                left: -50px;
+                width: 342px;
+            }
+            // @media screen and (max-width: $lg) {
+            //     top: 2485px;                     
+            // }
+            // @media screen and (max-width: $md) {
+            //     top: 4835px;         
+            // }
+            // @media screen and (max-width: $custom-md) {
+            //     top: 4884px;         
+            // }
+            @media screen and (max-width: $sm) {
+                // left: -41px;
+                // width: 332px;
+                // width: calc(332px - 6px);
+                // left: calc(-36px + 10px);
+                left: -36px;
+                width: 327px;
+            }
+            // @media screen and (max-width: $custom-xs){
+            //     left: -23px;
+            //     width: calc(100% - -12px);
+            // }
         }
     }
 

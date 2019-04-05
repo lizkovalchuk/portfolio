@@ -146,7 +146,8 @@ header{
                 grid-row: 7 /span 14;
             }
             @media screen and (max-width: $small-md){
-                grid-row: 7 /span 13;
+                // grid-row: 7 /span 13;
+                grid-row: 9 /span 14;
             }
             @media screen and (max-width: $large-sm){
                 grid-row: 8 /span 13;

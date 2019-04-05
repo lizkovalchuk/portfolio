@@ -121,7 +121,7 @@ header #banner__div--container {
         grid-row: 7 /span 14; } }
     @media screen and (max-width: 850px) {
       header #banner__div--container #banner__div--orange-square {
-        grid-row: 7 /span 13; } }
+        grid-row: 9 /span 14; } }
     @media screen and (max-width: 700px) {
       header #banner__div--container #banner__div--orange-square {
         grid-row: 8 /span 13; } }
@@ -519,33 +519,20 @@ header #header__svg_underline {
   @media screen and (max-width: 768px) {
     #aboutme__section {
       height: 1129px; } }
-  #aboutme__section h2 {
-    width: 120px;
-    padding-left: 15px; }
-  #aboutme__section #aboutme__svg_underline {
-    position: absolute;
-    top: 2128px;
-    left: -5px;
-    width: calc(100% - 1000px); }
-    @media screen and (max-width: 1250px) {
-      #aboutme__section #aboutme__svg_underline {
-        top: 2126px; } }
-    @media screen and (max-width: 1200px) {
-      #aboutme__section #aboutme__svg_underline {
-        top: 1886px;
-        width: 185px; } }
-    @media screen and (max-width: 992px) {
-      #aboutme__section #aboutme__svg_underline {
-        top: 4151px; } }
-    @media screen and (max-width: 768px) {
-      #aboutme__section #aboutme__svg_underline {
-        top: 2851px; } }
-    @media screen and (max-width: 550px) {
-      #aboutme__section #aboutme__svg_underline {
-        top: 2753px; } }
-    @media screen and (max-width: 500px) {
-      #aboutme__section #aboutme__svg_underline {
-        top: 4038px; } }
+  #aboutme__section #aboutme__div--header-svg-container {
+    position: relative; }
+    #aboutme__section #aboutme__div--header-svg-container h2 {
+      width: 120px;
+      padding-left: 15px; }
+    #aboutme__section #aboutme__div--header-svg-container #aboutme__svg_underline {
+      position: absolute;
+      left: -65px;
+      width: 202px;
+      top: 28px; }
+      @media screen and (max-width: 1250px) {
+        #aboutme__section #aboutme__div--header-svg-container #aboutme__svg_underline {
+          left: -50px;
+          width: 185px; } }
   #aboutme__section #aboutme__div--container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -650,37 +637,29 @@ header #header__svg_underline {
   @media screen and (max-width: 768px) {
     #skills-and-tools-wrapper {
       height: 1050px;
-      margin: 0 auto; } }
+      margin-left: 30px; } }
   @media screen and (max-width: 650px) {
     #skills-and-tools-wrapper {
       height: 1400px; } }
-  #skills-and-tools-wrapper #skills-and-tools-heading-text {
-    width: 276px;
-    padding-left: 15px;
-    margin-bottom: 15vh; }
-    @media screen and (max-width: 768px) {
-      #skills-and-tools-wrapper #skills-and-tools-heading-text {
-        margin-left: 45px; } }
-  #skills-and-tools-wrapper #skills-and-tools__svg_underline {
-    position: absolute;
-    top: 2725px;
-    left: -5px;
-    width: calc(100% - 843px); }
-    @media screen and (max-width: 1250px) {
-      #skills-and-tools-wrapper #skills-and-tools__svg_underline {
-        width: 343px; } }
-    @media screen and (max-width: 1200px) {
-      #skills-and-tools-wrapper #skills-and-tools__svg_underline {
-        top: 2485px; } }
-    @media screen and (max-width: 992px) {
-      #skills-and-tools-wrapper #skills-and-tools__svg_underline {
-        top: 4835px; } }
-    @media screen and (max-width: 900px) {
-      #skills-and-tools-wrapper #skills-and-tools__svg_underline {
-        top: 4884px; } }
-    @media screen and (max-width: 768px) {
-      #skills-and-tools-wrapper #skills-and-tools__svg_underline {
-        top: 3514px; } }
+  #skills-and-tools-wrapper #skills-and-tools--header-svg-container {
+    position: relative; }
+    #skills-and-tools-wrapper #skills-and-tools--header-svg-container #skills-and-tools-heading-text {
+      width: 276px;
+      padding-left: 15px;
+      margin-bottom: 15vh; }
+    #skills-and-tools-wrapper #skills-and-tools--header-svg-container #skills-and-tools__svg_underline {
+      position: absolute;
+      top: 28px;
+      left: -66px;
+      width: 357px; }
+      @media screen and (max-width: 1250px) {
+        #skills-and-tools-wrapper #skills-and-tools--header-svg-container #skills-and-tools__svg_underline {
+          left: -50px;
+          width: 342px; } }
+      @media screen and (max-width: 768px) {
+        #skills-and-tools-wrapper #skills-and-tools--header-svg-container #skills-and-tools__svg_underline {
+          left: -36px;
+          width: 327px; } }
   #skills-and-tools-wrapper #icon-container {
     height: 500px;
     display: grid;
