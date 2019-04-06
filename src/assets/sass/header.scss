@@ -22,7 +22,7 @@ header{
             max-width: 1200px;
         }
         #header__h1--name{
-            color: #240F4E;
+            color: black;
             margin: 16px 0;
             margin-left: 4.25%;
         }
@@ -43,6 +43,9 @@ header{
                 }
                 &:last-child{
                     margin-right: 0;
+                }
+                a{
+                    padding: 2px 5px;;
                 }
             }
             .header-nav-link {
@@ -81,8 +84,13 @@ header{
                 transition: 0.5s;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                border-left: 1px solid black;
+                margin-left: 54px;
                 li a{
                     text-decoration: none;
+                    &:visited{
+                        color: black;
+                    }
                 }
             }
         }
@@ -99,8 +107,12 @@ header{
         z-index: 99;
         li{
             padding: 5px 0 0 30px;
+            @media screen and (max-width: $custom-sm){            
+                padding: 5px 0 0 0;
+            }
             a{
                 text-decoration: none;
+                padding: 5px;
             }
         }
         li:nth-child(1), li:nth-child(2){
@@ -116,6 +128,7 @@ header{
         grid-template-rows: repeat(16, 1fr);
         height: 550px;
         position: relative;
+        margin-top: 18px;
         @media screen and (max-width: $md){            
             height: 700px;
             grid-template-rows: repeat(25, 1fr);

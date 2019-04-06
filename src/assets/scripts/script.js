@@ -2,10 +2,12 @@
 *TABLE OF CONTENTS
 *=================
 *1. Scroll to divs
-*2. Mailer Functionality
-*3. Welcome Text
-*4. Toggle Class
-*6. Hamburger
+*2. Contact Form
+*3. Mailer Functionality
+*4. Welcome Text
+*5. Toggle Class
+*6. IPMP header
+*7. Hamburger
 *********************************************/
 
 
@@ -13,26 +15,41 @@
 
 function scrollToDiv($div_name){
 	$("html, body").delay(300).animate({
-			scrollTop: $($div_name).offset().top
-		}, 500);
+		scrollTop: $($div_name).offset().top
+	}, 500);
 }
 
 $(document).on('click', '#header__section--toprow ul li', function() {
-		var page = $(this).attr("data-page");
-		scrollToDiv('#'+ page);
+	var page = $(this).attr("data-page");
+	scrollToDiv('#'+ page);
 });
 
 $(document).on('click', '#dw-arrow', function() {
-		var page = $(this).attr("data-page");
+	var page = $(this).attr("data-page");
 	scrollToDiv('#'+ page);
 });
 
 $(document).on('click', '#header__section--toprow #menu__ul--mobile li', function() {
-		var page = $(this).attr("data-page");
-		scrollToDiv('#'+ page);
+	var page = $(this).attr("data-page");
+	scrollToDiv('#'+ page);
 });
 
-//=========== 2. Mailer functioanlity===========//
+
+
+//=========== 2. Contact Form===========//
+
+$(document).ready(function (){
+	$('#menu__li_desktop-contact-form').click(contactFormModal);
+	$('#menu__li_mobile-contact-form').click(contactFormModal);
+});
+
+function contactFormModal(){
+	
+}
+
+
+
+//=========== 3. Mailer functioanlity===========//
 
 $(document).ready(function (){
 	$('#mail-button').click(button_mail_click);
@@ -66,7 +83,7 @@ function button_mail_click(){
 		});
 }
 
-//=========== 3. Welome Text =============//
+//=========== 4. Welome Text =============//
 
 $(document).ready(function(){
 	setTimeout(animateText,500,"banner__label--welcome-text-1","Designing with code", 2.5);
@@ -89,7 +106,7 @@ function textFrame(text)
 };
 
 
-//=========== 4. Toggle Class with JavaScript =============//
+//=========== 5. Toggle Class with JavaScript =============//
 
 window.addEventListener('load', function() {
 	var smallScreen = false;
@@ -258,7 +275,7 @@ function toggleBlurImageClass(){
 
 
 
-//=========== 5. IPMP header ===========//
+//=========== 6. IPMP header ===========//
 
 
 $(document).ready(function() {
@@ -277,7 +294,7 @@ $(document).ready(function() {
 
 
 
-//=========== 6. Hamburger ===========//
+//=========== 7. Hamburger ===========//
 
 $(document).ready(function() {
 	var $hamburger = $(".hamburger");
@@ -288,358 +305,3 @@ $(document).ready(function() {
 	});
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// OBSOLETE FOR NOW
-
-
-
-
-/*
-
-
-
-function toggleBlurImageClass(){
-	$("#berryface-port-piece-text").hover(function(){
-		$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
-	});
-
-	$("#netboost-port-piece-text").hover(function(){
-		$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
-	});
-
-	$("#sb-port-piece-text").hover(function(){
-		$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
-	});
-
-	$("#st-port-piece-text").hover(function(){
-		$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
-	});
-
-	$("#ipmp-port-piece-text").hover(function(){
-		$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
-	});
-
-	$("#cc-port-piece-text").hover(function(){
-		$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
-	});
-}
-
-function removeBlurImageClass(){
-	$(".port-piece-container #berryface-port-piece-img img").removeClass("blur-img");
-	$(".port-piece-container #netboost-port-piece-img img").removeClass("blur-img");
-	$(".port-piece-container #sb-port-piece-img img").removeClass("blur-img");
-	$(".port-piece-container #st-port-piece-img img").removeClass("blur-img");
-	$(".port-piece-container #ipmp-port-piece-img img").removeClass("blur-img");
-	$(".port-piece-container #cc-port-piece-img img").removeClass("blur-img");
-}
-
-$(document).ready(function() {
-
-	var widthOnLoad = window.innerWidth;
-	if(widthOnLoad > 500){
-		toggleBlurImageClass();
-	}
-
-	var resizeId;
-	window.addEventListener("resize", function(){
-		clearTimeout(resizeId);
-		resizeId = setTimeout(widthWatcher, 500);
-	});
-
-	function widthWatcher(){
-		var widthOnResize = window.innerWidth;
-		console.log(widthOnResize + " from widthWatcher function");	
-
-		if(widthOnResize > 500){
-			alert("bigger than 500");
-			toggleBlurImageClass();
-		} else if(widthOnResize < 500){
-			alert("smaller than 500");
-			removeBlurImageClass();
-		}
-	}
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// 		$("#berryface-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
-	// 		});
-	
-	// 		$("#netboost-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
-	// 		});
-	
-	// 		$("#sb-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
-	// 		});
-	
-	// 		$("#snc-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #snc-port-piece-img img").toggleClass("blur-img");
-	// 		});
-	
-	// 		$("#snc-port-piece-text").hover(function(){
-	// 			$("#snc-port-piece-img").toggleClass("remove-border-snc");
-	// 		});
-	
-	// 		$("#st-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
-	// 		});
-	
-	// 		$("#ipmp-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
-	// 		});
-	
-	// 		$("#cc-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
-	// 		});
-
-
-
-
-
-
-	/*
-
-
-
-
-	var resizeId;
-	window.addEventListener("resize", function(){
-		clearTimeout(resizeId);
-		resizeId = setTimeout(widthWatcher, 600);
-	});
-
-	function widthWatcher(){
-		var widthOnResize = window.innerWidth;
-		console.log(widthOnResize);		
-		if(widthOnResize > 500){
-			$("#berryface-port-piece-text").mouseover(function(){
-				$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
-			});
-	
-			$("#netboost-port-piece-text").mouseover(function(){
-				$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
-			});
-	
-			$("#sb-port-piece-text").mouseover(function(){
-				$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
-			});
-
-			$("#st-port-piece-text").mouseover(function(){
-				$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
-			});
-	
-			$("#ipmp-port-piece-text").mouseover(function(){
-				$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
-			});
-	
-			$("#cc-port-piece-text").mouseover(function(){
-				$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
-			});
-		} else if(widthOnResize < 500){
-			$("#berryface-port-piece-text").mouseover(function(){
-				$(".port-piece-container #berryface-port-piece-img img").removeClass("blur-img");
-			});
-	
-			$("#netboost-port-piece-text").mouseover(function(){
-				$(".port-piece-container #netboost-port-piece-img img").removeClass("blur-img");
-			});
-	
-			$("#sb-port-piece-text").mouseover(function(){
-				$(".port-piece-container #sb-port-piece-img img").removeClass("blur-img");
-			});
-
-			$("#st-port-piece-text").mouseover(function(){
-				$(".port-piece-container #st-port-piece-img img").removeClass("blur-img");
-			});
-	
-			$("#ipmp-port-piece-text").mouseover(function(){
-				$(".port-piece-container #ipmp-port-piece-img img").removeClass("blur-img");
-			});
-	
-			$("#cc-port-piece-text").mouseover(function(){
-				$(".port-piece-container #cc-port-piece-img img").removeClass("blur-img");
-			});
-		} 
-	}
-
-
-
-
-
-		// function myFunction(x) {
-	// 	if (x.matches) { 
-	// 		$("#berryface-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
-	// 		});
-	
-	// 		$("#netboost-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
-	// 		});
-	
-	// 		$("#sb-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
-	// 		});
-	
-	// 		$("#st-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
-	// 		});
-	
-	// 		$("#ipmp-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
-	// 		});
-	
-	// 		$("#cc-port-piece-text").hover(function(){
-	// 			$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
-	// 		});
-	// 	} 
-	// }
-
-	// var x = window.matchMedia("(min-width: 500px)")
-	// myFunction(x) // Call listener function at run time
-	// x.addListener(myFunction)
-
-
-// $(window).width(function() {
-// 	$("#log").append("<div>Handler for .resize() called.</div>");
-// });
-
-// document.getElementsByTagName("body")[0].onresize = function(){widthWatcher();};
-
-
-
-// document.onload = function(e){ 
-// 	console.log("document.onload"); 
-// }
-
-
-// $(document).ready(function() {
-
-// 	var smallScreen = false;
-// 	var widthOnLoad = window.innerWidth;
-	
-// 	if(widthOnLoad < 500){
-// 		smallScreen = true;
-// 		console.log(widthOnLoad);
-// 	} 
-
-// 	if(smallScreen == false) {
-// 		toggleBlurImageClass();
-// 		console.log(widthOnLoad+ " from if inside document.ready");
-// 	}
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// const p = document.querySelector('p');
-	// p.onmouseover = logMouseOver;
-	// p.onmouseout = logMouseOut;
-	
-	// function logMouseOver() {
-	// 	p.innerHTML = 'MOUSE OVER detected';
-	// }
-	
-	// function logMouseOut() {
-	// 	p.innerHTML = 'MOUSE OUT detected';
-	// }
-
-
-
-
-
-
-
-
-	// $("#berryface-port-piece-text").hover(function(){
-	// 	$(".port-piece-container #berryface-port-piece-img img").toggleClass("blur-img");
-	// });
-
-	// $("#netboost-port-piece-text").hover(function(){
-	// 	$(".port-piece-container #netboost-port-piece-img img").toggleClass("blur-img");
-	// });
-
-	// $("#sb-port-piece-text").hover(function(){
-	// 	$(".port-piece-container #sb-port-piece-img img").toggleClass("blur-img");
-	// });
-
-	// $("#st-port-piece-text").hover(function(){
-	// 	$(".port-piece-container #st-port-piece-img img").toggleClass("blur-img");
-	// });
-
-	// $("#ipmp-port-piece-text").hover(function(){
-	// 	$(".port-piece-container #ipmp-port-piece-img img").toggleClass("blur-img");
-	// });
-
-	// $("#cc-port-piece-text").hover(function(){
-	// 	$(".port-piece-container #cc-port-piece-img img").toggleClass("blur-img");
-	// });
-
-
-
-
-
-
-
-
-	*/

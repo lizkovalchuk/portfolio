@@ -8,11 +8,14 @@
         font-size: 60px;
         color: black;
         background-color: $yellow;
+        @media screen and (max-width: $custom-xs) {                
+            font-size: 55px;
+        }
         @media screen and (max-width: $xs) {                
-            font-size: 45px;
+            font-size: 40px;
         }
         @media screen and (max-width: $extra-xs) {                
-            font-size: 40px;
+            font-size: 35px;
         }
     }
 }

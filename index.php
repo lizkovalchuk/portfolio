@@ -24,10 +24,11 @@
 						<h1 id="header__h1--name">Liz Kovalchuk - Web Developer</h1>
 						<nav id="menu--desktop">
 							<ul id="menu__ul--desktop" >
-								<li data-page="portfolio-data-page"><a class="header-nav-link" href="#">Portfolio</a></li>
-								<li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li>
+								<li data-page="portfolio-data-page"><a class="header-nav-link" href="#">Portfolio</a></li>								
+								<!-- <li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li> -->
+								<li data-page="aboutme-data-page"><a class="header-nav-link" href="#">About</a></li>
 								<li data-page="skills-and-tools-data-page"><a class="header-nav-link" href="#">Skills & Tools</a></li>
-								<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
+								<li data-page="contact-frm"><a id="menu__li_desktop-contact-form" class="header-nav-link" href="#">Contact</a></li>
 							</ul>
 						</nav>
 						<nav id="menu--mobile">
@@ -37,10 +38,11 @@
 								</span>
 							</button>						
 							<ul id="menu__ul--mobile" >
-								<li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li>
 								<li data-page="portfolio-data-page"><a class="header-nav-link" href="#">Portfolio</a></li>
+								<li data-page="aboutme-data-page"><a class="header-nav-link" href="#">About</a></li>
+								<!-- <li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li> -->
 								<li data-page="skills-and-tools-data-page"><a class="header-nav-link" href="#">Skills & Tools</a></li>
-								<li data-page="contact-frm"><a class="header-nav-link" href="#">Contact</a></li>
+								<li data-page="contact-frm"><a id="menu__li_mobile-contact-form" class="header-nav-link" href="#">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -68,7 +70,7 @@
 
 			<!-- PORTFOLIO BLOCK -->
 
-			<span id="portfolio-data-page">   </span>
+			<div id="portfolio-data-page"></div>
 			<section id="portfolio_section">				
 				<div id="portfolio__div-h2-wrapper">
 					<h2 id="portfolio-block">Portfolio</h2>				
@@ -78,8 +80,7 @@
 						</g>
 					</svg>
 				</div>
-				<div class="portfolio-wrapper">	
-
+				<div class="portfolio-wrapper">						
 					<div id="berryface-container" class="port-piece-container">
 						<div id="berryface-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/bf.png" alt="picture of berryface project">
@@ -89,12 +90,11 @@
 							<p>BerryFace is an interface that connects to a raspberry pi via an API to show the current temperature and humidity.</p>
 							<p class="lower-text">Technologies: React, Python, Django and MariaDB</p>
 							<div class="portfolio__div--links-container">
-								<a class="portfolio__links" href="http://netboost.ca/" target="_blank" class="port-view-live">View Live</a>
-								<a class="portfolio__links" href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								
+								<a class="portfolio__links port-view-live" href="http://netboost.ca/" target="_blank">View Live</a>
+								<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								
 							</div>
 						</div>
 					</div>
-
 					<div id="stolen-bikes-container" class="port-piece-container">
 						<div id="sb-port-piece-img">
 							<img src="src/assets/images/portfolio-pieces/sb.png" alt="pitcure of stolen bikes project">
@@ -104,8 +104,8 @@
 							<p>A web application intergrating two different APIs to help users plan bicycle trips far from reported bike thiefs.</p>
 							<p class="lower-text">Technologies: HTML, CSS and JQuery, Google Maps API and Bike Index API V3.</p>
 							<div class="portfolio__div--links-container">
-								<a class="portfolio__links" href="https://github.com/lizkovalchuk/API-project" target="_blank" class="port-view-GH">View GitHub Code</a>
-								<a class="portfolio__links" href="http://stolenbikes.tk/" target="_blank" class="port-view-live">View Live</a>
+								<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/API-project" target="_blank">View GitHub Code</a>
+								<a class="portfolio__links port-view-live" href="http://stolenbikes.tk/" target="_blank">View Live</a>
 							</div>
 						</div>
 					</div>
@@ -118,23 +118,22 @@
 							<p>Database Driven website project management feature that displays percantage and duration of milestone completion.</p>
 							<p class="lower-text">Technologies: HTML, CSS, JavaScript, PHP, MySQL, Google Charts API</p>
 							<div class="portfolio__div--links-container">
-								<a class="portfolio__links" href="http://netboost.ca/" target="_blank" class="port-view-live">View Live</a>
-								<a class="portfolio__links" href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								
+								<a class="portfolio__links port-view-live" href="http://netboost.ca/" target="_blank">View Live</a>
+								<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								
 							</div>
 						</div>
 					</div>
-
 					<div id="symptom-tracker-container" class="port-piece-container">
 						<div id="st-port-piece-img">
-							<img src="src/assets/images/portfolio-pieces/st.png" id="cc-pic" alt="picture of comrade cafe project">
+							<img src="src/assets/images/portfolio-pieces/st.png" id="st-pic" alt="picture of symptom tracker project">
 						</div>
 						<div class="portfolio__div--port-piece-text-container" id="st-port-piece-text">
 							<h3>Giftcards</h3>
 							<p>An interactive interface for users to custom build giftcards on a restaurant website.</p>
 							<p class="lower-text">Technologies: HTML, CSS and JQuery.</p>
 							<div class="portfolio__div--links-container">
-								<a class="portfolio__links" href="http://comradecafe.tk" target="_blank" class="port-view-live">View Live</a>
-								<a class="portfolio__links" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank" class="port-view-GH">View GitHub Code</a>
+								<a class="portfolio__links port-view-live" href="http://comradecafe.tk" target="_blank">View Live</a>
+								<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank">View GitHub Code</a>
 							</div>
 						</div>
 					</div>
@@ -147,8 +146,8 @@
 							<p>Coded two custom WordPress plugins, one for custom profiles and the other to alter the GeoDirectory Theme style and content.</p>
 							<p class="lower-text">Technologies: WordPress, JQuery, CSS and PHP.</p>
 							<div class="portfolio__div--links-container">
-								<a class="portfolio__links" href="http://netboost.ca/" target="_blank" class="port-view-live">View Live</a>
-								<a class="portfolio__links" href="https://github.com/lizkovalchuk/Milestones" target="_blank" class="port-view-GH">View GitHub Code</a>								
+								<a class="portfolio__links port-view-live" href="http://netboost.ca/" target="_blank">View Live</a>
+								<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								
 							</div>
 						</div>
 					</div>
@@ -162,8 +161,8 @@
 								<p>An interactive interface for users to custom build giftcards on a restaurant website.</p>
 								<p class="lower-text">Technologies: HTML, CSS and JQuery.</p>
 								<div class="portfolio__div--links-container">
-									<a class="portfolio__links" href="http://comradecafe.tk" target="_blank" class="port-view-live">View Live</a>
-									<a class="portfolio__links" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank" class="port-view-GH">View GitHub Code</a>
+									<a class="portfolio__links port-view-live" href="http://comradecafe.tk" target="_blank">View Live</a>
+									<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank">View GitHub Code</a>
 								</div>
 							</div>
 						</div>
@@ -183,8 +182,7 @@
 					</div> -->
 				</div>
 			</section>
-
-
+			<div id="aboutme-data-page"></div>			
 			<section id="aboutme__section">
 				<div id="aboutme__div--header-svg-container">
 					<h2 id="aboutme__h2">About</h2>
@@ -216,7 +214,7 @@
 		
 			<!-- SKILLS AND TOOLS SECTION -->
 
-			<span id="skills-and-tools-data-page"></span>
+			<div id="skills-and-tools-data-page"></div>
 			<section id="skills-and-tools-wrapper">			
 				<div id="skills-and-tools--header-svg-container">
 					<h2 id="skills-and-tools-heading-text">Skills and Tools</h2>

@@ -19,7 +19,7 @@ header #header__section--toprow {
     width: 90%;
     max-width: 1200px; }
   header #header__section--toprow #header__h1--name {
-    color: #240F4E;
+    color: black;
     margin: 16px 0;
     margin-left: 4.25%; }
   @media screen and (max-width: 900px) {
@@ -37,6 +37,8 @@ header #header__section--toprow {
         margin-right: 3em; } }
     header #header__section--toprow #menu--desktop li:last-child {
       margin-right: 0; }
+    header #header__section--toprow #menu--desktop li a {
+      padding: 2px 5px; }
   header #header__section--toprow #menu--desktop .header-nav-link {
     display: inline-block;
     color: #000;
@@ -66,9 +68,13 @@ header #header__section--toprow {
     left: -55px;
     transition: 0.5s;
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    border-left: 1px solid black;
+    margin-left: 54px; }
     header #header__section--toprow #menu--mobile #menu__ul--mobile li a {
       text-decoration: none; }
+      header #header__section--toprow #menu--mobile #menu__ul--mobile li a:visited {
+        color: black; }
 
 header .mobile-menu-view {
   position: absolute;
@@ -80,8 +86,12 @@ header .mobile-menu-view {
   z-index: 99; }
   header .mobile-menu-view li {
     padding: 5px 0 0 30px; }
+    @media screen and (max-width: 650px) {
+      header .mobile-menu-view li {
+        padding: 5px 0 0 0; } }
     header .mobile-menu-view li a {
-      text-decoration: none; }
+      text-decoration: none;
+      padding: 5px; }
   header .mobile-menu-view li:nth-child(1), header .mobile-menu-view li:nth-child(2) {
     padding-top: 12px; }
   header .mobile-menu-view li:nth-child(3), header .mobile-menu-view li:nth-child(4) {
@@ -92,7 +102,8 @@ header #banner__div--container {
   grid-template-columns: repeat(48, 1fr);
   grid-template-rows: repeat(16, 1fr);
   height: 550px;
-  position: relative; }
+  position: relative;
+  margin-top: 18px; }
   @media screen and (max-width: 992px) {
     header #banner__div--container {
       height: 700px;
@@ -202,29 +213,51 @@ header #header__svg_underline {
   50% {
     transform: translateY(-20px); } }
 
+#portfolio-data-page {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  top: 600px; }
+  @media screen and (max-width: 992px) {
+    #portfolio-data-page {
+      top: 750px; } }
+  @media screen and (max-width: 900px) {
+    #portfolio-data-page {
+      top: 600px; } }
+  @media screen and (max-width: 650px) {
+    #portfolio-data-page {
+      top: 625px; } }
+  @media screen and (max-width: 550px) {
+    #portfolio-data-page {
+      top: 550px; } }
+  @media screen and (max-width: 500px) {
+    #portfolio-data-page {
+      top: 400px; } }
+
 #portfolio_section {
-  margin-bottom: 16vh; }
+  margin-bottom: 16vh;
+  margin-top: 65px; }
   #portfolio_section #portfolio__div-h2-wrapper h2 {
     width: 155px;
     padding-left: 15px;
     margin-left: 59px; }
   #portfolio_section #portfolio__svg_underline {
     position: absolute;
-    top: 727px;
+    top: 757px;
     left: -5px;
     width: 235px; }
     @media screen and (max-width: 992px) {
       #portfolio_section #portfolio__svg_underline {
-        top: 877px; } }
+        top: 908px; } }
     @media screen and (max-width: 768px) {
       #portfolio_section #portfolio__svg_underline {
-        top: 777px; } }
+        top: 808px; } }
     @media screen and (max-width: 550px) {
       #portfolio_section #portfolio__svg_underline {
-        top: 677px; } }
+        top: 707px; } }
     @media screen and (max-width: 500px) {
       #portfolio_section #portfolio__svg_underline {
-        top: 552px; } }
+        top: 583px; } }
   #portfolio_section #portfolio-data-page {
     min-height: 70px;
     display: block; }
@@ -506,6 +539,30 @@ header #header__svg_underline {
   #portfolio_section .remove-border-snc {
     border: 1px solid white !important; }
 
+#aboutme-data-page {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  top: 2000px; }
+  @media screen and (max-width: 1200px) {
+    #aboutme-data-page {
+      top: 1750px; } }
+  @media screen and (max-width: 992px) {
+    #aboutme-data-page {
+      top: 4050px; } }
+  @media screen and (max-width: 900px) {
+    #aboutme-data-page {
+      top: 4000px; } }
+  @media screen and (max-width: 768px) {
+    #aboutme-data-page {
+      top: 2700px; } }
+  @media screen and (max-width: 650px) {
+    #aboutme-data-page {
+      top: 2600px; } }
+  @media screen and (max-width: 500px) {
+    #aboutme-data-page {
+      top: 3900px; } }
+
 #aboutme__section {
   max-width: 90%;
   margin: 0 auto;
@@ -617,6 +674,33 @@ header #header__svg_underline {
     width: 100%; }
     #aboutme__section .aboutme__div--items h3, #aboutme__section .aboutme__div--items p {
       padding: 0 20px !important; }
+
+#skills-and-tools-data-page {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  top: 2600px; }
+  @media screen and (max-width: 1200px) {
+    #skills-and-tools-data-page {
+      top: 2350px; } }
+  @media screen and (max-width: 992px) {
+    #skills-and-tools-data-page {
+      top: 4660px; } }
+  @media screen and (max-width: 900px) {
+    #skills-and-tools-data-page {
+      top: 4650px; } }
+  @media screen and (max-width: 768px) {
+    #skills-and-tools-data-page {
+      top: 3300px; } }
+  @media screen and (max-width: 650px) {
+    #skills-and-tools-data-page {
+      top: 3800px; } }
+  @media screen and (max-width: 550px) {
+    #skills-and-tools-data-page {
+      top: 3700px; } }
+  @media screen and (max-width: 500px) {
+    #skills-and-tools-data-page {
+      top: 5000px; } }
 
 #skills-and-tools-wrapper {
   max-width: 90%;
@@ -939,12 +1023,15 @@ header #header__svg_underline {
     font-size: 60px;
     color: black;
     background-color: #F5FD4D; }
+    @media screen and (max-width: 550px) {
+      #thank-you-section #thank-you-text {
+        font-size: 55px; } }
     @media screen and (max-width: 500px) {
       #thank-you-section #thank-you-text {
-        font-size: 45px; } }
+        font-size: 40px; } }
     @media screen and (max-width: 400px) {
       #thank-you-section #thank-you-text {
-        font-size: 40px; } }
+        font-size: 35px; } }
 
 footer {
   display: flex;
@@ -970,27 +1057,32 @@ footer {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
-body #body__div_page-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  border-left: 1px solid black;
-  position: relative; }
-  @media screen and (max-width: 1250px) {
-    body #body__div_page-wrapper {
-      margin-left: 30px; } }
-  @media screen and (max-width: 400px) {
-    body #body__div_page-wrapper {
-      margin-left: 6px; } }
-
-body h1, body h2, body h3, body p, body a, body span, body label {
-  font-weight: 100;
-  font-family: "helvetica", sans-serif;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif; }
-
-body h2 {
-  font-size: 40px;
-  background-color: #F5FD4D; }
-
-body h3 {
-  font-size: 2em; }
+body {
+  overflow-x: hidden; }
+  body #body__div_page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-left: 1px solid black;
+    position: relative;
+    margin-top: -10px;
+    height: 120%; }
+    @media screen and (max-width: 1250px) {
+      body #body__div_page-wrapper {
+        margin-left: 30px; } }
+    @media screen and (max-width: 400px) {
+      body #body__div_page-wrapper {
+        margin-left: 6px; } }
+  body h1, body h2, body h3, body p, body a, body span, body label {
+    font-weight: 100;
+    font-family: "helvetica", sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif; }
+  body h2 {
+    font-size: 40px;
+    background-color: #F5FD4D; }
+  body h3 {
+    font-size: 2em; }
+  body a:focus,
+  body button:focus {
+    box-shadow: 0 0 15px gray !important;
+    outline: none; }
 

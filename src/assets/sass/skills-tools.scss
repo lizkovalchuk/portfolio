@@ -1,3 +1,31 @@
+
+#skills-and-tools-data-page{
+    height: 50px;
+    position: absolute;
+    width: 100%;    
+    top: 2600px;    
+    @media screen and (max-width: $lg) {
+        top: 2350px;
+    }
+    @media screen and (max-width: $md) {
+        top: 4660px;
+    }
+    @media screen and (max-width: $custom-md) {
+        top: 4650px;
+    }
+    @media screen and (max-width: $sm) {
+        top: 3300px;
+    }
+    @media screen and (max-width: $custom-sm) {
+        top: 3800px;
+    }
+    @media screen and (max-width: $custom-xs) {
+        top: 3700px;
+    }
+    @media screen and (max-width: $xs) {
+        top: 5000px;
+    }
+}
 #skills-and-tools-wrapper{
     max-width: 90%;
     margin: 0 auto;   
