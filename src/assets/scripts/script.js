@@ -39,15 +39,28 @@ $(document).on('click', '#header__section--toprow #menu__ul--mobile li', functio
 //=========== 2. Contact Form===========//
 
 $(document).ready(function (){
-	$('#menu__li_desktop-contact-form').click(contactFormModal);
-	$('#menu__li_mobile-contact-form').click(contactFormModal);
+	$('#menu__li_desktop-contact-form').click(contactFormModalOpen);
+	$('#menu__li_mobile-contact-form').click(contactFormModalOpen);
+	$('#contactForm__i_closeIcon').click(contactFormModalClose);
 });
 
-function contactFormModal(){
+function contactFormModalOpen(){	
+	$(".modal").css("display", "block");	
+	$("#body__div__modal-wrapper").addClass("modal-wrapper-modal-clicked");
+	$(".modal").addClass("modal-clicked");
 	
+	$("#header__section--toprow").addClass("modal-post-clicked-header__section--toprow");
+	$("#body__div_page-wrapper").addClass("modal-post-clicked-page-wrapper");
 }
 
-
+function contactFormModalClose(){
+	$(".modal").css("display", "none");		
+	$("#body__div__modal-wrapper").removeClass("modal-wrapper-modal-clicked");
+	$(".modal").removeClass("modal-clicked");
+	
+	$("#header__section--toprow").removeClass("modal-post-clicked-header__section--toprow");
+	$("#body__div_page-wrapper").removeClass("modal-post-clicked-page-wrapper");
+}
 
 //=========== 3. Mailer functioanlity===========//
 
