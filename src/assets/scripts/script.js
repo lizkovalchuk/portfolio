@@ -45,6 +45,7 @@ $(document).ready(function (){
 	$('#menu__li_desktop-contact-form').click(contactFormModalOpen);
 	$('#menu__li_mobile-contact-form').click(contactFormModalOpen);
 	$('#contactForm__i_closeIcon').click(contactFormModalClose);
+	// $('#body__div__modal-wrapper').click(contactFormModalClose);
 });
 
 function contactFormModalOpen(){	
@@ -54,6 +55,13 @@ function contactFormModalOpen(){
 	
 	$("#header__section--toprow").addClass("modal-post-clicked-header__section--toprow");
 	$("#body__div_page-wrapper").addClass("modal-post-clicked-page-wrapper");
+
+
+	var windowHeight = $(window).height();
+	console.log("the window height as is is "+ windowHeight);
+
+	var topPercentage = windowHeight * 0.1;
+	console.log("10% of the window height is "+ topPercentage)
 }
 
 function contactFormModalClose(){

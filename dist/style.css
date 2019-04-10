@@ -994,6 +994,7 @@ form .modal-content {
   padding: 20px;
   border: 1px solid #888;
   width: 40%;
+  height: 25vw;
   position: relative; }
   form .modal-content h2 {
     width: 144px;
@@ -1006,24 +1007,16 @@ form .modal-content {
     font-size: 40px; }
 
 .modal {
-  position: fixed;
-  /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
   left: 0;
-  top: -5000px;
   width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */ }
+  height: 50vh; }
 
 .modal-clicked {
-  top: 100px;
-  transition: 0.7s; }
+  position: fixed;
+  top: 20%;
+  left: 1%; }
 
 .modal-wrapper-modal-clicked {
   background-color: rgba(0, 0, 0, 0.2);

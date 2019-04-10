@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
 		<title>Liz Kovalchuk - Web Developer</title>
-		<meta name="viewport" content="width=device-width">
+		<!-- <meta name="viewport" content="width=device-width"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Liz Kovalchuk, a fullstack developer based in Toronto. He does front and back end coding for web and mobile applications to be more interactive.">
 		<link href="src/assets/libs/hamburgers.min.css" rel="stylesheet">
 		<link href="src/assets/libs/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
@@ -29,7 +30,7 @@
 									<!-- <li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li> -->
 									<li data-page="aboutme-data-page"><a id="desktopMenu__a-about" class="header-nav-link" href="#">About</a></li>
 									<li data-page="skills-and-tools-data-page"><a id="desktopMenu__a-skills-and-tools" class="header-nav-link" href="#">Skills & Tools</a></li>
-									<li><a id="menu__li_desktop-contact-form" class="header-nav-link" href="#">Contact</a></li>
+									<li><a id="menu__li_desktop-contact-form" class="header-nav-link">Contact</a></li>
 								</ul>
 							</nav>
 							<nav id="menu--mobile">
