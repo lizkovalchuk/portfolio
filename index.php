@@ -25,10 +25,10 @@
 							<h1 id="header__h1--name">Liz Kovalchuk - Web Developer</h1>
 							<nav id="menu--desktop">
 								<ul id="menu__ul--desktop" >
-									<li data-page="portfolio-data-page"><a class="header-nav-link" href="#">Portfolio</a></li>								
+									<li data-page="portfolio-data-page"><a id="desktopMenu__a-portfolio" class="header-nav-link" href="#">Portfolio</a></li>								
 									<!-- <li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li> -->
-									<li data-page="aboutme-data-page"><a class="header-nav-link" href="#">About</a></li>
-									<li data-page="skills-and-tools-data-page"><a class="header-nav-link" href="#">Skills & Tools</a></li>
+									<li data-page="aboutme-data-page"><a id="desktopMenu__a-about" class="header-nav-link" href="#">About</a></li>
+									<li data-page="skills-and-tools-data-page"><a id="desktopMenu__a-skills-and-tools" class="header-nav-link" href="#">Skills & Tools</a></li>
 									<li><a id="menu__li_desktop-contact-form" class="header-nav-link" href="#">Contact</a></li>
 								</ul>
 							</nav>
@@ -64,7 +64,7 @@
 						<div id="banner__div--orange-square"></div>
 					</div>
 					<div id="banner__div--downward-arrow">
-						<i class="fal fa-chevron-down" id="banner__i--downward-arrow" data-page="portfolio-block" ></i>			
+						<i class="fal fa-chevron-down" id="banner__i--downward-arrow" data-page="portfolio-data-page" ></i>			
 					</div>
 				</header>
 
@@ -91,8 +91,8 @@
 								<p>BerryFace is an interface that connects to a raspberry pi via an API to show the current temperature and humidity.</p>
 								<p class="lower-text">Technologies: React, Python, Django and MariaDB</p>
 								<div class="portfolio__div--links-container">
-									<a class="portfolio__links port-view-live" href="http://netboost.ca/" target="_blank">View Live</a>
-									<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								
+									<a class="portfolio__links port-view-live" href="https://berryface.herokuapp.com/" target="_blank">View Live</a>
+									<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/React-BerryFace" target="_blank">View GitHub Code</a>								
 								</div>
 							</div>
 						</div>
@@ -133,7 +133,7 @@
 								<p>An interactive interface for users to custom build giftcards on a restaurant website.</p>
 								<p class="lower-text">Technologies: HTML, CSS and JQuery.</p>
 								<div class="portfolio__div--links-container">
-									<a class="portfolio__links port-view-live" href="http://comradecafe.tk" target="_blank">View Live</a>
+									<a class="portfolio__links port-view-live" href="http://symptomtrackermvc.azurewebsites.net/" target="_blank">View Live</a>
 									<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank">View GitHub Code</a>
 								</div>
 							</div>
@@ -147,8 +147,8 @@
 								<p>Coded two custom WordPress plugins, one for custom profiles and the other to alter the GeoDirectory Theme style and content.</p>
 								<p class="lower-text">Technologies: WordPress, JQuery, CSS and PHP.</p>
 								<div class="portfolio__div--links-container">
-									<a class="portfolio__links port-view-live" href="http://netboost.ca/" target="_blank">View Live</a>
-									<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								
+									<a class="portfolio__links port-view-live" href="http://ipmpalumninetwork.ca/" target="_blank">View Live</a>
+									<!-- <a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								 -->
 								</div>
 							</div>
 						</div>
@@ -214,8 +214,8 @@
 				</section>
 			
 				<!-- SKILLS AND TOOLS SECTION -->
-
-				<div id="skills-and-tools-data-page"></div>
+				
+				<div class="here-destination" id="skills-and-tools-data-page"></div>
 				<section id="skills-and-tools-wrapper">			
 					<div id="skills-and-tools--header-svg-container">
 						<h2 id="skills-and-tools-heading-text">Skills and Tools</h2>
@@ -360,20 +360,14 @@
 				<i id="contactForm__i_closeIcon" class="fal fa-times"></i>
 				<div >
 					<label for="name">Name:</label>
-				</div>
-				<div>
-					<input type="text" id="name" name="name">
-				</div>
-				<div>
 					<label for="email">Email:</label>
 				</div>
 				<div>
+					<input type="text" id="name" name="name">
 					<input type="text" id="email" name="email">
 				</div>
 				<div >
 					<label for="messagebox">Message:</label>
-				</div>
-				<div>
 					<textarea rows="15" id="messagebox" name="message"></textarea>
 				</div>
 				<div class="custom-button">

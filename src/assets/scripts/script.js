@@ -11,32 +11,35 @@
 *********************************************/
 
 
-//========== 1. Scroll to divs===================//
+//=========== 1. Scroll to Divs ===========//
 
-function scrollToDiv($div_name){
-	$("html, body").delay(300).animate({
-		scrollTop: $($div_name).offset().top
-	}, 500);
-}
 
-$(document).on('click', '#header__section--toprow ul li', function() {
-	var page = $(this).attr("data-page");
-	scrollToDiv('#'+ page);
+$(document).ready(function (){
+	var skillsAndToolsDestination = document.querySelector('#skills-and-tools-data-page');
+	var portfolioDestination = document.querySelector('#portfolio-data-page');		
+	var aboutDestination = document.querySelector('#aboutme-data-page');		
+
+	$('#desktopMenu__a-skills-and-tools').click(function() {
+		$('html, body').animate({
+		  scrollTop: $(skillsAndToolsDestination).offset().top
+		},100)
+	})
+	$('#desktopMenu__a-portfolio').click(function() {
+		$('html, body').animate({
+		  scrollTop: $(portfolioDestination).offset().top
+		},100)
+	})
+	$('#desktopMenu__a-about').click(function() {
+		$('html, body').animate({
+		  scrollTop: $(aboutDestination).offset().top
+		},100)
+	})
 });
 
-$(document).on('click', '#dw-arrow', function() {
-	var page = $(this).attr("data-page");
-	scrollToDiv('#'+ page);
-});
-
-$(document).on('click', '#header__section--toprow #menu__ul--mobile li', function() {
-	var page = $(this).attr("data-page");
-	scrollToDiv('#'+ page);
-});
 
 
 
-//=========== 2. Contact Form===========//
+//=========== 2. Contact Form ===========//
 
 $(document).ready(function (){
 	$('#menu__li_desktop-contact-form').click(contactFormModalOpen);
@@ -113,8 +116,7 @@ function animateText(label_name, text, timer){
 	}
 };
 
-function textFrame(text)
-{
+function textFrame(text){
 	$("#banner__label--welcome-text-1").html(text);
 };
 
@@ -318,3 +320,36 @@ $(document).ready(function() {
 	});
 });
 
+
+
+
+
+// Lee's Code
+
+
+/*
+
+//========== 1. Scroll to divs FROM LEE===================//
+
+// function scrollToDiv($div_name){
+// 	$("html, body").delay(300).animate({
+// 		scrollTop: $($div_name).offset().top
+// 	}, 500);
+// }
+
+// $(document).on('click', '#header__section--toprow ul li', function() {
+// 	var page = $(this).attr("data-page");
+// 	scrollToDiv('#'+ page);
+// });
+
+// $(document).on('click', '#banner__i--downward-arrow', function() {
+// 	var page = $(this).attr("data-page");
+// 	scrollToDiv('#'+ page);
+// });
+
+// $(document).on('click', '#header__section--toprow #menu__ul--mobile li', function() {
+// 	var page = $(this).attr("data-page");
+// 	scrollToDiv('#'+ page);
+// });
+
+*/

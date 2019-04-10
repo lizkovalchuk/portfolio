@@ -217,7 +217,8 @@ header #header__svg_underline {
   height: 50px;
   position: absolute;
   width: 100%;
-  top: 600px; }
+  top: 600px;
+  z-index: -1; }
   @media screen and (max-width: 992px) {
     #portfolio-data-page {
       top: 750px; } }
@@ -1076,6 +1077,9 @@ footer {
       background-clip: border-box;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   overflow-x: hidden; }
