@@ -553,7 +553,7 @@ header #header__svg_underline {
       top: 4050px; } }
   @media screen and (max-width: 900px) {
     #aboutme-data-page {
-      top: 4000px; } }
+      top: 3900px; } }
   @media screen and (max-width: 768px) {
     #aboutme-data-page {
       top: 2700px; } }
@@ -1011,7 +1011,8 @@ form .modal-content {
   /* Sit on top */
   left: 0;
   width: 100%;
-  height: 50vh; }
+  height: 50vh;
+  display: none; }
 
 .modal-clicked {
   position: fixed;

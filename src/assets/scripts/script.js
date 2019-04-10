@@ -19,19 +19,37 @@ $(document).ready(function (){
 	var portfolioDestination = document.querySelector('#portfolio-data-page');		
 	var aboutDestination = document.querySelector('#aboutme-data-page');		
 
-	$('#desktopMenu__a-skills-and-tools').click(function() {
-		$('html, body').animate({
-		  scrollTop: $(skillsAndToolsDestination).offset().top
-		},100)
-	})
+
 	$('#desktopMenu__a-portfolio').click(function() {
 		$('html, body').animate({
 		  scrollTop: $(portfolioDestination).offset().top
 		},100)
 	})
+	$('#mobileMenu__a-portfolio').click(function() {
+		$('html, body').animate({
+		  scrollTop: $(portfolioDestination).offset().top
+		},100)
+	})
+
 	$('#desktopMenu__a-about').click(function() {
 		$('html, body').animate({
 		  scrollTop: $(aboutDestination).offset().top
+		},100)
+	})
+	$('#mobileMenu__a-about').click(function() {
+		$('html, body').animate({
+		  scrollTop: $(aboutDestination).offset().top
+		},100)
+	})
+
+	$('#desktopMenu__a-skills-and-tools').click(function() {
+		$('html, body').animate({
+		  scrollTop: $(skillsAndToolsDestination).offset().top
+		},100)
+	})
+	$('#mobileMenu__a-skills-and-tools').click(function() {
+		$('html, body').animate({
+		  scrollTop: $(skillsAndToolsDestination).offset().top
 		},100)
 	})
 });

@@ -26,8 +26,7 @@
 							<h1 id="header__h1--name">Liz Kovalchuk - Web Developer</h1>
 							<nav id="menu--desktop">
 								<ul id="menu__ul--desktop" >
-									<li data-page="portfolio-data-page"><a id="desktopMenu__a-portfolio" class="header-nav-link" href="#">Portfolio</a></li>								
-									<!-- <li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li> -->
+									<li data-page="portfolio-data-page"><a id="desktopMenu__a-portfolio" class="header-nav-link" href="#">Portfolio</a></li>																	
 									<li data-page="aboutme-data-page"><a id="desktopMenu__a-about" class="header-nav-link" href="#">About</a></li>
 									<li data-page="skills-and-tools-data-page"><a id="desktopMenu__a-skills-and-tools" class="header-nav-link" href="#">Skills & Tools</a></li>
 									<li><a id="menu__li_desktop-contact-form" class="header-nav-link">Contact</a></li>
@@ -40,11 +39,10 @@
 									</span>
 								</button>						
 								<ul id="menu__ul--mobile" >
-									<li data-page="portfolio-data-page"><a class="header-nav-link" href="#">Portfolio</a></li>
-									<li data-page="aboutme-data-page"><a class="header-nav-link" href="#">About</a></li>
-									<!-- <li data-page="aboutme__section"><a class="header-nav-link" href="#">About</a></li> -->
-									<li data-page="skills-and-tools-data-page"><a class="header-nav-link" href="#">Skills & Tools</a></li>
-									<li><a id="menu__li_mobile-contact-form" class="header-nav-link" href="#">Contact</a></li>
+									<li data-page="portfolio-data-page"><a id="mobileMenu__a-portfolio" class="header-nav-link" href="#">Portfolio</a></li>
+									<li data-page="aboutme-data-page"><a id="mobileMenu__a-about" class="header-nav-link" href="#">About</a></li>									
+									<li data-page="skills-and-tools-data-page"><a id="mobileMenu__a-skills-and-tools" class="header-nav-link" href="#">Skills & Tools</a></li>
+									<li><a id="menu__li_mobile-contact-form" class="header-nav-link">Contact</a></li>
 								</ul>
 							</nav>
 						</div>
