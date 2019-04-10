@@ -301,44 +301,11 @@
 						</div>
 					</div>
 				</section>
-		
-			<!-- FORM -->
-		
-				<!-- <form id="contact-frm" class="modal" action="mailer.php" method="post">		
-					<div class="modal-content">
-					<h2 id="_contact">Contact</h2>
-						<i class="fal fa-times"></i>
-						<div >
-							<label for="name">Name:</label>
-						</div>
-						<div>
-							<input type="text" id="name" name="name">
-						</div>
-						<div>
-							<label for="email">Email:</label>
-						</div>
-						<div>
-							<input type="text" id="email" name="email">
-						</div>
-						<div >
-							<label for="messagebox">Message:</label>
-						</div>
-						<div>
-							<textarea rows="15" id="messagebox" name="message"></textarea>
-						</div>
-						<div class="custom-button">
-							<button id="mail-button">SEND</button>
-						</div>
-					</div>
-				</form> -->
-		
+				
 				<!-- FOOTER -->
 				<div id="thank-you-section">
 					<span id="thank-you-text">Thanks for visiting!</span>
 				</div>
-
-
-		
 				<div>
 					<footer>	
 						<div class="social-links">
@@ -355,22 +322,30 @@
 		</div>
 		<form id="contact-frm" class="modal" action="mailer.php" method="post">		
 			<div class="modal-content">
-				<h2 id="_contact">Contact</h2>
+				<div id="contactForm__div-h2Container">
+					<h2 id="_contact">Contact</h2>
+				</div>
 				<i id="contactForm__i_closeIcon" class="fal fa-times"></i>
-				<div >
-					<label for="name">Name:</label>
-					<label for="email">Email:</label>
-				</div>
-				<div>
-					<input type="text" id="name" name="name">
-					<input type="text" id="email" name="email">
-				</div>
-				<div >
-					<label for="messagebox">Message:</label>
-					<textarea rows="15" id="messagebox" name="message"></textarea>
-				</div>
-				<div class="custom-button">
-					<button id="mail-button">SEND</button>
+				<!-- <div id="contactForm__div-col-labels"> -->
+				<label id="contactForm__label-name" for="name">Name:</label>
+				<input type="text" id="contactForm__input-name" name="name">
+				<label id="contactForm__label-email" for="email">Email:</label>
+				<input type="text" id="contactForm__input-email" name="email">
+				<label id="contactForm__label-message" for="messagebox">Message:</label>
+				<textarea rows="10" id="contactForm__input-message" name="message"></textarea>
+				<!-- </div> -->
+				<!-- <div id="contactForm__div-col-inputs"> -->
+					<!-- <input type="text" id="name" name="name"> -->
+					<!-- <input type="text" id="email" name="email"> -->
+					<!-- <textarea rows="10" id="messagebox" name="message"></textarea> -->
+				<!-- </div> -->
+				<!-- <div id="contactForm__div-col-message">
+					
+
+				</div> -->
+				<div id="contactForm__div-sendButton" class="custom-button">
+					<!-- <button id="mail-button">SEND</button> -->
+					<button id="contactForm__button-sendButton">Send</button>
 				</div>
 			</div>
 		</form>

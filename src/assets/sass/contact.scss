@@ -4,12 +4,22 @@ form{
 		margin: auto;
 		padding: 20px;
 		border: 1px solid #888;
-		width: 40%;	
-		height: 25vw;
-		position: relative;	
+		width: 30%;	
+		height: 27vw;
+		min-height: 400px;
+		position: relative;
+		display: grid;	
+		grid-template-rows: repeat(19, 1fr);		
+		grid-template-columns: repeat(25, 1fr);
+		#contactForm__div-h2Container{
+			grid-column: 2 / span 7;
+			grid-row: 2 / span 2;	
+		}
 		h2{
-			width: 144px;
-			padding: 0 20px;
+			background-color: $yellow;
+			font-size: 30px;
+			margin-top: unset;
+			padding: 0 10px;
 		}
 		i{
 			position: absolute;
@@ -18,8 +28,73 @@ form{
 			padding: 10px 20px;
 			font-size: 40px;
 		}
+		input, textarea{
+			border: 1px solid gray;
+			&:focus{
+				box-shadow: (0 0 15px gray) !important;
+				outline: none;
+			}
+		}
+
+		//Name
+		#contactForm__label-name{
+			grid-column: 3 / span 5;
+			grid-row-start: 5;	
+			text-align: end;
+		}
+		#contactForm__input-name{
+			grid-column: 9 / span 14;
+			grid-row-start: 5;
+		}
+
+		//Email
+		#contactForm__label-email{
+			grid-column: 3 / span 5;
+			grid-row-start: 7;	
+			text-align: end;
+		}
+		#contactForm__input-email{
+			grid-column: 9 / span 14;
+			grid-row-start: 7;	
+		}
+
+		//Message
+		#contactForm__label-message{
+			grid-column: 3 / span 5;
+			grid-row-start: 9;	
+			text-align: end;
+		}
+		#contactForm__input-message{
+			grid-column: 9 / span 14;
+			grid-row: 9 / span 10;
+		}
+
+		//Send Button
+		#contactForm__div-sendButton{
+			grid-column: 10 / span 5;
+			grid-row: 23 / span 2;
+			display: flex;
+			justify-content: center;
+			#contactForm__button-sendButton{
+				background-color: $yellow;
+				height: 33px;
+				width: 90px;
+				border: 1px solid gray;
+				font-size: 15px;
+				margin-bottom: 10px;
+				&:hover{
+					cursor: pointer;
+					box-shadow: (0 0 15px gray) !important;
+				}
+			}
+		}
 	}
 }
+
+
+
+
+
 .modal{
 	z-index: 1; /* Sit on top */	
 	left: 0;
