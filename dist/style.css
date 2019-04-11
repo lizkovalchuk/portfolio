@@ -1077,6 +1077,18 @@ form .modal-content {
       form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:hover {
         cursor: pointer;
         box-shadow: 0 0 15px gray !important; }
+  form .modal-content #contactForm__p-email-errorMessage,
+  form .modal-content #contactForm__p-name-errorMessage,
+  form .modal-content #contactForm__p-message-errorMessage {
+    font-size: 12px;
+    color: red;
+    grid-column: 8 / span 9; }
+  form .modal-content #contactForm__p-name-errorMessage {
+    grid-row-start: 6; }
+  form .modal-content #contactForm__p-email-errorMessage {
+    grid-row-start: 8; }
+  form .modal-content #contactForm__p-message-errorMessage {
+    grid-row-start: 19; }
 
 .modal {
   z-index: 1;

@@ -99,6 +99,23 @@ form{
 				}
 			}
 		}
+
+		#contactForm__p-email-errorMessage,
+		#contactForm__p-name-errorMessage,
+		#contactForm__p-message-errorMessage{
+			font-size: 12px;
+    		color: red;
+			grid-column: 8 / span 9;
+		}
+		#contactForm__p-name-errorMessage{
+			grid-row-start: 6;
+		}
+		#contactForm__p-email-errorMessage{
+    		grid-row-start: 8;
+		}
+		#contactForm__p-message-errorMessage{
+			grid-row-start: 19;
+		}
 	}
 }
 
@@ -131,3 +148,4 @@ form{
 .modal-post-clicked-header__section--toprow{
 	background-color:rgba(0,0,0,-0.01);
 }
+

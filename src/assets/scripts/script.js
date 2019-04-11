@@ -102,6 +102,7 @@ function button_mail_click(){
 	var email = $('#contactForm__input-email').val();
 	var name = $('#contactForm__input-name').val();
 	var message = $('#contactForm__input-message').val();
+	var emailValidation = pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
 
 	$.ajax({
 		url:'../lkcode/mailer.php',
@@ -114,10 +115,39 @@ function button_mail_click(){
 		error:function(){
 			alert("didnt work");
 		},
-		success: function(response){
-			// header('localhost/lkcode');
+		success: function(data){
 		
-		//	console.log(response);
+			if(data == "No arguments Provided!" ){
+				if( $('#contactForm__input-name').val() == '' || $('#contactForm__input-name').val() == null ){
+					if ($('#contactForm__p-name-errorMessage').length == 0){
+						$("#contactForm__input-name").after( "<p id='contactForm__p-name-errorMessage'>Name cannot be empty</p>" );
+					}
+				} else {
+					$('#contactForm__p-name-errorMessage').remove();
+				}
+
+
+				if (emailValidation.test(email) == false){	
+					 if ($('#contactForm__p-email-errorMessage').length == 0){
+						$("#contactForm__input-email").after( "<p id='contactForm__p-email-errorMessage'>Must be a valid email</p>" );
+					}				
+				}
+				if (emailValidation.test(email) == true){										
+					$('#contactForm__p-email-errorMessage').remove();
+				}
+
+
+				if( $('#contactForm__input-message').val() == '' || $('#contactForm__input-message').val() == null ){
+					if ($('#contactForm__p-message-errorMessage').length == 0){
+						$("#contactForm__input-message").after( "<p id='contactForm__p-message-errorMessage'>Message cannot be empty</p>" );
+					}
+				} else {
+					$('#contactForm__p-message-errorMessage').remove();
+				}
+			} 
+			// else{
+
+			// }
 
 
 		//grab the form feilds and make the 
