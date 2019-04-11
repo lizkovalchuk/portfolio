@@ -102,7 +102,7 @@
 							<div class="portfolio__div--port-piece-text-container" id="sb-port-piece-text">
 								<h3>Stolen Bikes</h3>
 								<p>A web application intergrating two different APIs to help users plan bicycle trips far from reported bike thiefs.</p>
-								<p class="lower-text">Technologies: HTML, CSS and JQuery, Google Maps API and Bike Index API V3.</p>
+								<p class="lower-text">Technologies: HTML, CSS, PHP and JQuery, Google Maps API and Bike Index API V3.</p>
 								<div class="portfolio__div--links-container">
 									<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/API-project" target="_blank">View GitHub Code</a>
 									<a class="portfolio__links port-view-live" href="http://stolenbikes.tk/" target="_blank">View Live</a>
@@ -128,9 +128,9 @@
 								<img src="src/assets/images/portfolio-pieces/st.png" id="st-pic" alt="picture of symptom tracker project">
 							</div>
 							<div class="portfolio__div--port-piece-text-container" id="st-port-piece-text">
-								<h3>Giftcards</h3>
-								<p>An interactive interface for users to custom build giftcards on a restaurant website.</p>
-								<p class="lower-text">Technologies: HTML, CSS and JQuery.</p>
+								<h3>Symptom Tracker</h3>
+								<p>Databse driven feature that allows users to register and login to track their symptoms.</p>
+								<p class="lower-text">Technologies: C#, .NET and CSS.</p>
 								<div class="portfolio__div--links-container">
 									<a class="portfolio__links port-view-live" href="http://symptomtrackermvc.azurewebsites.net/" target="_blank">View Live</a>
 									<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank">View GitHub Code</a>
@@ -325,26 +325,14 @@
 				<div id="contactForm__div-h2Container">
 					<h2 id="_contact">Contact</h2>
 				</div>
-				<i id="contactForm__i_closeIcon" class="fal fa-times"></i>
-				<!-- <div id="contactForm__div-col-labels"> -->
+				<i id="contactForm__i_closeIcon" class="fal fa-times"></i>				
 				<label id="contactForm__label-name" for="name">Name:</label>
 				<input type="text" id="contactForm__input-name" name="name">
 				<label id="contactForm__label-email" for="email">Email:</label>
 				<input type="text" id="contactForm__input-email" name="email">
 				<label id="contactForm__label-message" for="messagebox">Message:</label>
 				<textarea rows="10" id="contactForm__input-message" name="message"></textarea>
-				<!-- </div> -->
-				<!-- <div id="contactForm__div-col-inputs"> -->
-					<!-- <input type="text" id="name" name="name"> -->
-					<!-- <input type="text" id="email" name="email"> -->
-					<!-- <textarea rows="10" id="messagebox" name="message"></textarea> -->
-				<!-- </div> -->
-				<!-- <div id="contactForm__div-col-message">
-					
-
-				</div> -->
-				<div id="contactForm__div-sendButton" class="custom-button">
-					<!-- <button id="mail-button">SEND</button> -->
+				<div id="contactForm__div-sendButton" class="custom-button">				
 					<button id="contactForm__button-sendButton">Send</button>
 				</div>
 			</div>

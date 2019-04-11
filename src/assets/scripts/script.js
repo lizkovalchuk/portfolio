@@ -2,7 +2,7 @@
 *TABLE OF CONTENTS
 *=================
 *1. Scroll to divs
-*2. Contact Form
+*2. Contact Form Front-End
 *3. Mailer Functionality
 *4. Welcome Text
 *5. Toggle Class
@@ -57,7 +57,7 @@ $(document).ready(function (){
 
 
 
-//=========== 2. Contact Form ===========//
+//=========== 2. Contact Form Front-End ===========//
 
 $(document).ready(function (){
 	$('#menu__li_desktop-contact-form').click(contactFormModalOpen);
@@ -93,7 +93,8 @@ function contactFormModalClose(){
 
 //=========== 3. Mailer functioanlity===========//
 
-$(document).ready(function (){
+$(document).ready(function (event){
+	event.preventDefault();
 	$('#mail-button').click(button_mail_click);
 });
 

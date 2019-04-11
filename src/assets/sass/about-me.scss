@@ -22,6 +22,9 @@
     @media screen and (max-width: $xs) {
         top: 3900px;
     }
+    @media screen and (max-width: $extra-xs) {
+        top: 3800px;
+    }
 }
 
 #aboutme__section{
@@ -85,6 +88,12 @@
             }
             @media screen and (max-width: $sm) {
                 grid-column: unset;
+            }
+            @media screen and (max-width: $sm) {
+                grid-column: unset;
+            }
+            @media screen and (max-width: $extra-xs) {
+                margin-top: unset;
             }
         }
 
@@ -161,6 +170,11 @@
             width: 100%;
             h3, p{
                 padding: 0 20px !important;
+            }
+            h3{
+                @media screen and (max-width: $extra-xs) {
+                    margin: 18px 0px;
+                }
             }
         }
    // }

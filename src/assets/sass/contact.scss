@@ -11,9 +11,20 @@ form{
 		display: grid;	
 		grid-template-rows: repeat(19, 1fr);		
 		grid-template-columns: repeat(25, 1fr);
+		@media screen and (max-width: $custom-lg) {                
+			width: 35%;
+		}
+		@media screen and (max-width: $small-md) {                
+			width: 55%;
+		}
+		@media screen and (max-width: $custom-sm) {                
+			width: 75%;
+		}
+
 		#contactForm__div-h2Container{
-			grid-column: 2 / span 7;
-			grid-row: 2 / span 2;	
+			position: absolute;
+			top: 35px;
+			left: 40px;
 		}
 		h2{
 			background-color: $yellow;
@@ -38,34 +49,34 @@ form{
 
 		//Name
 		#contactForm__label-name{
-			grid-column: 3 / span 5;
+			grid-column: 1 / span 6;
 			grid-row-start: 5;	
 			text-align: end;
 		}
 		#contactForm__input-name{
-			grid-column: 9 / span 14;
+			grid-column: 8 / span 14;
 			grid-row-start: 5;
 		}
 
 		//Email
 		#contactForm__label-email{
-			grid-column: 3 / span 5;
+			grid-column: 1 / span 6;
 			grid-row-start: 7;	
 			text-align: end;
 		}
 		#contactForm__input-email{
-			grid-column: 9 / span 14;
+			grid-column: 8 / span 14;
 			grid-row-start: 7;	
 		}
 
 		//Message
 		#contactForm__label-message{
-			grid-column: 3 / span 5;
+			grid-column: 1 / span 6;
 			grid-row-start: 9;	
 			text-align: end;
 		}
 		#contactForm__input-message{
-			grid-column: 9 / span 14;
+			grid-column: 8 / span 14;
 			grid-row: 9 / span 10;
 		}
 
