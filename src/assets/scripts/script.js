@@ -76,10 +76,10 @@ function contactFormModalOpen(){
 
 
 	var windowHeight = $(window).height();
-	console.log("the window height as is is "+ windowHeight);
+	// console.log("the window height as is is "+ windowHeight);
 
 	var topPercentage = windowHeight * 0.1;
-	console.log("10% of the window height is "+ topPercentage)
+	// console.log("10% of the window height is "+ topPercentage)
 }
 
 function contactFormModalClose(){
@@ -94,36 +94,40 @@ function contactFormModalClose(){
 //=========== 3. Mailer functioanlity===========//
 
 $(document).ready(function (event){
-	event.preventDefault();
-	$('#mail-button').click(button_mail_click);
+	$('#contactForm__button-sendButton').click(button_mail_click);
 });
 
+
 function button_mail_click(){
-		var email = $('#email').val();
-		var name = $('#name').val();
-		var message = $('#messagebox').val();
+	var email = $('#contactForm__input-email').val();
+	var name = $('#contactForm__input-name').val();
+	var message = $('#contactForm__input-message').val();
 
-		$.ajax({
-			url:'../mailer.php',
-			type: 'POST',
-			data:{
-					name:name,
-					email:email,
-					message:message
-			},
-				error:function (){alert("didnt work");},
-				success: function(){
-					alert("Thank you for your message!");
+	$.ajax({
+		url:'../lkcode/mailer.php',
+		type: 'POST',
+		data:{
+				name:name,
+				email:email,
+				message:message
+		},
+		error:function(){
+			alert("didnt work");
+		},
+		success: function(response){
+			// header('localhost/lkcode');
+		
+		//	console.log(response);
 
-			//grab the form feilds and make the 
-			//make the value an empty string.
 
-				$('#email').val() = "";
-				$('#name').val() = "";
-				$('#messagebox').val() = "";
+		//grab the form feilds and make the 
+		//make the value an empty string.
 
-			}
-		});
+			// $('#email').val() = "";
+			// $('#name').val() = "";
+			// $('#messagebox').val() = "";
+		},		
+	});
 }
 
 //=========== 4. Welome Text =============//
@@ -136,7 +140,7 @@ function animateText(label_name, text, timer){
 	t = 0;
 	text = text;
 	var milisecondPerFrame = Math.ceil(timer * 500 / text.length);
-	console.log(milisecondPerFrame);
+	// console.log(milisecondPerFrame);
 	for (var i = 0; i < text.length; i++) 
 	{		
 		setTimeout(textFrame, i*milisecondPerFrame, text.substring(0, i + 1));
