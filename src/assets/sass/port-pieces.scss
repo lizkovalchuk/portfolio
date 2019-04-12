@@ -124,7 +124,8 @@
                     left: 30px;
                     width: 100%;
                     a{
-                        &:first-child{
+                        &:first-child, 
+                        &:nth-child(2) {
                             margin-right: 10px;
                         }
                     }
@@ -256,4 +257,13 @@
     .remove-border-snc{
         border: 1px solid white !important;
     }
+}
+
+.custom-opacity-class{
+    opacity: 1 !important;
+}
+
+.custom-focus-class{
+    background-color: white; 
+    color: gray !important;
 }

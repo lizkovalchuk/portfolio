@@ -8,6 +8,7 @@
 *5. Toggle Class
 *6. IPMP header
 *7. Hamburger
+*8. IsFocus for Tabbing
 *********************************************/
 
 
@@ -75,11 +76,11 @@ function contactFormModalOpen(){
 	$("#body__div_page-wrapper").addClass("modal-post-clicked-page-wrapper");
 
 
-	var windowHeight = $(window).height();
-	// console.log("the window height as is is "+ windowHeight);
+	// var windowHeight = $(window).height();
+	// // console.log("the window height as is is "+ windowHeight);
 
-	var topPercentage = windowHeight * 0.1;
-	// console.log("10% of the window height is "+ topPercentage)
+	// var topPercentage = windowHeight * 0.1;
+	// // console.log("10% of the window height is "+ topPercentage)
 }
 
 function contactFormModalClose(){
@@ -119,7 +120,9 @@ function button_mail_click(){
 		
 			if(data == "No arguments Provided!" ){
 
-				// Error messages code
+				// ==================== Error messages code
+
+				//Name
 				if( $('#contactForm__input-name').val() == '' || $('#contactForm__input-name').val() == null ){
 					if ($('#contactForm__p-name-errorMessage').length == 0){
 						$("#contactForm__input-name").after( "<p id='contactForm__p-name-errorMessage'>Name cannot be empty</p>" );
@@ -128,7 +131,7 @@ function button_mail_click(){
 					$('#contactForm__p-name-errorMessage').remove();
 				}
 
-
+				//Email
 				if (emailValidation.test(email) == false){	
 					 if ($('#contactForm__p-email-errorMessage').length == 0){
 						$("#contactForm__input-email").after( "<p id='contactForm__p-email-errorMessage'>Must be a valid email</p>" );
@@ -138,7 +141,7 @@ function button_mail_click(){
 					$('#contactForm__p-email-errorMessage').remove();
 				}
 
-
+				//Message
 				if( $('#contactForm__input-message').val() == '' || $('#contactForm__input-message').val() == null ){
 					if ($('#contactForm__p-message-errorMessage').length == 0){
 						$("#contactForm__input-message").after( "<p id='contactForm__p-message-errorMessage'>Message cannot be empty</p>" );
@@ -416,35 +419,190 @@ $(document).ready(function() {
 });
 
 
+//========== 8. IsFocus for Tabbing===================//
+
+document.addEventListener("keydown", function() {
+
+	//Contact 
+	$("#menu__li_desktop-contact-form").focus(function(){					
+		$("#menu__li_desktop-contact-form").on('keypress',function(e) {
+			if(e.which == 13) {
+				$(".modal").css("display", "block");	
+				$("#body__div__modal-wrapper").addClass("modal-wrapper-modal-clicked");
+				$(".modal").addClass("modal-clicked");
+				
+				$("#header__section--toprow").addClass("modal-post-clicked-header__section--toprow");
+				$("#body__div_page-wrapper").addClass("modal-post-clicked-page-wrapper");
+			}
+		});
+	});
+
+	//BerryFace
+	$("#portfolio__a-berryFace-live").focus(function(){					
+		$('.port-piece-container > #berryface-port-piece-img > img').addClass("blur-img");
+		$('#berryface-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-berryFace-live').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-berryFace-live").focusout(function(){		
+		$('.port-piece-container > #berryface-port-piece-img > img').removeClass("blur-img");
+		$('#berryface-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-berryFace-live').removeClass("custom-focus-class");
+	});
+	$("#portfolio__a-berryFace-GH").focus(function(){					
+		$('.port-piece-container > #berryface-port-piece-img > img').addClass("blur-img");
+		$('#berryface-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-berryFace-GH').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-berryFace-GH").focusout(function(){		
+		$('.port-piece-container > #berryface-port-piece-img > img').removeClass("blur-img");
+		$('#berryface-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-berryFace-GH').removeClass("custom-focus-class");
+	});
+
+	//Stolen Bikes
+	$("#portfolio__a-sb-live").focus(function(){					
+		$('.port-piece-container > #sb-port-piece-img > img').addClass("blur-img");
+		$('#sb-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-sb-live').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-sb-live").focusout(function(){		
+		$('.port-piece-container > #sb-port-piece-img > img').removeClass("blur-img");
+		$('#sb-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-sb-live').removeClass("custom-focus-class");
+	});
+	$("#portfolio__a-sb-GH").focus(function(){					
+		$('.port-piece-container > #sb-port-piece-img > img').addClass("blur-img");
+		$('#sb-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-sb-GH').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-sb-GH").focusout(function(){		
+		$('.port-piece-container > #sb-port-piece-img > img').removeClass("blur-img");
+		$('#sb-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-sb-GH').removeClass("custom-focus-class");
+	});
+
+	//Netboost
+	$("#portfolio__a-netboost-live").focus(function(){					
+		$('.port-piece-container > #netboost-port-piece-img > img').addClass("blur-img");
+		$('#netboost-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-netboost-live').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-netboost-live").focusout(function(){		
+		$('.port-piece-container > #netboost-port-piece-img > img').removeClass("blur-img");
+		$('#netboost-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-netboost-live').removeClass("custom-focus-class");
+	});
+	$("#portfolio__a-netboost-GH").focus(function(){					
+		$('.port-piece-container > #netboost-port-piece-img > img').addClass("blur-img");
+		$('#netboost-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-netboost-GH').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-netboost-GH").focusout(function(){		
+		$('.port-piece-container > #netboost-port-piece-img > img').removeClass("blur-img");
+		$('#netboost-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-netboost-GH').removeClass("custom-focus-class");
+	});
+	$("#portfolio__a-netboost-demo").focus(function(){					
+		$('.port-piece-container > #netboost-port-piece-img > img').addClass("blur-img");
+		$('#netboost-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-netboost-demo').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-netboost-demo").focusout(function(){		
+		$('.port-piece-container > #netboost-port-piece-img > img').removeClass("blur-img");
+		$('#netboost-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-netboost-demo').removeClass("custom-focus-class");
+	});
+
+	//Symptom Tracker
+	$("#portfolio__a-st-live").focus(function(){					
+		$('.port-piece-container > #st-port-piece-img > img').addClass("blur-img");
+		$('#st-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-st-live').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-st-live").focusout(function(){		
+		$('.port-piece-container > #st-port-piece-img > img').removeClass("blur-img");
+		$('#st-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-st-live').removeClass("custom-focus-class");
+	});
+	$("#portfolio__a-st-GH").focus(function(){					
+		$('.port-piece-container > #st-port-piece-img > img').addClass("blur-img");
+		$('#st-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-st-GH').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-st-GH").focusout(function(){		
+		$('.port-piece-container > #st-port-piece-img > img').removeClass("blur-img");
+		$('#st-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-st-GH').removeClass("custom-focus-class");
+	});
+	$("#portfolio__a-st-demo").focus(function(){					
+		$('.port-piece-container > #st-port-piece-img > img').addClass("blur-img");
+		$('#st-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-st-demo').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-st-demo").focusout(function(){		
+		$('.port-piece-container > #st-port-piece-img > img').removeClass("blur-img");
+		$('#st-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-st-demo').removeClass("custom-focus-class");
+	});
+
+
+	//IPMP
+	$("#portfolio__a-ipmp-live").focus(function(){					
+		$('.port-piece-container > #ipmp-port-piece-img > img').addClass("blur-img");
+		$('#ipmp-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-ipmp-live').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-ipmp-live").focusout(function(){		
+		$('.port-piece-container > #ipmp-port-piece-img > img').removeClass("blur-img");
+		$('#ipmp-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-ipmp-live').removeClass("custom-focus-class");
+	});
+	$("#portfolio__a-ipmp-GH").focus(function(){					
+		$('.port-piece-container > #ipmp-port-piece-img > img').addClass("blur-img");
+		$('#ipmp-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-ipmp-GH').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-ipmp-GH").focusout(function(){		
+		$('.port-piece-container > #ipmp-port-piece-img > img').removeClass("blur-img");
+		$('#ipmp-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-ipmp-GH').removeClass("custom-focus-class");
+	});
+	$("#portfolio__a-ipmp-demo").focus(function(){					
+		$('.port-piece-container > #ipmp-port-piece-img > img').addClass("blur-img");
+		$('#ipmp-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-ipmp-demo').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-ipmp-demo").focusout(function(){		
+		$('.port-piece-container > #ipmp-port-piece-img > img').removeClass("blur-img");
+		$('#ipmp-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-ipmp-demo').removeClass("custom-focus-class");
+	});
+
+
+	//Comrade Cafe
+	$("#portfolio__a-cc-live").focus(function(){					
+		$('.port-piece-container > #cc-port-piece-img > img').addClass("blur-img");
+		$('#cc-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-cc-live').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-cc-live").focusout(function(){		
+		$('.port-piece-container > #cc-port-piece-img > img').removeClass("blur-img");
+		$('#cc-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-cc-live').removeClass("custom-focus-class");
+	});
+	$("#portfolio__a-cc-GH").focus(function(){					
+		$('.port-piece-container > #cc-port-piece-img > img').addClass("blur-img");
+		$('#cc-port-piece-text').addClass("custom-opacity-class");
+		$('#portfolio__a-cc-GH').addClass("custom-focus-class");
+	});
+	$("#portfolio__a-cc-GH").focusout(function(){		
+		$('.port-piece-container > #cc-port-piece-img > img').removeClass("blur-img");
+		$('#cc-port-piece-text').removeClass("custom-opacity-class");
+		$('#portfolio__a-cc-GH').removeClass("custom-focus-class");
+	});
+});
 
 
 
-// Lee's Code
 
 
-/*
-
-//========== 1. Scroll to divs FROM LEE===================//
-
-// function scrollToDiv($div_name){
-// 	$("html, body").delay(300).animate({
-// 		scrollTop: $($div_name).offset().top
-// 	}, 500);
-// }
-
-// $(document).on('click', '#header__section--toprow ul li', function() {
-// 	var page = $(this).attr("data-page");
-// 	scrollToDiv('#'+ page);
-// });
-
-// $(document).on('click', '#banner__i--downward-arrow', function() {
-// 	var page = $(this).attr("data-page");
-// 	scrollToDiv('#'+ page);
-// });
-
-// $(document).on('click', '#header__section--toprow #menu__ul--mobile li', function() {
-// 	var page = $(this).attr("data-page");
-// 	scrollToDiv('#'+ page);
-// });
-
-*/

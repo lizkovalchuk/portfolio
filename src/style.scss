@@ -41,8 +41,11 @@ body{
     h3{
         font-size: 2em;
     }
+    h1:focus,
+    p:focus,
     a:focus,
-    button:focus{
+    button:focus
+    i:focus{
         box-shadow: (0 0 15px gray) !important;
         outline: none;
     }

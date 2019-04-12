@@ -23,13 +23,15 @@
 				<header>
 					<section id="header__section--toprow">
 						<div id="header__div--container">
-							<h1 id="header__h1--name">Liz Kovalchuk - Web Developer</h1>
+							<div id="header__div--h1-container">
+								<a href="#"><h1 id="header__h1--name">Liz Kovalchuk - Web Developer</h1></a>
+							</div>							
 							<nav id="menu--desktop">
 								<ul id="menu__ul--desktop" >
-									<li data-page="portfolio-data-page"><a id="desktopMenu__a-portfolio" class="header-nav-link" href="#">Portfolio</a></li>																	
-									<li data-page="aboutme-data-page"><a id="desktopMenu__a-about" class="header-nav-link" href="#">About</a></li>
-									<li data-page="skills-and-tools-data-page"><a id="desktopMenu__a-skills-and-tools" class="header-nav-link" href="#">Skills & Tools</a></li>
-									<li><a id="menu__li_desktop-contact-form" class="header-nav-link">Contact</a></li>
+									<li><a tabindex="0" id="desktopMenu__a-portfolio" class="header-nav-link" href="#">Portfolio</a></li>																	
+									<li><a tabindex="0" id="desktopMenu__a-about" class="header-nav-link" href="#">About</a></li>
+									<li><a tabindex="0" id="desktopMenu__a-skills-and-tools" class="header-nav-link" href="#">Skills & Tools</a></li>
+									<li><a tabindex="0" id="menu__li_desktop-contact-form" class="header-nav-link">Contact</a></li>
 								</ul>
 							</nav>
 							<nav id="menu--mobile">
@@ -39,9 +41,9 @@
 									</span>
 								</button>						
 								<ul id="menu__ul--mobile" >
-									<li data-page="portfolio-data-page"><a id="mobileMenu__a-portfolio" class="header-nav-link" href="#">Portfolio</a></li>
-									<li data-page="aboutme-data-page"><a id="mobileMenu__a-about" class="header-nav-link" href="#">About</a></li>									
-									<li data-page="skills-and-tools-data-page"><a id="mobileMenu__a-skills-and-tools" class="header-nav-link" href="#">Skills & Tools</a></li>
+									<li><a id="mobileMenu__a-portfolio" class="header-nav-link" href="#">Portfolio</a></li>
+									<li><a id="mobileMenu__a-about" class="header-nav-link" href="#">About</a></li>									
+									<li><a id="mobileMenu__a-skills-and-tools" class="header-nav-link" href="#">Skills & Tools</a></li>
 									<li><a id="menu__li_mobile-contact-form" class="header-nav-link">Contact</a></li>
 								</ul>
 							</nav>
@@ -90,8 +92,8 @@
 								<p>BerryFace is an interface that connects to a raspberry pi via an API to show the current temperature and humidity.</p>
 								<p class="lower-text">Technologies: React, Python, Django and MariaDB</p>
 								<div class="portfolio__div--links-container">
-									<a class="portfolio__links port-view-live" href="https://berryface.herokuapp.com/" target="_blank">View Live</a>
-									<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/React-BerryFace" target="_blank">View GitHub Code</a>								
+									<a tabindex="0" id="portfolio__a-berryFace-live" class="portfolio__links port-view-live" href="https://berryface.herokuapp.com/" target="_blank">View Live</a>
+									<a tabindex="0" id="portfolio__a-berryFace-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/React-BerryFace" target="_blank">View GitHub Code</a>								
 								</div>
 							</div>
 						</div>
@@ -104,8 +106,8 @@
 								<p>A web application intergrating two different APIs to help users plan bicycle trips far from reported bike thiefs.</p>
 								<p class="lower-text">Technologies: HTML, CSS, PHP and JQuery, Google Maps API and Bike Index API V3.</p>
 								<div class="portfolio__div--links-container">
-									<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/API-project" target="_blank">View GitHub Code</a>
-									<a class="portfolio__links port-view-live" href="http://stolenbikes.tk/" target="_blank">View Live</a>
+									<a tabindex="0" id="portfolio__a-sb-live" class="portfolio__links port-view-live" href="http://stolenbikes.tk/" target="_blank">View Live</a>
+									<a tabindex="0" id="portfolio__a-sb-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/API-project" target="_blank">View GitHub Code</a>
 								</div>
 							</div>
 						</div>
@@ -118,8 +120,9 @@
 								<p>Database Driven website project management feature that displays percantage and duration of milestone completion.</p>
 								<p class="lower-text">Technologies: HTML, CSS, JavaScript, PHP, MySQL, Google Charts API</p>
 								<div class="portfolio__div--links-container">
-									<a class="portfolio__links port-view-live" href="http://netboost.ca/" target="_blank">View Live</a>
-									<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								
+									<a tabindex="0" id="portfolio__a-netboost-live" class="portfolio__links port-view-live" href="http://netboost.ca/" target="_blank">View Live</a>
+									<a tabindex="0" id="portfolio__a-netboost-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								
+									<a tabindex="0" id="portfolio__a-netboost-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>								
 								</div>
 							</div>
 						</div>
@@ -132,8 +135,9 @@
 								<p>Databse driven feature that allows users to register and login to track their symptoms.</p>
 								<p class="lower-text">Technologies: C#, .NET and CSS.</p>
 								<div class="portfolio__div--links-container">
-									<a class="portfolio__links port-view-live" href="http://symptomtrackermvc.azurewebsites.net/" target="_blank">View Live</a>
-									<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank">View GitHub Code</a>
+									<a tabindex="0" id="portfolio__a-st-live" class="portfolio__links port-view-live" href="http://symptomtrackermvc.azurewebsites.net/" target="_blank">View Live</a>
+									<a tabindex="0" id="portfolio__a-st-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank">View GitHub Code</a>
+									<a tabindex="0" id="portfolio__a-st-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>
 								</div>
 							</div>
 						</div>
@@ -146,8 +150,9 @@
 								<p>Coded two custom WordPress plugins, one for custom profiles and the other to alter the GeoDirectory Theme style and content.</p>
 								<p class="lower-text">Technologies: WordPress, JQuery, CSS and PHP.</p>
 								<div class="portfolio__div--links-container">
-									<a class="portfolio__links port-view-live" href="http://ipmpalumninetwork.ca/" target="_blank">View Live</a>
-									<!-- <a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								 -->
+									<a tabindex="0" id="portfolio__a-ipmp-live" class="portfolio__links port-view-live" href="http://ipmpalumninetwork.ca/" target="_blank">View Live</a>
+									<a tabindex="0" id="portfolio__a-ipmp-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								
+									<a tabindex="0" id="portfolio__a-ipmp-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>								
 								</div>
 							</div>
 						</div>
@@ -161,8 +166,8 @@
 									<p>An interactive interface for users to custom build giftcards on a restaurant website.</p>
 									<p class="lower-text">Technologies: HTML, CSS and JQuery.</p>
 									<div class="portfolio__div--links-container">
-										<a class="portfolio__links port-view-live" href="http://comradecafe.tk" target="_blank">View Live</a>
-										<a class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank">View GitHub Code</a>
+										<a tabindex="0" id="portfolio__a-cc-live" class="portfolio__links port-view-live" href="http://comradecafe.tk" target="_blank">View Live</a>
+										<a tabindex="0" id="portfolio__a-cc-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank">View GitHub Code</a>
 									</div>
 								</div>
 							</div>
@@ -195,7 +200,7 @@
 					<div id="aboutme__div--container">					
 						<h3 id="aboutme__h3">Creating beautiful, clean and highly functional websites.</h3>
 						<div id="aboutme__div--resume">
-							<a href="src/assets/resume.pdf" target="_blank">View Resume</a>
+							<a tabindex="0" href="src/assets/resume.pdf" target="_blank">View Resume</a>
 						</div>					
 						<div class="aboutme__div--items" id="imagine__div">
 							<h3>Imagine</h3>
@@ -309,28 +314,28 @@
 				<div>
 					<footer>	
 						<div class="social-links">
-							<a href="https://github.com/lizkovalchuk" target="_blank" class="icon"><i class="fab fa-github"></i></a>
-							<a href="https://ca.linkedin.com/in/liz-kovalchuk-4803b86a" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
-							<a href="https://www.instagram.com/lizthecellist/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
-							<a href="https://twitter.com/lizthecellist" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
-							<a href="https://www.facebook.com/liz.kovalchuk" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
-							<a href="https://www.youtube.com/channel/UC7FfRr8dyecguF5082J23FQ" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>																										
+							<a tabindex="0" href="https://github.com/lizkovalchuk" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+							<a tabindex="0" href="https://ca.linkedin.com/in/liz-kovalchuk-4803b86a" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
+							<a tabindex="0" href="https://www.instagram.com/lizthecellist/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+							<a tabindex="0" href="https://twitter.com/lizthecellist" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+							<a tabindex="0" href="https://www.facebook.com/liz.kovalchuk" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+							<a tabindex="0" href="https://www.youtube.com/channel/UC7FfRr8dyecguF5082J23FQ" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>																										
 						</div>
 					</footer>
 				</div>
 			</div>
 		</div>
-		<form id="contact-form" class="modal" action="" method="post" onsubmit="return false">		
+		<form id="contact-form" class="modal" action="?" method="post" onsubmit="return false">		
 			<div class="modal-content">
 				<div id="contactForm__div-h2Container">
 					<h2 id="_contact">Contact</h2>
 				</div>
 				<i id="contactForm__i_closeIcon" class="fal fa-times"></i>				
-				<label id="contactForm__label-name" for="name">Name:</label>
+				<label id="contactForm__label-name" for="contactForm__input-name">Name:</label>
 				<input type="text" id="contactForm__input-name" name="name">
-				<label id="contactForm__label-email" for="email">Email:</label>
+				<label id="contactForm__label-email" for="contactForm__input-email">Email:</label>
 				<input type="text" id="contactForm__input-email" name="email">
-				<label id="contactForm__label-message" for="messagebox">Message:</label>
+				<label id="contactForm__label-message" for="contactForm__input-message">Message:</label>
 				<textarea rows="10" id="contactForm__input-message" name="message"></textarea>
 				<div id="contactForm__div-sendButton" class="custom-button">				
 					<button id="contactForm__button-sendButton">Send</button>

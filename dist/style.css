@@ -18,6 +18,10 @@ header #header__section--toprow {
     justify-content: space-between;
     width: 90%;
     max-width: 1200px; }
+    header #header__section--toprow #header__div--container #header__div--h1-container {
+      width: 250px; }
+      header #header__section--toprow #header__div--container #header__div--h1-container a {
+        text-decoration: none; }
   header #header__section--toprow #header__h1--name {
     color: black;
     margin: 16px 0;
@@ -317,7 +321,7 @@ header #header__svg_underline {
       bottom: 40px;
       left: 30px;
       width: 100%; }
-      #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container a:first-child {
+      #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container a:first-child, #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container a:nth-child(2) {
         margin-right: 10px; }
       @media screen and (max-width: 500px) {
         #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container {
@@ -539,6 +543,13 @@ header #header__svg_underline {
     transform: scale(1.15); }
   #portfolio_section .remove-border-snc {
     border: 1px solid white !important; }
+
+.custom-opacity-class {
+  opacity: 1 !important; }
+
+.custom-focus-class {
+  background-color: white;
+  color: gray !important; }
 
 #aboutme-data-page {
   height: 50px;
@@ -1224,8 +1235,11 @@ body {
     background-color: #F5FD4D; }
   body h3 {
     font-size: 2em; }
+  body h1:focus,
+  body p:focus,
   body a:focus,
-  body button:focus {
+  body button:focus
+i:focus {
     box-shadow: 0 0 15px gray !important;
     outline: none; }
 

@@ -20,6 +20,12 @@ header{
             justify-content: space-between;
             width: 90%;
             max-width: 1200px;
+            #header__div--h1-container{
+                width: 250px;
+                a{
+                    text-decoration: none;
+                }
+            }
         }
         #header__h1--name{
             color: black;
