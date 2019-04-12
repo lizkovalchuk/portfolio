@@ -5,11 +5,11 @@ form{
 		padding: 20px;
 		border: 1px solid #888;
 		width: 30%;	
-		height: 27vw;
+		height: 29vw;
 		min-height: 400px;
 		position: relative;
 		display: grid;	
-		grid-template-rows: repeat(19, 1fr);		
+		grid-template-rows: repeat(22, 1fr);		
 		grid-template-columns: repeat(25, 1fr);
 		@media screen and (max-width: $custom-lg) {                
 			width: 35%;
@@ -23,8 +23,8 @@ form{
 
 		#contactForm__div-h2Container{
 			position: absolute;
-			top: 35px;
-			left: 40px;
+			top: 5%;
+			left: 5%;
 		}
 		h2{
 			background-color: $yellow;
@@ -82,46 +82,65 @@ form{
 
 		//Send Button
 		#contactForm__div-sendButton{
-			grid-column: 10 / span 5;
-			grid-row: 23 / span 2;
-			display: flex;
-			justify-content: center;
+			// grid-column: 10 / span 5;
+			// grid-row: 23 / span 2;
+			// display: flex;
+			// justify-content: center;
+			position: absolute;
+			bottom: 12px;			
+			left: 39%;
 			#contactForm__button-sendButton{
 				background-color: $yellow;
 				height: 33px;
-				width: 90px;
-				border: 1px solid gray;
+				width: 90px;				
 				font-size: 15px;
 				margin-bottom: 10px;
+				position: relative;
+				border: none;
 				&:hover{
 					cursor: pointer;
+
+				}
+				&:focus{
 					box-shadow: (0 0 15px gray) !important;
 				}
+				&::after{
+				content	: '';
+				position: absolute;
+				top: 30px;
+				left: 1px;
+				display: block;
+				width: 0;
+				height: 2px;
+				border-bottom: 1px solid black;
+				transition: width .3s;
+				}
+				&:hover::after {
+                    width: 89px;
+                }
 			}
-		}
-
-		#contactForm__p-email-errorMessage,
-		#contactForm__p-name-errorMessage,
-		#contactForm__p-message-errorMessage{
-			font-size: 12px;
-    		color: red;
-			grid-column: 8 / span 9;
-		}
-		#contactForm__p-name-errorMessage{
-			grid-row-start: 6;
-		}
-		#contactForm__p-email-errorMessage{
-    		grid-row-start: 8;
-		}
-		#contactForm__p-message-errorMessage{
-			grid-row-start: 19;
 		}
 	}
 }
 
 
-
-
+#contactForm__p-email-errorMessage,
+#contactForm__p-name-errorMessage,
+#contactForm__p-message-errorMessage{
+	font-size: 12px;
+	color: red;
+	grid-column: 8 / span 15;
+}
+#contactForm__p-name-errorMessage{
+	grid-row-start: 6;
+}
+#contactForm__p-email-errorMessage{
+	grid-row-start: 8;
+}
+#contactForm__p-message-errorMessage{
+	grid-row-start: 19;
+	// grid-column: 8 / span 15;
+}
 
 .modal{
 	z-index: 1; /* Sit on top */	

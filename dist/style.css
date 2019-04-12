@@ -1006,11 +1006,11 @@ form .modal-content {
   padding: 20px;
   border: 1px solid #888;
   width: 30%;
-  height: 27vw;
+  height: 29vw;
   min-height: 400px;
   position: relative;
   display: grid;
-  grid-template-rows: repeat(19, 1fr);
+  grid-template-rows: repeat(22, 1fr);
   grid-template-columns: repeat(25, 1fr); }
   @media screen and (max-width: 1250px) {
     form .modal-content {
@@ -1023,8 +1023,8 @@ form .modal-content {
       width: 75%; } }
   form .modal-content #contactForm__div-h2Container {
     position: absolute;
-    top: 35px;
-    left: 40px; }
+    top: 5%;
+    left: 5%; }
   form .modal-content h2 {
     background-color: #F5FD4D;
     font-size: 30px;
@@ -1063,32 +1063,49 @@ form .modal-content {
     grid-column: 8 / span 14;
     grid-row: 9 / span 10; }
   form .modal-content #contactForm__div-sendButton {
-    grid-column: 10 / span 5;
-    grid-row: 23 / span 2;
-    display: flex;
-    justify-content: center; }
+    position: absolute;
+    bottom: 12px;
+    left: 39%; }
     form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton {
       background-color: #F5FD4D;
       height: 33px;
       width: 90px;
-      border: 1px solid gray;
       font-size: 15px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      position: relative;
+      border: none; }
       form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:hover {
-        cursor: pointer;
+        cursor: pointer; }
+      form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:focus {
         box-shadow: 0 0 15px gray !important; }
-  form .modal-content #contactForm__p-email-errorMessage,
-  form .modal-content #contactForm__p-name-errorMessage,
-  form .modal-content #contactForm__p-message-errorMessage {
-    font-size: 12px;
-    color: red;
-    grid-column: 8 / span 9; }
-  form .modal-content #contactForm__p-name-errorMessage {
-    grid-row-start: 6; }
-  form .modal-content #contactForm__p-email-errorMessage {
-    grid-row-start: 8; }
-  form .modal-content #contactForm__p-message-errorMessage {
-    grid-row-start: 19; }
+      form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 1px;
+        display: block;
+        width: 0;
+        height: 2px;
+        border-bottom: 1px solid black;
+        transition: width .3s; }
+      form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:hover::after {
+        width: 89px; }
+
+#contactForm__p-email-errorMessage,
+#contactForm__p-name-errorMessage,
+#contactForm__p-message-errorMessage {
+  font-size: 12px;
+  color: red;
+  grid-column: 8 / span 15; }
+
+#contactForm__p-name-errorMessage {
+  grid-row-start: 6; }
+
+#contactForm__p-email-errorMessage {
+  grid-row-start: 8; }
+
+#contactForm__p-message-errorMessage {
+  grid-row-start: 19; }
 
 .modal {
   z-index: 1;
