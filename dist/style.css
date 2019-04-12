@@ -1000,96 +1000,98 @@ header #header__svg_underline {
           grid-column: 9 / span 3;
           grid-row-start: 21; } }
 
-form .modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 30%;
-  height: 29vw;
-  min-height: 400px;
-  position: relative;
-  display: grid;
-  grid-template-rows: repeat(22, 1fr);
-  grid-template-columns: repeat(25, 1fr); }
-  @media screen and (max-width: 1250px) {
-    form .modal-content {
-      width: 35%; } }
-  @media screen and (max-width: 850px) {
-    form .modal-content {
-      width: 55%; } }
-  @media screen and (max-width: 650px) {
-    form .modal-content {
-      width: 75%; } }
-  form .modal-content #contactForm__div-h2Container {
-    position: absolute;
-    top: 5%;
-    left: 5%; }
-  form .modal-content h2 {
-    background-color: #F5FD4D;
-    font-size: 30px;
-    margin-top: unset;
-    padding: 0 10px; }
-  form .modal-content i {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px 20px;
-    font-size: 40px; }
-  form .modal-content input, form .modal-content textarea {
-    border: 1px solid gray; }
-    form .modal-content input:focus, form .modal-content textarea:focus {
-      box-shadow: 0 0 15px gray !important;
-      outline: none; }
-  form .modal-content #contactForm__label-name {
-    grid-column: 1 / span 6;
-    grid-row-start: 5;
-    text-align: end; }
-  form .modal-content #contactForm__input-name {
-    grid-column: 8 / span 14;
-    grid-row-start: 5; }
-  form .modal-content #contactForm__label-email {
-    grid-column: 1 / span 6;
-    grid-row-start: 7;
-    text-align: end; }
-  form .modal-content #contactForm__input-email {
-    grid-column: 8 / span 14;
-    grid-row-start: 7; }
-  form .modal-content #contactForm__label-message {
-    grid-column: 1 / span 6;
-    grid-row-start: 9;
-    text-align: end; }
-  form .modal-content #contactForm__input-message {
-    grid-column: 8 / span 14;
-    grid-row: 9 / span 10; }
-  form .modal-content #contactForm__div-sendButton {
-    position: absolute;
-    bottom: 12px;
-    left: 39%; }
-    form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton {
+form {
+  min-height: 485px; }
+  form .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 29vw;
+    min-height: 400px;
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(22, 1fr);
+    grid-template-columns: repeat(25, 1fr); }
+    @media screen and (max-width: 1250px) {
+      form .modal-content {
+        width: 35%; } }
+    @media screen and (max-width: 850px) {
+      form .modal-content {
+        width: 55%; } }
+    @media screen and (max-width: 650px) {
+      form .modal-content {
+        width: 75%; } }
+    form .modal-content #contactForm__div-h2Container {
+      position: absolute;
+      top: 5%;
+      left: 5%; }
+    form .modal-content h2 {
       background-color: #F5FD4D;
-      height: 33px;
-      width: 90px;
-      font-size: 15px;
-      margin-bottom: 10px;
-      position: relative;
-      border: none; }
-      form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:hover {
-        cursor: pointer; }
-      form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:focus {
-        box-shadow: 0 0 15px gray !important; }
-      form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton::after {
-        content: '';
-        position: absolute;
-        top: 30px;
-        left: 1px;
-        display: block;
-        width: 0;
-        height: 2px;
-        border-bottom: 1px solid black;
-        transition: width .3s; }
-      form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:hover::after {
-        width: 89px; }
+      font-size: 30px;
+      margin-top: unset;
+      padding: 0 10px; }
+    form .modal-content #contactForm__i_closeIcon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px 20px;
+      font-size: 40px; }
+    form .modal-content input, form .modal-content textarea {
+      border: 1px solid gray; }
+      form .modal-content input:focus, form .modal-content textarea:focus {
+        box-shadow: 0 0 15px gray !important;
+        outline: none; }
+    form .modal-content #contactForm__label-name {
+      grid-column: 1 / span 6;
+      grid-row-start: 5;
+      text-align: end; }
+    form .modal-content #contactForm__input-name {
+      grid-column: 8 / span 14;
+      grid-row-start: 5; }
+    form .modal-content #contactForm__label-email {
+      grid-column: 1 / span 6;
+      grid-row-start: 7;
+      text-align: end; }
+    form .modal-content #contactForm__input-email {
+      grid-column: 8 / span 14;
+      grid-row-start: 7; }
+    form .modal-content #contactForm__label-message {
+      grid-column: 1 / span 6;
+      grid-row-start: 9;
+      text-align: end; }
+    form .modal-content #contactForm__input-message {
+      grid-column: 8 / span 14;
+      grid-row: 9 / span 10; }
+    form .modal-content #contactForm__div-sendButton {
+      position: absolute;
+      bottom: 12px;
+      left: 39%; }
+      form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton {
+        background-color: #F5FD4D;
+        height: 33px;
+        width: 90px;
+        font-size: 15px;
+        margin-bottom: 10px;
+        position: relative;
+        border: none; }
+        form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:hover {
+          cursor: pointer; }
+        form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:focus {
+          box-shadow: 0 0 15px gray !important; }
+        form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton::after {
+          content: '';
+          position: absolute;
+          top: 30px;
+          left: 1px;
+          display: block;
+          width: 0;
+          height: 2px;
+          border-bottom: 1px solid black;
+          transition: width .3s; }
+        form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:hover::after {
+          width: 89px; }
 
 #contactForm__p-email-errorMessage,
 #contactForm__p-name-errorMessage,
@@ -1130,6 +1132,27 @@ form .modal-content {
 
 .modal-post-clicked-header__section--toprow {
   background-color: rgba(0, 0, 0, 0); }
+
+#contactForm__div-message-sent-container {
+  width: 30%;
+  height: 29vw;
+  min-height: 400px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  display: flex;
+  position: relative; }
+  #contactForm__div-message-sent-container #contactForm__p-message-sent {
+    font-size: 35px;
+    margin: auto; }
+  #contactForm__div-message-sent-container #contactForm__i-closeIcon-messageSent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    font-size: 60px;
+    z-index: 1000; }
 
 #thank-you-section {
   display: flex;

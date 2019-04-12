@@ -118,6 +118,8 @@ function button_mail_click(){
 		success: function(data){
 		
 			if(data == "No arguments Provided!" ){
+
+				// Error messages code
 				if( $('#contactForm__input-name').val() == '' || $('#contactForm__input-name').val() == null ){
 					if ($('#contactForm__p-name-errorMessage').length == 0){
 						$("#contactForm__input-name").after( "<p id='contactForm__p-name-errorMessage'>Name cannot be empty</p>" );
@@ -144,23 +146,56 @@ function button_mail_click(){
 				} else {
 					$('#contactForm__p-message-errorMessage').remove();
 				}
-			} 
-			// else{
+			}  
+			else { // this else is when arguments are provided and ajax is successful
 
-			// }
+				$('#contactForm__button-sendButton').attr("disabled", true);
+				$('#contactForm__button-sendButton').text('Loading...');
+				
+				function delayModalContentRemoval(){
+					$('.modal-content').remove();
+					$('#contact-form').append("<div id='contactForm__div-message-sent-container'><p id='contactForm__p-message-sent'></p></div>")
+					// $('#contact-form').append("<div id='contactForm__div-message-sent-container'></div>")
+					setTimeout(animateMessageSentText,500,"#contactForm__p-message-sent","Thanks for reaching out!", 2);
+	
+					function animateMessageSentText(label_name, text, timer){
+						t = 0;
+						text = text;
+						var milisecondPerFrame = Math.ceil(timer * 500 / text.length);
+						for (var i = 0; i < text.length; i++) 
+						{		
+							setTimeout(textFrame, i*milisecondPerFrame, text.substring(0, i + 1));
+						}
+					};
+	
+					function textFrame(text){
+						$("#contactForm__p-message-sent").html(text);
+					};
+	
+					function addCloseIcon(){
+						$('#contactForm__div-message-sent-container').append('<i id="contactForm__i-closeIcon-messageSent" class="fal fa-times" onClick="contactFormModalCloseMessageSent()"></i>');
+					}
+					setTimeout(addCloseIcon, 2000);
+				}
+				setTimeout(delayModalContentRemoval, 500);
 
-
-		//grab the form feilds and make the 
-		//make the value an empty string.
-
-			// $('#email').val() = "";
-			// $('#name').val() = "";
-			// $('#messagebox').val() = "";
+				
+			}
 		},		
 	});
 }
+		
+function contactFormModalCloseMessageSent(){			
+	$(".modal").css("display", "none");		
+	$("#body__div__modal-wrapper").removeClass("modal-wrapper-modal-clicked");
+	$(".modal").removeClass("modal-clicked");
+	
+	$("#header__section--toprow").removeClass("modal-post-clicked-header__section--toprow");
+	$("#body__div_page-wrapper").removeClass("modal-post-clicked-page-wrapper");
+}
 
-//=========== 4. Welome Text =============//
+
+//=========== 4. Welcome Text =============//
 
 $(document).ready(function(){
 	setTimeout(animateText,500,"banner__label--welcome-text-1","Designing with code", 2.5);
@@ -170,7 +205,6 @@ function animateText(label_name, text, timer){
 	t = 0;
 	text = text;
 	var milisecondPerFrame = Math.ceil(timer * 500 / text.length);
-	// console.log(milisecondPerFrame);
 	for (var i = 0; i < text.length; i++) 
 	{		
 		setTimeout(textFrame, i*milisecondPerFrame, text.substring(0, i + 1));

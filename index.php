@@ -320,7 +320,7 @@
 				</div>
 			</div>
 		</div>
-		<form id="contact-frm" class="modal" action="" method="post" onsubmit="return false">		
+		<form id="contact-form" class="modal" action="" method="post" onsubmit="return false">		
 			<div class="modal-content">
 				<div id="contactForm__div-h2Container">
 					<h2 id="_contact">Contact</h2>

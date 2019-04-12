@@ -1,4 +1,5 @@
 form{
+	min-height: 485px;
 	.modal-content {
 		background-color: #fefefe;
 		margin: auto;
@@ -32,7 +33,7 @@ form{
 			margin-top: unset;
 			padding: 0 10px;
 		}
-		i{
+		#contactForm__i_closeIcon{
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -168,3 +169,26 @@ form{
 	background-color:rgba(0,0,0,-0.01);
 }
 
+#contactForm__div-message-sent-container{
+	width: 30%;	
+	height: 29vw;
+	min-height: 400px;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	display: flex;
+	position: relative;
+	#contactForm__p-message-sent{
+		font-size: 35px;
+		margin: auto;
+	}
+	#contactForm__i-closeIcon-messageSent{
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 10px 20px;
+		font-size: 60px;
+		z-index: 1000;
+	}
+}
