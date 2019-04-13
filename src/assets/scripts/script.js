@@ -405,7 +405,7 @@ $(document).ready(function() {
 		} 
 	}
 
-	var x = window.matchMedia("(max-width: 768px)")
+	var x = window.matchMedia("(max-width: 1200px)")
 	myFunction(x) // Call listener function at run time
 	x.addListener(myFunction)
 
