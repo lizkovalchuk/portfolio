@@ -427,190 +427,206 @@ $(document).ready(function() {
 
 //========== 8. IsFocus for Tabbing===================//
 
-document.addEventListener("keydown", function() {
+window.addEventListener('load', function() {
+	var smallScreenTabbing = false;
+	var widthOnLoadTabbing = window.innerWidth;
+	
+	if(widthOnLoadTabbing < 500){
+		smallScreenTabbing = true;
+	} 
 
-	//Contact 
-	$("#menu__li_desktop-contact-form").focus(function(){					
-		$("#menu__li_desktop-contact-form").on('keypress',function(e) {
-			if(e.which == 13) {
-				$(".modal").css("display", "block");	
-				$("#body__div__modal-wrapper").addClass("modal-wrapper-modal-clicked");
-				$(".modal").addClass("modal-clicked");
-				
-				$("#header__section--toprow").addClass("modal-post-clicked-header__section--toprow");
-				$("#body__div_page-wrapper").addClass("modal-post-clicked-page-wrapper");
-			}
-		});
-	});
-
-	//BerryFace
-	$("#portfolio__a-berryFace-live").focus(function(){					
-		$('.port-piece-container > #berryface-port-piece-img > img').addClass("blur-img");
-		$('#berryface-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-berryFace-live').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-berryFace-live").focusout(function(){		
-		$('.port-piece-container > #berryface-port-piece-img > img').removeClass("blur-img");
-		$('#berryface-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-berryFace-live').removeClass("custom-focus-class");
-	});
-	$("#portfolio__a-berryFace-GH").focus(function(){					
-		$('.port-piece-container > #berryface-port-piece-img > img').addClass("blur-img");
-		$('#berryface-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-berryFace-GH').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-berryFace-GH").focusout(function(){		
-		$('.port-piece-container > #berryface-port-piece-img > img').removeClass("blur-img");
-		$('#berryface-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-berryFace-GH').removeClass("custom-focus-class");
-	});
-
-	//Stolen Bikes
-	$("#portfolio__a-sb-live").focus(function(){					
-		$('.port-piece-container > #sb-port-piece-img > img').addClass("blur-img");
-		$('#sb-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-sb-live').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-sb-live").focusout(function(){		
-		$('.port-piece-container > #sb-port-piece-img > img').removeClass("blur-img");
-		$('#sb-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-sb-live').removeClass("custom-focus-class");
-	});
-	$("#portfolio__a-sb-GH").focus(function(){					
-		$('.port-piece-container > #sb-port-piece-img > img').addClass("blur-img");
-		$('#sb-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-sb-GH').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-sb-GH").focusout(function(){		
-		$('.port-piece-container > #sb-port-piece-img > img').removeClass("blur-img");
-		$('#sb-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-sb-GH').removeClass("custom-focus-class");
-	});
-
-	//Netboost
-	$("#portfolio__a-netboost-live").focus(function(){					
-		$('.port-piece-container > #netboost-port-piece-img > img').addClass("blur-img");
-		$('#netboost-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-netboost-live').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-netboost-live").focusout(function(){		
-		$('.port-piece-container > #netboost-port-piece-img > img').removeClass("blur-img");
-		$('#netboost-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-netboost-live').removeClass("custom-focus-class");
-	});
-	$("#portfolio__a-netboost-GH").focus(function(){					
-		$('.port-piece-container > #netboost-port-piece-img > img').addClass("blur-img");
-		$('#netboost-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-netboost-GH').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-netboost-GH").focusout(function(){		
-		$('.port-piece-container > #netboost-port-piece-img > img').removeClass("blur-img");
-		$('#netboost-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-netboost-GH').removeClass("custom-focus-class");
-	});
-	$("#portfolio__a-netboost-demo").focus(function(){					
-		$('.port-piece-container > #netboost-port-piece-img > img').addClass("blur-img");
-		$('#netboost-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-netboost-demo').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-netboost-demo").focusout(function(){		
-		$('.port-piece-container > #netboost-port-piece-img > img').removeClass("blur-img");
-		$('#netboost-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-netboost-demo').removeClass("custom-focus-class");
-	});
-
-	//Symptom Tracker
-	$("#portfolio__a-st-live").focus(function(){					
-		$('.port-piece-container > #st-port-piece-img > img').addClass("blur-img");
-		$('#st-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-st-live').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-st-live").focusout(function(){		
-		$('.port-piece-container > #st-port-piece-img > img').removeClass("blur-img");
-		$('#st-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-st-live').removeClass("custom-focus-class");
-	});
-	$("#portfolio__a-st-GH").focus(function(){					
-		$('.port-piece-container > #st-port-piece-img > img').addClass("blur-img");
-		$('#st-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-st-GH').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-st-GH").focusout(function(){		
-		$('.port-piece-container > #st-port-piece-img > img').removeClass("blur-img");
-		$('#st-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-st-GH').removeClass("custom-focus-class");
-	});
-	$("#portfolio__a-st-demo").focus(function(){					
-		$('.port-piece-container > #st-port-piece-img > img').addClass("blur-img");
-		$('#st-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-st-demo').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-st-demo").focusout(function(){		
-		$('.port-piece-container > #st-port-piece-img > img').removeClass("blur-img");
-		$('#st-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-st-demo').removeClass("custom-focus-class");
-	});
-
-
-	//IPMP
-	$("#portfolio__a-ipmp-live").focus(function(){					
-		$('.port-piece-container > #ipmp-port-piece-img > img').addClass("blur-img");
-		$('#ipmp-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-ipmp-live').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-ipmp-live").focusout(function(){		
-		$('.port-piece-container > #ipmp-port-piece-img > img').removeClass("blur-img");
-		$('#ipmp-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-ipmp-live').removeClass("custom-focus-class");
-	});
-	$("#portfolio__a-ipmp-GH").focus(function(){					
-		$('.port-piece-container > #ipmp-port-piece-img > img').addClass("blur-img");
-		$('#ipmp-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-ipmp-GH').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-ipmp-GH").focusout(function(){		
-		$('.port-piece-container > #ipmp-port-piece-img > img').removeClass("blur-img");
-		$('#ipmp-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-ipmp-GH').removeClass("custom-focus-class");
-	});
-	$("#portfolio__a-ipmp-demo").focus(function(){					
-		$('.port-piece-container > #ipmp-port-piece-img > img').addClass("blur-img");
-		$('#ipmp-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-ipmp-demo').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-ipmp-demo").focusout(function(){		
-		$('.port-piece-container > #ipmp-port-piece-img > img').removeClass("blur-img");
-		$('#ipmp-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-ipmp-demo').removeClass("custom-focus-class");
-	});
-
-
-	//Comrade Cafe
-	$("#portfolio__a-cc-live").focus(function(){					
-		$('.port-piece-container > #cc-port-piece-img > img').addClass("blur-img");
-		$('#cc-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-cc-live').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-cc-live").focusout(function(){		
-		$('.port-piece-container > #cc-port-piece-img > img').removeClass("blur-img");
-		$('#cc-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-cc-live').removeClass("custom-focus-class");
-	});
-	$("#portfolio__a-cc-GH").focus(function(){					
-		$('.port-piece-container > #cc-port-piece-img > img').addClass("blur-img");
-		$('#cc-port-piece-text').addClass("custom-opacity-class");
-		$('#portfolio__a-cc-GH').addClass("custom-focus-class");
-	});
-	$("#portfolio__a-cc-GH").focusout(function(){		
-		$('.port-piece-container > #cc-port-piece-img > img').removeClass("blur-img");
-		$('#cc-port-piece-text').removeClass("custom-opacity-class");
-		$('#portfolio__a-cc-GH').removeClass("custom-focus-class");
-	});
+	if(smallScreenTabbing == false) {
+		tabbingDesktop();
+	}
 });
 
 
-//========== 9.  Thanks for Visiting (viewport)===================//
+function tabbingDesktop(){
+	document.addEventListener("keydown", function() {
+	
+		//Contact 
+		$("#menu__li_desktop-contact-form").focus(function(){					
+			$("#menu__li_desktop-contact-form").on('keypress',function(e) {
+				if(e.which == 13) {
+					$(".modal").css("display", "block");	
+					$("#body__div__modal-wrapper").addClass("modal-wrapper-modal-clicked");
+					$(".modal").addClass("modal-clicked");
+					
+					$("#header__section--toprow").addClass("modal-post-clicked-header__section--toprow");
+					$("#body__div_page-wrapper").addClass("modal-post-clicked-page-wrapper");
+				}
+			});
+		});
+	
+		//BerryFace
+		$("#portfolio__a-berryFace-live").focus(function(){					
+			$('.port-piece-container > #berryface-port-piece-img > img').addClass("blur-img");
+			$('#berryface-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-berryFace-live').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-berryFace-live").focusout(function(){		
+			$('.port-piece-container > #berryface-port-piece-img > img').removeClass("blur-img");
+			$('#berryface-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-berryFace-live').removeClass("custom-focus-class");
+		});
+		$("#portfolio__a-berryFace-GH").focus(function(){					
+			$('.port-piece-container > #berryface-port-piece-img > img').addClass("blur-img");
+			$('#berryface-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-berryFace-GH').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-berryFace-GH").focusout(function(){		
+			$('.port-piece-container > #berryface-port-piece-img > img').removeClass("blur-img");
+			$('#berryface-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-berryFace-GH').removeClass("custom-focus-class");
+		});
+	
+		//Stolen Bikes
+		$("#portfolio__a-sb-live").focus(function(){					
+			$('.port-piece-container > #sb-port-piece-img > img').addClass("blur-img");
+			$('#sb-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-sb-live').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-sb-live").focusout(function(){		
+			$('.port-piece-container > #sb-port-piece-img > img').removeClass("blur-img");
+			$('#sb-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-sb-live').removeClass("custom-focus-class");
+		});
+		$("#portfolio__a-sb-GH").focus(function(){					
+			$('.port-piece-container > #sb-port-piece-img > img').addClass("blur-img");
+			$('#sb-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-sb-GH').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-sb-GH").focusout(function(){		
+			$('.port-piece-container > #sb-port-piece-img > img').removeClass("blur-img");
+			$('#sb-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-sb-GH').removeClass("custom-focus-class");
+		});
+	
+		//Netboost
+		$("#portfolio__a-netboost-live").focus(function(){					
+			$('.port-piece-container > #netboost-port-piece-img > img').addClass("blur-img");
+			$('#netboost-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-netboost-live').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-netboost-live").focusout(function(){		
+			$('.port-piece-container > #netboost-port-piece-img > img').removeClass("blur-img");
+			$('#netboost-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-netboost-live').removeClass("custom-focus-class");
+		});
+		$("#portfolio__a-netboost-GH").focus(function(){					
+			$('.port-piece-container > #netboost-port-piece-img > img').addClass("blur-img");
+			$('#netboost-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-netboost-GH').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-netboost-GH").focusout(function(){		
+			$('.port-piece-container > #netboost-port-piece-img > img').removeClass("blur-img");
+			$('#netboost-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-netboost-GH').removeClass("custom-focus-class");
+		});
+		$("#portfolio__a-netboost-demo").focus(function(){					
+			$('.port-piece-container > #netboost-port-piece-img > img').addClass("blur-img");
+			$('#netboost-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-netboost-demo').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-netboost-demo").focusout(function(){		
+			$('.port-piece-container > #netboost-port-piece-img > img').removeClass("blur-img");
+			$('#netboost-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-netboost-demo').removeClass("custom-focus-class");
+		});
+	
+		//Symptom Tracker
+		$("#portfolio__a-st-live").focus(function(){					
+			$('.port-piece-container > #st-port-piece-img > img').addClass("blur-img");
+			$('#st-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-st-live').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-st-live").focusout(function(){		
+			$('.port-piece-container > #st-port-piece-img > img').removeClass("blur-img");
+			$('#st-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-st-live').removeClass("custom-focus-class");
+		});
+		$("#portfolio__a-st-GH").focus(function(){					
+			$('.port-piece-container > #st-port-piece-img > img').addClass("blur-img");
+			$('#st-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-st-GH').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-st-GH").focusout(function(){		
+			$('.port-piece-container > #st-port-piece-img > img').removeClass("blur-img");
+			$('#st-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-st-GH').removeClass("custom-focus-class");
+		});
+		$("#portfolio__a-st-demo").focus(function(){					
+			$('.port-piece-container > #st-port-piece-img > img').addClass("blur-img");
+			$('#st-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-st-demo').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-st-demo").focusout(function(){		
+			$('.port-piece-container > #st-port-piece-img > img').removeClass("blur-img");
+			$('#st-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-st-demo').removeClass("custom-focus-class");
+		});
+	
+	
+		//IPMP
+		$("#portfolio__a-ipmp-live").focus(function(){					
+			$('.port-piece-container > #ipmp-port-piece-img > img').addClass("blur-img");
+			$('#ipmp-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-ipmp-live').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-ipmp-live").focusout(function(){		
+			$('.port-piece-container > #ipmp-port-piece-img > img').removeClass("blur-img");
+			$('#ipmp-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-ipmp-live').removeClass("custom-focus-class");
+		});
+		$("#portfolio__a-ipmp-GH").focus(function(){					
+			$('.port-piece-container > #ipmp-port-piece-img > img').addClass("blur-img");
+			$('#ipmp-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-ipmp-GH').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-ipmp-GH").focusout(function(){		
+			$('.port-piece-container > #ipmp-port-piece-img > img').removeClass("blur-img");
+			$('#ipmp-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-ipmp-GH').removeClass("custom-focus-class");
+		});
+		$("#portfolio__a-ipmp-demo").focus(function(){					
+			$('.port-piece-container > #ipmp-port-piece-img > img').addClass("blur-img");
+			$('#ipmp-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-ipmp-demo').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-ipmp-demo").focusout(function(){		
+			$('.port-piece-container > #ipmp-port-piece-img > img').removeClass("blur-img");
+			$('#ipmp-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-ipmp-demo').removeClass("custom-focus-class");
+		});
+	
+	
+		//Comrade Cafe
+		$("#portfolio__a-cc-live").focus(function(){					
+			$('.port-piece-container > #cc-port-piece-img > img').addClass("blur-img");
+			$('#cc-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-cc-live').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-cc-live").focusout(function(){		
+			$('.port-piece-container > #cc-port-piece-img > img').removeClass("blur-img");
+			$('#cc-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-cc-live').removeClass("custom-focus-class");
+		});
+		$("#portfolio__a-cc-GH").focus(function(){					
+			$('.port-piece-container > #cc-port-piece-img > img').addClass("blur-img");
+			$('#cc-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-cc-GH').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-cc-GH").focusout(function(){		
+			$('.port-piece-container > #cc-port-piece-img > img').removeClass("blur-img");
+			$('#cc-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-cc-GH').removeClass("custom-focus-class");
+		});
+	});
+}
 
+
+
+//========== 9.  Thanks for Visiting (viewport)===================//
 
 $.getScript("./src/assets/libs/waypoints.min.js", function() {
 
@@ -638,6 +654,7 @@ $.getScript("./src/assets/libs/waypoints.min.js", function() {
 			function textFooterFrame(text){
 				$("#thank-you-text").html(text);
 			};
+			this.destroy();
 		},
 		offset: 900 
 	})

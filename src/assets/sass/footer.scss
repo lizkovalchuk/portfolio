@@ -1,10 +1,11 @@
-
-
 #thank-you-section{
     display: flex;
     justify-content: center;
     margin: 50px 0;
     min-height: 80px;
+    @media screen and (max-width: $xs) {                
+        min-height: 53px;
+    }
     #thank-you-text{
         font-size: 60px;
         color: black;
