@@ -238,7 +238,7 @@ window.addEventListener('load', function() {
 	if(smallScreen == false) {
 		toggleBlurImageClass();
 	}
-})
+});
 
 // RESIZER
 

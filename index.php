@@ -36,7 +36,7 @@
 								</ul>
 							</nav>
 							<nav id="menu--mobile">
-								<button class="hamburger hamburger--squeeze" type="button">
+								<button tabindex="0" class="hamburger hamburger--squeeze" type="button">
 									<span class="hamburger-box">
 										<span class="hamburger-inner"></span>
 									</span>
@@ -45,7 +45,7 @@
 									<li><a id="mobileMenu__a-portfolio" class="header-nav-link" href="#">Portfolio</a></li>
 									<li><a id="mobileMenu__a-about" class="header-nav-link" href="#">About</a></li>									
 									<li><a id="mobileMenu__a-skills-and-tools" class="header-nav-link" href="#">Skills & Tools</a></li>
-									<li><a id="menu__li_mobile-contact-form" class="header-nav-link">Contact</a></li>
+									<li><a tabindex="0" id="menu__li_mobile-contact-form" class="header-nav-link">Contact</a></li>
 								</ul>
 							</nav>
 						</div>

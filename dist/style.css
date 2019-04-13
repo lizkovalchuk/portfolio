@@ -61,6 +61,12 @@ header #header__section--toprow {
   header #header__section--toprow #menu--mobile button .hamburger-box .hamburger-inner {
     font-size: 40px;
     background-color: black; }
+    header #header__section--toprow #menu--mobile button .hamburger-box .hamburger-inner:focus {
+      box-shadow: 0 0 15px gray !important;
+      outline: none !important; }
+  header #header__section--toprow #menu--mobile button:focus {
+    box-shadow: 0 0 15px gray !important;
+    outline: none; }
   @media screen and (min-width: 900px) {
     header #header__section--toprow #menu--mobile {
       display: none; } }
@@ -320,12 +326,15 @@ header #header__svg_underline {
       position: absolute;
       bottom: 40px;
       left: 30px;
-      width: 100%; }
+      width: 100%;
+      display: flex; }
       #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container a:first-child, #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container a:nth-child(2) {
         margin-right: 10px; }
       @media screen and (max-width: 500px) {
         #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container {
           left: 5px; } }
+      #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container:nth-child(3), #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container:nth-child(4), #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container:nth-child(5) {
+        bottom: 14px !important; }
     #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-img,
     #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img,
     #portfolio_section .portfolio-wrapper .port-piece-container #sb-port-piece-img,
@@ -1243,5 +1252,5 @@ body {
   body button:focus
 i:focus {
     box-shadow: 0 0 15px gray !important;
-    outline: none; }
+    outline: none !important; }
 
