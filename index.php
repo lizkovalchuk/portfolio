@@ -15,6 +15,7 @@
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		crossorigin="anonymous"></script> -->
 		<script src="src/assets/libs/jquery-3.3.1.js"></script>
+		<script src="src/assets/libs/waypoints.min.js"></script>
 		<script src="src/assets/scripts/script.js"></script>
 	</head>
 	<body>
@@ -309,7 +310,7 @@
 				
 				<!-- FOOTER -->
 				<div id="thank-you-section">
-					<span id="thank-you-text">Thanks for visiting!</span>
+					<span id="thank-you-text"></span>
 				</div>
 				<div>
 					<footer>	
@@ -338,7 +339,7 @@
 				<label id="contactForm__label-message" for="contactForm__input-message">Message:</label>
 				<textarea rows="10" id="contactForm__input-message" name="message"></textarea>
 				<div id="contactForm__div-sendButton" class="custom-button">				
-					<button id="contactForm__button-sendButton">Send</button>
+					<button tabindex="0" id="contactForm__button-sendButton">Send</button>
 				</div>
 			</div>
 		</form>

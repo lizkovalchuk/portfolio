@@ -9,6 +9,7 @@
 *6. IPMP header
 *7. Hamburger
 *8. IsFocus for Tabbing
+*9. Thanks for Visiting (viewport)
 *********************************************/
 
 
@@ -601,6 +602,44 @@ document.addEventListener("keydown", function() {
 		$('#portfolio__a-cc-GH').removeClass("custom-focus-class");
 	});
 });
+
+
+//========== 9.  Thanks for Visiting (viewport)===================//
+
+
+$.getScript("./src/assets/libs/waypoints.min.js", function() {
+
+	// var object = new Waypoint;
+	var waypoint = new Waypoint({
+		element: document.getElementById('thank-you-section'),
+		handler: function() {
+		 //  console.log('Basic waypoint triggered');
+		//	console.log("in footer view")
+
+			$(document).ready(function(){
+				setTimeout(animateFooterText,500,"thank-you-text","Thanks for visiting!", 2.5);
+			});
+			
+			function animateFooterText(label_name, text, timer){
+				t = 0;
+				text = text;
+				var milisecondPerFrame = Math.ceil(timer * 500 / text.length);
+				for (var i = 0; i < text.length; i++) 
+				{		
+					setTimeout(textFooterFrame, i*milisecondPerFrame, text.substring(0, i + 1));
+				}
+			};
+			
+			function textFooterFrame(text){
+				$("#thank-you-text").html(text);
+			};
+		},
+		offset: 900 
+	})
+});
+
+
+
 
 
 

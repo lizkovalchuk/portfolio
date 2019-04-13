@@ -100,10 +100,11 @@ form{
 				border: none;
 				&:hover{
 					cursor: pointer;
-
 				}
-				&:focus{
+				&:focus,
+				&::selection{
 					box-shadow: (0 0 15px gray) !important;
+					outline: none;
 				}
 				&::after{
 				content	: '';

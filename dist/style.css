@@ -1089,8 +1089,9 @@ form {
         border: none; }
         form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:hover {
           cursor: pointer; }
-        form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:focus {
-          box-shadow: 0 0 15px gray !important; }
+        form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton:focus, form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton::selection {
+          box-shadow: 0 0 15px gray !important;
+          outline: none; }
         form .modal-content #contactForm__div-sendButton #contactForm__button-sendButton::after {
           content: '';
           position: absolute;
@@ -1168,7 +1169,8 @@ form {
 #thank-you-section {
   display: flex;
   justify-content: center;
-  margin: 50px 0; }
+  margin: 50px 0;
+  min-height: 80px; }
   #thank-you-section #thank-you-text {
     font-size: 60px;
     color: black;
