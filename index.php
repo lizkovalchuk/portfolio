@@ -66,7 +66,7 @@
 						<div id="banner__div--orange-square"></div>
 					</div>
 					<div id="banner__div--downward-arrow">
-						<i class="fal fa-chevron-down" id="banner__i--downward-arrow" data-page="portfolio-data-page" ></i>			
+						<i class="fal fa-chevron-down" id="banner__i--downward-arrow"></i>			
 					</div>
 				</header>
 

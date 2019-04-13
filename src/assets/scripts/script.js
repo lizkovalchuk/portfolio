@@ -32,6 +32,11 @@ $(document).ready(function (){
 		  scrollTop: $(portfolioDestination).offset().top
 		},100)
 	})
+	$('#banner__i--downward-arrow').click(function() {
+		$('html, body').animate({
+		  scrollTop: $(portfolioDestination).offset().top
+		},100)
+	})
 
 	$('#desktopMenu__a-about').click(function() {
 		$('html, body').animate({
