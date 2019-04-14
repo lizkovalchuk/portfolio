@@ -91,10 +91,11 @@
 							<div class="portfolio__div--port-piece-text-container" id="berryface-port-piece-text">
 								<h3>BerryFace</h3>
 								<p>BerryFace is an interface that connects to a raspberry pi via an API to show the current temperature and humidity.</p>
-								<p class="lower-text">Technologies: React, Python, Django and MariaDB</p>
+								<p class="lower-text">Technologies: Raspberry Pi, React, Python, and Firebase</p>
 								<div class="portfolio__div--links-container">
 									<a tabindex="0" id="portfolio__a-berryFace-live" class="portfolio__links port-view-live" href="https://berryface.herokuapp.com/" target="_blank">View Live</a>
-									<a tabindex="0" id="portfolio__a-berryFace-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/React-BerryFace" target="_blank">View GitHub Code</a>								
+									<a tabindex="0" id="portfolio__a-berryFace-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/React-BerryFace" target="_blank">View React Code</a>								
+									<!-- <a tabindex="0" id="portfolio__a-berryFace-GH2" class="portfolio__links port-view-GH" href="#" target="_blank">View Python Code</a>								 -->
 								</div>
 							</div>
 						</div>
@@ -118,12 +119,12 @@
 							</div>
 							<div class="portfolio__div--port-piece-text-container" id="netboost-port-piece-text">
 								<h3>Netboost.ca</h3>
-								<p>Database Driven website project management feature that displays percantage and duration of milestone completion.</p>
+								<p>Database Driven website (group project), coded 3 features, project management feature that displays percantage and duration of milestone completion, task manager and teacher approve student choices.</p>
 								<p class="lower-text">Technologies: HTML, CSS, JavaScript, PHP, MySQL, Google Charts API</p>
 								<div class="portfolio__div--links-container">
 									<a tabindex="0" id="portfolio__a-netboost-live" class="portfolio__links port-view-live" href="http://netboost.ca/" target="_blank">View Live</a>
 									<a tabindex="0" id="portfolio__a-netboost-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								
-									<a tabindex="0" id="portfolio__a-netboost-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>								
+									<!-- <a tabindex="0" id="portfolio__a-netboost-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>								 -->
 								</div>
 							</div>
 						</div>
@@ -133,12 +134,12 @@
 							</div>
 							<div class="portfolio__div--port-piece-text-container" id="st-port-piece-text">
 								<h3>Symptom Tracker</h3>
-								<p>Databse driven feature that allows users to register and login to track their symptoms.</p>
-								<p class="lower-text">Technologies: C#, .NET and CSS.</p>
+								<p>Databse driven application that allows users to register and login to track their symptoms.</p>
+								<p class="lower-text">Technologies: C#, .NET, MSSQL and CSS.</p>
 								<div class="portfolio__div--links-container">
 									<a tabindex="0" id="portfolio__a-st-live" class="portfolio__links port-view-live" href="http://symptomtrackermvc.azurewebsites.net/" target="_blank">View Live</a>
-									<a tabindex="0" id="portfolio__a-st-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/JavaScript-Team-Project-Fall-2017" target="_blank">View GitHub Code</a>
-									<a tabindex="0" id="portfolio__a-st-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>
+									<a tabindex="0" id="portfolio__a-st-GH" class="portfolio__links port-view-GH" href="#" target="_blank">View GitHub Code</a>
+									<!-- <a tabindex="0" id="portfolio__a-st-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a> -->
 								</div>
 							</div>
 						</div>
@@ -152,8 +153,8 @@
 								<p class="lower-text">Technologies: WordPress, JQuery, CSS and PHP.</p>
 								<div class="portfolio__div--links-container">
 									<a tabindex="0" id="portfolio__a-ipmp-live" class="portfolio__links port-view-live" href="http://ipmpalumninetwork.ca/" target="_blank">View Live</a>
-									<a tabindex="0" id="portfolio__a-ipmp-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								
-									<a tabindex="0" id="portfolio__a-ipmp-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>								
+									<!-- <a tabindex="0" id="portfolio__a-ipmp-GH" class="portfolio__links port-view-GH" href="#" target="_blank">View GitHub Code</a>								 -->
+									<!-- <a tabindex="0" id="portfolio__a-ipmp-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>								 -->
 								</div>
 							</div>
 						</div>
@@ -163,8 +164,8 @@
 							</div>
 							<div id="cc-port-piece-text">
 								<div class="portfolio__div--port-piece-text-container">								
-									<h3>Giftcards</h3>
-									<p>An interactive interface for users to custom build giftcards on a restaurant website.</p>
+									<h3>Comrade Cafe</h3>
+									<p>Built location, giftcard and about pages, project managed (this was a group project) and designed branding.</p>
 									<p class="lower-text">Technologies: HTML, CSS and JQuery.</p>
 									<div class="portfolio__div--links-container">
 										<a tabindex="0" id="portfolio__a-cc-live" class="portfolio__links port-view-live" href="http://comradecafe.tk" target="_blank">View Live</a>
