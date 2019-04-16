@@ -20,11 +20,11 @@
         top: 2600px;
     }
     @media screen and (max-width: $xs) {
-        top: 3900px;
-    }
-    @media screen and (max-width: $extra-xs) {
         top: 3800px;
     }
+    // @media screen and (max-width: $extra-xs) {
+    //     top: 3800px;
+    // }
 }
 
 #aboutme__section{
@@ -133,7 +133,7 @@
             padding: 8px;
             height: 21px;
             margin-top: 35px;
-            width: 95px;        
+            width: 109px;        
             a{
                 color: black;
                 text-decoration: none;
@@ -150,7 +150,7 @@
                     transition: width .3s;
                 }
                 &:hover::after {
-                    width: 111px;
+                    width: 125px;
                 }
             }
             @media screen and (max-width: $md) {

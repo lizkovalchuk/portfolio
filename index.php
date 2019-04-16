@@ -59,9 +59,51 @@
 								</g>
 							</svg>
 						</div>
-						<div id="banner__div--logo-container">				
-							<img src="src/assets/images/logos/with-joshua1.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk">
-							<!-- <img src="src/assets/images/logos/logo-jan-26.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk"> -->
+
+						<script>
+							window.onload = function(){
+								// Opera 8.0+
+								var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+
+								// Firefox 1.0+
+								var isFirefox = typeof InstallTrigger !== 'undefined';
+
+								// Safari 3.0+ "[object HTMLElementConstructor]" 
+								var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+
+								// Internet Explorer 6-11
+								var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+								// Edge 20+
+								var isEdge = !isIE && !!window.StyleMedia;
+
+								// Chrome 1+
+								var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+								// Blink engine detection
+								var isBlink = (isChrome || isOpera) && !!window.CSS;
+
+								var logoContainer = document.getElementById("banner__div--logo-container");
+
+								if(isIE || isEdge){
+									var x = document.createElement("IMG");
+									x.setAttribute("src", "src/assets/images/logos/logo-final-black.png");
+									logoContainer.appendChild(x);
+								}else{
+									var x = document.createElement("IMG");
+									x.setAttribute("src", "src/assets/images/logos/with-joshua1.svg");
+									logoContainer.appendChild(x);
+								}
+							};
+							
+						</script>
+
+
+						<div id="banner__div--logo-container">	
+							<!--[if IE ]>
+								<img src="src/assets/images/logos/logo-final-black.png" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk">							
+							<![endif]-->			
+							<!-- <img src="src/assets/images/logos/with-joshua1.svg" id="banner__img--logo-white" alt="Logo for Liz Kovalchuk">							 -->
 						</div>
 						<div id="banner__div--orange-square"></div>
 					</div>
@@ -153,7 +195,7 @@
 								<p class="lower-text">Technologies: WordPress, JQuery, CSS and PHP.</p>
 								<div class="portfolio__div--links-container">
 									<a tabindex="0" id="portfolio__a-ipmp-live" class="portfolio__links port-view-live" href="http://ipmpalumninetwork.ca/" target="_blank">View Live</a>
-									<!-- <a tabindex="0" id="portfolio__a-ipmp-GH" class="portfolio__links port-view-GH" href="#" target="_blank">View GitHub Code</a>								 -->
+									<a tabindex="0" id="portfolio__a-ipmp-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/IPMP-WordPress-Custom-Plugins" target="_blank">View GitHub Code</a>								
 									<!-- <a tabindex="0" id="portfolio__a-ipmp-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>								 -->
 								</div>
 							</div>
@@ -246,7 +288,7 @@
 							<span id="sass-span">Sass</span>
 						</div>
 						<div class="tool-icon-div" id="item-4">
-						<img class="tool-icon" src="src/assets/images/tool-icons/js.png" alt="javascript logo">					
+						<img class="tool-icon" src="src/assets/images/tool-icons/JS.png" alt="javascript logo">					
 							<span id="javascript-span">JavaScript</span>
 						</div>
 						<div class="tool-icon-div" id="item-5">

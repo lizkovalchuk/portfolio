@@ -333,7 +333,7 @@ header #header__svg_underline {
       @media screen and (max-width: 500px) {
         #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container {
           left: 5px; } }
-      #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container:nth-child(3), #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container:nth-child(4), #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container:nth-child(5) {
+      #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container:first-child, #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container:nth-child(3), #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container:nth-child(4), #portfolio_section .portfolio-wrapper .port-piece-container .portfolio__div--port-piece-text-container .portfolio__div--links-container:nth-child(5) {
         bottom: 14px !important; }
     #portfolio_section .portfolio-wrapper .port-piece-container #berryface-port-piece-img,
     #portfolio_section .portfolio-wrapper .port-piece-container #netboost-port-piece-img,
@@ -582,9 +582,6 @@ header #header__svg_underline {
       top: 2600px; } }
   @media screen and (max-width: 500px) {
     #aboutme-data-page {
-      top: 3900px; } }
-  @media screen and (max-width: 400px) {
-    #aboutme-data-page {
       top: 3800px; } }
 
 #aboutme__section {
@@ -673,7 +670,7 @@ header #header__svg_underline {
       padding: 8px;
       height: 21px;
       margin-top: 35px;
-      width: 95px; }
+      width: 109px; }
       #aboutme__section #aboutme__div--container #aboutme__div--resume a {
         color: black;
         text-decoration: none;
@@ -689,7 +686,7 @@ header #header__svg_underline {
           border-bottom: 1px solid black;
           transition: width .3s; }
         #aboutme__section #aboutme__div--container #aboutme__div--resume a:hover::after {
-          width: 111px; }
+          width: 125px; }
       @media screen and (max-width: 992px) {
         #aboutme__section #aboutme__div--container #aboutme__div--resume {
           grid-column: 5 /span 2;
