@@ -231,7 +231,7 @@ window.addEventListener('load', function() {
 	var smallScreen = false;
 	var widthOnLoad = window.innerWidth;
 	
-	if(widthOnLoad < 500){
+	if(widthOnLoad <= 500){
 		smallScreen = true;
 	} 
 
@@ -256,7 +256,7 @@ function widthWatcher(){
 		// console.log(widthOnResize + " from if inside widthWatcher function");
 		toggleBlurImageClass();
 	} 
-	if(widthOnResize < 500){
+	if(widthOnResize <= 500){
 		var berryFaceText = document.querySelector('#berryface-port-piece-text');
 		var berryFaceImg = document.querySelector('.port-piece-container #berryface-port-piece-img img');
 
@@ -716,6 +716,22 @@ $.getScript("./src/assets/libs/waypoints.min.js", function() {
 });
 
 
+//=========== 10. Hide Python ===========//
+
+
+// $(document).ready(function() {
+
+// 	function hidePython(x) {
+// 		if (x.matches) { 
+// 			$("#portfolio__a-berryFace-GH2").css("display","none");
+// 		} 
+// 	}
+
+// 	var x = window.matchMedia("(max-width: 1200px)")
+// 	hidePython(x) // Call listener function at run time
+// 	x.addListener(myFunction)
+
+// });
 
 
 
