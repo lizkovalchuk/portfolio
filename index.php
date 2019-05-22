@@ -132,11 +132,11 @@
 							</div>
 							<div class="portfolio__div--port-piece-text-container" id="berryface-port-piece-text">
 								<h3>BerryFace</h3>
-								<p>BerryFace is an interface that connects to a raspberry pi via an API to show the current temperature and humidity.</p>
-								<p class="lower-text">Technologies: Raspberry Pi, React, Python, and Firebase</p>
+								<p>BerryFace is an interface for a raspberry pi. BerryFace will soon connect with Firebase to show the current temperature and humidity in my apartment.</p>
+								<p class="lower-text">Technologies: Raspberry Pi, React, Material UI, Python, and Firebase</p>
 								<div class="portfolio__div--links-container">
-									<a tabindex="0" id="portfolio__a-berryFace-live" class="portfolio__links port-view-live" href="https://berryface.herokuapp.com/" target="_blank">View Live</a>
-									<a tabindex="0" id="portfolio__a-berryFace-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/React-BerryFace" target="_blank">View React Code</a>								
+									<a tabindex="0" id="portfolio__a-berryFace-live" class="portfolio__links port-view-live" href="https://lizkovalchuk.github.io/berryface-v2/#/" target="_blank">View Live</a>
+									<a tabindex="0" id="portfolio__a-berryFace-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/berryface-v2" target="_blank">View React Code</a>								
 									<a tabindex="0" id="portfolio__a-berryFace-GH2" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Python-BerryFace" target="_blank">View Python Code</a>								
 								</div>
 							</div>
