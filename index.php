@@ -137,7 +137,7 @@
 								<div class="portfolio__div--links-container">
 									<a tabindex="0" id="portfolio__a-berryFace-live" class="portfolio__links port-view-live" href="https://berryface.herokuapp.com/" target="_blank">View Live</a>
 									<a tabindex="0" id="portfolio__a-berryFace-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/React-BerryFace" target="_blank">View React Code</a>								
-									<!-- <a tabindex="0" id="portfolio__a-berryFace-GH2" class="portfolio__links port-view-GH" href="#" target="_blank">View Python Code</a>								 -->
+									<a tabindex="0" id="portfolio__a-berryFace-GH2" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Python-BerryFace" target="_blank">View Python Code</a>								
 								</div>
 							</div>
 						</div>
@@ -161,12 +161,12 @@
 							</div>
 							<div class="portfolio__div--port-piece-text-container" id="netboost-port-piece-text">
 								<h3>Netboost.ca</h3>
-								<p>Database Driven website (group project), coded 3 features, project management feature that displays percantage and duration of milestone completion, task manager and teacher approve student choices.</p>
-								<p class="lower-text">Technologies: HTML, CSS, JavaScript, PHP, MySQL, Google Charts API</p>
+								<p>Project management feature that displays percantage and duration of milestone completion, task manager and teacher approve student choices.</p>
+								<p class="lower-text">Technologies: HTML, CSS, JS, PHP, MySQL, Google Charts API</p>
 								<div class="portfolio__div--links-container">
 									<a tabindex="0" id="portfolio__a-netboost-live" class="portfolio__links port-view-live" href="http://netboost.ca/" target="_blank">View Live</a>
 									<a tabindex="0" id="portfolio__a-netboost-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Milestones" target="_blank">View GitHub Code</a>								
-									<!-- <a tabindex="0" id="portfolio__a-netboost-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>								 -->
+									<a tabindex="0" id="portfolio__a-netboost-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>								
 								</div>
 							</div>
 						</div>
@@ -181,7 +181,7 @@
 								<div class="portfolio__div--links-container">
 									<a tabindex="0" id="portfolio__a-st-live" class="portfolio__links port-view-live" href="http://symptomtrackermvc.azurewebsites.net/" target="_blank">View Live</a>
 									<a tabindex="0" id="portfolio__a-st-GH" class="portfolio__links port-view-GH" href="#" target="_blank">View GitHub Code</a>
-									<!-- <a tabindex="0" id="portfolio__a-st-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a> -->
+									<a tabindex="0" id="portfolio__a-st-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>
 								</div>
 							</div>
 						</div>
@@ -196,11 +196,31 @@
 								<div class="portfolio__div--links-container">
 									<a tabindex="0" id="portfolio__a-ipmp-live" class="portfolio__links port-view-live" href="http://ipmpalumninetwork.ca/" target="_blank">View Live</a>
 									<a tabindex="0" id="portfolio__a-ipmp-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/IPMP-WordPress-Custom-Plugins" target="_blank">View GitHub Code</a>								
-									<!-- <a tabindex="0" id="portfolio__a-ipmp-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>								 -->
+									<a tabindex="0" id="portfolio__a-ipmp-demo" class="portfolio__links port-view-demo" href="#" target="_blank">View Demo</a>								
 								</div>
 							</div>
 						</div>
-						<div id="comrade-cafe-container" class="port-piece-container">
+
+						<div id="cm-container" class="port-piece-container">
+							<div id="cm-port-piece-img">
+								<img src="src/assets/images/portfolio-pieces/cm.png" id="cm-pic" alt="picture of contact manager application">
+							</div>
+							<!-- <div > -->
+								<div class="portfolio__div--port-piece-text-container" id="cm-port-piece-text">								
+									<h3>Contact Manager</h3>
+									<p>Simple one page application to manage contacts using React, axios and JSON placeholder API.</p>
+									<p class="lower-text">Technologies: React, Axios</p>
+									<div class="portfolio__div--links-container">
+										<a tabindex="0" id="portfolio__a-cm-live" class="portfolio__links port-view-live" href="https://lizkovalchuk.github.io/Contact-Manager/#/" target="_blank">View Live</a>
+										<a tabindex="0" id="portfolio__a-cm-GH" class="portfolio__links port-view-GH" href="https://github.com/lizkovalchuk/Contact-Manager" target="_blank">View GitHub Code</a>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+
+
+
+						<!-- <div id="comrade-cafe-container" class="port-piece-container">
 							<div id="cc-port-piece-img">
 								<img src="src/assets/images/portfolio-pieces/cc.png" id="cc-pic" alt="picture of comrade cafe project">
 							</div>
@@ -215,7 +235,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 						<!-- <div id="syn-key-container" class="port-piece-container">
 							<div id="snc-port-piece-img">

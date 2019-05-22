@@ -272,8 +272,11 @@ function widthWatcher(){
 		var ipmpText = document.querySelector('#ipmp-port-piece-text');
 		var ipmpImg = document.querySelector('.port-piece-container #ipmp-port-piece-img img');
 
-		var ccText = document.querySelector('#cc-port-piece-text');
-		var ccImg = document.querySelector('.port-piece-container #cc-port-piece-img img');
+		var cmText = document.querySelector('#cm-port-piece-text');
+		var cmImg = document.querySelector('.port-piece-container #cm-port-piece-img img');
+
+		// var ccText = document.querySelector('#cc-port-piece-text');
+		// var ccImg = document.querySelector('.port-piece-container #cc-port-piece-img img');
 
 		berryFaceText.onmouseover = noBlurImg;
 		function noBlurImg() {
@@ -300,10 +303,15 @@ function widthWatcher(){
 			ipmpImg.classList.remove("blur-img");
 		}
 
-		ccText.onmouseover = noBlurImg;
+		cmText.onmouseover = noBlurImg;
 		function noBlurImg() {
-			ccImg.classList.remove("blur-img");
+			cmImg.classList.remove("blur-img");
 		}
+
+		// ccText.onmouseover = noBlurImg;
+		// function noBlurImg() {
+		// 	ccImg.classList.remove("blur-img");
+		// }
 
 	} // end of if(widthOnResize < 500)
 } // end of widthWatcher function
@@ -326,8 +334,11 @@ function toggleBlurImageClass(){
 	var ipmpText = document.querySelector('#ipmp-port-piece-text');
 	var ipmpImg = document.querySelector('.port-piece-container #ipmp-port-piece-img img');
 
-	var ccText = document.querySelector('#cc-port-piece-text');
-	var ccImg = document.querySelector('.port-piece-container #cc-port-piece-img img');
+	var cmText = document.querySelector('#cm-port-piece-text');
+	var cmImg = document.querySelector('.port-piece-container #cm-port-piece-img img');
+
+	// var ccText = document.querySelector('#cc-port-piece-text');
+	// var ccImg = document.querySelector('.port-piece-container #cc-port-piece-img img');
 
 	berryFaceText.onmouseover = logMouseOverBerryFace;
 	berryFaceText.onmouseout = logMouseOutBerryFace;
@@ -379,15 +390,26 @@ function toggleBlurImageClass(){
 		ipmpImg.classList.remove("blur-img");
 	}
 
-	ccText.onmouseover = logMouseOverCc;
-	ccText.onmouseout = logMouseOutCc;
 
-	function logMouseOverCc() {	
-		ccImg.classList.add("blur-img");
+	cmText.onmouseover = logMouseOverCm;
+	cmText.onmouseout = logMouseOutCm;
+
+	function logMouseOverCm() {	
+		cmImg.classList.add("blur-img");
 	}
-	function logMouseOutCc() {
-		ccImg.classList.remove("blur-img");
+	function logMouseOutCm() {
+		cmImg.classList.remove("blur-img");
 	}
+
+	// ccText.onmouseover = logMouseOverCc;
+	// ccText.onmouseout = logMouseOutCc;
+
+	// function logMouseOverCc() {	
+	// 	ccImg.classList.add("blur-img");
+	// }
+	// function logMouseOutCc() {
+	// 	ccImg.classList.remove("blur-img");
+	// }
 
 } // end of toogleBlurImageClass function
 
@@ -479,6 +501,17 @@ function tabbingDesktop(){
 			$('#berryface-port-piece-text').removeClass("custom-opacity-class");
 			$('#portfolio__a-berryFace-GH').removeClass("custom-focus-class");
 		});
+		$("#portfolio__a-berryFace-GH2").focus(function(){					
+			$('.port-piece-container > #berryface-port-piece-img > img').addClass("blur-img");
+			$('#berryface-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-berryFace-GH2').addClass("custom-focus-class");
+		});
+		$("#portfolio__a-berryFace-GH2").focusout(function(){		
+			$('.port-piece-container > #berryface-port-piece-img > img').removeClass("blur-img");
+			$('#berryface-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-berryFace-GH2').removeClass("custom-focus-class");
+		});
+	
 	
 		//Stolen Bikes
 		$("#portfolio__a-sb-live").focus(function(){					
@@ -599,28 +632,50 @@ function tabbingDesktop(){
 			$('#portfolio__a-ipmp-demo').removeClass("custom-focus-class");
 		});
 	
-	
-		//Comrade Cafe
-		$("#portfolio__a-cc-live").focus(function(){					
-			$('.port-piece-container > #cc-port-piece-img > img').addClass("blur-img");
-			$('#cc-port-piece-text').addClass("custom-opacity-class");
-			$('#portfolio__a-cc-live').addClass("custom-focus-class");
+		//Contact Manager
+		$("#portfolio__a-cm-live").focus(function(){					
+			$('.port-piece-container > #cm-port-piece-img > img').addClass("blur-img");
+			$('#cm-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-cm-live').addClass("custom-focus-class");
 		});
-		$("#portfolio__a-cc-live").focusout(function(){		
-			$('.port-piece-container > #cc-port-piece-img > img').removeClass("blur-img");
-			$('#cc-port-piece-text').removeClass("custom-opacity-class");
-			$('#portfolio__a-cc-live').removeClass("custom-focus-class");
+		$("#portfolio__a-cm-live").focusout(function(){		
+			$('.port-piece-container > #cm-port-piece-img > img').removeClass("blur-img");
+			$('#cm-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-cm-live').removeClass("custom-focus-class");
 		});
-		$("#portfolio__a-cc-GH").focus(function(){					
-			$('.port-piece-container > #cc-port-piece-img > img').addClass("blur-img");
-			$('#cc-port-piece-text').addClass("custom-opacity-class");
-			$('#portfolio__a-cc-GH').addClass("custom-focus-class");
+		$("#portfolio__a-cm-GH").focus(function(){					
+			$('.port-piece-container > #cm-port-piece-img > img').addClass("blur-img");
+			$('#cm-port-piece-text').addClass("custom-opacity-class");
+			$('#portfolio__a-cm-GH').addClass("custom-focus-class");
 		});
-		$("#portfolio__a-cc-GH").focusout(function(){		
-			$('.port-piece-container > #cc-port-piece-img > img').removeClass("blur-img");
-			$('#cc-port-piece-text').removeClass("custom-opacity-class");
-			$('#portfolio__a-cc-GH').removeClass("custom-focus-class");
+		$("#portfolio__a-cm-GH").focusout(function(){		
+			$('.port-piece-container > #cm-port-piece-img > img').removeClass("blur-img");
+			$('#cm-port-piece-text').removeClass("custom-opacity-class");
+			$('#portfolio__a-cm-GH').removeClass("custom-focus-class");
 		});
+
+
+		// //Comrade Cafe
+		// $("#portfolio__a-cc-live").focus(function(){					
+		// 	$('.port-piece-container > #cc-port-piece-img > img').addClass("blur-img");
+		// 	$('#cc-port-piece-text').addClass("custom-opacity-class");
+		// 	$('#portfolio__a-cc-live').addClass("custom-focus-class");
+		// });
+		// $("#portfolio__a-cc-live").focusout(function(){		
+		// 	$('.port-piece-container > #cc-port-piece-img > img').removeClass("blur-img");
+		// 	$('#cc-port-piece-text').removeClass("custom-opacity-class");
+		// 	$('#portfolio__a-cc-live').removeClass("custom-focus-class");
+		// });
+		// $("#portfolio__a-cc-GH").focus(function(){					
+		// 	$('.port-piece-container > #cc-port-piece-img > img').addClass("blur-img");
+		// 	$('#cc-port-piece-text').addClass("custom-opacity-class");
+		// 	$('#portfolio__a-cc-GH').addClass("custom-focus-class");
+		// });
+		// $("#portfolio__a-cc-GH").focusout(function(){		
+		// 	$('.port-piece-container > #cc-port-piece-img > img').removeClass("blur-img");
+		// 	$('#cc-port-piece-text').removeClass("custom-opacity-class");
+		// 	$('#portfolio__a-cc-GH').removeClass("custom-focus-class");
+		// });
 	});
 }
 

@@ -149,6 +149,7 @@
             #snc-port-piece-img,
             #st-port-piece-img,
             #ipmp-port-piece-img,
+            #cm-port-piece-img,
             #cc-port-piece-img
             {
                 height: 355px;
@@ -200,6 +201,7 @@
             #snc-port-piece-text,
             #st-port-piece-text,
             #ipmp-port-piece-text,
+            #cm-port-piece-text,
             #cc-port-piece-text
             {
                 position: absolute;
@@ -246,6 +248,7 @@
         #syn-key-container,
         #symptom-tracker-container,
         #ipmp-container,
+        #cm-container,
         #comrade-cafe-container {
             position: relative;
             @media screen and (max-width: $md){
